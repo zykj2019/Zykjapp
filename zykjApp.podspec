@@ -139,7 +139,7 @@ Pod::Spec.new do |s|
 
   s.frameworks = 'Accelerate', 'CoreTelephony', 'SystemConfiguration'
   #//不带tbd后缀及lib前缀
-  s.libraries = 'libc++', 'libsqlite3' , 'libz'
+  s.libraries = 'c++', 'sqlite3' , 'z'
 
   s.prefix_header_contents = <<-PRE
                   #ifdef __OBJC__
