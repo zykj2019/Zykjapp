@@ -428,7 +428,6 @@
 		24367C50206A3B09001255AD /* CLSafeMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLSafeMutableArray.h; sourceTree = "<group>"; };
 		24367C51206A3B09001255AD /* CLSafeMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLSafeMutableArray.m; sourceTree = "<group>"; };
 		24367C52206A3B09001255AD /* CommonCatetory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonCatetory.h; sourceTree = "<group>"; };
-		24367C55206A3B09001255AD /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		24367C56206A3B09001255AD /* KeyChainHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyChainHelper.h; sourceTree = "<group>"; };
 		24367C57206A3B09001255AD /* KeyChainHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChainHelper.m; sourceTree = "<group>"; };
 		24367C58206A3B09001255AD /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
@@ -1296,7 +1295,6 @@
 				24367C50206A3B09001255AD /* CLSafeMutableArray.h */,
 				24367C51206A3B09001255AD /* CLSafeMutableArray.m */,
 				24367C52206A3B09001255AD /* CommonCatetory.h */,
-				24367C55206A3B09001255AD /* GTMDefines.h */,
 				24367C56206A3B09001255AD /* KeyChainHelper.h */,
 				24367C57206A3B09001255AD /* KeyChainHelper.m */,
 				24367C58206A3B09001255AD /* MKMapView+ZoomLevel.h */,
