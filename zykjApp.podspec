@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "zykjApp"
-  s.version      = "11"
+  s.version      = "14"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -152,7 +152,11 @@ Pod::Spec.new do |s|
 # s.requires_arc = true
  # s.requires_arc = ['zykjApp/zykjApp/API/*', 'zykjApp/zykjApp/Ext/*', 'zykjApp/zykjApp/Helper/*', 'zykjApp/zykjApp/Model/*', 'zykjApp/zykjApp/VC/*', 'zykjApp/zykjApp/Utils/*', 'zykjApp/zykjApp/Views/*']
 
+s.compiler_flags   = '-ObjC'
+
 non_arc_files = 'zykjApp/zykjApp/NoArc/OpenUDID.m','zykjApp/zykjApp/NoArc/JSONKit.m'
+
+
 
 s.exclude_files = non_arc_files
 s.subspec 'no-arc' do |sp|
