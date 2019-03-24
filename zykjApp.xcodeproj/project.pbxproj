@@ -27,7 +27,6 @@
 		24367D42206A3B0A001255AD /* FTUtils+NSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 24367C20206A3B09001255AD /* FTUtils+NSObject.m */; };
 		24367D43206A3B0A001255AD /* FTUtils+UIGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24367C22206A3B09001255AD /* FTUtils+UIGestureRecognizer.m */; };
 		24367D45206A3B0A001255AD /* CLSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 24367C51206A3B09001255AD /* CLSafeMutableArray.m */; };
-		24367D46206A3B0A001255AD /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 24367C54206A3B09001255AD /* GTMBase64.m */; };
 		24367D47206A3B0A001255AD /* KeyChainHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 24367C57206A3B09001255AD /* KeyChainHelper.m */; };
 		24367D48206A3B0A001255AD /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 24367C59206A3B09001255AD /* MKMapView+ZoomLevel.m */; };
 		24367D49206A3B0A001255AD /* NSData+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 24367C5B206A3B09001255AD /* NSData+Common.m */; };
@@ -288,7 +287,6 @@
 		2444E25920590D9E00F29C06 /* WCAnnouceNet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2444E25620590D9E00F29C06 /* WCAnnouceNet.m */; };
 		2444E25E20590DA600F29C06 /* BaseRestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2444E25D20590DA600F29C06 /* BaseRestAPI.m */; };
 		2444E27F20590DAE00F29C06 /* DES3Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 2444E26120590DAE00F29C06 /* DES3Util.m */; };
-		2444E28020590DAE00F29C06 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2444E26320590DAE00F29C06 /* GTMBase64.m */; };
 		2444E28120590DAE00F29C06 /* IMichUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2444E26620590DAE00F29C06 /* IMichUtil.m */; };
 		2444E28220590DAE00F29C06 /* MDownloadTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2444E26820590DAE00F29C06 /* MDownloadTool.m */; };
 		2444E28320590DAE00F29C06 /* MyRegularExpressionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2444E26A20590DAE00F29C06 /* MyRegularExpressionManager.m */; };
@@ -362,6 +360,7 @@
 		24544C0121C0E1A800BAED34 /* M80AttributedLabelURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 24544BFC21C0E1A700BAED34 /* M80AttributedLabelURL.m */; };
 		24544C0221C0E1A800BAED34 /* NSMutableAttributedString+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = 24544BFE21C0E1A700BAED34 /* NSMutableAttributedString+M80.m */; };
 		24544C0721C0E24700BAED34 /* LEEAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 24544C0521C0E24600BAED34 /* LEEAlert.m */; };
+		249EE1A22247AE580076FE7F /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE1A02247AE570076FE7F /* GTMBase64.m */; };
 		9FABE173A95CE7757E3293CB /* Pods_zykjApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DEF3C9E47F4A038AC7A991 /* Pods_zykjApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -429,8 +428,6 @@
 		24367C50206A3B09001255AD /* CLSafeMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLSafeMutableArray.h; sourceTree = "<group>"; };
 		24367C51206A3B09001255AD /* CLSafeMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLSafeMutableArray.m; sourceTree = "<group>"; };
 		24367C52206A3B09001255AD /* CommonCatetory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonCatetory.h; sourceTree = "<group>"; };
-		24367C53206A3B09001255AD /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
-		24367C54206A3B09001255AD /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		24367C55206A3B09001255AD /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		24367C56206A3B09001255AD /* KeyChainHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyChainHelper.h; sourceTree = "<group>"; };
 		24367C57206A3B09001255AD /* KeyChainHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChainHelper.m; sourceTree = "<group>"; };
@@ -973,8 +970,6 @@
 		2444E25D20590DA600F29C06 /* BaseRestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRestAPI.m; sourceTree = "<group>"; };
 		2444E26020590DAE00F29C06 /* DES3Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DES3Util.h; sourceTree = "<group>"; };
 		2444E26120590DAE00F29C06 /* DES3Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DES3Util.m; sourceTree = "<group>"; };
-		2444E26220590DAE00F29C06 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
-		2444E26320590DAE00F29C06 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		2444E26420590DAE00F29C06 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		2444E26520590DAE00F29C06 /* IMichUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMichUtil.h; sourceTree = "<group>"; };
 		2444E26620590DAE00F29C06 /* IMichUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMichUtil.m; sourceTree = "<group>"; };
@@ -1131,6 +1126,8 @@
 		24544C0621C0E24600BAED34 /* LEEAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEEAlert.h; sourceTree = "<group>"; };
 		24544C0821C0E26D00BAED34 /* ViewsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewsHeader.h; sourceTree = "<group>"; };
 		249EE19A2247A8240076FE7F /* AllHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllHeader.h; sourceTree = "<group>"; };
+		249EE1A02247AE570076FE7F /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		249EE1A12247AE580076FE7F /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		39E8346066F611182F67483F /* Pods-zykjApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zykjApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zykjApp/Pods-zykjApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8386129BE0C7DD394B4C400D /* Pods-zykjApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zykjApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-zykjApp/Pods-zykjApp.release.xcconfig"; sourceTree = "<group>"; };
 		C3DEF3C9E47F4A038AC7A991 /* Pods_zykjApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zykjApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1299,8 +1296,6 @@
 				24367C50206A3B09001255AD /* CLSafeMutableArray.h */,
 				24367C51206A3B09001255AD /* CLSafeMutableArray.m */,
 				24367C52206A3B09001255AD /* CommonCatetory.h */,
-				24367C53206A3B09001255AD /* GTMBase64.h */,
-				24367C54206A3B09001255AD /* GTMBase64.m */,
 				24367C55206A3B09001255AD /* GTMDefines.h */,
 				24367C56206A3B09001255AD /* KeyChainHelper.h */,
 				24367C57206A3B09001255AD /* KeyChainHelper.m */,
@@ -2505,10 +2500,10 @@
 		2444E25F20590DAE00F29C06 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				249EE1A12247AE580076FE7F /* GTMBase64.h */,
+				249EE1A02247AE570076FE7F /* GTMBase64.m */,
 				2444E26020590DAE00F29C06 /* DES3Util.h */,
 				2444E26120590DAE00F29C06 /* DES3Util.m */,
-				2444E26220590DAE00F29C06 /* GTMBase64.h */,
-				2444E26320590DAE00F29C06 /* GTMBase64.m */,
 				2444E26420590DAE00F29C06 /* GTMDefines.h */,
 				2444E26520590DAE00F29C06 /* IMichUtil.h */,
 				2444E26620590DAE00F29C06 /* IMichUtil.m */,
@@ -3089,6 +3084,7 @@
 				2444E1F320590D9600F29C06 /* MSSBrowseBaseViewController.m in Sources */,
 				2444E2BB20590DC000F29C06 /* PictureView.m in Sources */,
 				24367EC7206A582A001255AD /* UIGestureRecognizer+YYAdd.m in Sources */,
+				249EE1A22247AE580076FE7F /* GTMBase64.m in Sources */,
 				2444E28220590DAE00F29C06 /* MDownloadTool.m in Sources */,
 				2444E25920590D9E00F29C06 /* WCAnnouceNet.m in Sources */,
 				24367D3D206A3B0A001255AD /* UITableViewController+ADScaleTransititon.m in Sources */,
@@ -3128,7 +3124,6 @@
 				24367D72206A3B0A001255AD /* UIImageView+MKNetworkKitAdditions.m in Sources */,
 				24367ED5206A582A001255AD /* UIButton+YYWebImage.m in Sources */,
 				2444E21220590D9600F29C06 /* SDWebImagePrefetcher.m in Sources */,
-				24367D46206A3B0A001255AD /* GTMBase64.m in Sources */,
 				24367D61206A3B0A001255AD /* KeyValueTableViewController.m in Sources */,
 				24544BE221C0DF1800BAED34 /* UIView+MJExtension.m in Sources */,
 				2444E28820590DAE00F29C06 /* UIControl+Block.m in Sources */,
@@ -3343,7 +3338,6 @@
 				24367EB6206A582A001255AD /* NSNotificationCenter+YYAdd.m in Sources */,
 				24367D4C206A3B0A001255AD /* NSObject+CommonBlock.m in Sources */,
 				24367F07206A5BA3001255AD /* NSObject+YYModel.m in Sources */,
-				2444E28020590DAE00F29C06 /* GTMBase64.m in Sources */,
 				2444E1DA20590D9600F29C06 /* FMDatabaseAdditions.m in Sources */,
 				24367D57206A3B0A001255AD /* UIView+CustomAutoLayout.m in Sources */,
 				24367EC2206A582A001255AD /* UIBezierPath+YYAdd.m in Sources */,
