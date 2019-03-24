@@ -39,7 +39,7 @@
             [array addObject:value];
         }
     }
-    return CommonReturnAutoReleased(array);
+    return array;
 }
 
 /*
@@ -136,7 +136,6 @@
 {
     
     id aClassInstance = [[aClass alloc] init];
-    CommonAutoRelease(aClassInstance);
     
     // 因JSON返回的字段中有id
     // 所以对此数据作特处理
@@ -147,7 +146,6 @@
     
     // 将返回的Json键与aClassInstance的属性列表进行一次对比，找出要赋值的属性，以减少不必要的运算
     NSDictionary *propertyKeys = [aClassInstance enumerateKeysInDictionary:dict];
-    CommonRetain(propertyKeys);
     
     NSArray *propertyKeysArray = [propertyKeys allKeys];
     
@@ -162,7 +160,6 @@
         [aClassInstance enumerateProperty:propertyName value:idvalue propertyDictionary:propertyKeys];
     }
     
-    CommonRelease(propertyKeys);
     return aClassInstance;
 }
 
@@ -241,7 +238,6 @@
     NSUInteger propertyCount = 0;
     
     NSMutableDictionary *propertyKeys = [[NSMutableDictionary alloc] init];
-    CommonAutoRelease(propertyKeys);
     
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
     [self propertyListOfClass:[self class] propertyList:dic];
@@ -317,7 +313,6 @@
 + (id)parse:(Class)aClass dictionary:(NSDictionary *)dict itemClass:(Class)itemClass
 {
     id aClassInstance = [[aClass alloc] init];
-    CommonAutoRelease(aClassInstance);
     
     // 因ＪＳＯＮ返回的字段中有id
     // 所以对此数据作特处理
@@ -327,7 +322,6 @@
     }
     
     NSDictionary *propertyKeys = [aClassInstance enumerateKeysInDictionary:dict];
-    CommonRetain(propertyKeys);
     
     NSArray *propertyKeysArray = [propertyKeys allKeys];
     for (unsigned int i = 0 ; i < propertyKeysArray.count; i++ )
@@ -337,7 +331,6 @@
         [aClassInstance enumerateProperty:propertyName value:idvalue propertyDictionary:propertyKeys itemClass:itemClass];
         
     }
-    CommonRelease(propertyKeys);
     //    [propertyKeys release];
     
     return aClassInstance;
@@ -368,7 +361,7 @@
             [array addObject:value];
         }
     }
-    return CommonReturnAutoReleased(array);
+    return array;
 }
 + (NSMutableArray *)loadItem:(Class)itemClass fromJsonString:(NSString *)json
 {

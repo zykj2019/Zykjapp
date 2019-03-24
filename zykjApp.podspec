@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "zykjApp"
-  s.version      = "7"
+  s.version      = "9"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -148,8 +148,8 @@ Pod::Spec.new do |s|
                   #endif
                  PRE
 
-s.requires_arc =  'zykjApp/zykjApp/API'
+# s.requires_arc =  'zykjApp/zykjApp/API'
 # s.requires_arc = true
- # s.requires_arc = ['zykjApp/zykjApp/API', 'zykjApp/zykjApp/Ext', 'zykjApp/zykjApp/Helper', 'zykjApp/zykjApp/Model', 'zykjApp/zykjApp/VC', 'zykjApp/zykjApp/Utils', 'zykjApp/zykjApp/Views']
+ s.requires_arc = ['zykjApp/zykjApp/API', 'zykjApp/zykjApp/Ext', 'zykjApp/zykjApp/Helper', 'zykjApp/zykjApp/Model', 'zykjApp/zykjApp/VC', 'zykjApp/zykjApp/Utils', 'zykjApp/zykjApp/Views']
 
 end

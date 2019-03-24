@@ -144,7 +144,6 @@
 {
     _backgroundView = [[UIImageView alloc] init];
     [self.view addSubview:_backgroundView];
-    CommonRelease(_backgroundView);
 }
 
 - (void)configBackground

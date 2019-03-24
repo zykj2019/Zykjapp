@@ -41,8 +41,6 @@ static IOSDeviceConfig *_sharedConfig = nil;
 - (void)dealloc
 {
 //    [_deviceUUID release];
-    CommonRelease(_deviceUUID);
-    CommonSuperDealloc();
 //    [super dealloc];
 }
 

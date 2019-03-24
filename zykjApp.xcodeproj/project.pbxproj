@@ -492,7 +492,6 @@
 		249EE7B82247B2FF0076FE7F /* ImageTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTitleButton.h; sourceTree = "<group>"; };
 		249EE7B92247B2FF0076FE7F /* MoreTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreTableView.m; sourceTree = "<group>"; };
 		249EE7BA2247B2FF0076FE7F /* KeyValueTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyValueTableViewController.h; sourceTree = "<group>"; };
-		249EE7BC2247B2FF0076FE7F /* ARCCompile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCCompile.h; sourceTree = "<group>"; };
 		249EE7BD2247B2FF0076FE7F /* DebugMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugMarco.h; sourceTree = "<group>"; };
 		249EE7BF2247B2FF0076FE7F /* UIView+Glow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Glow.m"; sourceTree = "<group>"; };
 		249EE7C02247B2FF0076FE7F /* UIView+CustomAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CustomAutoLayout.h"; sourceTree = "<group>"; };
@@ -1527,7 +1526,6 @@
 		249EE7BB2247B2FF0076FE7F /* DebugMacro */ = {
 			isa = PBXGroup;
 			children = (
-				249EE7BC2247B2FF0076FE7F /* ARCCompile.h */,
 				249EE7BD2247B2FF0076FE7F /* DebugMarco.h */,
 			);
 			path = DebugMacro;

@@ -36,9 +36,8 @@
     input.leftView = label;
     label.textAlignment = NSTextAlignmentRight;
     label.font = [[FontHelper shareHelper] textFont];
-    CommonRelease(label);
     
-    return CommonReturnAutoReleased(input);
+    return input;
     
 }
 

@@ -70,7 +70,7 @@
     {
         ret = [[newClass alloc] init];
     }
-    return CommonReturnAutoReleased(ret);
+    return ret;
 }
 
 + (id)loadClassFromNib:(Class)newClass
@@ -97,7 +97,7 @@
     {
         ret = [[newClass alloc] initWithNibName:[newClass description] bundle:[NSBundle mainBundle]];
     }
-    return CommonReturnAutoReleased(ret);
+    return ret;
 }
 
 + (id)loadClass:(Class)newClass withParams:(id)params

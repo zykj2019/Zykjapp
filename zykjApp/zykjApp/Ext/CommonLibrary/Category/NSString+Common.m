@@ -325,7 +325,7 @@ char pinyinFirstLetter(unsigned short hanzi)
 {
 	NSString *url = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL,  (CFStringRef)self,  NULL,  (CFStringRef)@"!*'();:@&=+$,/?%#[]",  kCFStringEncodingUTF8));
 
-    return CommonReturnAutoReleased(url);
+    return url;
 }
 
 - (NSString *)capitalize
