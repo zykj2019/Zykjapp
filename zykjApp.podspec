@@ -159,4 +159,5 @@ s.subspec 'no-arc' do |sp|
   sp.source_files = non_arc_files
   sp.requires_arc = false
   end
+
 end
