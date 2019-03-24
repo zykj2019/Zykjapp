@@ -1083,17 +1083,17 @@
 		249EE6662247B2FB0076FE7F /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				249EE66E2247B2FB0076FE7F /* HelperHeader.h */,
+				249EE66B2247B2FB0076FE7F /* nd_define.h */,
+				249EE66F2247B2FB0076FE7F /* NotificationMacro.h */,
+				249EE66C2247B2FB0076FE7F /* ServerConfig.h */,
+				249EE6702247B2FB0076FE7F /* ServerInfo.h */,
+				249EE66A2247B2FB0076FE7F /* ServerInfo.m */,
+				249EE66D2247B2FB0076FE7F /* ShareValue.h */,
 				249EE6672247B2FB0076FE7F /* ShareValue.m */,
 				249EE6682247B2FB0076FE7F /* UtilsMacro.h */,
-				249EE6692247B2FB0076FE7F /* WCAnnouceNet.m */,
-				249EE66A2247B2FB0076FE7F /* ServerInfo.m */,
-				249EE66B2247B2FB0076FE7F /* nd_define.h */,
-				249EE66C2247B2FB0076FE7F /* ServerConfig.h */,
-				249EE66D2247B2FB0076FE7F /* ShareValue.h */,
-				249EE66E2247B2FB0076FE7F /* HelperHeader.h */,
-				249EE66F2247B2FB0076FE7F /* NotificationMacro.h */,
-				249EE6702247B2FB0076FE7F /* ServerInfo.h */,
 				249EE6712247B2FB0076FE7F /* WCAnnouceNet.h */,
+				249EE6692247B2FB0076FE7F /* WCAnnouceNet.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
