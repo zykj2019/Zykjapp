@@ -1021,32 +1021,32 @@
 		249EE63F2247B2FB0076FE7F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				249EE6402247B2FB0076FE7F /* UIControl+Block.m */,
-				249EE6412247B2FB0076FE7F /* UIView+InitMethod */,
-				249EE6472247B2FB0076FE7F /* UIImage+External.h */,
-				249EE6482247B2FB0076FE7F /* UIView+block.h */,
-				249EE6492247B2FB0076FE7F /* UIBarButtonItem+ND.m */,
 				249EE64A2247B2FB0076FE7F /* DES3Util.h */,
-				249EE64B2247B2FB0076FE7F /* GTMBase64.h */,
-				249EE64C2247B2FB0076FE7F /* UIImage+ND.m */,
-				249EE64D2247B2FB0076FE7F /* IMichUtil.h */,
-				249EE64E2247B2FB0076FE7F /* MDownloadTool.h */,
-				249EE64F2247B2FB0076FE7F /* UIImageView+SDImageCache.m */,
-				249EE6502247B2FB0076FE7F /* MyRegularExpressionManager.m */,
-				249EE6512247B2FB0076FE7F /* UIControl+Block.h */,
-				249EE6522247B2FB0076FE7F /* UtilsHeader.h */,
-				249EE6532247B2FB0076FE7F /* UIBarButtonItem+ND.h */,
-				249EE6542247B2FB0076FE7F /* UIView+block.m */,
-				249EE6552247B2FB0076FE7F /* UIImage+External.m */,
-				249EE6562247B2FB0076FE7F /* GTMDefines.h */,
-				249EE6572247B2FB0076FE7F /* UIAlertView-Blocks */,
-				249EE65F2247B2FB0076FE7F /* IMichUtil.m */,
-				249EE6602247B2FB0076FE7F /* UIImage+ND.h */,
-				249EE6612247B2FB0076FE7F /* GTMBase64.m */,
 				249EE6622247B2FB0076FE7F /* DES3Util.m */,
-				249EE6632247B2FB0076FE7F /* MyRegularExpressionManager.h */,
-				249EE6642247B2FB0076FE7F /* UIImageView+SDImageCache.h */,
+				249EE64B2247B2FB0076FE7F /* GTMBase64.h */,
+				249EE6612247B2FB0076FE7F /* GTMBase64.m */,
+				249EE6562247B2FB0076FE7F /* GTMDefines.h */,
+				249EE64D2247B2FB0076FE7F /* IMichUtil.h */,
+				249EE65F2247B2FB0076FE7F /* IMichUtil.m */,
+				249EE64E2247B2FB0076FE7F /* MDownloadTool.h */,
 				249EE6652247B2FB0076FE7F /* MDownloadTool.m */,
+				249EE6632247B2FB0076FE7F /* MyRegularExpressionManager.h */,
+				249EE6502247B2FB0076FE7F /* MyRegularExpressionManager.m */,
+				249EE6572247B2FB0076FE7F /* UIAlertView-Blocks */,
+				249EE6532247B2FB0076FE7F /* UIBarButtonItem+ND.h */,
+				249EE6492247B2FB0076FE7F /* UIBarButtonItem+ND.m */,
+				249EE6512247B2FB0076FE7F /* UIControl+Block.h */,
+				249EE6402247B2FB0076FE7F /* UIControl+Block.m */,
+				249EE6472247B2FB0076FE7F /* UIImage+External.h */,
+				249EE6552247B2FB0076FE7F /* UIImage+External.m */,
+				249EE6602247B2FB0076FE7F /* UIImage+ND.h */,
+				249EE64C2247B2FB0076FE7F /* UIImage+ND.m */,
+				249EE6642247B2FB0076FE7F /* UIImageView+SDImageCache.h */,
+				249EE64F2247B2FB0076FE7F /* UIImageView+SDImageCache.m */,
+				249EE6482247B2FB0076FE7F /* UIView+block.h */,
+				249EE6542247B2FB0076FE7F /* UIView+block.m */,
+				249EE6412247B2FB0076FE7F /* UIView+InitMethod */,
+				249EE6522247B2FB0076FE7F /* UtilsHeader.h */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1370,7 +1370,6 @@
 				249EE6CE2247B2FE0076FE7F /* DACircularProgressView.m */,
 				249EE6CF2247B2FE0076FE7F /* ZLAutoLayout */,
 				249EE6D22247B2FE0076FE7F /* DACircularProgressView.h */,
-				249EE6D32247B2FE0076FE7F /* SDWebImage */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -1382,13 +1381,6 @@
 				249EE6D12247B2FE0076FE7F /* UIView+ZLAutoLayout.h */,
 			);
 			path = ZLAutoLayout;
-			sourceTree = "<group>";
-		};
-		249EE6D32247B2FE0076FE7F /* SDWebImage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SDWebImage;
 			sourceTree = "<group>";
 		};
 		249EE6D42247B2FE0076FE7F /* Resource */ = {
