@@ -148,4 +148,6 @@ Pod::Spec.new do |s|
                   #endif
                  PRE
 
+ s.requires_arc = ['zykjApp/zykjApp/API', 'zykjApp/zykjApp/Ext', 'zykjApp/zykjApp/Helper', 'zykjApp/zykjApp/Model', 'zykjApp/zykjApp/VC', 'zykjApp/zykjApp/Utils', 'zykjApp/zykjApp/Views']
+
 end
