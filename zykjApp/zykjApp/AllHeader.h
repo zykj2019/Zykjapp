@@ -13,7 +13,6 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #import <AVFoundation/AVAsset.h>
-#import "AppDelegate.h"
 #import "ExtHeader.h"
 #import "UtilsHeader.h"
 #import "HelperHeader.h"
