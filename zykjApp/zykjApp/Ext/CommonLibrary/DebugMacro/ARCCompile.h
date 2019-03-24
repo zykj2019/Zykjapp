@@ -9,6 +9,8 @@
 #ifndef CommonLibrary_ARCCompile_h
 #define CommonLibrary_ARCCompile_h
 
+#import <objc/runtime.h>
+
 #if ! __has_feature(objc_arc)
     #define CommonAutoRelease(__v) ([__v autorelease])
     #define CommonReturnAutoReleased Autorelease

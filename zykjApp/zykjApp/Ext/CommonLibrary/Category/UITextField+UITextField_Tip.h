@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 #import "NSObject+CommonBlock.h"
 
 @interface UITextField (UITextField_Tip)
