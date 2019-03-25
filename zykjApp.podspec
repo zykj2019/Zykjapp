@@ -14,9 +14,9 @@ Pod::Spec.new do |s|
   #  can feel like a chore to fill in it's definitely to your advantage. The
   #  summary should be tweet-length, and the description more in depth.
   #
-s.public_header_files = 'zykjApp/zykjApp/**/*.{h}'
-s.header_dir = 'zykjApp/zykjApp'
-s.header_mappings_dir = 'zykjApp/zykjApp'
+# s.public_header_files = 'zykjApp/zykjApp/**/*.{h}'
+# s.header_dir = 'zykjApp/zykjApp'
+# s.header_mappings_dir = 'zykjApp/zykjApp'
 
 non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
   s.exclude_files = non_arc_files
