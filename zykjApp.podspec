@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 s.public_header_files = 'zykjApp/zykjApp/**/*.{h}'
-s.header_dir = 'zykjApp/zykjApp/**'
- s.header_mappings_dir = 'zykjApp/zykjApp/**'
+# s.header_dir = 'zykjApp/zykjApp/**'
+ # s.header_mappings_dir = 'zykjApp/zykjApp/**'
 
 non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
   s.exclude_files = non_arc_files
@@ -161,11 +161,7 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
   s.libraries = 'c++', 'sqlite3' , 'z'
 
   s.prefix_header_contents = <<-PRE
-                  #ifdef __OBJC__
-                  #import "TestA.h"
-                  #import "AllHeader.h"
-                  #else
-                  #endif
+                #import "TestA.h"
                  PRE
 
 # s.requires_arc =  'zykjApp/zykjApp/API'
