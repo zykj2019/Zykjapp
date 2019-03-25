@@ -151,7 +151,6 @@
 		249EEA542247B3030076FE7F /* M80AttributedLabelURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE8412247B2FF0076FE7F /* M80AttributedLabelURL.m */; };
 		249EEA552247B3030076FE7F /* NSMutableAttributedString+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE8432247B2FF0076FE7F /* NSMutableAttributedString+M80.m */; };
 		249EEA562247B3030076FE7F /* NSMutableDictionary+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE8452247B2FF0076FE7F /* NSMutableDictionary+Json.m */; };
-		249EEA572247B3030076FE7F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE8462247B2FF0076FE7F /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		249EEA582247B3030076FE7F /* NSObject+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE8472247B2FF0076FE7F /* NSObject+Json.m */; };
 		249EEA592247B3030076FE7F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE84E2247B2FF0076FE7F /* MBProgressHUD.m */; };
 		249EEA5A2247B3030076FE7F /* HUDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE8502247B2FF0076FE7F /* HUDHelper.m */; };
@@ -254,7 +253,6 @@
 		249EEABB2247B3030076FE7F /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE9362247B2FF0076FE7F /* UICKeyChainStore.m */; };
 		249EEABC2247B3030076FE7F /* FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE9392247B2FF0076FE7F /* FCUUID.m */; };
 		249EEABD2247B3030076FE7F /* BaseRestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE93E2247B3000076FE7F /* BaseRestAPI.m */; };
-		249EEABE2247B3030076FE7F /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE9412247B3000076FE7F /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		249EEABF2247B3030076FE7F /* NSData+base64Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE9442247B3000076FE7F /* NSData+base64Encoding.m */; };
 		249EEAC02247B3030076FE7F /* NSString+ZLKExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE9462247B3000076FE7F /* NSString+ZLKExtend.m */; };
 		249EEAC12247B3030076FE7F /* HttpEncryptTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE9492247B3000076FE7F /* HttpEncryptTool.m */; };
@@ -284,8 +282,6 @@
 		249EEAEE2247B59B0076FE7F /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EEAE32247B59B0076FE7F /* UIView+YYAdd.m */; };
 		249EEAEF2247B59B0076FE7F /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EEAE92247B59B0076FE7F /* NSObject+YYModel.m */; };
 		249EEAF02247B59B0076FE7F /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EEAEA2247B59B0076FE7F /* YYClassInfo.m */; };
-		249EEAF12247CA220076FE7F /* JSONKit.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE84A2247B2FF0076FE7F /* JSONKit.h */; };
-		249EEAF22247CA270076FE7F /* OpenUDID.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE9482247B3000076FE7F /* OpenUDID.h */; };
 		249EEAF32247CA2B0076FE7F /* AllHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE19A2247A8240076FE7F /* AllHeader.h */; };
 		249EEAF722488DA90076FE7F /* TestA.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EEAF622488DA90076FE7F /* TestA.m */; };
 		249EEAF8224891810076FE7F /* TestA.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EEAF522488DA80076FE7F /* TestA.h */; };
@@ -625,11 +621,9 @@
 		249EE8422247B2FF0076FE7F /* M80AttributedLabelAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80AttributedLabelAttachment.h; sourceTree = "<group>"; };
 		249EE8432247B2FF0076FE7F /* NSMutableAttributedString+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+M80.m"; sourceTree = "<group>"; };
 		249EE8452247B2FF0076FE7F /* NSMutableDictionary+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Json.m"; sourceTree = "<group>"; };
-		249EE8462247B2FF0076FE7F /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		249EE8472247B2FF0076FE7F /* NSObject+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Json.m"; sourceTree = "<group>"; };
 		249EE8482247B2FF0076FE7F /* NSMutableDictionary+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Json.h"; sourceTree = "<group>"; };
 		249EE8492247B2FF0076FE7F /* NSObject+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Json.h"; sourceTree = "<group>"; };
-		249EE84A2247B2FF0076FE7F /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		249EE84C2247B2FF0076FE7F /* TipUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipUtility.h; sourceTree = "<group>"; };
 		249EE84D2247B2FF0076FE7F /* MBProgressHUD_NHExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD_NHExtend.h; sourceTree = "<group>"; };
 		249EE84E2247B2FF0076FE7F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
@@ -839,13 +833,11 @@
 		249EE93D2247B3000076FE7F /* BaseRestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRestAPI.h; sourceTree = "<group>"; };
 		249EE93E2247B3000076FE7F /* BaseRestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRestAPI.m; sourceTree = "<group>"; };
 		249EE9402247B3000076FE7F /* NSString+ZLKExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZLKExtend.h"; sourceTree = "<group>"; };
-		249EE9412247B3000076FE7F /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
 		249EE9422247B3000076FE7F /* HttpEncryptTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpEncryptTool.h; sourceTree = "<group>"; };
 		249EE9442247B3000076FE7F /* NSData+base64Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+base64Encoding.m"; sourceTree = "<group>"; };
 		249EE9452247B3000076FE7F /* NSData+base64Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+base64Encoding.h"; sourceTree = "<group>"; };
 		249EE9462247B3000076FE7F /* NSString+ZLKExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZLKExtend.m"; sourceTree = "<group>"; };
 		249EE9472247B3000076FE7F /* PublicRequestDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicRequestDefine.h; sourceTree = "<group>"; };
-		249EE9482247B3000076FE7F /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
 		249EE9492247B3000076FE7F /* HttpEncryptTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpEncryptTool.m; sourceTree = "<group>"; };
 		249EE94B2247B3000076FE7F /* AESCbc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCbc.h; sourceTree = "<group>"; };
 		249EE94C2247B3000076FE7F /* AESCbc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCbc.m; sourceTree = "<group>"; };
@@ -1017,7 +1009,6 @@
 		249EE1992247A7940076FE7F /* zykjApp */ = {
 			isa = PBXGroup;
 			children = (
-				249EEADE2247B4D30076FE7F /* NoArc */,
 				249EE93B2247B3000076FE7F /* API */,
 				249EE6962247B2FE0076FE7F /* Ext */,
 				249EE6662247B2FB0076FE7F /* Helper */,
@@ -2336,17 +2327,6 @@
 			path = UIFramework;
 			sourceTree = "<group>";
 		};
-		249EEADE2247B4D30076FE7F /* NoArc */ = {
-			isa = PBXGroup;
-			children = (
-				249EE9482247B3000076FE7F /* OpenUDID.h */,
-				249EE9412247B3000076FE7F /* OpenUDID.m */,
-				249EE84A2247B2FF0076FE7F /* JSONKit.h */,
-				249EE8462247B2FF0076FE7F /* JSONKit.m */,
-			);
-			path = NoArc;
-			sourceTree = "<group>";
-		};
 		249EEADF2247B59B0076FE7F /* YYKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -2401,6 +2381,7 @@
 				2444E07720590CAB00F29C06 /* Sources */,
 				2444E07820590CAB00F29C06 /* Frameworks */,
 				2444E07920590CAB00F29C06 /* Resources */,
+				C7A2906B64BFB4CFB1FEA8F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2560,6 +2541,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C7A2906B64BFB4CFB1FEA8F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-zykjApp/Pods-zykjApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Noarc/Noarc.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Noarc.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zykjApp/Pods-zykjApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -2574,14 +2573,11 @@
 				249EEAFD2248ADE50076FE7F /* ViewsHeader.h in Sources */,
 				249EEAF8224891810076FE7F /* TestA.h in Sources */,
 				249EEAF32247CA2B0076FE7F /* AllHeader.h in Sources */,
-				249EEAF22247CA270076FE7F /* OpenUDID.h in Sources */,
-				249EEAF12247CA220076FE7F /* JSONKit.h in Sources */,
 				249EEAAF2247B3030076FE7F /* SDWebImageDownloader.m in Sources */,
 				249EE9A72247B3010076FE7F /* ZLPickerGroupViewController.m in Sources */,
 				249EEAA02247B3030076FE7F /* TAPageControl.m in Sources */,
 				249EE99B2247B3010076FE7F /* User.m in Sources */,
 				249EEA272247B3020076FE7F /* NSData+Common.m in Sources */,
-				249EEABE2247B3030076FE7F /* OpenUDID.m in Sources */,
 				249EE9B02247B3010076FE7F /* UIView+Extension.m in Sources */,
 				249EE9AB2247B3010076FE7F /* ZLPickerCollectionViewCell.m in Sources */,
 				249EE9852247B3010076FE7F /* RIButtonItem.m in Sources */,
@@ -2754,7 +2750,6 @@
 				249EEA292247B3020076FE7F /* CLSafeMutableArray.m in Sources */,
 				249EEA3E2247B3020076FE7F /* UIImageView+MKNetworkKitAdditions.m in Sources */,
 				249EEAD12247B3030076FE7F /* BaseTableVC.m in Sources */,
-				249EEA572247B3030076FE7F /* JSONKit.m in Sources */,
 				249EEAEF2247B59B0076FE7F /* NSObject+YYModel.m in Sources */,
 				249EEAB12247B3030076FE7F /* UIImage+MultiFormat.m in Sources */,
 				249EEA892247B3030076FE7F /* LK_NSDictionary2Object.m in Sources */,

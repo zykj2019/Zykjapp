@@ -13,12 +13,10 @@ Pod::Spec.new do |s|
   #  These will help people to find your library, and whilst it
   #  can feel like a chore to fill in it's definitely to your advantage. The
   #  summary should be tweet-length, and the description more in depth.
-
-
-
+  #
 
   s.name         = "zykjApp"
-  s.version      = "36"
+  s.version      = "11"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -143,107 +141,16 @@ Pod::Spec.new do |s|
   #//不带tbd后缀及lib前缀
   s.libraries = 'c++', 'sqlite3' , 'z'
 
-  # s.prefix_header_contents = <<-PRE
-  #                 #ifdef __OBJC__
-  #                 #import "AllHeader.h"
-  #                 #else
-  #                 #endif
-  #                PRE
+  s.prefix_header_contents = <<-PRE
+                  #ifdef __OBJC__
+                  #import "AllHeader.h"
+                  #else
+                  #endif
+                 PRE
 
 # s.requires_arc =  'zykjApp/zykjApp/API'
 # s.requires_arc = true
- # s.requires_arc = ['zykjApp/zykjApp/API/*', 'zykjApp/zykjApp/Ext/*', 'zykjApp/zykjApp/Helper/*', 'zykjApp/zykjApp/Model/*', 'zykjApp/zykjApp/VC/*', 'zykjApp/zykjApp/Utils/*', 'zykjApp/zykjApp/Views/*']
-
-s.compiler_flags   = '-ObjC'
-
-s.prefix_header_contents = <<-PRE
-              #ifdef __OBJC__
-              #import <UIKit/UIKit.h>
-              #import <Foundation/Foundation.h>
-                #import <AVFoundation/AVFoundation.h>
-                #import <AVFoundation/AVAsset.h>
-              #else
-              #endif
-             PRE
-
-non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
-  s.exclude_files = non_arc_files
-  s.subspec 'no-arc' do |sp|
-    sp.source_files = non_arc_files
-    sp.requires_arc = false
-    end
-
-    s.subspec 'Ext' do |ss|
-    ss.dependency 'zykjApp/no-arc'
-    ss.source_files = 'zykjApp/zykjApp/Ext/**/*.{h,m,swift}}'
-    ss.frameworks = 'Accelerate', 'CoreTelephony', 'SystemConfiguration'
-    #//不带tbd后缀及lib前缀
-    ss.libraries = 'c++', 'sqlite3' , 'z'
-    end
-
-    s.subspec 'Utils' do |ss|
-    ss.dependency 'zykjApp/Ext'
-    ss.source_files = 'zykjApp/zykjApp/Utils/**/*.{h,m,swift}}'
-    ss.frameworks = 'Accelerate', 'CoreTelephony', 'SystemConfiguration'
-    #//不带tbd后缀及lib前缀
-    ss.libraries = 'c++', 'sqlite3' , 'z'
-    ss.prefix_header_contents = <<-PRE
-                  #ifdef __OBJC__
-                  #import "ExtHeader.h"
-                  #else
-                  #endif
-                 PRE
-    end
-
-    s.subspec 'Helper' do |ss|
-    ss.dependency 'zykjApp/Utils'
-    ss.source_files = 'zykjApp/zykjApp/Helper/**/*.{h,m,swift}}'
-    ss.frameworks = 'Accelerate', 'CoreTelephony', 'SystemConfiguration'
-    #//不带tbd后缀及lib前缀
-    ss.libraries = 'c++', 'sqlite3' , 'z'
-    ss.prefix_header_contents = <<-PRE
-                  #ifdef __OBJC__
-                  #import "ExtHeader.h"
-                  #import "UtilsHeader.h"
-                  #else
-                  #endif
-                 PRE
-    end
-
-    s.subspec 'VC' do |ss|
-    ss.dependency 'zykjApp/Helper'
-    ss.source_files = 'zykjApp/zykjApp/VC/**/*.{h,m,swift}}'
-    ss.frameworks = 'Accelerate', 'CoreTelephony', 'SystemConfiguration'
-    #//不带tbd后缀及lib前缀
-    ss.libraries = 'c++', 'sqlite3' , 'z'
-    ss.prefix_header_contents = <<-PRE
-                  #ifdef __OBJC__
-                  #import "ExtHeader.h"
-                  #import "UtilsHeader.h"
-                  #import "HelperHeader.h"
-                  #else
-                  #endif
-                 PRE
-    end
-
-    s.subspec 'Views' do |ss|
-    ss.dependency 'zykjApp/VC'
-    ss.source_files = 'zykjApp/zykjApp/Views/**/*.{h,m,swift}}'
-    ss.frameworks = 'Accelerate', 'CoreTelephony', 'SystemConfiguration'
-    #//不带tbd后缀及lib前缀
-    ss.libraries = 'c++', 'sqlite3' , 'z'
-    ss.prefix_header_contents = <<-PRE
-                  #ifdef __OBJC__
-                  #import "ExtHeader.h"
-                  #import "UtilsHeader.h"
-                  #import "HelperHeader.h"
-                  #import "UIFramework.h"
-                  #else
-                  #endif
-                 PRE
-    end
-
-
+ #s.requires_arc = ['zykjApp/zykjApp/API', 'zykjApp/zykjApp/Ext', 'zykjApp/zykjApp/Helper', 'zykjApp/zykjApp/Model', 'zykjApp/zykjApp/VC', 'zykjApp/zykjApp/Utils', 'zykjApp/zykjApp/Views']
 
 
 end

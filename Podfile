@@ -8,4 +8,6 @@ use_frameworks!
 
 target 'zykjApp' do
 
+    pod "Noarc", :git => 'git@github.com:xiaozo/Zykjapp-noarc.git'
+    
 end
