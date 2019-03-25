@@ -160,6 +160,7 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
 
   s.prefix_header_contents = <<-PRE
                   #ifdef __OBJC__
+                  #import "AllHeader.h"
                   #else
                   #endif
                  PRE
