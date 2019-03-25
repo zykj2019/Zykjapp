@@ -26,8 +26,10 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
     end
 
     views_files = 'zykjApp/zykjApp/Views/**/*.{h,m,swift}'
+
     s.exclude_files = views_files
       s.subspec 'Views' do |sp|
+      sp.public_header_files = 'zykjApp/zykjApp/**/*.{h}'
       sp.source_files = views_files
       sp.requires_arc = true
         end
