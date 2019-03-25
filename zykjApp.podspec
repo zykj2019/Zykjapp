@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   #  can feel like a chore to fill in it's definitely to your advantage. The
   #  summary should be tweet-length, and the description more in depth.
   #
-non_arc_files = 'zykjApp/zykjApp/NoArc/OpenUDID.m','zykjApp/zykjApp/NoArc/JSONKit.m'
+non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
   s.exclude_files = non_arc_files
   s.subspec 'no-arc' do |sp|
     sp.source_files = non_arc_files
