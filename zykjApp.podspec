@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "zykjApp"
-  s.version      = "33"
+  s.version      = "36"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -93,7 +93,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "zykjApp/zykjApp/**/*.{h,m,swift}"
+  # s.source_files  = "zykjApp/zykjApp/**/*.{h,m,swift}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -166,11 +166,17 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
     s.subspec 'Ext' do |ss|
     ss.dependency 'zykjApp/no-arc'
     ss.source_files = 'zykjApp/zykjApp/Ext/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
+    ss.frameworks = 'Accelerate', 'CoreTelephony', 'SystemConfiguration'
+    #//不带tbd后缀及lib前缀
+    ss.libraries = 'c++', 'sqlite3' , 'z'
     end
 
     s.subspec 'Utils' do |ss|
     ss.dependency 'zykjApp/Ext'
     ss.source_files = 'zykjApp/zykjApp/Utils/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
+    ss.frameworks = 'Accelerate', 'CoreTelephony', 'SystemConfiguration'
+    #//不带tbd后缀及lib前缀
+    ss.libraries = 'c++', 'sqlite3' , 'z'
     ss.prefix_header_contents = <<-PRE
                   #ifdef __OBJC__
                   #import "ExtHeader.h"
@@ -182,6 +188,9 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
     s.subspec 'Helper' do |ss|
     ss.dependency 'zykjApp/Utils'
     ss.source_files = 'zykjApp/zykjApp/Helper/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
+    ss.frameworks = 'Accelerate', 'CoreTelephony', 'SystemConfiguration'
+    #//不带tbd后缀及lib前缀
+    ss.libraries = 'c++', 'sqlite3' , 'z'
     ss.prefix_header_contents = <<-PRE
                   #ifdef __OBJC__
                   #import "ExtHeader.h"
@@ -194,6 +203,9 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
     s.subspec 'VC' do |ss|
     ss.dependency 'zykjApp/Helper'
     ss.source_files = 'zykjApp/zykjApp/VC/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
+    ss.frameworks = 'Accelerate', 'CoreTelephony', 'SystemConfiguration'
+    #//不带tbd后缀及lib前缀
+    ss.libraries = 'c++', 'sqlite3' , 'z'
     ss.prefix_header_contents = <<-PRE
                   #ifdef __OBJC__
                   #import "ExtHeader.h"
@@ -207,6 +219,9 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
     s.subspec 'Views' do |ss|
     ss.dependency 'zykjApp/VC'
     ss.source_files = 'zykjApp/zykjApp/Views/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
+    ss.frameworks = 'Accelerate', 'CoreTelephony', 'SystemConfiguration'
+    #//不带tbd后缀及lib前缀
+    ss.libraries = 'c++', 'sqlite3' , 'z'
     ss.prefix_header_contents = <<-PRE
                   #ifdef __OBJC__
                   #import "ExtHeader.h"
