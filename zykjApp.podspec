@@ -13,23 +13,39 @@ Pod::Spec.new do |s|
   #  These will help people to find your library, and whilst it
   #  can feel like a chore to fill in it's definitely to your advantage. The
   #  summary should be tweet-length, and the description more in depth.
-  
 
-non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}','zykjApp/zykjApp/AllHeader.h'
+
+non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
   s.exclude_files = non_arc_files
   s.subspec 'no-arc' do |sp|
     sp.source_files = non_arc_files
     sp.requires_arc = false
-    sp.source_files = "zykjApp/zykjApp/**/*.{h,m,swift}"
     end
 
-    # views_files = 'zykjApp/zykjApp/Views/**/*.{h,m,swift}'
-    #
-    # s.exclude_files = views_files
-    #   s.subspec 'Views' do |spview|
-    #   spview.source_files = views_files
-    #   spview.requires_arc = true
-    #     end
+    s.subspec 'Ext' do |ss|
+    ss.dependency 'zykjApp/no-arc'
+    ss.source_files = 'zykjApp/zykjApp/Ext/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
+    end
+
+    s.subspec 'Utils' do |ss|
+    ss.dependency 'zykjApp/Ext'
+    ss.source_files = 'zykjApp/zykjApp/Utils/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
+    end
+
+    s.subspec 'Helper' do |ss|
+    ss.dependency 'zykjApp/Utils'
+    ss.source_files = 'zykjApp/zykjApp/Helper/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
+    end
+
+    s.subspec 'VC' do |ss|
+    ss.dependency 'zykjApp/Helper'
+    ss.source_files = 'zykjApp/zykjApp/VC/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
+    end
+
+    s.subspec 'Views' do |ss|
+    ss.dependency 'zykjApp/VC'
+    ss.source_files = 'zykjApp/zykjApp/Views/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
+    end
 
   s.name         = "zykjApp"
   s.version      = "27"
@@ -157,12 +173,12 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}','zykjApp/zykjApp/AllHea
   #//不带tbd后缀及lib前缀
   s.libraries = 'c++', 'sqlite3' , 'z'
 
-  s.prefix_header_contents = <<-PRE
-                  #ifdef __OBJC__
-                  #import "AllHeader.h"
-                  #else
-                  #endif
-                 PRE
+  # s.prefix_header_contents = <<-PRE
+  #                 #ifdef __OBJC__
+  #                 #import "AllHeader.h"
+  #                 #else
+  #                 #endif
+  #                PRE
 
 # s.requires_arc =  'zykjApp/zykjApp/API'
 # s.requires_arc = true

@@ -13,17 +13,5 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #import <AVFoundation/AVAsset.h>
-#import "ExtHeader.h"
-#import "UtilsHeader.h"
-#import "HelperHeader.h"
-#import "UIFramework.h"
-#import "ViewsHeader.h"
-
-#ifndef __OPTIMIZE__
-#define NSLog(...) NSLog(__VA_ARGS__)
-#else
-#define NSLog(...) {}
-#endif
-
 
 #endif /* AllHeader_h */
