@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 s.public_header_files = 'zykjApp/zykjApp/**/*.{h}'
-s.header_dir = 'zykjApp/zykjApp'
-# s.header_mappings_dir = 'zykjApp/zykjApp'
+# s.header_dir = 'zykjApp/zykjApp'
+#  s.header_mappings_dir = 'zykjApp/zykjApp'
 
 non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
   s.exclude_files = non_arc_files
@@ -28,10 +28,12 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
     views_files = 'zykjApp/zykjApp/Views/**/*.{h,m,swift}'
 
     s.exclude_files = views_files
-      s.subspec 'Views' do |sp|
-      sp.public_header_files = 'zykjApp/zykjApp/**/*.{h}'
-      sp.source_files = views_files
-      sp.requires_arc = true
+      s.subspec 'Views' do |spview|
+      spview.public_header_files = 'zykjApp/zykjApp/**/*.{h}'
+      spview.header_dir = 'zykjApp/zykjApp'
+      spview.header_mappings_dir = 'zykjApp/zykjApp'
+      spview.source_files = views_files
+      spview.requires_arc = true
         end
 
   s.name         = "zykjApp"
@@ -162,7 +164,7 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
 
   s.prefix_header_contents = <<-PRE
                   #ifdef __OBJC__
-
+                  #import "AllHeader.h"
                   #else
                   #endif
                  PRE

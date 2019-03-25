@@ -1164,10 +1164,10 @@
 		249EE6872247B2FC0076FE7F /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				249EE6882247B2FC0076FE7F /* TipView.h */,
-				249EE6892247B2FC0076FE7F /* PlaceHolderTextView */,
-				249EE68C2247B2FC0076FE7F /* TipView.m */,
 				249EE68D2247B2FC0076FE7F /* MyTextView */,
+				249EE6892247B2FC0076FE7F /* PlaceHolderTextView */,
+				249EE6882247B2FC0076FE7F /* TipView.h */,
+				249EE68C2247B2FC0076FE7F /* TipView.m */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
