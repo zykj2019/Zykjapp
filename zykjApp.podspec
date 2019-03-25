@@ -171,21 +171,51 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
     s.subspec 'Utils' do |ss|
     ss.dependency 'zykjApp/Ext'
     ss.source_files = 'zykjApp/zykjApp/Utils/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
+    ss.prefix_header_contents = <<-PRE
+                  #ifdef __OBJC__
+                  #import "ExtHeader.h"
+                  #else
+                  #endif
+                 PRE
     end
 
     s.subspec 'Helper' do |ss|
     ss.dependency 'zykjApp/Utils'
     ss.source_files = 'zykjApp/zykjApp/Helper/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
+    ss.prefix_header_contents = <<-PRE
+                  #ifdef __OBJC__
+                  #import "ExtHeader.h"
+                  #import "UtilsHeader.h"
+                  #else
+                  #endif
+                 PRE
     end
 
     s.subspec 'VC' do |ss|
     ss.dependency 'zykjApp/Helper'
     ss.source_files = 'zykjApp/zykjApp/VC/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
+    ss.prefix_header_contents = <<-PRE
+                  #ifdef __OBJC__
+                  #import "ExtHeader.h"
+                  #import "UtilsHeader.h"
+                  #import "HelperHeader.h"
+                  #else
+                  #endif
+                 PRE
     end
 
     s.subspec 'Views' do |ss|
     ss.dependency 'zykjApp/VC'
     ss.source_files = 'zykjApp/zykjApp/Views/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
+    ss.prefix_header_contents = <<-PRE
+                  #ifdef __OBJC__
+                  #import "ExtHeader.h"
+                  #import "UtilsHeader.h"
+                  #import "HelperHeader.h"
+                  #import "UIFramework.h"
+                  #else
+                  #endif
+                 PRE
     end
 
 
