@@ -93,7 +93,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "zykjApp/zykjApp/AllHeader.h"
+  s.source_files  = "zykjApp/zykjApp/**/*.{h,m,swift}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -166,12 +166,12 @@ s.prefix_header_contents = <<-PRE
               #endif
              PRE
 
-# non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
-#   s.exclude_files = non_arc_files
-#   s.subspec 'no-arc' do |sp|
-#     sp.source_files = non_arc_files
-#     sp.requires_arc = false
-#     end
+non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
+  s.exclude_files = non_arc_files
+  s.subspec 'no-arc' do |sp|
+    sp.source_files = non_arc_files
+    sp.requires_arc = false
+    end
 
     s.subspec 'Ext' do |ss|
     ss.dependency 'zykjApp/no-arc'
