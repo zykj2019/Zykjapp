@@ -93,7 +93,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  # s.source_files  = "zykjApp/zykjApp/**/*.{h,m,swift}"
+  s.source_files  = "zykjApp/zykjApp/**/*.{h,m,swift}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -163,6 +163,7 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
     sp.requires_arc = false
     end
 
+    s.exclude_files = 'zykjApp/zykjApp/Ext/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
     s.subspec 'Ext' do |ss|
     ss.dependency 'zykjApp/no-arc'
     ss.source_files = 'zykjApp/zykjApp/Ext/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
@@ -171,6 +172,7 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
     ss.libraries = 'c++', 'sqlite3' , 'z'
     end
 
+  s.exclude_files = 'zykjApp/zykjApp/Utils/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
     s.subspec 'Utils' do |ss|
     ss.dependency 'zykjApp/Ext'
     ss.source_files = 'zykjApp/zykjApp/Utils/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
@@ -185,6 +187,7 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
                  PRE
     end
 
+s.exclude_files = 'zykjApp/zykjApp/Helper/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
     s.subspec 'Helper' do |ss|
     ss.dependency 'zykjApp/Utils'
     ss.source_files = 'zykjApp/zykjApp/Helper/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
@@ -200,6 +203,7 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
                  PRE
     end
 
+    s.exclude_files = 'zykjApp/zykjApp/VC/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
     s.subspec 'VC' do |ss|
     ss.dependency 'zykjApp/Helper'
     ss.source_files = 'zykjApp/zykjApp/VC/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
@@ -216,6 +220,7 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
                  PRE
     end
 
+    s.exclude_files = 'zykjApp/zykjApp/Views/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
     s.subspec 'Views' do |ss|
     ss.dependency 'zykjApp/VC'
     ss.source_files = 'zykjApp/zykjApp/Views/**/*.{h,m,swift}}','zykjApp/zykjApp/AllHeader.h'
