@@ -161,7 +161,11 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
   s.libraries = 'c++', 'sqlite3' , 'z'
 
   s.prefix_header_contents = <<-PRE
-                #import "TestA.h"
+                  #ifdef __OBJC__
+                  #import "TestA.h"
+                  #import "AllHeader.h"
+                  #else
+                  #endif
                  PRE
 
 # s.requires_arc =  'zykjApp/zykjApp/API'
