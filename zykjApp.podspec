@@ -21,15 +21,28 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
   s.subspec 'no-arc' do |sp|
     sp.source_files = non_arc_files
     sp.requires_arc = false
+    sp.prefix_header_contents = <<-PRE
+                    #ifdef __OBJC__
+                    #import "TestA.h"
+                    #import "AllHeader.h"
+                    #else
+                    #endif
+                   PRE
     end
 
     views_files = 'zykjApp/zykjApp/Views/**/*.{h,m,swift}'
 
     s.exclude_files = views_files
       s.subspec 'Views' do |spview|
-      spview.public_header_files = 'zykjApp/zykjApp/**/*.{h}'
       spview.source_files = views_files
       spview.requires_arc = true
+      spview.prefix_header_contents = <<-PRE
+                      #ifdef __OBJC__
+                      #import "TestA.h"
+                      #import "AllHeader.h"
+                      #else
+                      #endif
+                     PRE
         end
 
   s.name         = "zykjApp"
