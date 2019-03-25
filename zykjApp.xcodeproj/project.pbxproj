@@ -288,6 +288,7 @@
 		249EEAF22247CA270076FE7F /* OpenUDID.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE9482247B3000076FE7F /* OpenUDID.h */; };
 		249EEAF32247CA2B0076FE7F /* AllHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE19A2247A8240076FE7F /* AllHeader.h */; };
 		249EEAF722488DA90076FE7F /* TestA.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EEAF622488DA90076FE7F /* TestA.m */; };
+		249EEAF8224891810076FE7F /* TestA.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EEAF522488DA80076FE7F /* TestA.h */; };
 		9FABE173A95CE7757E3293CB /* Pods_zykjApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DEF3C9E47F4A038AC7A991 /* Pods_zykjApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -2561,6 +2562,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				249EEAF8224891810076FE7F /* TestA.h in Sources */,
 				249EEAF32247CA2B0076FE7F /* AllHeader.h in Sources */,
 				249EEAF22247CA270076FE7F /* OpenUDID.h in Sources */,
 				249EEAF12247CA220076FE7F /* JSONKit.h in Sources */,
