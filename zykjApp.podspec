@@ -29,9 +29,6 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
 
     s.exclude_files = views_files
       s.subspec 'Views' do |spview|
-      spview.public_header_files = 'zykjApp/zykjApp/**/*.{h}'
-      spview.header_dir = 'zykjApp/zykjApp'
-      spview.header_mappings_dir = 'zykjApp/zykjApp'
       spview.source_files = views_files
       spview.requires_arc = true
         end
