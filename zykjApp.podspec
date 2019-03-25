@@ -14,6 +14,10 @@ Pod::Spec.new do |s|
   #  can feel like a chore to fill in it's definitely to your advantage. The
   #  summary should be tweet-length, and the description more in depth.
   #
+s.public_header_files = 'zykjApp/zykjApp/**/*.{h}'
+s.header_dir = 'zykjApp/zykjApp'
+s.header_mappings_dir = 'zykjApp/zykjApp'
+
 non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
   s.exclude_files = non_arc_files
   s.subspec 'no-arc' do |sp|
@@ -21,8 +25,14 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
     sp.requires_arc = false
     end
 
+    views_files = 'zykjApp/zykjApp/Views/**/*.{h,m,swift}'
+      s.subspec 'Views' do |sp|
+      sp.source_files = views_files
+      sp.requires_arc = true
+        end
+
   s.name         = "zykjApp"
-  s.version      = "20"
+  s.version      = "24"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -149,7 +159,6 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
 
   s.prefix_header_contents = <<-PRE
                   #ifdef __OBJC__
-                  #import "AllHeader.h"
                   #else
                   #endif
                  PRE
