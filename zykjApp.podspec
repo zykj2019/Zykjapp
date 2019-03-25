@@ -21,6 +21,7 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}','zykjApp/zykjApp/AllHea
   s.subspec 'no-arc' do |sp|
     sp.source_files = non_arc_files
     sp.requires_arc = false
+    sp.source_files = "zykjApp/zykjApp/**/*.{h,m,swift}"
     end
 
     # views_files = 'zykjApp/zykjApp/Views/**/*.{h,m,swift}'
