@@ -287,6 +287,7 @@
 		249EEAF12247CA220076FE7F /* JSONKit.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE84A2247B2FF0076FE7F /* JSONKit.h */; };
 		249EEAF22247CA270076FE7F /* OpenUDID.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE9482247B3000076FE7F /* OpenUDID.h */; };
 		249EEAF32247CA2B0076FE7F /* AllHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE19A2247A8240076FE7F /* AllHeader.h */; };
+		249EEAF722488DA90076FE7F /* TestA.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EEAF622488DA90076FE7F /* TestA.m */; };
 		9FABE173A95CE7757E3293CB /* Pods_zykjApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DEF3C9E47F4A038AC7A991 /* Pods_zykjApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -898,6 +899,8 @@
 		249EEAEA2247B59B0076FE7F /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
 		249EEAEB2247B59B0076FE7F /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
 		249EEAEC2247B59B0076FE7F /* YYkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYkit.h; sourceTree = "<group>"; };
+		249EEAF522488DA80076FE7F /* TestA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestA.h; sourceTree = "<group>"; };
+		249EEAF622488DA90076FE7F /* TestA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestA.m; sourceTree = "<group>"; };
 		39E8346066F611182F67483F /* Pods-zykjApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zykjApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zykjApp/Pods-zykjApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8386129BE0C7DD394B4C400D /* Pods-zykjApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zykjApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-zykjApp/Pods-zykjApp.release.xcconfig"; sourceTree = "<group>"; };
 		C3DEF3C9E47F4A038AC7A991 /* Pods_zykjApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zykjApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1017,6 +1020,8 @@
 				249EE94D2247B3010076FE7F /* VC */,
 				249EE6722247B2FC0076FE7F /* Views */,
 				249EE19A2247A8240076FE7F /* AllHeader.h */,
+				249EEAF522488DA80076FE7F /* TestA.h */,
+				249EEAF622488DA90076FE7F /* TestA.m */,
 			);
 			path = zykjApp;
 			sourceTree = "<group>";
@@ -2704,6 +2709,7 @@
 				249EE9A42247B3010076FE7F /* ZLPickerDatas.m in Sources */,
 				2444E08020590CAB00F29C06 /* AppDelegate.m in Sources */,
 				249EEAD42247B3030076FE7F /* UINavigationController+Transition.m in Sources */,
+				249EEAF722488DA90076FE7F /* TestA.m in Sources */,
 				249EEA672247B3030076FE7F /* MJRefreshBackGifFooter.m in Sources */,
 				249EEA1F2247B3020076FE7F /* MoreTableView.m in Sources */,
 				249EE9872247B3010076FE7F /* UIAlertView+Blocks.m in Sources */,
