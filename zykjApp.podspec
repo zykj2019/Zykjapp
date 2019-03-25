@@ -48,7 +48,7 @@ non_arc_files = 'zykjApp/zykjApp/NoArc/**/*.{h,m,swift}'
     end
 
   s.name         = "zykjApp"
-  s.version      = "27"
+  s.version      = "32"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
