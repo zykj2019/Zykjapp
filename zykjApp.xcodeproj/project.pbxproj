@@ -289,6 +289,11 @@
 		249EEAF32247CA2B0076FE7F /* AllHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE19A2247A8240076FE7F /* AllHeader.h */; };
 		249EEAF722488DA90076FE7F /* TestA.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EEAF622488DA90076FE7F /* TestA.m */; };
 		249EEAF8224891810076FE7F /* TestA.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EEAF522488DA80076FE7F /* TestA.h */; };
+		249EEAFD2248ADE50076FE7F /* ViewsHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6822247B2FC0076FE7F /* ViewsHeader.h */; };
+		249EEAFE2248ADF80076FE7F /* ExtHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE85F2247B2FF0076FE7F /* ExtHeader.h */; };
+		249EEAFF2248AE010076FE7F /* UtilsHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6522247B2FB0076FE7F /* UtilsHeader.h */; };
+		249EEB002248AE0A0076FE7F /* HelperHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE66E2247B2FB0076FE7F /* HelperHeader.h */; };
+		249EEB012248AE140076FE7F /* UIFramework.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE9512247B3010076FE7F /* UIFramework.h */; };
 		9FABE173A95CE7757E3293CB /* Pods_zykjApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DEF3C9E47F4A038AC7A991 /* Pods_zykjApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -2562,6 +2567,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				249EEB012248AE140076FE7F /* UIFramework.h in Sources */,
+				249EEB002248AE0A0076FE7F /* HelperHeader.h in Sources */,
+				249EEAFF2248AE010076FE7F /* UtilsHeader.h in Sources */,
+				249EEAFE2248ADF80076FE7F /* ExtHeader.h in Sources */,
+				249EEAFD2248ADE50076FE7F /* ViewsHeader.h in Sources */,
 				249EEAF8224891810076FE7F /* TestA.h in Sources */,
 				249EEAF32247CA2B0076FE7F /* AllHeader.h in Sources */,
 				249EEAF22247CA270076FE7F /* OpenUDID.h in Sources */,
