@@ -309,6 +309,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E2D73701B4BB7BF17C13F9D /* Pods-zykjApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zykjApp.release.xcconfig"; path = "Target Support Files/Pods-zykjApp/Pods-zykjApp.release.xcconfig"; sourceTree = "<group>"; };
 		2444E07B20590CAB00F29C06 /* zykjApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zykjApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2444E07E20590CAB00F29C06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2444E07F20590CAB00F29C06 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -895,8 +896,7 @@
 		249EEAEA2247B59B0076FE7F /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
 		249EEAEB2247B59B0076FE7F /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
 		249EEAEC2247B59B0076FE7F /* YYkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYkit.h; sourceTree = "<group>"; };
-		39E8346066F611182F67483F /* Pods-zykjApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zykjApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zykjApp/Pods-zykjApp.debug.xcconfig"; sourceTree = "<group>"; };
-		8386129BE0C7DD394B4C400D /* Pods-zykjApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zykjApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-zykjApp/Pods-zykjApp.release.xcconfig"; sourceTree = "<group>"; };
+		2A532DB85BF0A552B5F92222 /* Pods-zykjApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zykjApp.debug.xcconfig"; path = "Target Support Files/Pods-zykjApp/Pods-zykjApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C3DEF3C9E47F4A038AC7A991 /* Pods_zykjApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zykjApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -937,7 +937,7 @@
 				2444E0A120590CAB00F29C06 /* zykjAppUITests */,
 				2444E07C20590CAB00F29C06 /* Products */,
 				2444E0B020590D5A00F29C06 /* Frameworks */,
-				3F7D4E695001E4E1967841F4 /* Pods */,
+				D538C8DA0CEB91048B2655C5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2355,13 +2355,14 @@
 			path = YYModel;
 			sourceTree = "<group>";
 		};
-		3F7D4E695001E4E1967841F4 /* Pods */ = {
+		D538C8DA0CEB91048B2655C5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				39E8346066F611182F67483F /* Pods-zykjApp.debug.xcconfig */,
-				8386129BE0C7DD394B4C400D /* Pods-zykjApp.release.xcconfig */,
+				2A532DB85BF0A552B5F92222 /* Pods-zykjApp.debug.xcconfig */,
+				0E2D73701B4BB7BF17C13F9D /* Pods-zykjApp.release.xcconfig */,
 			);
 			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2371,11 +2372,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2444E0A720590CAB00F29C06 /* Build configuration list for PBXNativeTarget "zykjApp" */;
 			buildPhases = (
-				56633B514AF108B663B3961F /* [CP] Check Pods Manifest.lock */,
+				8A0CABB6204D3CD1F9D6975A /* [CP] Check Pods Manifest.lock */,
 				2444E07720590CAB00F29C06 /* Sources */,
 				2444E07820590CAB00F29C06 /* Frameworks */,
 				2444E07920590CAB00F29C06 /* Resources */,
-				8F1621771E9C778CCCE40EA1 /* [CP] Embed Pods Frameworks */,
+				1FD8846399703FBAE236689E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2517,31 +2518,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		56633B514AF108B663B3961F /* [CP] Check Pods Manifest.lock */ = {
+		1FD8846399703FBAE236689E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-zykjApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8F1621771E9C778CCCE40EA1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-zykjApp/Pods-zykjApp-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-zykjApp/Pods-zykjApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Noarc/Noarc.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -2550,7 +2533,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zykjApp/Pods-zykjApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-zykjApp/Pods-zykjApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A0CABB6204D3CD1F9D6975A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zykjApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2971,7 +2976,7 @@
 		};
 		2444E0A820590CAB00F29C06 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39E8346066F611182F67483F /* Pods-zykjApp.debug.xcconfig */;
+			baseConfigurationReference = 2A532DB85BF0A552B5F92222 /* Pods-zykjApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -2999,7 +3004,7 @@
 		};
 		2444E0A920590CAB00F29C06 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8386129BE0C7DD394B4C400D /* Pods-zykjApp.release.xcconfig */;
+			baseConfigurationReference = 0E2D73701B4BB7BF17C13F9D /* Pods-zykjApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
