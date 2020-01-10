@@ -2361,7 +2361,6 @@
 				2A532DB85BF0A552B5F92222 /* Pods-zykjApp.debug.xcconfig */,
 				0E2D73701B4BB7BF17C13F9D /* Pods-zykjApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -2372,11 +2371,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2444E0A720590CAB00F29C06 /* Build configuration list for PBXNativeTarget "zykjApp" */;
 			buildPhases = (
-				8A0CABB6204D3CD1F9D6975A /* [CP] Check Pods Manifest.lock */,
 				2444E07720590CAB00F29C06 /* Sources */,
 				2444E07820590CAB00F29C06 /* Frameworks */,
 				2444E07920590CAB00F29C06 /* Resources */,
-				1FD8846399703FBAE236689E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2516,49 +2513,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1FD8846399703FBAE236689E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-zykjApp/Pods-zykjApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Noarc/Noarc.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Noarc.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-zykjApp/Pods-zykjApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8A0CABB6204D3CD1F9D6975A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-zykjApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2444E07720590CAB00F29C06 /* Sources */ = {
