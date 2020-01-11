@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "zykjApp"
-  s.version      = "73"
+  s.version      = "74"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -99,7 +99,7 @@ Pod::Spec.new do |s|
   help_files = "zykjApp/zykjApp/Helper/**/*.{h,m,swift}"
   views_files = "zykjApp/zykjApp/Views/**/*.{h,m,swift}"
   uiFramework_files = "zykjApp/zykjApp/UIFramework/**/*.{h,m,swift}"
-  ext_files = "zykjApp/zykjApp/Ext/**/*.{h,m,swift}"
+  ext_files = "zykjApp/zykjApp/Ext/*.{h,m,swift}"
 
   #//一下就是子设置，为需要添加mrc标识的文件进行设置
   s.subspec 'no-arc' do |sp|
