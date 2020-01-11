@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "zykjApp"
-  s.version      = "83"
+  s.version      = "84"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -172,23 +172,56 @@ Pod::Spec.new do |s|
     masonry_files = "zykjApp/zykjApp/Ext/Masonry/**/*.{h,m,swift}"
     aFNetworking_files = "zykjApp/zykjApp/Ext/AFNetworking/**/*.{h,m,swift}"
     commonLibrary_files = "zykjApp/zykjApp/Ext/CommonLibrary/**/*.{h,m,swift}"
-    # commonLibrary_files = "zykjApp/zykjApp/Ext/CommonLibrary/**/*.{h,m,swift}"
-
+    fMDB_files = "zykjApp/zykjApp/Ext/FMDB/**/*.{h,m,swift}"
+    mSSBrowse_files = "zykjApp/zykjApp/Ext/MSSBrowse/**/*.{h,m,swift}"
+    sDCycleScrollView_files = "zykjApp/zykjApp/Ext/SDCycleScrollView/**/*.{h,m,swift}"
+    sDWebImage_files = "zykjApp/zykjApp/Ext/SDWebImage/**/*.{h,m,swift}"
+    xHImageViewer_files = "zykjApp/zykjApp/Ext/XHImageViewer/**/*.{h,m,swift}"
+    yyKit_files = "zykjApp/zykjApp/Ext/YYKit/**/*.{h,m,swift}"
+    zLPickerLib_files = "zykjApp/zykjApp/Ext/ZLPickerLib/**/*.{h,m,swift}"
 
     ss.source_files = ext_files
-    ss.exclude_files = masonry_files,aFNetworking_files,commonLibrary_files
+    ss.exclude_files = masonry_files,aFNetworking_files,commonLibrary_files,fMDB_files,mSSBrowse_files,sDCycleScrollView_files,sDWebImage_files,xHImageViewer_files,yyKit_files,zLPickerLib_files
     
     ss.subspec 'Masonry' do |sss|
     sss.source_files = masonry_files
     end
 
     ss.subspec 'AFNetworking' do |sss|
-      sss.source_files = aFNetworking_files
-      end
+    sss.source_files = aFNetworking_files
+    end
 
       ss.subspec 'CommonLibrary' do |sss|
-        sss.source_files = commonLibrary_files
+      sss.source_files = commonLibrary_files
+      end
+
+      ss.subspec 'FMDB' do |sss|
+      sss.source_files = fMDB_files
+      end
+
+      ss.subspec 'MSSBrowse' do |sss|
+        sss.source_files = mSSBrowse_files
         end
+
+        ss.subspec 'SDCycleScrollView' do |sss|
+          sss.source_files = sDCycleScrollView_files
+          end
+
+      ss.subspec 'SDWebImage' do |sss|
+      sss.source_files = sDWebImage_files
+       end
+
+       ss.subspec 'XHImageViewer' do |sss|
+        sss.source_files = xHImageViewer_files
+         end
+
+         ss.subspec 'YYKit' do |sss|
+          sss.source_files = yyKit_files
+           end
+
+           ss.subspec 'ZLPickerLib' do |sss|
+            sss.source_files = zLPickerLib_files
+             end
 
   #二级目录
     end

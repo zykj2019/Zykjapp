@@ -252,7 +252,6 @@
 		67A861D023C9D92B001B773E /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A861C423C9D92B001B773E /* MASConstraint.m */; };
 		67A861D123C9D92B001B773E /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A861C623C9D92B001B773E /* MASViewConstraint.m */; };
 		67A861D223C9D92B001B773E /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A861C723C9D92B001B773E /* MASViewAttribute.m */; };
-		67A861D323C9D92B001B773E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67A861C823C9D92B001B773E /* Info.plist */; };
 		67A861DC23C9DA09001B773E /* FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A861D523C9DA09001B773E /* FCUUID.m */; };
 		67A861DD23C9DA09001B773E /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A861D923C9DA09001B773E /* NSObject+FBKVOController.m */; };
 		67A861DE23C9DA09001B773E /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A861DA23C9DA09001B773E /* FBKVOController.m */; };
@@ -2165,7 +2164,6 @@
 				2444E08620590CAB00F29C06 /* Main.storyboard in Resources */,
 				6761555123C9B20800E8056A /* add2.png in Resources */,
 				67A8614B23C9D650001B773E /* mss_browseLoading@3x.png in Resources */,
-				67A861D323C9D92B001B773E /* Info.plist in Resources */,
 				67A8612523C9D650001B773E /* MBProgressHUD.bundle in Resources */,
 				67A8616B23C9D650001B773E /* README.markdown in Resources */,
 				67A8616C23C9D650001B773E /* LICENSE.txt in Resources */,
