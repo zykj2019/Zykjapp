@@ -15,7 +15,6 @@
 #import <AVFoundation/AVAsset.h>
 #import <AVKit/AVKit.h>
 #import <AssetsLibrary/AssetsLibrary.h>
-#import "AppDelegate.h"
 #import "NoArcHeader.h"
 #import "UtilsHeader.h"
 #import "ExtHeader.h"
