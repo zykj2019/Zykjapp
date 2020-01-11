@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "zykjApp"
-  s.version      = "43"
+  s.version      = "44"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -132,7 +132,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency "Noarc"
+  #s.dependency "Noarc"
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "BLNetworking"

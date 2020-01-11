@@ -288,7 +288,8 @@
 		249EEAFF2248AE010076FE7F /* UtilsHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6522247B2FB0076FE7F /* UtilsHeader.h */; };
 		249EEB002248AE0A0076FE7F /* HelperHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE66E2247B2FB0076FE7F /* HelperHeader.h */; };
 		249EEB012248AE140076FE7F /* UIFramework.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE9512247B3010076FE7F /* UIFramework.h */; };
-		9FABE173A95CE7757E3293CB /* Pods_zykjApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DEF3C9E47F4A038AC7A991 /* Pods_zykjApp.framework */; };
+		676150E423C9733900E8056A /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 676150E323C9733900E8056A /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		676150E723C9734D00E8056A /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 676150E523C9734D00E8056A /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -309,7 +310,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E2D73701B4BB7BF17C13F9D /* Pods-zykjApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zykjApp.release.xcconfig"; path = "Target Support Files/Pods-zykjApp/Pods-zykjApp.release.xcconfig"; sourceTree = "<group>"; };
 		2444E07B20590CAB00F29C06 /* zykjApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zykjApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2444E07E20590CAB00F29C06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2444E07F20590CAB00F29C06 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -896,7 +896,11 @@
 		249EEAEA2247B59B0076FE7F /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
 		249EEAEB2247B59B0076FE7F /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
 		249EEAEC2247B59B0076FE7F /* YYkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYkit.h; sourceTree = "<group>"; };
-		2A532DB85BF0A552B5F92222 /* Pods-zykjApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zykjApp.debug.xcconfig"; path = "Target Support Files/Pods-zykjApp/Pods-zykjApp.debug.xcconfig"; sourceTree = "<group>"; };
+		676150DF23C9730200E8056A /* NoArcHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoArcHeader.h; sourceTree = "<group>"; };
+		676150E223C9733900E8056A /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		676150E323C9733900E8056A /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		676150E523C9734D00E8056A /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
+		676150E623C9734D00E8056A /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
 		C3DEF3C9E47F4A038AC7A991 /* Pods_zykjApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zykjApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -908,7 +912,6 @@
 				24472F58206B36C90037356F /* libc++.tbd in Frameworks */,
 				24472F56206B36C90037356F /* libz.tbd in Frameworks */,
 				2444E0B220590D5A00F29C06 /* libsqlite3.tbd in Frameworks */,
-				9FABE173A95CE7757E3293CB /* Pods_zykjApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,7 +940,6 @@
 				2444E0A120590CAB00F29C06 /* zykjAppUITests */,
 				2444E07C20590CAB00F29C06 /* Products */,
 				2444E0B020590D5A00F29C06 /* Frameworks */,
-				D538C8DA0CEB91048B2655C5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1005,6 +1007,7 @@
 		249EE1992247A7940076FE7F /* zykjApp */ = {
 			isa = PBXGroup;
 			children = (
+				676150DE23C972E400E8056A /* NoArc */,
 				249EE93B2247B3000076FE7F /* API */,
 				249EE6962247B2FE0076FE7F /* Ext */,
 				249EE6662247B2FB0076FE7F /* Helper */,
@@ -2272,51 +2275,51 @@
 		249EE94E2247B3010076FE7F /* UIFramework */ = {
 			isa = PBXGroup;
 			children = (
-				249EE94F2247B3010076FE7F /* KeyValue.h */,
-				249EE9502247B3010076FE7F /* BaseAppDelegate.m */,
-				249EE9512247B3010076FE7F /* UIFramework.h */,
-				249EE9522247B3010076FE7F /* ScrollViewController.m */,
-				249EE9532247B3010076FE7F /* PageScrollView.m */,
-				249EE9542247B3010076FE7F /* RefreshView.h */,
-				249EE9552247B3010076FE7F /* NSObject+loadPadClass.m */,
-				249EE9562247B3010076FE7F /* CommonBaseViewController.m */,
-				249EE9572247B3010076FE7F /* BaseViewController.m */,
-				249EE9582247B3010076FE7F /* RefreshAbleView.h */,
-				249EE9592247B3010076FE7F /* TableRefreshViewController.m */,
-				249EE95A2247B3010076FE7F /* UINavigationController+Transition.h */,
-				249EE95B2247B3010076FE7F /* MenuAbleItem.h */,
-				249EE95C2247B3010076FE7F /* UIView+Layout.m */,
-				249EE95D2247B3010076FE7F /* TableSearchViewController.m */,
-				249EE95E2247B3010076FE7F /* PageMenuScrollView.m */,
-				249EE95F2247B3010076FE7F /* UIViewController+Layout.m */,
-				249EE9602247B3010076FE7F /* ScrollBaseViewController.m */,
-				249EE9612247B3010076FE7F /* MenuItem.m */,
-				249EE9622247B3010076FE7F /* ScrollRefreshViewController.h */,
-				249EE9632247B3010076FE7F /* BaseCollectionViewController.h */,
-				249EE9642247B3010076FE7F /* PopupView.m */,
-				249EE9652247B3010076FE7F /* NavigationViewController.h */,
-				249EE9662247B3010076FE7F /* BaseTableVC.m */,
 				249EE9672247B3010076FE7F /* BaseAppDelegate.h */,
-				249EE9682247B3010076FE7F /* KeyValue.m */,
-				249EE9692247B3010076FE7F /* CommonBaseViewController.h */,
-				249EE96A2247B3010076FE7F /* NSObject+loadPadClass.h */,
-				249EE96B2247B3010076FE7F /* RefreshView.m */,
-				249EE96C2247B3010076FE7F /* PageScrollView.h */,
-				249EE96D2247B3010076FE7F /* ScrollViewController.h */,
-				249EE96E2247B3010076FE7F /* UIView+Layout.h */,
-				249EE96F2247B3010076FE7F /* TableRefreshViewController.h */,
-				249EE9702247B3010076FE7F /* UINavigationController+Transition.m */,
-				249EE9712247B3010076FE7F /* BaseViewController.h */,
-				249EE9722247B3010076FE7F /* BaseTableVC.h */,
-				249EE9732247B3010076FE7F /* NavigationViewController.m */,
+				249EE9502247B3010076FE7F /* BaseAppDelegate.m */,
+				249EE9632247B3010076FE7F /* BaseCollectionViewController.h */,
 				249EE9742247B3010076FE7F /* BaseCollectionViewController.m */,
-				249EE9752247B3010076FE7F /* PopupView.h */,
-				249EE9762247B3010076FE7F /* ScrollBaseViewController.h */,
+				249EE9722247B3010076FE7F /* BaseTableVC.h */,
+				249EE9662247B3010076FE7F /* BaseTableVC.m */,
+				249EE9712247B3010076FE7F /* BaseViewController.h */,
+				249EE9572247B3010076FE7F /* BaseViewController.m */,
+				249EE9692247B3010076FE7F /* CommonBaseViewController.h */,
+				249EE9562247B3010076FE7F /* CommonBaseViewController.m */,
+				249EE94F2247B3010076FE7F /* KeyValue.h */,
+				249EE9682247B3010076FE7F /* KeyValue.m */,
+				249EE95B2247B3010076FE7F /* MenuAbleItem.h */,
 				249EE9772247B3010076FE7F /* MenuItem.h */,
-				249EE9782247B3010076FE7F /* ScrollRefreshViewController.m */,
-				249EE9792247B3010076FE7F /* UIViewController+Layout.h */,
+				249EE9612247B3010076FE7F /* MenuItem.m */,
+				249EE9652247B3010076FE7F /* NavigationViewController.h */,
+				249EE9732247B3010076FE7F /* NavigationViewController.m */,
+				249EE96A2247B3010076FE7F /* NSObject+loadPadClass.h */,
+				249EE9552247B3010076FE7F /* NSObject+loadPadClass.m */,
 				249EE97A2247B3010076FE7F /* PageMenuScrollView.h */,
+				249EE95E2247B3010076FE7F /* PageMenuScrollView.m */,
+				249EE96C2247B3010076FE7F /* PageScrollView.h */,
+				249EE9532247B3010076FE7F /* PageScrollView.m */,
+				249EE9752247B3010076FE7F /* PopupView.h */,
+				249EE9642247B3010076FE7F /* PopupView.m */,
+				249EE9582247B3010076FE7F /* RefreshAbleView.h */,
+				249EE9542247B3010076FE7F /* RefreshView.h */,
+				249EE96B2247B3010076FE7F /* RefreshView.m */,
+				249EE9762247B3010076FE7F /* ScrollBaseViewController.h */,
+				249EE9602247B3010076FE7F /* ScrollBaseViewController.m */,
+				249EE9622247B3010076FE7F /* ScrollRefreshViewController.h */,
+				249EE9782247B3010076FE7F /* ScrollRefreshViewController.m */,
+				249EE96D2247B3010076FE7F /* ScrollViewController.h */,
+				249EE9522247B3010076FE7F /* ScrollViewController.m */,
+				249EE96F2247B3010076FE7F /* TableRefreshViewController.h */,
+				249EE9592247B3010076FE7F /* TableRefreshViewController.m */,
 				249EE97B2247B3010076FE7F /* TableSearchViewController.h */,
+				249EE95D2247B3010076FE7F /* TableSearchViewController.m */,
+				249EE9512247B3010076FE7F /* UIFramework.h */,
+				249EE95A2247B3010076FE7F /* UINavigationController+Transition.h */,
+				249EE9702247B3010076FE7F /* UINavigationController+Transition.m */,
+				249EE96E2247B3010076FE7F /* UIView+Layout.h */,
+				249EE95C2247B3010076FE7F /* UIView+Layout.m */,
+				249EE9792247B3010076FE7F /* UIViewController+Layout.h */,
+				249EE95F2247B3010076FE7F /* UIViewController+Layout.m */,
 			);
 			path = UIFramework;
 			sourceTree = "<group>";
@@ -2355,13 +2358,16 @@
 			path = YYModel;
 			sourceTree = "<group>";
 		};
-		D538C8DA0CEB91048B2655C5 /* Pods */ = {
+		676150DE23C972E400E8056A /* NoArc */ = {
 			isa = PBXGroup;
 			children = (
-				2A532DB85BF0A552B5F92222 /* Pods-zykjApp.debug.xcconfig */,
-				0E2D73701B4BB7BF17C13F9D /* Pods-zykjApp.release.xcconfig */,
+				676150E623C9734D00E8056A /* OpenUDID.h */,
+				676150E523C9734D00E8056A /* OpenUDID.m */,
+				676150E223C9733900E8056A /* JSONKit.h */,
+				676150E323C9733900E8056A /* JSONKit.m */,
+				676150DF23C9730200E8056A /* NoArcHeader.h */,
 			);
-			path = Pods;
+			path = NoArc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2629,6 +2635,7 @@
 				249EEA332247B3020076FE7F /* NSObject+KVOCategory.m in Sources */,
 				249EEA9A2247B3030076FE7F /* AFNetworkReachabilityManager.m in Sources */,
 				249EEAA72247B3030076FE7F /* FMDatabase.m in Sources */,
+				676150E423C9733900E8056A /* JSONKit.m in Sources */,
 				249EE9C32247B3020076FE7F /* ZLAnimationImageView.m in Sources */,
 				249EEA232247B3020076FE7F /* NSString+RegexCheck.m in Sources */,
 				249EE9962247B3010076FE7F /* LEEAlert.m in Sources */,
@@ -2685,6 +2692,7 @@
 				249EEA8E2247B3030076FE7F /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				249EE9892247B3010076FE7F /* GTMBase64.m in Sources */,
 				249EE9882247B3010076FE7F /* IMichUtil.m in Sources */,
+				676150E723C9734D00E8056A /* OpenUDID.m in Sources */,
 				249EEAED2247B59B0076FE7F /* UITableView+YYAdd.m in Sources */,
 				249EEA7D2247B3030076FE7F /* UIImage+MSSScale.m in Sources */,
 				249EEA5D2247B3030076FE7F /* IOSDeviceConfig.m in Sources */,
@@ -2930,7 +2938,6 @@
 		};
 		2444E0A820590CAB00F29C06 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A532DB85BF0A552B5F92222 /* Pods-zykjApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -2958,7 +2965,6 @@
 		};
 		2444E0A920590CAB00F29C06 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E2D73701B4BB7BF17C13F9D /* Pods-zykjApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -9,12 +9,13 @@
 #ifndef AllHeader_h
 #define AllHeader_h
 
-#import <Noarc/JSONKit.h>
-#import <Noarc/OpenUDID.h>
+//#import <Noarc/JSONKit.h>
+//#import <Noarc/OpenUDID.h>
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #import <AVFoundation/AVAsset.h>
+#import "NoArcHeader.h"
 #import "ExtHeader.h"
 #import "UtilsHeader.h"
 #import "HelperHeader.h"
