@@ -12,7 +12,5 @@
 #import "UtilsMacro.h"
 #import "ServerConfig.h"
 #import "NotificationMacro.h"
-#import "ShareValue.h"
-
 
 #endif /* HelperHeader_h */

@@ -34,9 +34,6 @@
 		249EE9892247B3010076FE7F /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6612247B2FB0076FE7F /* GTMBase64.m */; };
 		249EE98A2247B3010076FE7F /* DES3Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6622247B2FB0076FE7F /* DES3Util.m */; };
 		249EE98B2247B3010076FE7F /* MDownloadTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6652247B2FB0076FE7F /* MDownloadTool.m */; };
-		249EE98C2247B3010076FE7F /* ShareValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6672247B2FB0076FE7F /* ShareValue.m */; };
-		249EE98D2247B3010076FE7F /* WCAnnouceNet.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6692247B2FB0076FE7F /* WCAnnouceNet.m */; };
-		249EE98E2247B3010076FE7F /* ServerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE66A2247B2FB0076FE7F /* ServerInfo.m */; };
 		249EE98F2247B3010076FE7F /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 249EE6752247B2FC0076FE7F /* add.png */; };
 		249EE9902247B3010076FE7F /* PictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6782247B2FC0076FE7F /* PictureView.m */; };
 		249EE9912247B3010076FE7F /* del.png in Resources */ = {isa = PBXBuildFile; fileRef = 249EE6792247B2FC0076FE7F /* del.png */; };
@@ -48,8 +45,6 @@
 		249EE9972247B3010076FE7F /* PlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE68A2247B2FC0076FE7F /* PlaceholderTextView.m */; };
 		249EE9982247B3010076FE7F /* TipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE68C2247B2FC0076FE7F /* TipView.m */; };
 		249EE9992247B3010076FE7F /* MyTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE68F2247B2FC0076FE7F /* MyTextView.m */; };
-		249EE99A2247B3010076FE7F /* Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6922247B2FC0076FE7F /* Auth.m */; };
-		249EE99B2247B3010076FE7F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6932247B2FC0076FE7F /* User.m */; };
 		249EEABD2247B3030076FE7F /* BaseRestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE93E2247B3000076FE7F /* BaseRestAPI.m */; };
 		249EEABF2247B3030076FE7F /* NSData+base64Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE9442247B3000076FE7F /* NSData+base64Encoding.m */; };
 		249EEAC02247B3030076FE7F /* NSString+ZLKExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE9462247B3000076FE7F /* NSString+ZLKExtend.m */; };
@@ -360,17 +355,11 @@
 		249EE6632247B2FB0076FE7F /* MyRegularExpressionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRegularExpressionManager.h; sourceTree = "<group>"; };
 		249EE6642247B2FB0076FE7F /* UIImageView+SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDImageCache.h"; sourceTree = "<group>"; };
 		249EE6652247B2FB0076FE7F /* MDownloadTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDownloadTool.m; sourceTree = "<group>"; };
-		249EE6672247B2FB0076FE7F /* ShareValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareValue.m; sourceTree = "<group>"; };
 		249EE6682247B2FB0076FE7F /* UtilsMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
-		249EE6692247B2FB0076FE7F /* WCAnnouceNet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCAnnouceNet.m; sourceTree = "<group>"; };
-		249EE66A2247B2FB0076FE7F /* ServerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerInfo.m; sourceTree = "<group>"; };
 		249EE66B2247B2FB0076FE7F /* nd_define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nd_define.h; sourceTree = "<group>"; };
 		249EE66C2247B2FB0076FE7F /* ServerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerConfig.h; sourceTree = "<group>"; };
-		249EE66D2247B2FB0076FE7F /* ShareValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareValue.h; sourceTree = "<group>"; };
 		249EE66E2247B2FB0076FE7F /* HelperHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperHeader.h; sourceTree = "<group>"; };
 		249EE66F2247B2FB0076FE7F /* NotificationMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationMacro.h; sourceTree = "<group>"; };
-		249EE6702247B2FB0076FE7F /* ServerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerInfo.h; sourceTree = "<group>"; };
-		249EE6712247B2FB0076FE7F /* WCAnnouceNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCAnnouceNet.h; sourceTree = "<group>"; };
 		249EE6752247B2FC0076FE7F /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		249EE6762247B2FC0076FE7F /* PictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureView.h; sourceTree = "<group>"; };
 		249EE6772247B2FC0076FE7F /* MultiPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiPictureView.h; sourceTree = "<group>"; };
@@ -393,10 +382,6 @@
 		249EE68E2247B2FC0076FE7F /* ContantHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContantHead.h; sourceTree = "<group>"; };
 		249EE68F2247B2FC0076FE7F /* MyTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTextView.m; sourceTree = "<group>"; };
 		249EE6902247B2FC0076FE7F /* MyTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextView.h; sourceTree = "<group>"; };
-		249EE6922247B2FC0076FE7F /* Auth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Auth.m; sourceTree = "<group>"; };
-		249EE6932247B2FC0076FE7F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		249EE6942247B2FC0076FE7F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		249EE6952247B2FC0076FE7F /* Auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Auth.h; sourceTree = "<group>"; };
 		249EE93D2247B3000076FE7F /* BaseRestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRestAPI.h; sourceTree = "<group>"; };
 		249EE93E2247B3000076FE7F /* BaseRestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRestAPI.m; sourceTree = "<group>"; };
 		249EE9402247B3000076FE7F /* NSString+ZLKExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZLKExtend.h"; sourceTree = "<group>"; };
@@ -985,7 +970,6 @@
 				676150DE23C972E400E8056A /* NoArc */,
 				249EE93B2247B3000076FE7F /* API */,
 				249EE6662247B2FB0076FE7F /* Helper */,
-				249EE6912247B2FC0076FE7F /* Model */,
 				249EE63F2247B2FB0076FE7F /* Utils */,
 				249EE94D2247B3010076FE7F /* VC */,
 				249EE6722247B2FC0076FE7F /* Views */,
@@ -1062,13 +1046,7 @@
 				249EE66B2247B2FB0076FE7F /* nd_define.h */,
 				249EE66F2247B2FB0076FE7F /* NotificationMacro.h */,
 				249EE66C2247B2FB0076FE7F /* ServerConfig.h */,
-				249EE6702247B2FB0076FE7F /* ServerInfo.h */,
-				249EE66A2247B2FB0076FE7F /* ServerInfo.m */,
-				249EE66D2247B2FB0076FE7F /* ShareValue.h */,
-				249EE6672247B2FB0076FE7F /* ShareValue.m */,
 				249EE6682247B2FB0076FE7F /* UtilsMacro.h */,
-				249EE6712247B2FB0076FE7F /* WCAnnouceNet.h */,
-				249EE6692247B2FB0076FE7F /* WCAnnouceNet.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -1164,17 +1142,6 @@
 				249EE6902247B2FC0076FE7F /* MyTextView.h */,
 			);
 			path = MyTextView;
-			sourceTree = "<group>";
-		};
-		249EE6912247B2FC0076FE7F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				249EE6922247B2FC0076FE7F /* Auth.m */,
-				249EE6932247B2FC0076FE7F /* User.m */,
-				249EE6942247B2FC0076FE7F /* User.h */,
-				249EE6952247B2FC0076FE7F /* Auth.h */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		249EE93B2247B3000076FE7F /* API */ = {
@@ -2422,7 +2389,6 @@
 				6761546523C9AE7500E8056A /* MJRefreshGifHeader.m in Sources */,
 				676154AD23C9AE7500E8056A /* SDWebImageManager+MJ.m in Sources */,
 				6761542D23C9AE7500E8056A /* KeyChainHelper.m in Sources */,
-				249EE99B2247B3010076FE7F /* User.m in Sources */,
 				6761550323C9AF2500E8056A /* ZLCameraViewController.m in Sources */,
 				6761546B23C9AE7500E8056A /* NJKWebViewProgress.m in Sources */,
 				6761541923C9AE7500E8056A /* UIView+Effect.m in Sources */,
@@ -2452,7 +2418,6 @@
 				249EE98A2247B3010076FE7F /* DES3Util.m in Sources */,
 				6761542023C9AE7500E8056A /* CLSafeMutableArray.m in Sources */,
 				6761551123C9AF2500E8056A /* ZLPickerGroupTableViewCell.m in Sources */,
-				249EE98C2247B3010076FE7F /* ShareValue.m in Sources */,
 				2444E08320590CAB00F29C06 /* ViewController.m in Sources */,
 				6761548D23C9AE7500E8056A /* AFURLRequestSerialization.m in Sources */,
 				6761550123C9AF2500E8056A /* ZLPickerBrowserPhotoImageView.m in Sources */,
@@ -2466,7 +2431,6 @@
 				6761544B23C9AE7500E8056A /* M80AttributedLabelURL.m in Sources */,
 				676154A823C9AE7500E8056A /* SDImageCache.m in Sources */,
 				6761548B23C9AE7500E8056A /* AFHTTPSessionManager.m in Sources */,
-				249EE98D2247B3010076FE7F /* WCAnnouceNet.m in Sources */,
 				249EEAC82247B3030076FE7F /* BaseViewController.m in Sources */,
 				249EE9842247B3010076FE7F /* UIImage+External.m in Sources */,
 				6761548523C9AE7500E8056A /* IQKeyboardManager.m in Sources */,
@@ -2560,7 +2524,6 @@
 				6761551623C9AF2500E8056A /* ZLAnimationImageView.m in Sources */,
 				6761547823C9AE7500E8056A /* MSSBrowseActionSheetCell.m in Sources */,
 				6761550E23C9AF2500E8056A /* ZLPickerCollectionViewCell.m in Sources */,
-				249EE99A2247B3010076FE7F /* Auth.m in Sources */,
 				6761543023C9AE7500E8056A /* MKNetworkOperation.m in Sources */,
 				6761540C23C9AE7500E8056A /* NSObject+YYModel.m in Sources */,
 				6761547B23C9AE7500E8056A /* XHZoomingImageView.m in Sources */,
@@ -2609,7 +2572,6 @@
 				6761542C23C9AE7500E8056A /* UIImage+Alpha.m in Sources */,
 				249EEAD12247B3030076FE7F /* BaseTableVC.m in Sources */,
 				6761546F23C9AE7500E8056A /* MSSBrowseCollectionViewCell.m in Sources */,
-				249EE98E2247B3010076FE7F /* ServerInfo.m in Sources */,
 				249EEACB2247B3030076FE7F /* TableSearchViewController.m in Sources */,
 				6761549523C9AE7500E8056A /* TAAnimatedDotView.m in Sources */,
 				249EEAC52247B3030076FE7F /* PageScrollView.m in Sources */,

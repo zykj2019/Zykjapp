@@ -10,7 +10,6 @@
 #import "AFNetworking.h"
 #import "ServerConfig.h"
 #import "FCUUID.h"
-#import "Auth.h"
 #import "IMichUtil.h"
 #import "DES3Util.h"
 #import "YYKit.h"
@@ -55,21 +54,6 @@
 -(id)init{
     self = [super init];
     if (self) {
-        // 加密数据
-        Auth *mAuth = [[Auth alloc]init];
-        mAuth.authId = [FCUUID uuid];
-        mAuth.appKey = APP_KEY;
-        NSDictionary *dic = [IMichUtil getObjectData:mAuth];
-        NSData *data = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:nil];
-        self.auth = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
-        self.auth = [DES3Util encrypt:APP_SECRET input:self.auth];
-        //NSLog(@"auth:%@",self.auth);
-        
-        // 应用key
-       // self.ak = APP_KEY;
-        
-        // 用户id
-        self.ud = [ShareValue sharedInstance].user.uuid;
         
         // 终端类型
         self.client = @"1010";
