@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "zykjApp"
-  s.version      = "68"
+  s.version      = "69"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -97,6 +97,7 @@ Pod::Spec.new do |s|
   api_files = "zykjApp/zykjApp/API/**/*.{h,m,swift}"
   model_files = "zykjApp/zykjApp/Model/**/*.{h,m,swift}"
  help_files = "zykjApp/zykjApp/Help/**/*.{h,m,swift}"
+views_files = "zykjApp/zykjApp/Views/**/*.{h,m,swift}"
   uiFramework_files = "zykjApp/zykjApp/UIFramework/**/*.{h,m,swift}"
 
   #//一下就是子设置，为需要添加mrc标识的文件进行设置
@@ -111,7 +112,7 @@ Pod::Spec.new do |s|
   s.source_files  = "zykjApp/zykjApp/**/*.{h,m,swift}"
 
   #在工程中首先排除一下
-  s.exclude_files = non_arc_files,utils_files,api_files,model_files,uiFramework_files
+  s.exclude_files = non_arc_files,utils_files,api_files,model_files,uiFramework_files,views_files,help_files
 
   #二级目录 NoArc
   s.subspec 'NoArc' do |ss|
@@ -140,6 +141,12 @@ Pod::Spec.new do |s|
        #二级目录 help
    s.subspec 'Helper' do |ss|
     ss.source_files = help_files
+  #二级目录
+    end
+
+   #二级目录 views
+   s.subspec 'Views' do |ss|
+    ss.source_files = views_files
   #二级目录
     end
 
