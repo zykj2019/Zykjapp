@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "zykjApp"
-  s.version      = "52"
+  s.version      = "53"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -110,7 +110,7 @@ Pod::Spec.new do |s|
 
     #二级目录 UtilsHeader
     s.subspec 'Utils' do |ss|
-      ss.source_files = 'zykjApp/zykjApp/Utils/*.{h,m,swift}'
+      ss.source_files = "zykjApp/zykjApp/Utils/**/*.{h,m,swift}"
     #二级目录
       end
 
