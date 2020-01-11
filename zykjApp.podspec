@@ -172,10 +172,12 @@ Pod::Spec.new do |s|
     masonry_files = "zykjApp/zykjApp/Ext/Masonry/**/*.{h,m,swift}"
     aFNetworking_files = "zykjApp/zykjApp/Ext/AFNetworking/**/*.{h,m,swift}"
     commonLibrary_files = "zykjApp/zykjApp/Ext/CommonLibrary/**/*.{h,m,swift}"
-      
-    ss.source_files = ext_files
-    ss.exclude_files = masonry_files,aFNetworking_files
+    # commonLibrary_files = "zykjApp/zykjApp/Ext/CommonLibrary/**/*.{h,m,swift}"
 
+
+    ss.source_files = ext_files
+    ss.exclude_files = masonry_files,aFNetworking_files,commonLibrary_files
+    
     ss.subspec 'Masonry' do |sss|
     sss.source_files = masonry_files
     end
