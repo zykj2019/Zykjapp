@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "zykjApp"
-  s.version      = "55"
+  s.version      = "56"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -94,6 +94,7 @@ Pod::Spec.new do |s|
   #//这是需要添加mrc标识的文件，为相对路径
   non_arc_files = 'zykjApp/zykjApp/NoArc/*.{h,m,swift}'
   utils_files = "zykjApp/zykjApp/Utils/**/*.{h,m,swift}"
+  
   #//一下就是子设置，为需要添加mrc标识的文件进行设置
   s.subspec 'no-arc' do |sp|
 
