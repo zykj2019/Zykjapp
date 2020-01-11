@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "zykjApp"
-  s.version      = "79"
+  s.version      = "80"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -170,13 +170,23 @@ Pod::Spec.new do |s|
     #二级目录 Ext
    s.subspec 'Ext' do |ss|
     masonry_files = "zykjApp/zykjApp/Ext/Masonry/**/*.{h,m,swift}"
+    aFNetworking_files = "zykjApp/zykjApp/Ext/AFNetworking/**/*.{h,m,swift}"
+    commonLibrary_files = "zykjApp/zykjApp/Ext/CommonLibrary/**/*.{h,m,swift}"
       
     ss.source_files = ext_files
-    ss.exclude_files = masonry_files
+    ss.exclude_files = masonry_files,aFNetworking_files
 
     ss.subspec 'Masonry' do |sss|
     sss.source_files = masonry_files
     end
+
+    ss.subspec 'AFNetworking' do |sss|
+      sss.source_files = aFNetworking_files
+      end
+
+      ss.subspec 'CommonLibrary' do |sss|
+        sss.source_files = commonLibrary_files
+        end
 
   #二级目录
     end
