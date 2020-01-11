@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "zykjApp"
-  s.version      = "84"
+  s.version      = "85"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -147,7 +147,40 @@ Pod::Spec.new do |s|
 
    #二级目录 views
    s.subspec 'Views' do |ss|
+    wkwebView_files = "zykjApp/zykjApp/Views/WkwebView/**/*.{h,m,swift}"
+    iCViewPager_files = "zykjApp/zykjApp/Views/ICViewPager/**/*.{h,m,swift}"
+    iCNavViewPager_files = "zykjApp/zykjApp/Views/ICNavViewPager/**/*.{h,m,swift}"
+    lEEAlert_files = "zykjApp/zykjApp/Views/LEEAlert/**/*.{h,m,swift}"
+    multiPictureView_files = "zykjApp/zykjApp/Views/MultiPictureView/**/*.{h,m,swift}"
+    placeHolderTextView_files = "zykjApp/zykjApp/Views/PlaceHolderTextView/**/*.{h,m,swift}"
+
     ss.source_files = views_files
+    ss.exclude_files = wkwebView_files,iCViewPager_files,iCNavViewPager_files,lEEAlert_files,multiPictureView_files,placeHolderTextView_files
+
+    ss.subspec 'WkwebView' do |sss|
+    sss.source_files = wkwebView_files
+    end
+
+    ss.subspec 'ICViewPager' do |sss|
+      sss.source_files = iCViewPager_files
+      end
+
+      ss.subspec 'ICNavViewPager' do |sss|
+        sss.source_files = iCNavViewPager_files
+        end
+
+        ss.subspec 'LEEAlert' do |sss|
+          sss.source_files = lEEAlert_files
+          end
+
+          ss.subspec 'MultiPictureView' do |sss|
+            sss.source_files = multiPictureView_files
+            end
+
+            ss.subspec 'PlaceHolderTextView' do |sss|
+              sss.source_files = placeHolderTextView_files
+              end
+
   #二级目录
     end
 
