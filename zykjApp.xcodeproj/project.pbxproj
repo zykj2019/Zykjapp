@@ -259,6 +259,24 @@
 		67A861EB23C9DA21001B773E /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A861E323C9DA21001B773E /* NJKWebViewProgressView.m */; };
 		67A861EC23C9DA21001B773E /* VPImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A861E523C9DA21001B773E /* VPImageCropperViewController.m */; };
 		67A861ED23C9DA21001B773E /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A861E823C9DA21001B773E /* UICKeyChainStore.m */; };
+		67A8620723C9DE58001B773E /* UITabBarController+CLPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A861FE23C9DE58001B773E /* UITabBarController+CLPlayerRotation.m */; };
+		67A8620823C9DE58001B773E /* UINavigationController+CLPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A861FF23C9DE58001B773E /* UINavigationController+CLPlayerRotation.m */; };
+		67A8620923C9DE58001B773E /* UIViewController+CLPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8620023C9DE58001B773E /* UIViewController+CLPlayerRotation.m */; };
+		67A8622423C9DEC4001B773E /* BRStringPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8620D23C9DEC4001B773E /* BRStringPickerView.m */; };
+		67A8622523C9DEC4001B773E /* sys_region.json in Resources */ = {isa = PBXBuildFile; fileRef = 67A8621323C9DEC4001B773E /* sys_region.json */; };
+		67A8622623C9DEC4001B773E /* ZHCityPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8621423C9DEC4001B773E /* ZHCityPickerView.m */; };
+		67A8622723C9DEC4001B773E /* ZHCityPickerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8621523C9DEC4001B773E /* ZHCityPickerModel.m */; };
+		67A8622823C9DEC4001B773E /* NSDate+BRPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8621823C9DEC4001B773E /* NSDate+BRPickerView.m */; };
+		67A8622923C9DEC4001B773E /* BRDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8621923C9DEC4001B773E /* BRDatePickerView.m */; };
+		67A8622A23C9DEC4001B773E /* BRBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8621C23C9DEC4001B773E /* BRBaseView.m */; };
+		67A8622B23C9DEC4001B773E /* BRAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8621F23C9DEC4001B773E /* BRAddressModel.m */; };
+		67A8622C23C9DEC4001B773E /* BRPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 67A8622123C9DEC4001B773E /* BRPickerView.bundle */; };
+		67A8622D23C9DEC4001B773E /* BRAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8622323C9DEC4001B773E /* BRAddressPickerView.m */; };
+		67A8623723C9DECC001B773E /* XXPickerViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8623023C9DECC001B773E /* XXPickerViewViewController.m */; };
+		67A8623823C9DECC001B773E /* XXPickerViewToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8623123C9DECC001B773E /* XXPickerViewToolbar.m */; };
+		67A8623923C9DECC001B773E /* XXPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8623223C9DECC001B773E /* XXPickerView.m */; };
+		67A8623A23C9DECC001B773E /* XXPickerViewTitleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8623423C9DECC001B773E /* XXPickerViewTitleItem.m */; };
+		67A8623D23C9DF10001B773E /* NSArray+NSArray_ILExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8623C23C9DF10001B773E /* NSArray+NSArray_ILExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -821,6 +839,42 @@
 		67A861E623C9DA21001B773E /* VPImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPImageCropperViewController.h; sourceTree = "<group>"; };
 		67A861E823C9DA21001B773E /* UICKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICKeyChainStore.m; sourceTree = "<group>"; };
 		67A861E923C9DA21001B773E /* UICKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICKeyChainStore.h; sourceTree = "<group>"; };
+		67A861F123C9DE58001B773E /* UINavigationController+CLPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+CLPlayerRotation.h"; sourceTree = "<group>"; };
+		67A861F223C9DE58001B773E /* UIViewController+CLPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CLPlayerRotation.h"; sourceTree = "<group>"; };
+		67A861FE23C9DE58001B773E /* UITabBarController+CLPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+CLPlayerRotation.m"; sourceTree = "<group>"; };
+		67A861FF23C9DE58001B773E /* UINavigationController+CLPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+CLPlayerRotation.m"; sourceTree = "<group>"; };
+		67A8620023C9DE58001B773E /* UIViewController+CLPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CLPlayerRotation.m"; sourceTree = "<group>"; };
+		67A8620123C9DE58001B773E /* UITabBarController+CLPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+CLPlayerRotation.h"; sourceTree = "<group>"; };
+		67A8620C23C9DEC4001B773E /* BRStringPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRStringPickerView.h; sourceTree = "<group>"; };
+		67A8620D23C9DEC4001B773E /* BRStringPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRStringPickerView.m; sourceTree = "<group>"; };
+		67A8620E23C9DEC4001B773E /* BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPickerView.h; sourceTree = "<group>"; };
+		67A8620F23C9DEC4001B773E /* BRPickerViewMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPickerViewMacro.h; sourceTree = "<group>"; };
+		67A8621123C9DEC4001B773E /* ZHCityPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHCityPickerView.h; sourceTree = "<group>"; };
+		67A8621223C9DEC4001B773E /* ZHCityPickerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHCityPickerModel.h; sourceTree = "<group>"; };
+		67A8621323C9DEC4001B773E /* sys_region.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sys_region.json; sourceTree = "<group>"; };
+		67A8621423C9DEC4001B773E /* ZHCityPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHCityPickerView.m; sourceTree = "<group>"; };
+		67A8621523C9DEC4001B773E /* ZHCityPickerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHCityPickerModel.m; sourceTree = "<group>"; };
+		67A8621723C9DEC4001B773E /* BRDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDatePickerView.h; sourceTree = "<group>"; };
+		67A8621823C9DEC4001B773E /* NSDate+BRPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+BRPickerView.m"; sourceTree = "<group>"; };
+		67A8621923C9DEC4001B773E /* BRDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDatePickerView.m; sourceTree = "<group>"; };
+		67A8621A23C9DEC4001B773E /* NSDate+BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+BRPickerView.h"; sourceTree = "<group>"; };
+		67A8621C23C9DEC4001B773E /* BRBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBaseView.m; sourceTree = "<group>"; };
+		67A8621D23C9DEC4001B773E /* BRBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBaseView.h; sourceTree = "<group>"; };
+		67A8621F23C9DEC4001B773E /* BRAddressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAddressModel.m; sourceTree = "<group>"; };
+		67A8622023C9DEC4001B773E /* BRAddressPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAddressPickerView.h; sourceTree = "<group>"; };
+		67A8622123C9DEC4001B773E /* BRPickerView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BRPickerView.bundle; sourceTree = "<group>"; };
+		67A8622223C9DEC4001B773E /* BRAddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAddressModel.h; sourceTree = "<group>"; };
+		67A8622323C9DEC4001B773E /* BRAddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAddressPickerView.m; sourceTree = "<group>"; };
+		67A8622F23C9DECC001B773E /* XXPickerViewTitleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXPickerViewTitleItem.h; sourceTree = "<group>"; };
+		67A8623023C9DECC001B773E /* XXPickerViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXPickerViewViewController.m; sourceTree = "<group>"; };
+		67A8623123C9DECC001B773E /* XXPickerViewToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXPickerViewToolbar.m; sourceTree = "<group>"; };
+		67A8623223C9DECC001B773E /* XXPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXPickerView.m; sourceTree = "<group>"; };
+		67A8623323C9DECC001B773E /* XXPickerViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXPickerViewViewController.h; sourceTree = "<group>"; };
+		67A8623423C9DECC001B773E /* XXPickerViewTitleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXPickerViewTitleItem.m; sourceTree = "<group>"; };
+		67A8623523C9DECC001B773E /* XXPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXPickerView.h; sourceTree = "<group>"; };
+		67A8623623C9DECC001B773E /* XXPickerViewToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXPickerViewToolbar.h; sourceTree = "<group>"; };
+		67A8623B23C9DF0F001B773E /* NSArray+NSArray_ILExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NSArray_ILExtension.h"; sourceTree = "<group>"; };
+		67A8623C23C9DF10001B773E /* NSArray+NSArray_ILExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NSArray_ILExtension.m"; sourceTree = "<group>"; };
 		C3DEF3C9E47F4A038AC7A991 /* Pods_zykjApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zykjApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -943,6 +997,8 @@
 		249EE63F2247B2FB0076FE7F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				67A8623B23C9DF0F001B773E /* NSArray+NSArray_ILExtension.h */,
+				67A8623C23C9DF10001B773E /* NSArray+NSArray_ILExtension.m */,
 				6761567A23C9C28D00E8056A /* UIView+ND.h */,
 				6761567923C9C28D00E8056A /* UIView+ND.m */,
 				6761567623C9C23400E8056A /* UINavigationBar+Awesome.h */,
@@ -1024,6 +1080,7 @@
 			children = (
 				6761567D23C9C2AE00E8056A /* LineView.h */,
 				6761567C23C9C2AE00E8056A /* LineView.m */,
+				67A8620A23C9DEC4001B773E /* BRPickerView */,
 				6761562B23C9BD3400E8056A /* WkwebView */,
 				6761555A23C9B28000E8056A /* ICViewPager */,
 				6761553B23C9B20700E8056A /* ICNavViewPager */,
@@ -1156,6 +1213,7 @@
 		676155D623C9B54C00E8056A /* UIFramework */ = {
 			isa = PBXGroup;
 			children = (
+				67A861F023C9DE58001B773E /* Category */,
 				6761563123C9BDE300E8056A /* CustomNav */,
 				6761561A23C9B91000E8056A /* BaseTableView.h */,
 				6761561923C9B90F00E8056A /* BaseTableView.m */,
@@ -2050,6 +2108,102 @@
 			path = UICKeyChainStore;
 			sourceTree = "<group>";
 		};
+		67A861F023C9DE58001B773E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				67A861F123C9DE58001B773E /* UINavigationController+CLPlayerRotation.h */,
+				67A861FF23C9DE58001B773E /* UINavigationController+CLPlayerRotation.m */,
+				67A8620123C9DE58001B773E /* UITabBarController+CLPlayerRotation.h */,
+				67A861FE23C9DE58001B773E /* UITabBarController+CLPlayerRotation.m */,
+				67A861F223C9DE58001B773E /* UIViewController+CLPlayerRotation.h */,
+				67A8620023C9DE58001B773E /* UIViewController+CLPlayerRotation.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		67A8620A23C9DEC4001B773E /* BRPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				67A8622E23C9DECC001B773E /* XXPickerView */,
+				67A8620B23C9DEC4001B773E /* StringPickerView */,
+				67A8620E23C9DEC4001B773E /* BRPickerView.h */,
+				67A8620F23C9DEC4001B773E /* BRPickerViewMacro.h */,
+				67A8621023C9DEC4001B773E /* ZHSelectCity */,
+				67A8621623C9DEC4001B773E /* DatePickerView */,
+				67A8621B23C9DEC4001B773E /* Base */,
+				67A8621E23C9DEC4001B773E /* AddressPickerView */,
+			);
+			path = BRPickerView;
+			sourceTree = "<group>";
+		};
+		67A8620B23C9DEC4001B773E /* StringPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				67A8620C23C9DEC4001B773E /* BRStringPickerView.h */,
+				67A8620D23C9DEC4001B773E /* BRStringPickerView.m */,
+			);
+			path = StringPickerView;
+			sourceTree = "<group>";
+		};
+		67A8621023C9DEC4001B773E /* ZHSelectCity */ = {
+			isa = PBXGroup;
+			children = (
+				67A8621123C9DEC4001B773E /* ZHCityPickerView.h */,
+				67A8621223C9DEC4001B773E /* ZHCityPickerModel.h */,
+				67A8621323C9DEC4001B773E /* sys_region.json */,
+				67A8621423C9DEC4001B773E /* ZHCityPickerView.m */,
+				67A8621523C9DEC4001B773E /* ZHCityPickerModel.m */,
+			);
+			path = ZHSelectCity;
+			sourceTree = "<group>";
+		};
+		67A8621623C9DEC4001B773E /* DatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				67A8621723C9DEC4001B773E /* BRDatePickerView.h */,
+				67A8621823C9DEC4001B773E /* NSDate+BRPickerView.m */,
+				67A8621923C9DEC4001B773E /* BRDatePickerView.m */,
+				67A8621A23C9DEC4001B773E /* NSDate+BRPickerView.h */,
+			);
+			path = DatePickerView;
+			sourceTree = "<group>";
+		};
+		67A8621B23C9DEC4001B773E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				67A8621C23C9DEC4001B773E /* BRBaseView.m */,
+				67A8621D23C9DEC4001B773E /* BRBaseView.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		67A8621E23C9DEC4001B773E /* AddressPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				67A8621F23C9DEC4001B773E /* BRAddressModel.m */,
+				67A8622023C9DEC4001B773E /* BRAddressPickerView.h */,
+				67A8622123C9DEC4001B773E /* BRPickerView.bundle */,
+				67A8622223C9DEC4001B773E /* BRAddressModel.h */,
+				67A8622323C9DEC4001B773E /* BRAddressPickerView.m */,
+			);
+			path = AddressPickerView;
+			sourceTree = "<group>";
+		};
+		67A8622E23C9DECC001B773E /* XXPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				67A8622F23C9DECC001B773E /* XXPickerViewTitleItem.h */,
+				67A8623023C9DECC001B773E /* XXPickerViewViewController.m */,
+				67A8623123C9DECC001B773E /* XXPickerViewToolbar.m */,
+				67A8623223C9DECC001B773E /* XXPickerView.m */,
+				67A8623323C9DECC001B773E /* XXPickerViewViewController.h */,
+				67A8623423C9DECC001B773E /* XXPickerViewTitleItem.m */,
+				67A8623523C9DECC001B773E /* XXPickerView.h */,
+				67A8623623C9DECC001B773E /* XXPickerViewToolbar.h */,
+			);
+			path = XXPickerView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2161,8 +2315,10 @@
 				6761563023C9BD3500E8056A /* WKJSPOST.html in Resources */,
 				67A860D823C9D64F001B773E /* ZLPickerGroupTableViewCell.xib in Resources */,
 				2444E08820590CAB00F29C06 /* Assets.xcassets in Resources */,
+				67A8622523C9DEC4001B773E /* sys_region.json in Resources */,
 				2444E08620590CAB00F29C06 /* Main.storyboard in Resources */,
 				6761555123C9B20800E8056A /* add2.png in Resources */,
+				67A8622C23C9DEC4001B773E /* BRPickerView.bundle in Resources */,
 				67A8614B23C9D650001B773E /* mss_browseLoading@3x.png in Resources */,
 				67A8612523C9D650001B773E /* MBProgressHUD.bundle in Resources */,
 				67A8616B23C9D650001B773E /* README.markdown in Resources */,
@@ -2209,6 +2365,7 @@
 				249EEAF32247CA2B0076FE7F /* AllHeader.h in Sources */,
 				67A8614223C9D650001B773E /* MSSBrowseLocalViewController.m in Sources */,
 				67A860CC23C9D64F001B773E /* ALAsset+ZLPick.m in Sources */,
+				67A8620723C9DE58001B773E /* UITabBarController+CLPlayerRotation.m in Sources */,
 				6761561B23C9B91000E8056A /* BaseTableView.m in Sources */,
 				67A860E023C9D64F001B773E /* UITableView+YYAdd.m in Sources */,
 				67A860F923C9D64F001B773E /* UIView+CustomAutoLayout.m in Sources */,
@@ -2228,6 +2385,7 @@
 				67A8610C23C9D650001B773E /* NSDate+RFC1123.m in Sources */,
 				67A8611123C9D650001B773E /* FTAnimationManager.m in Sources */,
 				6761564023C9BE4D00E8056A /* UIFrameworkModel.m in Sources */,
+				67A8623723C9DECC001B773E /* XXPickerViewViewController.m in Sources */,
 				67A860E523C9D64F001B773E /* MenuTableViewController.m in Sources */,
 				6761560623C9B54C00E8056A /* PageScrollView.m in Sources */,
 				6761567E23C9C2AE00E8056A /* LineView.m in Sources */,
@@ -2252,6 +2410,7 @@
 				67A860CA23C9D64F001B773E /* ZLCameraImageView.m in Sources */,
 				67A8615E23C9D650001B773E /* AFURLResponseSerialization.m in Sources */,
 				67A8614323C9D650001B773E /* MSSBrowseCollectionViewCell.m in Sources */,
+				67A8623A23C9DECC001B773E /* XXPickerViewTitleItem.m in Sources */,
 				67A861EB23C9DA21001B773E /* NJKWebViewProgressView.m in Sources */,
 				249EE97D2247B3010076FE7F /* UILabel+InitMethod.m in Sources */,
 				67A861CE23C9D92B001B773E /* NSArray+MASAdditions.m in Sources */,
@@ -2262,17 +2421,20 @@
 				249EE97F2247B3010076FE7F /* UIBarButtonItem+ND.m in Sources */,
 				249EE9842247B3010076FE7F /* UIImage+External.m in Sources */,
 				67A860EE23C9D64F001B773E /* NSString+RegexCheck.m in Sources */,
+				67A8620923C9DE58001B773E /* UIViewController+CLPlayerRotation.m in Sources */,
 				249EEAC02247B3030076FE7F /* NSString+ZLKExtend.m in Sources */,
 				6761560423C9B54C00E8056A /* BaseAppDelegate.m in Sources */,
 				67A8617223C9D650001B773E /* UIImage+WebP.m in Sources */,
 				67A8617023C9D650001B773E /* FMDatabasePool.m in Sources */,
 				67A860E623C9D64F001B773E /* MenuButton.m in Sources */,
+				67A8623923C9DECC001B773E /* XXPickerView.m in Sources */,
 				67A860DF23C9D64F001B773E /* ZLPickerGlobal.m in Sources */,
 				67A8617423C9D650001B773E /* SDWebImageManager.m in Sources */,
 				249EE9822247B3010076FE7F /* MyRegularExpressionManager.m in Sources */,
 				67A8614923C9D650001B773E /* MSSBrowseZoomScrollView.m in Sources */,
 				67A8610D23C9D650001B773E /* UIColor+MLPFlatColors.m in Sources */,
 				67A860D523C9D64F001B773E /* ZLPickerImageView.m in Sources */,
+				67A8622423C9DEC4001B773E /* BRStringPickerView.m in Sources */,
 				67A860E123C9D64F001B773E /* UIView+YYAdd.m in Sources */,
 				67A860CE23C9D64F001B773E /* ZLPickerGroup.m in Sources */,
 				67A8611D23C9D650001B773E /* M80AttributedLabelAttachment.m in Sources */,
@@ -2283,6 +2445,7 @@
 				67A861DD23C9DA09001B773E /* NSObject+FBKVOController.m in Sources */,
 				67A860FA23C9D64F001B773E /* UITextField+UITextField_Tip.m in Sources */,
 				67A860DA23C9D64F001B773E /* UIView+ZLAutoLayout.m in Sources */,
+				67A8622923C9DEC4001B773E /* BRDatePickerView.m in Sources */,
 				67A860F523C9D64F001B773E /* NSString+Common.m in Sources */,
 				67A861D123C9D92B001B773E /* MASViewConstraint.m in Sources */,
 				67A861CB23C9D92B001B773E /* MASCompositeConstraint.m in Sources */,
@@ -2309,9 +2472,11 @@
 				67A8611E23C9D650001B773E /* M80AttributedLabel.m in Sources */,
 				67A8617123C9D650001B773E /* FMResultSet.m in Sources */,
 				6761556023C9B28000E8056A /* ViewMyPagerViewController.m in Sources */,
+				67A8622A23C9DEC4001B773E /* BRBaseView.m in Sources */,
 				67A8611923C9D650001B773E /* UIViewController+ADFlipTransition.m in Sources */,
 				6761567823C9C23400E8056A /* UINavigationBar+Awesome.m in Sources */,
 				67A8610423C9D64F001B773E /* MKNetworkOperation.m in Sources */,
+				67A8622D23C9DEC4001B773E /* BRAddressPickerView.m in Sources */,
 				67A860ED23C9D64F001B773E /* UIView+Effect.m in Sources */,
 				67A8616223C9D650001B773E /* AFNetworkReachabilityManager.m in Sources */,
 				67A8612223C9D650001B773E /* NSObject+Json.m in Sources */,
@@ -2319,6 +2484,7 @@
 				249EE9802247B3010076FE7F /* UIImage+ND.m in Sources */,
 				67A8616723C9D650001B773E /* TADotView.m in Sources */,
 				67A860D623C9D64F001B773E /* ZLPickerFooterCollectionReusableView.m in Sources */,
+				67A8623D23C9DF10001B773E /* NSArray+NSArray_ILExtension.m in Sources */,
 				6761561123C9B54C00E8056A /* PopupView.m in Sources */,
 				2444E08020590CAB00F29C06 /* AppDelegate.m in Sources */,
 				6761561323C9B54C00E8056A /* KeyValue.m in Sources */,
@@ -2330,8 +2496,10 @@
 				67A8617323C9D650001B773E /* MKAnnotationView+WebCache.m in Sources */,
 				67A8611323C9D650001B773E /* UIViewController+ADScaleTransition.m in Sources */,
 				67A8615123C9D650001B773E /* XHImageViewer.m in Sources */,
+				67A8622B23C9DEC4001B773E /* BRAddressModel.m in Sources */,
 				249EE9812247B3010076FE7F /* UIImageView+SDImageCache.m in Sources */,
 				67A861DE23C9DA09001B773E /* FBKVOController.m in Sources */,
+				67A8623823C9DECC001B773E /* XXPickerViewToolbar.m in Sources */,
 				67A8610823C9D64F001B773E /* NSString+MKNetworkKitAdditions.m in Sources */,
 				67A8616423C9D650001B773E /* SDCycleScrollView.m in Sources */,
 				67A8616023C9D650001B773E /* AFURLSessionManager.m in Sources */,
@@ -2342,6 +2510,7 @@
 				67A8616F23C9D650001B773E /* FMDatabase.m in Sources */,
 				67A8612823C9D650001B773E /* FontHelper.m in Sources */,
 				6761560923C9B54C00E8056A /* BaseViewController.m in Sources */,
+				67A8622823C9DEC4001B773E /* NSDate+BRPickerView.m in Sources */,
 				67A860E223C9D64F001B773E /* NSObject+YYModel.m in Sources */,
 				6761564E23C9C15000E8056A /* BaseView.m in Sources */,
 				67A860F223C9D64F001B773E /* NSData+Common.m in Sources */,
@@ -2356,6 +2525,7 @@
 				67A8616523C9D650001B773E /* UIView+SDExtension.m in Sources */,
 				67A8614523C9D650001B773E /* MSSBrowseActionSheet.m in Sources */,
 				67A8611023C9D650001B773E /* FTAnimation+UIView.m in Sources */,
+				67A8622623C9DEC4001B773E /* ZHCityPickerView.m in Sources */,
 				6761561723C9B54C00E8056A /* BaseCollectionViewController.m in Sources */,
 				676150E723C9734D00E8056A /* OpenUDID.m in Sources */,
 				67A8614623C9D650001B773E /* MSSBrowseNetworkViewController.m in Sources */,
@@ -2377,6 +2547,7 @@
 				67A861CC23C9D92B001B773E /* MASConstraintMaker.m in Sources */,
 				67A860E423C9D64F001B773E /* EGORefreshTableHeaderView.m in Sources */,
 				67A8614723C9D650001B773E /* UIImage+MSSScale.m in Sources */,
+				67A8622723C9DEC4001B773E /* ZHCityPickerModel.m in Sources */,
 				67A8614F23C9D650001B773E /* XHZoomingImageView.m in Sources */,
 				6761560723C9B54C00E8056A /* NSObject+loadPadClass.m in Sources */,
 				67A860C623C9D64F001B773E /* ZLPickerBrowserPhotoGifView.m in Sources */,
@@ -2409,6 +2580,7 @@
 				67A860FD23C9D64F001B773E /* UILabel+Common.m in Sources */,
 				67A860FC23C9D64F001B773E /* UIImage+Common.m in Sources */,
 				67A860D023C9D64F001B773E /* ZLPickerGroupViewController.m in Sources */,
+				67A8620823C9DE58001B773E /* UINavigationController+CLPlayerRotation.m in Sources */,
 				67A860F323C9D64F001B773E /* UIImage+TintColor.m in Sources */,
 				249EEABF2247B3030076FE7F /* NSData+base64Encoding.m in Sources */,
 				67A8614423C9D650001B773E /* MSSBrowseModel.m in Sources */,

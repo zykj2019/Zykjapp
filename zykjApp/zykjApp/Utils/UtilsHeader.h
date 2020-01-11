@@ -14,4 +14,5 @@
 #import "UIViewInitMethodHeaders.h"
 #import "UITableView+custom.h"
 #import "UINavigationBar+Awesome.h"
+#import "NSArray+NSArray_ILExtension.h"
 #endif /* UtilsHeader_h */
