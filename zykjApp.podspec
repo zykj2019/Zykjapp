@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "zykjApp"
-  s.version      = "45"
+  s.version      = "46"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -91,9 +91,11 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  non_arc_files = 'zykjApp/zykjApp/NoArc/*.{h,m,swift}'//这是需要添加mrc标识的文件，为相对路径
+  #//这是需要添加mrc标识的文件，为相对路径
+  non_arc_files = 'zykjApp/zykjApp/NoArc/*.{h,m,swift}'
 
-  s.subspec 'no-arc' do |sp|//一下就是子设置，为需要添加mrc标识的文件进行设置
+  #//一下就是子设置，为需要添加mrc标识的文件进行设置
+  s.subspec 'no-arc' do |sp|
 
   sp.source_files = non_arc_files
 
@@ -103,7 +105,8 @@ Pod::Spec.new do |s|
 
   s.source_files  = "zykjApp/zykjApp/**/*.{h,m,swift}"
 
-  s.exclude_files = non_arc_files//在工程中首先排除一下
+  #在工程中首先排除一下
+  s.exclude_files = non_arc_files
 
   # s.exclude_files = "Classes/Exclude"
 
