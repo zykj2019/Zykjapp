@@ -24,6 +24,8 @@
 
 #define kIconReturnTag        150
 
+#import "ZYWeakTimerObject.h"
+
 #import "CustomNav.h"
 #import "UILabel+ND.h"
 #import "UIViewController+ND.h"

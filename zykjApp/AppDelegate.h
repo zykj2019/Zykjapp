@@ -12,6 +12,7 @@
 
 @interface AppDelegate : BaseAppDelegate
 
+@property (strong, nonatomic) UIWindow *window;
 
 @end
 
