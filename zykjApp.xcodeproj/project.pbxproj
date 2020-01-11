@@ -253,6 +253,13 @@
 		67A861D123C9D92B001B773E /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A861C623C9D92B001B773E /* MASViewConstraint.m */; };
 		67A861D223C9D92B001B773E /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A861C723C9D92B001B773E /* MASViewAttribute.m */; };
 		67A861D323C9D92B001B773E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67A861C823C9D92B001B773E /* Info.plist */; };
+		67A861DC23C9DA09001B773E /* FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A861D523C9DA09001B773E /* FCUUID.m */; };
+		67A861DD23C9DA09001B773E /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A861D923C9DA09001B773E /* NSObject+FBKVOController.m */; };
+		67A861DE23C9DA09001B773E /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A861DA23C9DA09001B773E /* FBKVOController.m */; };
+		67A861EA23C9DA21001B773E /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A861E123C9DA21001B773E /* NJKWebViewProgress.m */; };
+		67A861EB23C9DA21001B773E /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A861E323C9DA21001B773E /* NJKWebViewProgressView.m */; };
+		67A861EC23C9DA21001B773E /* VPImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A861E523C9DA21001B773E /* VPImageCropperViewController.m */; };
+		67A861ED23C9DA21001B773E /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A861E823C9DA21001B773E /* UICKeyChainStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -801,6 +808,20 @@
 		67A861C623C9D92B001B773E /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
 		67A861C723C9D92B001B773E /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
 		67A861C823C9D92B001B773E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67A861D523C9DA09001B773E /* FCUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCUUID.m; sourceTree = "<group>"; };
+		67A861D623C9DA09001B773E /* FCUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCUUID.h; sourceTree = "<group>"; };
+		67A861D823C9DA09001B773E /* FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBKVOController.h; sourceTree = "<group>"; };
+		67A861D923C9DA09001B773E /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FBKVOController.m"; sourceTree = "<group>"; };
+		67A861DA23C9DA09001B773E /* FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBKVOController.m; sourceTree = "<group>"; };
+		67A861DB23C9DA09001B773E /* NSObject+FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FBKVOController.h"; sourceTree = "<group>"; };
+		67A861E023C9DA21001B773E /* NJKWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgressView.h; sourceTree = "<group>"; };
+		67A861E123C9DA21001B773E /* NJKWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgress.m; sourceTree = "<group>"; };
+		67A861E223C9DA21001B773E /* NJKWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgress.h; sourceTree = "<group>"; };
+		67A861E323C9DA21001B773E /* NJKWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgressView.m; sourceTree = "<group>"; };
+		67A861E523C9DA21001B773E /* VPImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPImageCropperViewController.m; sourceTree = "<group>"; };
+		67A861E623C9DA21001B773E /* VPImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPImageCropperViewController.h; sourceTree = "<group>"; };
+		67A861E823C9DA21001B773E /* UICKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICKeyChainStore.m; sourceTree = "<group>"; };
+		67A861E923C9DA21001B773E /* UICKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICKeyChainStore.h; sourceTree = "<group>"; };
 		C3DEF3C9E47F4A038AC7A991 /* Pods_zykjApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zykjApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1456,6 +1477,11 @@
 		67A85F3B23C9D64F001B773E /* CommonLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				67A861DF23C9DA21001B773E /* NJKWebViewProgress */,
+				67A861E723C9DA21001B773E /* UICKeyChainStore */,
+				67A861E423C9DA21001B773E /* VPImageCropper */,
+				67A861D723C9DA09001B773E /* FBKVOController */,
+				67A861D423C9DA09001B773E /* FCUUID */,
 				67A85F3C23C9D64F001B773E /* CommonLibrary.h */,
 				67A85F3D23C9D64F001B773E /* CommonView */,
 				67A85F4D23C9D64F001B773E /* DebugMacro */,
@@ -1976,6 +2002,55 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		67A861D423C9DA09001B773E /* FCUUID */ = {
+			isa = PBXGroup;
+			children = (
+				67A861D523C9DA09001B773E /* FCUUID.m */,
+				67A861D623C9DA09001B773E /* FCUUID.h */,
+			);
+			path = FCUUID;
+			sourceTree = "<group>";
+		};
+		67A861D723C9DA09001B773E /* FBKVOController */ = {
+			isa = PBXGroup;
+			children = (
+				67A861D823C9DA09001B773E /* FBKVOController.h */,
+				67A861D923C9DA09001B773E /* NSObject+FBKVOController.m */,
+				67A861DA23C9DA09001B773E /* FBKVOController.m */,
+				67A861DB23C9DA09001B773E /* NSObject+FBKVOController.h */,
+			);
+			path = FBKVOController;
+			sourceTree = "<group>";
+		};
+		67A861DF23C9DA21001B773E /* NJKWebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				67A861E023C9DA21001B773E /* NJKWebViewProgressView.h */,
+				67A861E123C9DA21001B773E /* NJKWebViewProgress.m */,
+				67A861E223C9DA21001B773E /* NJKWebViewProgress.h */,
+				67A861E323C9DA21001B773E /* NJKWebViewProgressView.m */,
+			);
+			path = NJKWebViewProgress;
+			sourceTree = "<group>";
+		};
+		67A861E423C9DA21001B773E /* VPImageCropper */ = {
+			isa = PBXGroup;
+			children = (
+				67A861E523C9DA21001B773E /* VPImageCropperViewController.m */,
+				67A861E623C9DA21001B773E /* VPImageCropperViewController.h */,
+			);
+			path = VPImageCropper;
+			sourceTree = "<group>";
+		};
+		67A861E723C9DA21001B773E /* UICKeyChainStore */ = {
+			isa = PBXGroup;
+			children = (
+				67A861E823C9DA21001B773E /* UICKeyChainStore.m */,
+				67A861E923C9DA21001B773E /* UICKeyChainStore.h */,
+			);
+			path = UICKeyChainStore;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2143,6 +2218,7 @@
 				67A860D123C9D64F001B773E /* ZLNavigationController.m in Sources */,
 				67A860C823C9D64F001B773E /* ZLPickerBrowserPhotoScrollView.m in Sources */,
 				67A8617623C9D650001B773E /* UIImageView+HighlightedWebCache.m in Sources */,
+				67A861DC23C9DA09001B773E /* FCUUID.m in Sources */,
 				67A8610923C9D64F001B773E /* UIImageView+MKNetworkKitAdditions.m in Sources */,
 				67A8610223C9D64F001B773E /* Reachability.m in Sources */,
 				67A8610723C9D64F001B773E /* NSData+MKBase64.m in Sources */,
@@ -2178,6 +2254,7 @@
 				67A860CA23C9D64F001B773E /* ZLCameraImageView.m in Sources */,
 				67A8615E23C9D650001B773E /* AFURLResponseSerialization.m in Sources */,
 				67A8614323C9D650001B773E /* MSSBrowseCollectionViewCell.m in Sources */,
+				67A861EB23C9DA21001B773E /* NJKWebViewProgressView.m in Sources */,
 				249EE97D2247B3010076FE7F /* UILabel+InitMethod.m in Sources */,
 				67A861CE23C9D92B001B773E /* NSArray+MASAdditions.m in Sources */,
 				67A8611223C9D650001B773E /* FTUtils+NSObject.m in Sources */,
@@ -2202,14 +2279,17 @@
 				67A860CE23C9D64F001B773E /* ZLPickerGroup.m in Sources */,
 				67A8611D23C9D650001B773E /* M80AttributedLabelAttachment.m in Sources */,
 				249EE9832247B3010076FE7F /* UIView+block.m in Sources */,
+				67A861ED23C9DA21001B773E /* UICKeyChainStore.m in Sources */,
 				676150E423C9733900E8056A /* JSONKit.m in Sources */,
 				67A8616E23C9D650001B773E /* FMDatabaseAdditions.m in Sources */,
+				67A861DD23C9DA09001B773E /* NSObject+FBKVOController.m in Sources */,
 				67A860FA23C9D64F001B773E /* UITextField+UITextField_Tip.m in Sources */,
 				67A860DA23C9D64F001B773E /* UIView+ZLAutoLayout.m in Sources */,
 				67A860F523C9D64F001B773E /* NSString+Common.m in Sources */,
 				67A861D123C9D92B001B773E /* MASViewConstraint.m in Sources */,
 				67A861CB23C9D92B001B773E /* MASCompositeConstraint.m in Sources */,
 				67A8617E23C9D650001B773E /* NSData+ImageContentType.m in Sources */,
+				67A861EC23C9DA21001B773E /* VPImageCropperViewController.m in Sources */,
 				67A8617923C9D650001B773E /* UIImage+MultiFormat.m in Sources */,
 				67A861CA23C9D92B001B773E /* ViewController+MASAdditions.m in Sources */,
 				6761555223C9B20800E8056A /* MultiPictureView.m in Sources */,
@@ -2253,11 +2333,13 @@
 				67A8611323C9D650001B773E /* UIViewController+ADScaleTransition.m in Sources */,
 				67A8615123C9D650001B773E /* XHImageViewer.m in Sources */,
 				249EE9812247B3010076FE7F /* UIImageView+SDImageCache.m in Sources */,
+				67A861DE23C9DA09001B773E /* FBKVOController.m in Sources */,
 				67A8610823C9D64F001B773E /* NSString+MKNetworkKitAdditions.m in Sources */,
 				67A8616423C9D650001B773E /* SDCycleScrollView.m in Sources */,
 				67A8616023C9D650001B773E /* AFURLSessionManager.m in Sources */,
 				67A8617B23C9D650001B773E /* SDWebImagePrefetcher.m in Sources */,
 				67A8612123C9D650001B773E /* NSMutableDictionary+Json.m in Sources */,
+				67A861EA23C9DA21001B773E /* NJKWebViewProgress.m in Sources */,
 				6761555723C9B20800E8056A /* LEEAlert.m in Sources */,
 				67A8616F23C9D650001B773E /* FMDatabase.m in Sources */,
 				67A8612823C9D650001B773E /* FontHelper.m in Sources */,
