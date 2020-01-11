@@ -123,6 +123,8 @@
 }
 - (void)addNewPic:(NSArray *)pictures {
 //    [ApplicationDelegate.window endEditing:YES];
+    [[UIApplication sharedApplication].keyWindow endEditing:YES];
+    
     if (self.picViews.count + pictures.count > _allPicCount)
     {
         [[HUDHelper sharedInstance] tipMessage:[NSString stringWithFormat:@"最多只能添加%d张图片",_allPicCount]];
