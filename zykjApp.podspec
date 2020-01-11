@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "zykjApp"
-  s.version      = "65"
+  s.version      = "66"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -95,6 +95,8 @@ Pod::Spec.new do |s|
   non_arc_files = 'zykjApp/zykjApp/NoArc/*.{h,m,swift}'
   utils_files = "zykjApp/zykjApp/Utils/**/*.{h,m,swift}"
   api_files = "zykjApp/zykjApp/API/**/*.{h,m,swift}"
+  model_files = "zykjApp/zykjApp/Model/**/*.{h,m,swift}"
+  uiFramework_files = "zykjApp/zykjApp/UIFramework/**/*.{h,m,swift}"
 
   #//一下就是子设置，为需要添加mrc标识的文件进行设置
   s.subspec 'no-arc' do |sp|
@@ -108,7 +110,7 @@ Pod::Spec.new do |s|
   s.source_files  = "zykjApp/zykjApp/**/*.{h,m,swift}"
 
   #在工程中首先排除一下
-  s.exclude_files = non_arc_files,utils_files,api_files
+  s.exclude_files = non_arc_files,utils_files,api_files,model_files,uiFramework_files
 
   #二级目录 NoArc
   s.subspec 'NoArc' do |ss|
@@ -116,13 +118,26 @@ Pod::Spec.new do |s|
   #二级目录
     end
 
-   #二级目录 UtilsHeader
+       #二级目录 Utils
    s.subspec 'Utils' do |ss|
     ss.source_files = utils_files
   #二级目录
     end
 
-  #二级目录 UtilsHeader
+   #二级目录 UIFramework
+   s.subspec 'UIFramework' do |ss|
+    ss.source_files = uiFramework_files
+  #二级目录
+    end
+
+       #二级目录 model
+   s.subspec 'Model' do |ss|
+    ss.source_files = model_files
+  #二级目录
+    end
+
+
+  #二级目录 API
    s.subspec 'API' do |ss|
     api_core_files = "zykjApp/zykjApp/API/core/**/*.{h,m,swift}"
     api_IosApiRequestUtil_files = "zykjApp/zykjApp/API/IosApiRequestUtil/**/*.{h,m,swift}"
