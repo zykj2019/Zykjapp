@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "zykjApp"
-  s.version      = "69"
+  s.version      = "70"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -96,7 +96,7 @@ Pod::Spec.new do |s|
   utils_files = "zykjApp/zykjApp/Utils/**/*.{h,m,swift}"
   api_files = "zykjApp/zykjApp/API/**/*.{h,m,swift}"
   model_files = "zykjApp/zykjApp/Model/**/*.{h,m,swift}"
- help_files = "zykjApp/zykjApp/Help/**/*.{h,m,swift}"
+ help_files = "zykjApp/zykjApp/Helper/**/*.{h,m,swift}"
 views_files = "zykjApp/zykjApp/Views/**/*.{h,m,swift}"
   uiFramework_files = "zykjApp/zykjApp/UIFramework/**/*.{h,m,swift}"
 
@@ -138,7 +138,7 @@ views_files = "zykjApp/zykjApp/Views/**/*.{h,m,swift}"
   #二级目录
     end
 
-       #二级目录 help
+       #二级目录 Helper
    s.subspec 'Helper' do |ss|
     ss.source_files = help_files
   #二级目录
