@@ -13,6 +13,5 @@
 #import "CommonLibrary.h"
 #import "UIImageView+WebCache.h"
 #import "ZLPicker.h"
-#import "MJRefresh.h"
 
 #endif /* ExtHeader_h */
