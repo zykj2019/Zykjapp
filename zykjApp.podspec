@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "zykjApp"
-  s.version      = "67"
+  s.version      = "68"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -96,6 +96,7 @@ Pod::Spec.new do |s|
   utils_files = "zykjApp/zykjApp/Utils/**/*.{h,m,swift}"
   api_files = "zykjApp/zykjApp/API/**/*.{h,m,swift}"
   model_files = "zykjApp/zykjApp/Model/**/*.{h,m,swift}"
+ help_files = "zykjApp/zykjApp/Help/**/*.{h,m,swift}"
   uiFramework_files = "zykjApp/zykjApp/UIFramework/**/*.{h,m,swift}"
 
   #//一下就是子设置，为需要添加mrc标识的文件进行设置
@@ -130,9 +131,15 @@ Pod::Spec.new do |s|
   #二级目录
     end
 
-       #二级目录 model
+   #二级目录 model
    s.subspec 'Model' do |ss|
     ss.source_files = model_files
+  #二级目录
+    end
+
+       #二级目录 help
+   s.subspec 'Helper' do |ss|
+    ss.source_files = help_files
   #二级目录
     end
 
