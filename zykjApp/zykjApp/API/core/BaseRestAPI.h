@@ -8,18 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "HttpEncryptTool.h"
-/*
- 1、所有的负数和1开头的代码直接返回网络异常
- 2、所有2开头的代码做逻辑判断（主观选择是否弹出提示）
- 3、所有3开头的直接显示给用户看
 
- **/
-typedef  enum : NSInteger {
-    CODETYPE_FAIL  = 0, //负数和1
-    CODETYPE_NORMAL, //正常 0
-    CODETYPE_LOGIC, //2开头
-    CODETYPE_SHOW,  //3开头
-}CODETYPE;
 typedef void (^SuccBlock)(NSObject *result, CODETYPE codeType ,NSString *info,NSString *code);
 typedef void (^FailBlock)(NSString *description,CODETYPE codeType,NSString *code);
 

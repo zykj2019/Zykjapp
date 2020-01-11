@@ -18,6 +18,7 @@
 #import "NoArcHeader.h"
 #import "UtilsHeader.h"
 #import "ExtHeader.h"
+#import "ModelHeader.h"
 #import "HelperHeader.h"
 #import "UIFramework.h"
 #import "ViewsHeader.h"

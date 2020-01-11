@@ -7,11 +7,51 @@
 //
 
 /**
- *  调试栏颜色插件的宏定义
- *
- *  @return nil
- *
+ Synthsize a weak or strong reference.
+ 
+ Example:
+    @weakify(self)
+    [self doSomething^{
+        @strongify(self)
+        if (!self) return;
+        ...
+    }];
+
  */
+#ifndef weakify
+    #if DEBUG
+        #if __has_feature(objc_arc)
+        #define weakify(object) autoreleasepool{} __weak __typeof__(object) weak##_##object = object;
+        #else
+        #define weakify(object) autoreleasepool{} __block __typeof__(object) block##_##object = object;
+        #endif
+    #else
+        #if __has_feature(objc_arc)
+        #define weakify(object) try{} @finally{} {} __weak __typeof__(object) weak##_##object = object;
+        #else
+        #define weakify(object) try{} @finally{} {} __block __typeof__(object) block##_##object = object;
+        #endif
+    #endif
+#endif
+
+#ifndef strongify
+    #if DEBUG
+        #if __has_feature(objc_arc)
+        #define strongify(object) autoreleasepool{} __typeof__(object) object = weak##_##object;
+        #else
+        #define strongify(object) autoreleasepool{} __typeof__(object) object = block##_##object;
+        #endif
+    #else
+        #if __has_feature(objc_arc)
+        #define strongify(object) try{} @finally{} __typeof__(object) object = weak##_##object;
+        #else
+        #define strongify(object) try{} @finally{} __typeof__(object) object = block##_##object;
+        #endif
+    #endif
+#endif
+
+// 判断是否高清屏
+#define isRetina ([UIScreen instancesRespondToSelector:@selector(scale)] ? (2 == [[UIScreen mainScreen] scale]) : NO)
 
 #define PROGRAMNAME @""
 
@@ -129,17 +169,13 @@
 #define RectSetOrigin(f, x, y)              CGRectMake(x, y, RectWidth(f), RectHeight(f))
 #define Rect(x, y, w, h)                    CGRectMake(x, y, w, h)
 
-#define DATE_COMPONENTS1                     NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit
-#define TIME_COMPONENTS                     NSHourCalendarUnit|NSMinuteCalendarUnit|NSSecondCalendarUnit
-
 #define IOSVersion                          [[[UIDevice currentDevice] systemVersion] floatValue]
 #define IsIOS7Later                         !(IOSVersion < 7.0)
+#define IsIOS9Later                          !(IOSVersion < 9.0)
+#define IsIOS11Later                          !(IOSVersion < 11.0)
+#define IsIOS13Later                          !(IOSVersion < 13.0)
 #define StatusbarSize ((IOSVersion >= 7 && __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_6_1)?20.f:0.f)
-
-#define TabBarHeight                        49.0f
-#define NaviBarHeight                       44.0f
-#define HeightFor4InchScreen                568.0f
-#define HeightFor3p5InchScreen              480.0f
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
 
 #define ViewCtrlTopBarHeight                (IsiOS7Later ? (NaviBarHeight + StatusBarHeight) : NaviBarHeight)
 #define IsUseIOS7SystemSwipeGoBack          (IsiOS7Later ? YES : NO)
@@ -147,9 +183,9 @@
 #define YOURSYSTEM_OR_LATER(yoursystem) [[[UIDevice currentDevice] systemVersion] compare:(yoursystem)] != NSOrderedAscending
 
 
-#define RGB(r,g,b)             [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
-
-#define RGBA(r,g,b,a)          [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+//#define RGB(r,g,b)             [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+//
+//#define RGBA(r,g,b,a)          [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
@@ -167,6 +203,22 @@ _Pragma("clang diagnostic pop") \
 #define IMAGE_RESIZE(image, top, left, bottom, right)    [image resizableImageWithCapInsets:UIEdgeInsetsMake(top, left, bottom, right) resizingMode:UIImageResizingModeStretch]
 
 
+//主窗口的宽、高
+#define kMainScreenWidth  MainScreenWidth()
+#define kMainScreenHeight MainScreenHeight()
+
+#define Localized(Str) NSLocalizedString(Str, Str)
+
+//static __inline__ CGFloat MainScreenWidth()
+//{
+//    return UIInterfaceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation) ? [UIScreen mainScreen].bounds.size.width : [UIScreen mainScreen].bounds.size.height;
+//}
+//
+//static __inline__ CGFloat MainScreenHeight()
+//{
+//    return UIInterfaceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation) ? [UIScreen mainScreen].bounds.size.height : [UIScreen mainScreen].bounds.size.width;
+//}
+
 //iphonex适配
 // UIScreen width.
 #define  HT_ScreenWidth   [UIScreen mainScreen].bounds.size.width
@@ -174,7 +226,7 @@ _Pragma("clang diagnostic pop") \
 // UIScreen height.
 #define  HT_ScreenHeight  [UIScreen mainScreen].bounds.size.height
 // iPhone X
-#define  HT_iPhoneX (HT_ScreenWidth == 375.f && HT_ScreenHeight == 812.f ? YES : NO)
+#define  HT_iPhoneX (((HT_ScreenWidth == 375.f && HT_ScreenHeight == 812.f) || (HT_ScreenWidth == 414.f && HT_ScreenHeight == 896.f)) ? YES : NO)
 
 // Status bar height.
 #define  HT_StatusBarHeight      (HT_iPhoneX ? 44.f : 20.f)
@@ -185,16 +237,158 @@ _Pragma("clang diagnostic pop") \
 // Tabbar height.
 #define  HT_TabbarHeight         (HT_iPhoneX ? (49.f+34.f) : 49.f)
 
+// Tabbar height.
+#define  HT_TabbarHeight_normal         49.f
+
 // Tabbar safe bottom margin.
 #define  HT_TabbarSafeBottomMargin         (HT_iPhoneX ? 34.f : 0.f)
+
+// Tabbar safe top margin.
+#define  HT_NavSafeTopMargin         (HT_iPhoneX ? 24.f : 0.f)
 
 // Status bar & navigation bar height.
 #define  HT_StatusBarAndNavigationBarHeight  (HT_iPhoneX ? 88.f : 64.f)
 
 #define HT_ViewSafeAreInsets(view) ({UIEdgeInsets insets; if(@available(iOS 11.0, *)) {insets = view.safeAreaInsets;} else {insets = UIEdgeInsetsZero;} insets;})
 
-//基础配置
-#define kAppBakgroundColor          RGBOF(0xF9F7F8)
+#define WS(weakSelf)   __weak __typeof(self)weakSelf = self;
+
+#define WVAR(variable,instancetype)   __weak __typeof(instancetype)variable = instancetype;
+
+
+// 默认界面之间的间距
+#define kDefaultMargin     8
+
+//字体比例
+#define kScale ((ScreenWidth > 375) ? 1 : ScreenWidth/375)
+#define SizeScale kScale
+
+
+#define degreeToRadians(x) (M_PI *(x)/180.0)
+
+
+
+
+
+//
+//  ServerInfoHeader.h
+//  ZykjAppClient
+//
+//  Created by zoulixiang on 2018/5/26.
+//  Copyright © 2018年 zoulixiang. All rights reserved.
+//
+
+#ifndef ServerInfoHeader_h
+#define ServerInfoHeader_h
+
+/*
+ 1、所有的负数和1开头的代码直接返回网络异常
+ 2、所有2开头的代码做逻辑判断（主观选择是否弹出提示）
+ 3、所有3开头的直接显示给用户看
+ 
+ **/
+/*
+ 注意当产生新的2开头的code需要在
+ +(NSURLSessionDataTask *)sendRestRequest:(BaseRestRequest *)request apiPath:(NSString *)apiPath success:(SuccBlock)success fail:(FailBlock)fail class:(Class)resultClass method:(NSString *)method 加入对应的code
+ **/
+typedef  enum : NSInteger {
+    CODETYPE_FAIL  = 0, //负数和1
+    CODETYPE_NORMAL, //正常 0
+    CODETYPE_LOGIC, //2开头
+    CODETYPE_SHOW,  //3开头
+}CODETYPE;
+
+#define Multi_Pic_browse        0
+#define maxPicNum                9             //最大图片数
+
+#define Icon_small_size    CGSizeMake(18.0,18.0)
+#define Icon_medium_size    CGSizeMake(36.0,36.0)
+#define Icon_big_size    CGSizeMake(54.0,54.0)
+
+#define Icon_medium_CHeight  36.0 + 20.0
+
+#define emptyWidth              335.0;             //空视图宽度
+#define emptyImgTop             5.0
+#define emptyLblBottom          25.0
+
+#define Page_Size                20
+
+#define Sex_man             @"1"
+#define Sex_women           @"2"
+
+#define empty_array         [NSArray array]
+
+//录音
+//最大录制时间
+#define Pro_Audio_Max_Time  300
+//录音格式
+#define Pro_Audio_File_Format  @"wav"
+
+
+// 默认的字体颜色
+#define kBaseFontName        @"PingFangSC-Regular"
+#define kBaseFontLightName        @"PingFangSC-Light"
+#define kBaseFontMediumName        @"PingFangSC-Medium"
+
+//#define BaesFont(sizes)      [UIFont fontWithName:kBaseFontName size:sizes]
+//#define BaesFontLight(sizes)      [UIFont fontWithName:kBaseFontLightName size:sizes]
+//#define ScaleFont(name,sizes)      [UIFont fontWithName:name size:sizes*SizeScale]
+
+#define BaesFont(sizes) IsIOS9Later ? [UIFont fontWithName:kBaseFontName size:sizes] : [UIFont systemFontOfSize:sizes]
+
+#define BaesFontLight(sizes)   IsIOS9Later ? [UIFont fontWithName:kBaseFontLightName size:sizes] : [UIFont systemFontOfSize:sizes]
+
+#define BaesFontMedium(sizes)   IsIOS9Later ? [UIFont fontWithName:kBaseFontMediumName size:sizes] : [UIFont systemFontOfSize:sizes]
+
+
+//基础颜色配置
+#define WCBLUE          [UIColor blueColor]
+#define WCWHITE         UIColorFromRGB(0xFFFFFF)
+#define WCBLACK         UIColorFromRGB(0x353535)
+#define WCGRAY          UIColorFromRGB(0x717171)
+#define WCRED           UIColorFromRGB(0xf43e34)
+#define WCPURPLE        UIColorFromRGB(0x667af8)
+
+#define kAppThemeHex                0x4bcda0            //16进制颜色
+#define kAppThemeColor              UIColorFromRGB(kAppThemeHex)
+#define kMainTextColor              kAppThemeColor
+#define kHighlightedColor           UIColorFromRGB(0xf3f3f3)
+
+//渐变色颜色
+//#define kGradientMainBColor        {109/255.0f, 225/255.0f, 146/255.0f, 1}
+//#define kGradientMainEColor        {102/255.0f, 214/255.0f, 183/255.0f, 1}
+#define kGradientMainBColor        {116/255.0f, 218/255.0f, 137/255.0f, 1}
+#define kGradientMainEColor        {73/255.0f, 197/255.0f, 147/255.0f, 1}
+
+#define kGradientMainBColor1        [UIColor colorWithRed:((CGFloat[])kGradientMainBColor)[0] green:(((CGFloat[])kGradientMainBColor)[1]) blue:(((CGFloat[])kGradientMainBColor)[2]) alpha:1]
+#define kGradientMainEColor1        [UIColor colorWithRed:((CGFloat[])kGradientMainEColor)[0] green:(((CGFloat[])kGradientMainEColor)[1]) blue:(((CGFloat[])kGradientMainEColor)[2]) alpha:1]
+
+
+//灰色颜色
+#define WCGRAYFONT   UIColorFromRGB(0xb2b2b2)
+#define WCGRAYDARKFONT   UIColorFromRGB(0x9b9b9b)
+#define WCGRAYTHINFONT   UIColorFromRGB(0xcbcbcb)
+
+
+#define WCVIEWCOLOR   UIColorFromRGB(0xF0F0F0)
+#define kAppBakgroundColor        WCVIEWCOLOR
+#define WCTABLEVIEWCOLOR  WCVIEWCOLOR
+#define WCLINECOLOR    RGB(228, 228, 228)
+#define WCLINECOLOR1   RGBA(219, 219, 219, 1.0)
+#define WCLINECOLOR2   RGBA(210, 210, 210, 1.0)
+
+
+#define Base_title_font   BaesFont(16.0)
+#define Base_subtitle_font   BaesFont(16.0)
+
+#define Base_title_color     kBlackColor
+#define Base_subtitle_color  WCGRAYDARKFONT
+
+#define Base_textView_font     BaesFont(16.0)
+#define Base_textView_color     kBlackColor
+
+//导航栏颜色
+#define kNavColor                   RGB(251, 251, 251)
 #define kAppModalBackgroundColor    [kBlackColor colorWithAlphaComponent:0.6]
 #define kAppModalDimbackgroundColor [RGB(16, 16, 16) colorWithAlphaComponent:0.3]
 
@@ -203,28 +397,54 @@ _Pragma("clang diagnostic pop") \
 #define kNavBarThemeColor             RGB(128, 64, 122)
 #define kNavBarHighlightThemeColor    RGB(161, 92, 154)
 
-// 默认TableViewCell高度
-#define kDefaultCellHeight 50
-// 默认界面之间的间距
-#define kDefaultMargin     8
+#define kNavImg                 [UIImage imageWithColor:kNavColor]
 
-// 默认的字体颜色
-#define kMainTextColor                kBlackColor
+//占位图片
+#define kDefaultPicColor           RGB(200, 200, 200)
+#define kIconHeaderImg          [UIImage imageNamed:@"defaultPic.png"]
+#define kIconPicImg             [UIImage imageNamed:@"defaultPic.png"]
 
-#define kDetailTextColor              RGB(145, 145, 145)
+//返回图标
+#define kIconRetun              [UIImage imageNamed:@"return_action"]
+#define kIconRetun_High         [UIImage imageNamed:@"return_action_high"]
+
+//Infoview
+#define InfoView_arrow_size             CGSizeMake(10.0, 16.0)
+//通用全局间距
+#define InfoView_margin                   15.0
+#define InfoView_arrow_margin             15.0
+
+#define InfoView_obj_margin             5.0
+
+#define bottomLineWidth 0.5
+#define bottomLineHeight 0.5
+
+#define AppUser                             [ShareValue sharedInstance].user
+#define AppUserId                           [ShareValue sharedInstance].user.userId
+#define BASE_IMAGE_HOST                     AppUser.image_url_prefix
 
 
-#define kDownRefreshLoadOver    @"没有更多了"
+#define WCS(key)                      NSLocalizedStringFromTable(key,NSStringFromClass([self class]), nil)
+//通用
+#define WCL(key)                      NSLocalizedStringFromTable(key,@"ZYKJLocalizable", nil)
+//loginvc
+#define WCLOGIN(key)                      NSLocalizedStringFromTable(key,@"LOGINLocalizable", nil)
+//mevc
+#define WCME(key)                      NSLocalizedStringFromTable(key,@"MELocalizable", nil)
+//studystatevc
+#define WCSTUDY(key)                      NSLocalizedStringFromTable(key,@"STUDYLocalizable", nil)
+//Schoolvc
+#define WCSCHOOL(key)                      NSLocalizedStringFromTable(key,@"SCHOOLLocalizable", nil)
+//chatvc
+#define WCCHAT(key)                      NSLocalizedStringFromTable(key,@"CHATLocalizable", nil)
+//scheduleVC
+#define WCSCHEDULE(key)                      NSLocalizedStringFromTable(key,@"ScheduleLocalizable", nil)
+//PayVC
+#define WCPAY(key)                      NSLocalizedStringFromTable(key,@"PAYLocalizable", nil)
+//TeachVC
+#define WCTEACH(key)                      NSLocalizedStringFromTable(key,@"TEACHLocalizable", nil)
+//classVC
+#define WCCLASS(key)                      NSLocalizedStringFromTable(key,@"CLASSLocalizable", nil)
 
-#define kDownReleaseToRefresh   @"松开即可更新..."
-
-#define kDownDragUpToRefresh    @"上拉即可更新..."
-
-#define kDownRefreshLoading     @"加载中..."
-
-// CommonLibrary中常用的字体
-#define kCommonLargeTextFont       [UIFont systemFontOfSize:16]
-#define kCommonMiddleTextFont      [UIFont systemFontOfSize:14]
-#define kCommonSmallTextFont       [UIFont systemFontOfSize:12]
-
+#endif /* ServerInfoHeader_h */
 

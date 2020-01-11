@@ -12,4 +12,6 @@
 #import "UIView+block.h"
 #import "UIControl+Block.h"
 #import "UIViewInitMethodHeaders.h"
+#import "UITableView+custom.h"
+#import "UINavigationBar+Awesome.h"
 #endif /* UtilsHeader_h */

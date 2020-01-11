@@ -9,6 +9,7 @@
 #ifndef ExtHeader_h
 #define ExtHeader_h
 #import "YYKit.h"
+#import "Masonry.h"
 #import "CommonLibrary.h"
 #import "UIImageView+WebCache.h"
 #import "ZLPicker.h"

@@ -47,7 +47,7 @@
     self.leftViewMode = UITextFieldViewModeAlways;
     
     UILabel *lb= [UILabel labelWith:left];
-    lb.textColor = kMainTextColor;
+//    lb.textColor = kMainTextColor;
     lb.font = kCommonMiddleTextFont;
     CGSize size = [lb textSizeIn:CGSizeMake(320, 320)];
     lb.frame = CGRectMake(0, 0, size.width, size.height);
