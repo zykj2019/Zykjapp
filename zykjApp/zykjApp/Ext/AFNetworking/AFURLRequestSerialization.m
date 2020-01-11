@@ -204,6 +204,7 @@ static void *AFHTTPRequestSerializerObserverContext = &AFHTTPRequestSerializerOb
     }
 
     self.stringEncoding = NSUTF8StringEncoding;
+    self.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
 
     self.mutableHTTPRequestHeaders = [NSMutableDictionary dictionary];
     self.requestHeaderModificationQueue = dispatch_queue_create("requestHeaderModificationQueue", DISPATCH_QUEUE_CONCURRENT);
@@ -374,7 +375,6 @@ forHTTPHeaderField:(NSString *)field
     }
 
     mutableRequest = [[self requestBySerializingRequest:mutableRequest withParameters:parameters error:error] mutableCopy];
-
 	return mutableRequest;
 }
 
