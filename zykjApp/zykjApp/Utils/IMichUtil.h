@@ -42,11 +42,7 @@
 // 计算文本宽度
 + (CGFloat)calcLabelWidth:(NSString *)strText fontSize:(NSInteger)fontSize height:(CGFloat)height;
 
-
-
 + (NSArray *)getArrayFromJsonString:(NSString *)jsonString fail:(void (^)(NSString *description))fail;
-
-+ (NSArray *)convertArrayDict2Obj:(NSArray *)array class:(Class)resultClass;
 
 
 + (NSString *)convertArray2JsonStr:(NSArray *)array;
@@ -79,9 +75,6 @@
 
 // 金额校验
 + (BOOL)checkMoneyString:(NSString *)moneyStr range:(NSRange)range replacementString:(NSString *)string;
-
-//字典数组转模型数组
-+ (NSMutableArray *)getArrayWithArray:(NSArray *)dataArray andClass:(Class)clazz;
 
 +(NSString *)convertArrayToString:(NSArray *)array;
 

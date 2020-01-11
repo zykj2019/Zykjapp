@@ -8,7 +8,6 @@
 
 #import "BaseRestAPI.h"
 #import "AFNetworking.h"
-#import "LK_NSDictionary2Object.h"
 #import "ServerConfig.h"
 #import "FCUUID.h"
 #import "Auth.h"

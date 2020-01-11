@@ -8,7 +8,6 @@
 
 #import "IMichUtil.h"
 #import "UIImage+External.h"
-#import "LK_NSDictionary2Object.h"
 #include <sys/types.h>
 #include <sys/sysctl.h>
 #include <netdb.h>
@@ -255,18 +254,6 @@
     }
     
     return retArray;
-}
-
-+ (NSArray *)convertArrayDict2Obj:(NSArray *)array class:(Class)resultClass
-{
-    NSMutableArray *mArray = [NSMutableArray array];
-    
-    for (NSDictionary *dict in array)
-    {
-        [mArray addObject:[dict objectByClass:resultClass]];
-    }
-    
-    return mArray;
 }
 
 // 转化结果集 为列表
@@ -565,23 +552,6 @@
     }
     
     return YES;
-}
-
-+ (NSMutableArray *)getArrayWithArray:(NSArray *)dataArray andClass:(Class)clazz {
-	
-    NSMutableArray *retArray = @[].mutableCopy;
-    if ([dataArray isKindOfClass:[NSDictionary class]]) {
-        dataArray = [NSArray arrayWithObject:dataArray];
-    }
-    
-    for (NSDictionary *subDict in dataArray)
-    {
-        NSObject *m = [subDict objectByClass:clazz];
-        
-        [retArray addObject:m];
-    }
-
-    return retArray;
 }
 
 +(NSString *)convertArrayToString:(NSArray *)array {
