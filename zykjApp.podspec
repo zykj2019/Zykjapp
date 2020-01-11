@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "zykjApp"
-  s.version      = "71"
+  s.version      = "72"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -171,9 +171,12 @@ Pod::Spec.new do |s|
    s.subspec 'Ext' do |ss|
     masonry_files = "zykjApp/zykjApp/Ext/Masonry/**/*.{h,m,swift}"
       
-    ss.subspec 'masonry' do |sss|
+    ss.source_files = ext_files
+
+    ss.subspec 'Masonry' do |sss|
     sss.source_files = masonry_files
     end
+
   #二级目录
     end
 
