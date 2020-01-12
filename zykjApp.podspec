@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "zykjApp"
-  s.version      = "92"
+  s.version      = "93"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -323,6 +323,9 @@ Pod::Spec.new do |s|
   s.frameworks = 'Accelerate', 'CoreTelephony', 'SystemConfiguration'
   #//不带tbd后缀及lib前缀
   s.libraries = 'c++', 'sqlite3' , 'z'
+
+  # 本库提供的 .a 静态库
+  s.vendored_libraries  = 'zykjApp/zykjApp/Views/MyAudio/Vendor/AMR/lib/*.a'
 
   s.prefix_header_contents = <<-PRE
                   #ifdef __OBJC__
