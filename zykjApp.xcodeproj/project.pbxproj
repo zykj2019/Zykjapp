@@ -41,6 +41,9 @@
 		249EEAF32247CA2B0076FE7F /* AllHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE19A2247A8240076FE7F /* AllHeader.h */; };
 		249EEAFF2248AE010076FE7F /* UtilsHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6522247B2FB0076FE7F /* UtilsHeader.h */; };
 		249EEB002248AE0A0076FE7F /* HelperHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE66E2247B2FB0076FE7F /* HelperHeader.h */; };
+		24AA730A23CAE7D1005275EB /* ViewPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AA730623CAE7D1005275EB /* ViewPagerController.m */; };
+		24AA730B23CAE7D1005275EB /* ViewMyPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AA730923CAE7D1005275EB /* ViewMyPagerViewController.m */; };
+		24AA730E23CAE830005275EB /* UIView+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AA730C23CAE830005275EB /* UIView+ND.m */; };
 		676150E423C9733900E8056A /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 676150E323C9733900E8056A /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		676150E723C9734D00E8056A /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 676150E523C9734D00E8056A /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		676151F323C99F4800E8056A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 676151F223C99F4800E8056A /* UIView+Extension.m */; };
@@ -48,8 +51,6 @@
 		6761555323C9B20800E8056A /* NavViewPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6761553D23C9B20700E8056A /* NavViewPagerController.m */; };
 		6761555423C9B20800E8056A /* PlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6761553F23C9B20700E8056A /* PlaceholderTextView.m */; };
 		6761555723C9B20800E8056A /* LEEAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 6761554A23C9B20700E8056A /* LEEAlert.m */; };
-		6761555F23C9B28000E8056A /* ViewPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6761555B23C9B28000E8056A /* ViewPagerController.m */; };
-		6761556023C9B28000E8056A /* ViewMyPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6761555E23C9B28000E8056A /* ViewMyPagerViewController.m */; };
 		6761560423C9B54C00E8056A /* BaseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 676155D823C9B54C00E8056A /* BaseAppDelegate.m */; };
 		6761560623C9B54C00E8056A /* PageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 676155DB23C9B54C00E8056A /* PageScrollView.m */; };
 		6761560723C9B54C00E8056A /* NSObject+loadPadClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 676155DD23C9B54C00E8056A /* NSObject+loadPadClass.m */; };
@@ -284,7 +285,6 @@
 		67A8626F23C9E026001B773E /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A8626623C9E026001B773E /* libopencore-amrnb.a */; };
 		67A8627023C9E026001B773E /* amrFileCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8626723C9E026001B773E /* amrFileCodec.m */; };
 		67A8627123C9E026001B773E /* MyAudioHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8626823C9E026001B773E /* MyAudioHelp.m */; };
-		67A8627423C9E1EF001B773E /* UIView+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8627323C9E1EF001B773E /* UIView+ND.m */; };
 		67A8627D23C9E2B1001B773E /* ZYWeakTimerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8627B23C9E2B1001B773E /* ZYWeakTimerObject.m */; };
 /* End PBXBuildFile section */
 
@@ -381,6 +381,12 @@
 		249EE9492247B3000076FE7F /* HttpEncryptTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpEncryptTool.m; sourceTree = "<group>"; };
 		249EE94B2247B3000076FE7F /* AESCbc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCbc.h; sourceTree = "<group>"; };
 		249EE94C2247B3000076FE7F /* AESCbc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCbc.m; sourceTree = "<group>"; };
+		24AA730623CAE7D1005275EB /* ViewPagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewPagerController.m; sourceTree = "<group>"; };
+		24AA730723CAE7D1005275EB /* ViewMyPagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewMyPagerViewController.h; sourceTree = "<group>"; };
+		24AA730823CAE7D1005275EB /* ViewPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewPagerController.h; sourceTree = "<group>"; };
+		24AA730923CAE7D1005275EB /* ViewMyPagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewMyPagerViewController.m; sourceTree = "<group>"; };
+		24AA730C23CAE830005275EB /* UIView+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+ND.m"; path = "../../../../../至一科技/ZykjAppClient/ZykjAppClient/ZykjAppClient/Utils/UIView+ND.m"; sourceTree = "<group>"; };
+		24AA730D23CAE830005275EB /* UIView+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+ND.h"; path = "../../../../../至一科技/ZykjAppClient/ZykjAppClient/ZykjAppClient/Utils/UIView+ND.h"; sourceTree = "<group>"; };
 		676150DF23C9730200E8056A /* NoArcHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoArcHeader.h; sourceTree = "<group>"; };
 		676150E223C9733900E8056A /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		676150E323C9733900E8056A /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
@@ -398,10 +404,6 @@
 		6761554A23C9B20700E8056A /* LEEAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEEAlert.m; sourceTree = "<group>"; };
 		6761554B23C9B20700E8056A /* LEEAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEEAlert.h; sourceTree = "<group>"; };
 		6761554C23C9B20800E8056A /* TipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipView.h; sourceTree = "<group>"; };
-		6761555B23C9B28000E8056A /* ViewPagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewPagerController.m; sourceTree = "<group>"; };
-		6761555C23C9B28000E8056A /* ViewMyPagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewMyPagerViewController.h; sourceTree = "<group>"; };
-		6761555D23C9B28000E8056A /* ViewPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewPagerController.h; sourceTree = "<group>"; };
-		6761555E23C9B28000E8056A /* ViewMyPagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewMyPagerViewController.m; sourceTree = "<group>"; };
 		676155D723C9B54C00E8056A /* KeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyValue.h; sourceTree = "<group>"; };
 		676155D823C9B54C00E8056A /* BaseAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAppDelegate.m; sourceTree = "<group>"; };
 		676155D923C9B54C00E8056A /* UIFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFramework.h; sourceTree = "<group>"; };
@@ -901,8 +903,6 @@
 		67A8626623C9E026001B773E /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
 		67A8626723C9E026001B773E /* amrFileCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = amrFileCodec.m; sourceTree = "<group>"; };
 		67A8626823C9E026001B773E /* MyAudioHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAudioHelp.m; sourceTree = "<group>"; };
-		67A8627223C9E1EE001B773E /* UIView+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+ND.h"; path = "../../../../../../至一/老师端version/zlx-debug/ZykjAppWork/ZykjAppWork/Utils/UIView+ND.h"; sourceTree = "<group>"; };
-		67A8627323C9E1EF001B773E /* UIView+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+ND.m"; path = "../../../../../../至一/老师端version/zlx-debug/ZykjAppWork/ZykjAppWork/Utils/UIView+ND.m"; sourceTree = "<group>"; };
 		67A8627B23C9E2B1001B773E /* ZYWeakTimerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWeakTimerObject.m; sourceTree = "<group>"; };
 		67A8627C23C9E2B1001B773E /* ZYWeakTimerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYWeakTimerObject.h; sourceTree = "<group>"; };
 		C3DEF3C9E47F4A038AC7A991 /* Pods_zykjApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zykjApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1059,8 +1059,8 @@
 				249EE6542247B2FB0076FE7F /* UIView+block.m */,
 				676151F123C99F4800E8056A /* UIView+Extension.h */,
 				676151F223C99F4800E8056A /* UIView+Extension.m */,
-				67A8627223C9E1EE001B773E /* UIView+ND.h */,
-				67A8627323C9E1EF001B773E /* UIView+ND.m */,
+				24AA730D23CAE830005275EB /* UIView+ND.h */,
+				24AA730C23CAE830005275EB /* UIView+ND.m */,
 				249EE6412247B2FB0076FE7F /* UIView+InitMethod */,
 				249EE6522247B2FB0076FE7F /* UtilsHeader.h */,
 			);
@@ -1114,7 +1114,7 @@
 				67A8623E23C9DFB8001B773E /* MultiPictureView2 */,
 				67A8620A23C9DEC4001B773E /* BRPickerView */,
 				6761562B23C9BD3400E8056A /* WkwebView */,
-				6761555A23C9B28000E8056A /* ICViewPager */,
+				24AA730523CAE7D1005275EB /* ICViewPager */,
 				6761553B23C9B20700E8056A /* ICNavViewPager */,
 				6761554823C9B20700E8056A /* LEEAlert */,
 				6761553E23C9B20700E8056A /* PlaceHolderTextView */,
@@ -1175,6 +1175,17 @@
 			path = AES;
 			sourceTree = "<group>";
 		};
+		24AA730523CAE7D1005275EB /* ICViewPager */ = {
+			isa = PBXGroup;
+			children = (
+				24AA730723CAE7D1005275EB /* ViewMyPagerViewController.h */,
+				24AA730923CAE7D1005275EB /* ViewMyPagerViewController.m */,
+				24AA730823CAE7D1005275EB /* ViewPagerController.h */,
+				24AA730623CAE7D1005275EB /* ViewPagerController.m */,
+			);
+			path = ICViewPager;
+			sourceTree = "<group>";
+		};
 		676150DE23C972E400E8056A /* NoArc */ = {
 			isa = PBXGroup;
 			children = (
@@ -1213,18 +1224,6 @@
 				6761554923C9B20700E8056A /* LEEAlertHelper.h */,
 			);
 			path = LEEAlert;
-			sourceTree = "<group>";
-		};
-		6761555A23C9B28000E8056A /* ICViewPager */ = {
-			isa = PBXGroup;
-			children = (
-				6761555C23C9B28000E8056A /* ViewMyPagerViewController.h */,
-				6761555E23C9B28000E8056A /* ViewMyPagerViewController.m */,
-				6761555D23C9B28000E8056A /* ViewPagerController.h */,
-				6761555B23C9B28000E8056A /* ViewPagerController.m */,
-			);
-			name = ICViewPager;
-			path = "../../../../../../至一/老师端version/zlx-debug/ZykjAppWork/ZykjAppWork/Views/ThirdViews/ICViewPager";
 			sourceTree = "<group>";
 		};
 		676155D623C9B54C00E8056A /* UIFramework */ = {
@@ -2478,7 +2477,6 @@
 				67A8616A23C9D650001B773E /* TAAbstractDotView.m in Sources */,
 				67A8618123C9D650001B773E /* SDWebImageManager+MJ.m in Sources */,
 				6761561E23C9B98D00E8056A /* Common.m in Sources */,
-				67A8627423C9E1EF001B773E /* UIView+ND.m in Sources */,
 				67A860C523C9D64F001B773E /* ZLPickerBrowserViewController.m in Sources */,
 				67A861D023C9D92B001B773E /* MASConstraint.m in Sources */,
 				67A860D323C9D64F001B773E /* ZLPickerCollectionView.m in Sources */,
@@ -2568,6 +2566,7 @@
 				249EE9832247B3010076FE7F /* UIView+block.m in Sources */,
 				67A861ED23C9DA21001B773E /* UICKeyChainStore.m in Sources */,
 				676150E423C9733900E8056A /* JSONKit.m in Sources */,
+				24AA730A23CAE7D1005275EB /* ViewPagerController.m in Sources */,
 				67A8616E23C9D650001B773E /* FMDatabaseAdditions.m in Sources */,
 				67A861DD23C9DA09001B773E /* NSObject+FBKVOController.m in Sources */,
 				67A860FA23C9D64F001B773E /* UITextField+UITextField_Tip.m in Sources */,
@@ -2599,7 +2598,6 @@
 				67A860F423C9D64F001B773E /* CLSafeMutableArray.m in Sources */,
 				67A8611E23C9D650001B773E /* M80AttributedLabel.m in Sources */,
 				67A8617123C9D650001B773E /* FMResultSet.m in Sources */,
-				6761556023C9B28000E8056A /* ViewMyPagerViewController.m in Sources */,
 				67A8622A23C9DEC4001B773E /* BRBaseView.m in Sources */,
 				67A8611923C9D650001B773E /* UIViewController+ADFlipTransition.m in Sources */,
 				6761567823C9C23400E8056A /* UINavigationBar+Awesome.m in Sources */,
@@ -2659,6 +2657,7 @@
 				67A8622623C9DEC4001B773E /* ZHCityPickerView.m in Sources */,
 				6761561723C9B54C00E8056A /* BaseCollectionViewController.m in Sources */,
 				676150E723C9734D00E8056A /* OpenUDID.m in Sources */,
+				24AA730B23CAE7D1005275EB /* ViewMyPagerViewController.m in Sources */,
 				67A8614623C9D650001B773E /* MSSBrowseNetworkViewController.m in Sources */,
 				67A860DD23C9D64F001B773E /* ZLAnimationBaseView.m in Sources */,
 				67A8612423C9D650001B773E /* HUDHelper.m in Sources */,
@@ -2670,7 +2669,6 @@
 				67A8616923C9D650001B773E /* TAAnimatedDotView.m in Sources */,
 				6761560E23C9B54C00E8056A /* UIViewController+Layout.m in Sources */,
 				67A8617F23C9D650001B773E /* UIImageView+WebCache.m in Sources */,
-				6761555F23C9B28000E8056A /* ViewPagerController.m in Sources */,
 				67A8612023C9D650001B773E /* NSMutableAttributedString+M80.m in Sources */,
 				6761561623C9B54C00E8056A /* NavigationViewController.m in Sources */,
 				6761562A23C9BBF200E8056A /* UITableView+custom.m in Sources */,
@@ -2728,6 +2726,7 @@
 				67A8612323C9D650001B773E /* MBProgressHUD.m in Sources */,
 				67A8614A23C9D650001B773E /* MSSBrowseRemindView.m in Sources */,
 				67A860DC23C9D64F001B773E /* ZLAnimationImageView.m in Sources */,
+				24AA730E23CAE830005275EB /* UIView+ND.m in Sources */,
 				67A860D223C9D64F001B773E /* ZLPickerViewController.m in Sources */,
 				67A860E923C9D64F001B773E /* CheckButton.m in Sources */,
 				6761562F23C9BD3500E8056A /* WKWebViewController.m in Sources */,
