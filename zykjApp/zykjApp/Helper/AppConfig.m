@@ -71,4 +71,24 @@
 - (CGFloat)bottomLineHeight {
     return 0.5;
 }
+
+- (CGFloat)bitsPerPixel {
+    return 6.0;
+}
+
+- (CGFloat)videoWidth {
+    return 960.0;
+}
+
+- (CGFloat)videoHeight {
+    return 540;
+}
+
+- (CGFloat)videoMaxTime {
+    return 300.0;
+}
+
+- (CGFloat)videoMinTime {
+    return 300.0;
+}
 @end

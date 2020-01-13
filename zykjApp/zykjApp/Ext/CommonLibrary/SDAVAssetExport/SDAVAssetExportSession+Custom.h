@@ -8,22 +8,12 @@
 
 #import "SDAVAssetExportSession.h"
 
-#define XFCamera_bitsPerPixel      6.0
-#define XFCamera_video_width      960
-#define XFCamera_video_height      540
+#define ExportSession_bitsPerPixel      [Appconfig bitsPerPixel]
+#define ExportSession_video_width      [Appconfig videoWidth]
+#define ExportSession_video_height      [Appconfig videoHeight]
 
-
-#define kScreenWidth [UIScreen mainScreen].bounds.size.width
-#define kScreenHeight [UIScreen mainScreen].bounds.size.height
-#define SafeViewBottomHeight (kScreenHeight == 812.0 ? 34.0 : 0.0)
-#define iSiPhoneX  HT_iPhoneX
-#define VIDEO_FILEPATH                                              @"video"
-//#define TIMER_INTERVAL 0.01f                                        // 定时器记录视频间隔
-#define TIMER_INTERVAL 1.0f                                        // 定时器记录视频间隔
-#define VIDEO_RECORDER_MAX_TIME 300.0f                               // 视频最大时长 (单位/秒)
-#define VIDEO_RECORDER_MIN_TIME 1.0f                                // 最短视频时长 (单位/秒)
-#define START_VIDEO_ANIMATION_DURATION 0.3f                         // 录制视频前的动画时间
-#define DEFAULT_VIDEO_ZOOM_FACTOR 3.0f
+#define ExportSession_Max_Time [Appconfig videoMaxTime]                               // 视频最大时长 (单位/秒)
+#define ExportSession_Min_Time [Appconfig videoMinTime]                                //
 
 typedef void (^CompletionWriteBlock)(BOOL isFinished);
 

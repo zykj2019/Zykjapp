@@ -125,7 +125,7 @@ static NSString *const kSDAVAssetExportSessionIsEnterExportMethod = @"kSDAVAsset
     //每秒钟多大
     long long bitRate_KB = [self videoSizeBySeconds];
     
-    return (bitRate_KB > (360 + (50 * MAX(0, (XFCamera_bitsPerPixel - 6)))));
+    return (bitRate_KB > (360 + (50 * MAX(0, (ExportSession_bitsPerPixel - 6)))));
 }
 
 /// 配置压缩信息
@@ -156,16 +156,16 @@ static NSString *const kSDAVAssetExportSessionIsEnterExportMethod = @"kSDAVAsset
     int seconds = [exportSession videoSeconds];
     
     //时间大于超过时间不让上传
-    if (seconds > VIDEO_RECORDER_MAX_TIME) {
+    if (seconds > ExportSession_Max_Time) {
         //时长大于限制返回no
-         [self errorCode:1001 errorMsg:[NSString stringWithFormat:@"视频时间不能大于%d秒",(int)VIDEO_RECORDER_MAX_TIME]];
+         [self errorCode:1001 errorMsg:[NSString stringWithFormat:@"视频时间不能大于%d秒",(int)ExportSession_Max_Time]];
         return;
     }
     
     //时间小于最短时间不让上传
-    if (seconds < VIDEO_RECORDER_MIN_TIME) {
+    if (seconds < ExportSession_Min_Time) {
         //时长大于限制返回no
-        [self errorCode:1002 errorMsg:[NSString stringWithFormat:@"视频时间不能小于%d秒",(int)VIDEO_RECORDER_MIN_TIME]];
+        [self errorCode:1002 errorMsg:[NSString stringWithFormat:@"视频时间不能小于%d秒",(int)ExportSession_Min_Time]];
         return;
     }
     
@@ -175,10 +175,10 @@ static NSString *const kSDAVAssetExportSessionIsEnterExportMethod = @"kSDAVAsset
     }
     
     //写入视频大小
-    NSInteger numPixels = XFCamera_video_width  * XFCamera_video_height / 2;
+    NSInteger numPixels = ExportSession_video_width  * ExportSession_video_height / 2;
     
     //每像素比特
-    CGFloat bitsPerPixel = XFCamera_bitsPerPixel;
+    CGFloat bitsPerPixel = ExportSession_bitsPerPixel;
     NSInteger bitsPerSecond = numPixels * bitsPerPixel;
     
     
@@ -221,8 +221,8 @@ static NSString *const kSDAVAssetExportSessionIsEnterExportMethod = @"kSDAVAsset
         exportSession.videoSettings = @
         {
         AVVideoCodecKey: AVVideoCodecH264,
-        AVVideoWidthKey: @(XFCamera_video_height),
-        AVVideoHeightKey: @(XFCamera_video_width),
+        AVVideoWidthKey: @(ExportSession_video_height),
+        AVVideoHeightKey: @(ExportSession_video_width),
         AVVideoCompressionPropertiesKey: @
             {
             AVVideoAverageBitRateKey: @(bitsPerSecond),
@@ -233,8 +233,8 @@ static NSString *const kSDAVAssetExportSessionIsEnterExportMethod = @"kSDAVAsset
         exportSession.videoSettings = @
         {
         AVVideoCodecKey: AVVideoCodecH264,
-        AVVideoWidthKey: @(XFCamera_video_width),
-        AVVideoHeightKey: @(XFCamera_video_height),
+        AVVideoWidthKey: @(ExportSession_video_width),
+        AVVideoHeightKey: @(ExportSession_video_height),
         AVVideoCompressionPropertiesKey: @
             {
             AVVideoAverageBitRateKey: @(bitsPerSecond),

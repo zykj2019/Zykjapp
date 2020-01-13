@@ -46,6 +46,21 @@
 //app 间隔线高
 @property (assign, nonatomic) CGFloat bottomLineHeight;
 
+//app 视频录制或转码bitsPerPixel
+@property (assign, nonatomic) CGFloat bitsPerPixel;
+
+//app 视频录制或转码的宽度
+@property (assign, nonatomic) CGFloat videoWidth;
+
+//app 视频录制或转码的高度
+@property (assign, nonatomic) CGFloat videoHeight;
+
+//app 视频录制或转码的最大时间
+@property (assign, nonatomic) CGFloat videoMaxTime;
+
+//app 视频录制或转码的最小时间
+@property (assign, nonatomic) CGFloat videoMinTime;
+
 - (UIFont *)baseFont:(CGFloat)size;
 
 - (UIFont *)baseFontLight:(CGFloat)size;
