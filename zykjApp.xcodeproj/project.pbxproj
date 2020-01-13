@@ -19,6 +19,9 @@
 		24472F56206B36C90037356F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 24472F4E206B36C80037356F /* libz.tbd */; };
 		24472F58206B36C90037356F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 24472F51206B36C80037356F /* libc++.tbd */; };
 		24726C3C23CC18CE005299B8 /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 24726C3B23CC18CE005299B8 /* AppConfig.m */; };
+		24726C4D23CC2CDB005299B8 /* SDAVAssetExportHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 24726C4723CC2CDB005299B8 /* SDAVAssetExportHelp.m */; };
+		24726C4E23CC2CDB005299B8 /* SDAVAssetExportSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 24726C4923CC2CDB005299B8 /* SDAVAssetExportSession.m */; };
+		24726C4F23CC2CDB005299B8 /* SDAVAssetExportSession+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 24726C4B23CC2CDB005299B8 /* SDAVAssetExportSession+Custom.m */; };
 		249EE97C2247B3010076FE7F /* UIControl+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6402247B2FB0076FE7F /* UIControl+Block.m */; };
 		249EE97D2247B3010076FE7F /* UILabel+InitMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6442247B2FB0076FE7F /* UILabel+InitMethod.m */; };
 		249EE97E2247B3010076FE7F /* UIImageView+InitMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6452247B2FB0076FE7F /* UIImageView+InitMethod.m */; };
@@ -331,6 +334,12 @@
 		24472F55206B36C90037356F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		24726C3A23CC18CE005299B8 /* AppConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
 		24726C3B23CC18CE005299B8 /* AppConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppConfig.m; sourceTree = "<group>"; };
+		24726C4723CC2CDB005299B8 /* SDAVAssetExportHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAVAssetExportHelp.m; sourceTree = "<group>"; };
+		24726C4823CC2CDB005299B8 /* SDAVAssetExportSession+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDAVAssetExportSession+Custom.h"; sourceTree = "<group>"; };
+		24726C4923CC2CDB005299B8 /* SDAVAssetExportSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAVAssetExportSession.m; sourceTree = "<group>"; };
+		24726C4A23CC2CDB005299B8 /* SDAVAssetExportHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAVAssetExportHelp.h; sourceTree = "<group>"; };
+		24726C4B23CC2CDB005299B8 /* SDAVAssetExportSession+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDAVAssetExportSession+Custom.m"; sourceTree = "<group>"; };
+		24726C4C23CC2CDB005299B8 /* SDAVAssetExportSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAVAssetExportSession.h; sourceTree = "<group>"; };
 		249EE19A2247A8240076FE7F /* AllHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllHeader.h; sourceTree = "<group>"; };
 		249EE6402247B2FB0076FE7F /* UIControl+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Block.m"; sourceTree = "<group>"; };
 		249EE6422247B2FB0076FE7F /* UIImageView+InitMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+InitMethod.h"; sourceTree = "<group>"; };
@@ -1009,6 +1018,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		24726C4623CC2CDB005299B8 /* SDAVAssetExport */ = {
+			isa = PBXGroup;
+			children = (
+				24726C4A23CC2CDB005299B8 /* SDAVAssetExportHelp.h */,
+				24726C4723CC2CDB005299B8 /* SDAVAssetExportHelp.m */,
+				24726C4C23CC2CDB005299B8 /* SDAVAssetExportSession.h */,
+				24726C4923CC2CDB005299B8 /* SDAVAssetExportSession.m */,
+				24726C4823CC2CDB005299B8 /* SDAVAssetExportSession+Custom.h */,
+				24726C4B23CC2CDB005299B8 /* SDAVAssetExportSession+Custom.m */,
+			);
+			path = SDAVAssetExport;
+			sourceTree = "<group>";
+		};
 		249EE1992247A7940076FE7F /* zykjApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -1559,6 +1581,7 @@
 		67A85F3B23C9D64F001B773E /* CommonLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				24726C4623CC2CDB005299B8 /* SDAVAssetExport */,
 				67A861DF23C9DA21001B773E /* NJKWebViewProgress */,
 				67A861E723C9DA21001B773E /* UICKeyChainStore */,
 				67A861E423C9DA21001B773E /* VPImageCropper */,
@@ -2514,6 +2537,7 @@
 				6761564023C9BE4D00E8056A /* UIFrameworkModel.m in Sources */,
 				67A8623723C9DECC001B773E /* XXPickerViewViewController.m in Sources */,
 				67A860E523C9D64F001B773E /* MenuTableViewController.m in Sources */,
+				24726C4D23CC2CDB005299B8 /* SDAVAssetExportHelp.m in Sources */,
 				6761560623C9B54C00E8056A /* PageScrollView.m in Sources */,
 				6761567E23C9C2AE00E8056A /* LineView.m in Sources */,
 				249EE9852247B3010076FE7F /* RIButtonItem.m in Sources */,
@@ -2530,6 +2554,7 @@
 				6761555323C9B20800E8056A /* NavViewPagerController.m in Sources */,
 				249EE98A2247B3010076FE7F /* DES3Util.m in Sources */,
 				2444E08320590CAB00F29C06 /* ViewController.m in Sources */,
+				24726C4E23CC2CDB005299B8 /* SDAVAssetExportSession.m in Sources */,
 				6761564D23C9C15000E8056A /* NJWeakWrapper.m in Sources */,
 				67A860E823C9D64F001B773E /* KeyValueTableViewController.m in Sources */,
 				67A860F623C9D64F001B773E /* NSDate+Common.m in Sources */,
@@ -2546,6 +2571,7 @@
 				67A860EC23C9D64F001B773E /* UIView+CaptureImage.m in Sources */,
 				67A860F823C9D64F001B773E /* UIImage+ImageEffect.m in Sources */,
 				249EE97F2247B3010076FE7F /* UIBarButtonItem+ND.m in Sources */,
+				24726C4F23CC2CDB005299B8 /* SDAVAssetExportSession+Custom.m in Sources */,
 				249EE9842247B3010076FE7F /* UIImage+External.m in Sources */,
 				67A8627023C9E026001B773E /* amrFileCodec.m in Sources */,
 				67A860EE23C9D64F001B773E /* NSString+RegexCheck.m in Sources */,
