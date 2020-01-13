@@ -25,10 +25,22 @@
 
 @end
 
-
-
 @implementation IMichUtil
 
+- (AppConfig *)appConfig {
+    if (_appConfig == nil) {
+        NSString *plistPath = [[NSBundle mainBundle]pathForResource:@"appMainConfig" ofType:@"plist"];
+        NSMutableDictionary *dataDic = [[NSMutableDictionary alloc]initWithContentsOfFile:plistPath];
+        NSString *appConfigClassName = dataDic[@"appConfigClassName"];
+        if (appConfigClassName.length) {
+            _appConfig = [[NSClassFromString(appConfigClassName) alloc] init];
+        } else {
+            _appConfig = [[AppConfig alloc] init];
+        }
+    }
+    return _appConfig;
+    
+}
 + (IMichUtil *)shareInstance
 {
     static IMichUtil *shareIMichUtil = nil;
@@ -41,10 +53,6 @@
     return shareIMichUtil;
 }
 
-- (void)test {
-   NSString *paht =  [[NSBundle mainBundle] pathForResource:@"1.txt" ofType:nil];
-    NSLog(@"%@",paht);
-}
 - (id)init
 {
     self = [super init];

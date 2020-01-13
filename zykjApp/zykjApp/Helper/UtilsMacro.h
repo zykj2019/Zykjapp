@@ -309,14 +309,8 @@ typedef  enum : NSInteger {
     CODETYPE_SHOW,  //3开头
 }CODETYPE;
 
-#define maxPicNum                9             //最大图片数
 
-#define Icon_small_size    CGSizeMake(18.0,18.0)
-#define Icon_medium_size    CGSizeMake(36.0,36.0)
-#define Icon_big_size    CGSizeMake(54.0,54.0)
-
-#define Icon_medium_CHeight  36.0 + 20.0
-
+#define Appconfig        (AppConfig *)[IMichUtil shareInstance].appConfig
 #define emptyImgTop             5.0
 #define emptyLblBottom          25.0
 
@@ -338,7 +332,7 @@ typedef  enum : NSInteger {
 //#define BaesFontLight(sizes)      [UIFont fontWithName:kBaseFontLightName size:sizes]
 //#define ScaleFont(name,sizes)      [UIFont fontWithName:name size:sizes*SizeScale]
 
-#define BaesFont(sizes) IsIOS9Later ? [UIFont fontWithName:kBaseFontName size:sizes] : [UIFont systemFontOfSize:sizes]
+#define BaesFont(sizes) (UIFont *)[Appconfig baseFont:sizes]
 
 #define BaesFontLight(sizes)   IsIOS9Later ? [UIFont fontWithName:kBaseFontLightName size:sizes] : [UIFont systemFontOfSize:sizes]
 

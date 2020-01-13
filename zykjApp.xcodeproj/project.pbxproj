@@ -18,6 +18,7 @@
 		2444E0B220590D5A00F29C06 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2444E0B120590D5A00F29C06 /* libsqlite3.tbd */; };
 		24472F56206B36C90037356F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 24472F4E206B36C80037356F /* libz.tbd */; };
 		24472F58206B36C90037356F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 24472F51206B36C80037356F /* libc++.tbd */; };
+		24726C3C23CC18CE005299B8 /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 24726C3B23CC18CE005299B8 /* AppConfig.m */; };
 		249EE97C2247B3010076FE7F /* UIControl+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6402247B2FB0076FE7F /* UIControl+Block.m */; };
 		249EE97D2247B3010076FE7F /* UILabel+InitMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6442247B2FB0076FE7F /* UILabel+InitMethod.m */; };
 		249EE97E2247B3010076FE7F /* UIImageView+InitMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6452247B2FB0076FE7F /* UIImageView+InitMethod.m */; };
@@ -328,6 +329,8 @@
 		24472F53206B36C80037356F /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		24472F54206B36C90037356F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		24472F55206B36C90037356F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		24726C3A23CC18CE005299B8 /* AppConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
+		24726C3B23CC18CE005299B8 /* AppConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppConfig.m; sourceTree = "<group>"; };
 		249EE19A2247A8240076FE7F /* AllHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllHeader.h; sourceTree = "<group>"; };
 		249EE6402247B2FB0076FE7F /* UIControl+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Block.m"; sourceTree = "<group>"; };
 		249EE6422247B2FB0076FE7F /* UIImageView+InitMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+InitMethod.h"; sourceTree = "<group>"; };
@@ -1096,6 +1099,8 @@
 				249EE66B2247B2FB0076FE7F /* nd_define.h */,
 				249EE66C2247B2FB0076FE7F /* ServerConfig.h */,
 				249EE6682247B2FB0076FE7F /* UtilsMacro.h */,
+				24726C3A23CC18CE005299B8 /* AppConfig.h */,
+				24726C3B23CC18CE005299B8 /* AppConfig.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -2608,6 +2613,7 @@
 				249EE9802247B3010076FE7F /* UIImage+ND.m in Sources */,
 				67A8616723C9D650001B773E /* TADotView.m in Sources */,
 				67A860D623C9D64F001B773E /* ZLPickerFooterCollectionReusableView.m in Sources */,
+				24726C3C23CC18CE005299B8 /* AppConfig.m in Sources */,
 				67A8623D23C9DF10001B773E /* NSArray+NSArray_ILExtension.m in Sources */,
 				6761561123C9B54C00E8056A /* PopupView.m in Sources */,
 				2444E08020590CAB00F29C06 /* AppDelegate.m in Sources */,

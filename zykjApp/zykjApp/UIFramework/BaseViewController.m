@@ -304,4 +304,13 @@
     [self configRightBarItems:@[rightButtonItem] animated:showAnimated];
 }
 
+- (void)showEmptyView:(NSString *)title {
+    
+}
+- (void)removeEmptyView
+{
+    UIView *empImgView = (UIView *)[self.view viewWithTag:EMPTYVIEWTAG];
+    [empImgView removeFromSuperview];
+}
+
 @end

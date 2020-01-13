@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "AppConfig.h"
 
 #define SECS_OF_ONE_DAY    (24 * 60 * 60)  // 一天
 #define SECS_OF_ONE_HOUR   (60 * 60)       // 一小时
@@ -16,9 +17,9 @@
 
 @interface IMichUtil : NSObject
 
-+ (IMichUtil *)shareInstance;
+@property (strong, nonatomic) AppConfig *appConfig;
 
-- (void)test;
++ (IMichUtil *)shareInstance;
 
 // 时间戳转日期时间
 + (NSString *)convertDateStrFromDigt:(unsigned long long)dateTime;
