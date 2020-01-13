@@ -41,6 +41,10 @@
     return shareIMichUtil;
 }
 
+- (void)test {
+   NSString *paht =  [[NSBundle mainBundle] pathForResource:@"1.txt" ofType:nil];
+    NSLog(@"%@",paht);
+}
 - (id)init
 {
     self = [super init];

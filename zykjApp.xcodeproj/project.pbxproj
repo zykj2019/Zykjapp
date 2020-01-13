@@ -367,7 +367,6 @@
 		249EE66B2247B2FB0076FE7F /* nd_define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nd_define.h; sourceTree = "<group>"; };
 		249EE66C2247B2FB0076FE7F /* ServerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerConfig.h; sourceTree = "<group>"; };
 		249EE66E2247B2FB0076FE7F /* HelperHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperHeader.h; sourceTree = "<group>"; };
-		249EE66F2247B2FB0076FE7F /* NotificationMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationMacro.h; sourceTree = "<group>"; };
 		249EE93D2247B3000076FE7F /* BaseRestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRestAPI.h; sourceTree = "<group>"; };
 		249EE93E2247B3000076FE7F /* BaseRestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRestAPI.m; sourceTree = "<group>"; };
 		249EE9402247B3000076FE7F /* NSString+ZLKExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZLKExtend.h"; sourceTree = "<group>"; };
@@ -1095,7 +1094,6 @@
 			children = (
 				249EE66E2247B2FB0076FE7F /* HelperHeader.h */,
 				249EE66B2247B2FB0076FE7F /* nd_define.h */,
-				249EE66F2247B2FB0076FE7F /* NotificationMacro.h */,
 				249EE66C2247B2FB0076FE7F /* ServerConfig.h */,
 				249EE6682247B2FB0076FE7F /* UtilsMacro.h */,
 			);

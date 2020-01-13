@@ -255,6 +255,18 @@ _Pragma("clang diagnostic pop") \
 
 #define WVAR(variable,instancetype)   __weak __typeof(instancetype)variable = instancetype;
 
+//基础颜色配置
+#define WCBLUE          [UIColor blueColor]
+#define WCWHITE         UIColorFromRGB(0xFFFFFF)
+#define WCBLACK         UIColorFromRGB(0x353535)
+#define WCGRAY          UIColorFromRGB(0x717171)
+#define WCRED           UIColorFromRGB(0xf43e34)
+#define WCPURPLE        UIColorFromRGB(0x667af8)
+
+//灰色颜色
+#define WCGRAYFONT   UIColorFromRGB(0xb2b2b2)
+#define WCGRAYDARKFONT   UIColorFromRGB(0x9b9b9b)
+#define WCGRAYTHINFONT   UIColorFromRGB(0xcbcbcb)
 
 // 默认界面之间的间距
 #define kDefaultMargin     8
@@ -266,8 +278,7 @@ _Pragma("clang diagnostic pop") \
 
 #define degreeToRadians(x) (M_PI *(x)/180.0)
 
-
-
+#define empty_array         [NSArray array]
 
 
 //
@@ -298,7 +309,6 @@ typedef  enum : NSInteger {
     CODETYPE_SHOW,  //3开头
 }CODETYPE;
 
-#define Multi_Pic_browse        0
 #define maxPicNum                9             //最大图片数
 
 #define Icon_small_size    CGSizeMake(18.0,18.0)
@@ -307,16 +317,10 @@ typedef  enum : NSInteger {
 
 #define Icon_medium_CHeight  36.0 + 20.0
 
-#define emptyWidth              335.0;             //空视图宽度
 #define emptyImgTop             5.0
 #define emptyLblBottom          25.0
 
 #define Page_Size                20
-
-#define Sex_man             @"1"
-#define Sex_women           @"2"
-
-#define empty_array         [NSArray array]
 
 //录音
 //最大录制时间
@@ -341,14 +345,6 @@ typedef  enum : NSInteger {
 #define BaesFontMedium(sizes)   IsIOS9Later ? [UIFont fontWithName:kBaseFontMediumName size:sizes] : [UIFont systemFontOfSize:sizes]
 
 
-//基础颜色配置
-#define WCBLUE          [UIColor blueColor]
-#define WCWHITE         UIColorFromRGB(0xFFFFFF)
-#define WCBLACK         UIColorFromRGB(0x353535)
-#define WCGRAY          UIColorFromRGB(0x717171)
-#define WCRED           UIColorFromRGB(0xf43e34)
-#define WCPURPLE        UIColorFromRGB(0x667af8)
-
 #define kAppThemeHex                0x4bcda0            //16进制颜色
 #define kAppThemeColor              UIColorFromRGB(kAppThemeHex)
 #define kMainTextColor              kAppThemeColor
@@ -364,11 +360,6 @@ typedef  enum : NSInteger {
 #define kGradientMainEColor1        [UIColor colorWithRed:((CGFloat[])kGradientMainEColor)[0] green:(((CGFloat[])kGradientMainEColor)[1]) blue:(((CGFloat[])kGradientMainEColor)[2]) alpha:1]
 
 
-//灰色颜色
-#define WCGRAYFONT   UIColorFromRGB(0xb2b2b2)
-#define WCGRAYDARKFONT   UIColorFromRGB(0x9b9b9b)
-#define WCGRAYTHINFONT   UIColorFromRGB(0xcbcbcb)
-
 
 #define WCVIEWCOLOR   UIColorFromRGB(0xF0F0F0)
 #define kAppBakgroundColor        WCVIEWCOLOR
@@ -376,16 +367,6 @@ typedef  enum : NSInteger {
 #define WCLINECOLOR    RGB(228, 228, 228)
 #define WCLINECOLOR1   RGBA(219, 219, 219, 1.0)
 #define WCLINECOLOR2   RGBA(210, 210, 210, 1.0)
-
-
-#define Base_title_font   BaesFont(16.0)
-#define Base_subtitle_font   BaesFont(16.0)
-
-#define Base_title_color     kBlackColor
-#define Base_subtitle_color  WCGRAYDARKFONT
-
-#define Base_textView_font     BaesFont(16.0)
-#define Base_textView_color     kBlackColor
 
 //导航栏颜色
 #define kNavColor                   RGB(251, 251, 251)
@@ -418,10 +399,6 @@ typedef  enum : NSInteger {
 
 #define bottomLineWidth 0.5
 #define bottomLineHeight 0.5
-
-#define AppUser                             [ShareValue sharedInstance].user
-#define AppUserId                           [ShareValue sharedInstance].user.userId
-#define BASE_IMAGE_HOST                     AppUser.image_url_prefix
 
 
 #define WCS(key)                      NSLocalizedStringFromTable(key,NSStringFromClass([self class]), nil)

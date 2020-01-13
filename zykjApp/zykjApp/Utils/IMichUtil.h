@@ -18,6 +18,8 @@
 
 + (IMichUtil *)shareInstance;
 
+- (void)test;
+
 // 时间戳转日期时间
 + (NSString *)convertDateStrFromDigt:(unsigned long long)dateTime;
 

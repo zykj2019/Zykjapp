@@ -39,8 +39,8 @@
 
 - (NSArray *)popToRootViewController;
 
-- (void)presentViewController:(UIViewController *)vc animated:(BOOL)animated completion:(void (^)())completion;
-- (void)dismissViewController:(UIViewController *)vc animated:(BOOL)animated completion:(void (^)())completion;
+- (void)presentViewController:(UIViewController *)vc animated:(BOOL)animated completion:(void (^)(void))completion;
+- (void)dismissViewController:(UIViewController *)vc animated:(BOOL)animated completion:(void (^)(void))completion;
 
 
 @end

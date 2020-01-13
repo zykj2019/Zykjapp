@@ -193,7 +193,7 @@
     return [[self navigationViewController] popToViewController:viewController animated:YES];
 }
 
-- (void)presentViewController:(UIViewController *)vc animated:(BOOL)animated completion:(void (^)())completion
+- (void)presentViewController:(UIViewController *)vc animated:(BOOL)animated completion:(void (^)(void))completion
 {
     UIViewController *top = [self topViewController];
     
@@ -208,7 +208,7 @@
     }
 }
 
-- (void)dismissViewController:(UIViewController *)vc animated:(BOOL)animated completion:(void (^)())completion
+- (void)dismissViewController:(UIViewController *)vc animated:(BOOL)animated completion:(void (^)(void))completion
 {
     if (vc.navigationController != [BaseAppDelegate sharedAppDelegate].navigationViewController)
     {
