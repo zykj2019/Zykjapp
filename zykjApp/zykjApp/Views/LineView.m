@@ -47,7 +47,7 @@
             _heightConstraint = constraint;
         }
     }
-    _heightConstraint.constant = bottomLineHeight;
+    _heightConstraint.constant = BottomLineHeight;
     
     //
 }
@@ -118,7 +118,7 @@
     } else {
         
         activateView.backgroundColor = orginLineColor;
-         activateView.heightConstraint.constant = bottomLineHeight;
+         activateView.heightConstraint.constant = BottomLineHeight;
         
     }
     
@@ -126,7 +126,7 @@
 
 -(void)textEnd:(NSNotification *)noti {
     activateView.backgroundColor = orginLineColor;
-    activateView.heightConstraint.constant = bottomLineHeight;
+    activateView.heightConstraint.constant = BottomLineHeight;
 }
 
 - (void)layoutIfNeeded {

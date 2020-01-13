@@ -200,9 +200,9 @@
     
     frame = _tabsBottomLine.frame;
     frame.origin.x = 0.0;
-    frame.origin.y = CGRectGetMaxY(_tabsView.frame) - bottomLineHeight;
+    frame.origin.y = CGRectGetMaxY(_tabsView.frame) - BottomLineHeight;
     frame.size.width = self.view.bounds.size.width;
-    frame.size.height = bottomLineHeight;
+    frame.size.height = BottomLineHeight;
     _tabsBottomLine.frame = frame;
     
     frame = _contentView.frame;

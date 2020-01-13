@@ -207,9 +207,5 @@
 //拼接ImageUrl
 #define CREATE_IMAGE_URL(width,heigh) [[NSString alloc] initWithFormat:@"@%dw_%dh_100Q.jpg",width,heigh]
 
-#define MAX_IMAGE_COUNT   9
-#define MAX_LONG_TIME     9223372036854775807
-#define NAV_CTRL_COLOR    RGB(255.0, 255.0, 255.0)
-//#define NAV_CTRL_COLOR    RGB(248.0, 109.0, 143.0)
 
 

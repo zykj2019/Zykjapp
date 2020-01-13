@@ -324,36 +324,18 @@ typedef  enum : NSInteger {
 
 
 // 默认的字体颜色
-#define kBaseFontName        @"PingFangSC-Regular"
-#define kBaseFontLightName        @"PingFangSC-Light"
-#define kBaseFontMediumName        @"PingFangSC-Medium"
-
-//#define BaesFont(sizes)      [UIFont fontWithName:kBaseFontName size:sizes]
-//#define BaesFontLight(sizes)      [UIFont fontWithName:kBaseFontLightName size:sizes]
-//#define ScaleFont(name,sizes)      [UIFont fontWithName:name size:sizes*SizeScale]
 
 #define BaesFont(sizes) (UIFont *)[Appconfig baseFont:sizes]
 
-#define BaesFontLight(sizes)   IsIOS9Later ? [UIFont fontWithName:kBaseFontLightName size:sizes] : [UIFont systemFontOfSize:sizes]
+#define BaesFontLight(sizes)   (UIFont *)[Appconfig baseFontLight:sizes]
 
-#define BaesFontMedium(sizes)   IsIOS9Later ? [UIFont fontWithName:kBaseFontMediumName size:sizes] : [UIFont systemFontOfSize:sizes]
+#define BaesFontMedium(sizes)   (UIFont *)[Appconfig baseFontMedium:sizes]
 
 
-#define kAppThemeHex                0x4bcda0            //16进制颜色
+#define kAppThemeHex                [Appconfig appThemeHex]          //16进制颜色
 #define kAppThemeColor              UIColorFromRGB(kAppThemeHex)
 #define kMainTextColor              kAppThemeColor
 #define kHighlightedColor           UIColorFromRGB(0xf3f3f3)
-
-//渐变色颜色
-//#define kGradientMainBColor        {109/255.0f, 225/255.0f, 146/255.0f, 1}
-//#define kGradientMainEColor        {102/255.0f, 214/255.0f, 183/255.0f, 1}
-#define kGradientMainBColor        {116/255.0f, 218/255.0f, 137/255.0f, 1}
-#define kGradientMainEColor        {73/255.0f, 197/255.0f, 147/255.0f, 1}
-
-#define kGradientMainBColor1        [UIColor colorWithRed:((CGFloat[])kGradientMainBColor)[0] green:(((CGFloat[])kGradientMainBColor)[1]) blue:(((CGFloat[])kGradientMainBColor)[2]) alpha:1]
-#define kGradientMainEColor1        [UIColor colorWithRed:((CGFloat[])kGradientMainEColor)[0] green:(((CGFloat[])kGradientMainEColor)[1]) blue:(((CGFloat[])kGradientMainEColor)[2]) alpha:1]
-
-
 
 #define WCVIEWCOLOR   UIColorFromRGB(0xF0F0F0)
 #define kAppBakgroundColor        WCVIEWCOLOR
@@ -376,46 +358,24 @@ typedef  enum : NSInteger {
 
 //占位图片
 #define kDefaultPicColor           RGB(200, 200, 200)
-#define kIconHeaderImg          [UIImage imageNamed:@"defaultPic.png"]
-#define kIconPicImg             [UIImage imageNamed:@"defaultPic.png"]
+#define kIconHeaderImg          [Appconfig defaultHeaderImg]
+#define kIconPicImg             [Appconfig defaultPicImg]
 
 //返回图标
-#define kIconRetun              [UIImage imageNamed:@"return_action"]
-#define kIconRetun_High         [UIImage imageNamed:@"return_action_high"]
+#define kIconRetun              [Appconfig iconRetunImg]
+#define kIconRetun_High         [Appconfig iconRetunHighImg]
 
-//Infoview
-#define InfoView_arrow_size             CGSizeMake(10.0, 16.0)
+//View
 //通用全局间距
-#define InfoView_margin                   15.0
-#define InfoView_arrow_margin             15.0
+#define View_margin                   [Appconfig viewMargin]
+#define View_obj_margin              [Appconfig viewObjMargin]
 
-#define InfoView_obj_margin             5.0
-
-#define bottomLineWidth 0.5
-#define bottomLineHeight 0.5
+#define BottomLineWidth         [Appconfig bottomLineWidth]
+#define BottomLineHeight        [Appconfig bottomLineHeight]
 
 
 #define WCS(key)                      NSLocalizedStringFromTable(key,NSStringFromClass([self class]), nil)
-//通用
-#define WCL(key)                      NSLocalizedStringFromTable(key,@"ZYKJLocalizable", nil)
-//loginvc
-#define WCLOGIN(key)                      NSLocalizedStringFromTable(key,@"LOGINLocalizable", nil)
-//mevc
-#define WCME(key)                      NSLocalizedStringFromTable(key,@"MELocalizable", nil)
-//studystatevc
-#define WCSTUDY(key)                      NSLocalizedStringFromTable(key,@"STUDYLocalizable", nil)
-//Schoolvc
-#define WCSCHOOL(key)                      NSLocalizedStringFromTable(key,@"SCHOOLLocalizable", nil)
-//chatvc
-#define WCCHAT(key)                      NSLocalizedStringFromTable(key,@"CHATLocalizable", nil)
-//scheduleVC
-#define WCSCHEDULE(key)                      NSLocalizedStringFromTable(key,@"ScheduleLocalizable", nil)
-//PayVC
-#define WCPAY(key)                      NSLocalizedStringFromTable(key,@"PAYLocalizable", nil)
-//TeachVC
-#define WCTEACH(key)                      NSLocalizedStringFromTable(key,@"TEACHLocalizable", nil)
-//classVC
-#define WCCLASS(key)                      NSLocalizedStringFromTable(key,@"CLASSLocalizable", nil)
+
 
 #endif /* ServerInfoHeader_h */
 

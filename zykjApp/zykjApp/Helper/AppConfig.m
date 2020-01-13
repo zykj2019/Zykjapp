@@ -10,8 +10,65 @@
 
 @implementation AppConfig
 
+- (NSString *)iOS9LaterBaseFontName {
+    return @"PingFangSC-Regular";
+    
+}
+
+- (NSString *)iOS9LaterBaseFontLightName {
+    return @"PingFangSC-Light";
+    
+}
+
+- (NSString *)iOS9LaterBaseFontMediumName {
+    return @"PingFangSC-Medium";
+    
+}
+- (NSUInteger)appThemeHex {
+    return 0x4bcda0;
+}
 - (UIFont *)baseFont:(CGFloat)size {
     
     return  IsIOS9Later ? [UIFont fontWithName:self.iOS9LaterBaseFontName size:size] : [UIFont systemFontOfSize:size];
+}
+
+- (UIFont *)baseFontLight:(CGFloat)size {
+     return  IsIOS9Later ? [UIFont fontWithName:self.iOS9LaterBaseFontLightName size:size] : [UIFont systemFontOfSize:size];
+}
+
+- (UIFont *)baseFontMedium:(CGFloat)size {
+    return  IsIOS9Later ? [UIFont fontWithName:self.iOS9LaterBaseFontMediumName size:size] : [UIFont systemFontOfSize:size];
+}
+
+- (UIImage *)defaultHeaderImg {
+    return [UIImage imageNamed:@"defaultPic.png"];
+}
+
+- (UIImage *)defaultPicImg {
+    return [UIImage imageNamed:@"defaultPic.png"];
+}
+
+- (UIImage *)iconRetunImg {
+    return [UIImage imageNamed:@"return_action"];
+}
+
+- (UIImage *)iconRetunHighImg {
+    return [UIImage imageNamed:@"return_action_high"];
+}
+
+- (CGFloat)viewMargin {
+    return 15.0;
+}
+
+- (CGFloat)viewObjMargin {
+    return 5.0;
+}
+
+- (CGFloat)bottomLineWidth {
+    return 0.5;
+}
+
+- (CGFloat)bottomLineHeight {
+    return 0.5;
 }
 @end
