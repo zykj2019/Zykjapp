@@ -47,7 +47,6 @@
 		249EEB002248AE0A0076FE7F /* HelperHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE66E2247B2FB0076FE7F /* HelperHeader.h */; };
 		24AA730A23CAE7D1005275EB /* ViewPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AA730623CAE7D1005275EB /* ViewPagerController.m */; };
 		24AA730B23CAE7D1005275EB /* ViewMyPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AA730923CAE7D1005275EB /* ViewMyPagerViewController.m */; };
-		24AA730E23CAE830005275EB /* UIView+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AA730C23CAE830005275EB /* UIView+ND.m */; };
 		24AA731123CAECC4005275EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24AA731023CAECC3005275EB /* Assets.xcassets */; };
 		676150E423C9733900E8056A /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 676150E323C9733900E8056A /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		676150E723C9734D00E8056A /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 676150E523C9734D00E8056A /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -394,8 +393,6 @@
 		24AA730723CAE7D1005275EB /* ViewMyPagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewMyPagerViewController.h; sourceTree = "<group>"; };
 		24AA730823CAE7D1005275EB /* ViewPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewPagerController.h; sourceTree = "<group>"; };
 		24AA730923CAE7D1005275EB /* ViewMyPagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewMyPagerViewController.m; sourceTree = "<group>"; };
-		24AA730C23CAE830005275EB /* UIView+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+ND.m"; path = "../../../../../至一科技/ZykjAppClient/ZykjAppClient/ZykjAppClient/Utils/UIView+ND.m"; sourceTree = "<group>"; };
-		24AA730D23CAE830005275EB /* UIView+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+ND.h"; path = "../../../../../至一科技/ZykjAppClient/ZykjAppClient/ZykjAppClient/Utils/UIView+ND.h"; sourceTree = "<group>"; };
 		24AA731023CAECC3005275EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		676150DF23C9730200E8056A /* NoArcHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoArcHeader.h; sourceTree = "<group>"; };
 		676150E223C9733900E8056A /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
@@ -1080,8 +1077,6 @@
 				249EE6542247B2FB0076FE7F /* UIView+block.m */,
 				676151F123C99F4800E8056A /* UIView+Extension.h */,
 				676151F223C99F4800E8056A /* UIView+Extension.m */,
-				24AA730D23CAE830005275EB /* UIView+ND.h */,
-				24AA730C23CAE830005275EB /* UIView+ND.m */,
 				249EE6412247B2FB0076FE7F /* UIView+InitMethod */,
 				249EE6522247B2FB0076FE7F /* UtilsHeader.h */,
 			);
@@ -2756,7 +2751,6 @@
 				67A8612323C9D650001B773E /* MBProgressHUD.m in Sources */,
 				67A8614A23C9D650001B773E /* MSSBrowseRemindView.m in Sources */,
 				67A860DC23C9D64F001B773E /* ZLAnimationImageView.m in Sources */,
-				24AA730E23CAE830005275EB /* UIView+ND.m in Sources */,
 				67A860D223C9D64F001B773E /* ZLPickerViewController.m in Sources */,
 				67A860E923C9D64F001B773E /* CheckButton.m in Sources */,
 				6761562F23C9BD3500E8056A /* WKWebViewController.m in Sources */,

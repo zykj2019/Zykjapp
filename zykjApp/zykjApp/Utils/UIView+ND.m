@@ -64,7 +64,7 @@ static NSString *const kTopLine = @"kTopLine";
     [self addSubview:line];
     [line mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.bottom.right.mas_equalTo(ws);
-        make.height.mas_equalTo(bottomLineHeight);
+        make.height.mas_equalTo(BottomLineHeight);
     }];
      [self setTbottomLine:line];
 }
@@ -77,7 +77,7 @@ static NSString *const kTopLine = @"kTopLine";
     [self addSubview:line];
     [line mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.bottom.right.mas_equalTo(ws);
-        make.height.mas_equalTo(bottomLineHeight);
+        make.height.mas_equalTo(BottomLineHeight);
     }];
     [self setTbottomLine:line];
 }
@@ -89,7 +89,7 @@ static NSString *const kTopLine = @"kTopLine";
     [self addSubview:line];
     [line mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.right.mas_equalTo(ws);
-        make.height.mas_equalTo(bottomLineHeight);
+        make.height.mas_equalTo(BottomLineHeight);
     }];
     [self setTtopLine:line];
 }
@@ -102,7 +102,7 @@ static NSString *const kTopLine = @"kTopLine";
     [self addSubview:line];
     [line mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.right.mas_equalTo(ws);
-        make.height.mas_equalTo(bottomLineHeight);
+        make.height.mas_equalTo(BottomLineHeight);
     }];
     [self setTtopLine:line];
 }
