@@ -62,9 +62,7 @@
 		6761560823C9B54C00E8056A /* CommonBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 676155DE23C9B54C00E8056A /* CommonBaseViewController.m */; };
 		6761560923C9B54C00E8056A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 676155DF23C9B54C00E8056A /* BaseViewController.m */; };
 		6761560B23C9B54C00E8056A /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 676155E423C9B54C00E8056A /* UIView+Layout.m */; };
-		6761560D23C9B54C00E8056A /* PageMenuScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 676155E623C9B54C00E8056A /* PageMenuScrollView.m */; };
 		6761560E23C9B54C00E8056A /* UIViewController+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 676155E723C9B54C00E8056A /* UIViewController+Layout.m */; };
-		6761560F23C9B54C00E8056A /* ScrollBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 676155E823C9B54C00E8056A /* ScrollBaseViewController.m */; };
 		6761561023C9B54C00E8056A /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 676155E923C9B54C00E8056A /* MenuItem.m */; };
 		6761561123C9B54C00E8056A /* PopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 676155EC23C9B54C00E8056A /* PopupView.m */; };
 		6761561323C9B54C00E8056A /* KeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 676155F023C9B54C00E8056A /* KeyValue.m */; };
@@ -424,9 +422,7 @@
 		676155E223C9B54C00E8056A /* UINavigationController+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Transition.h"; sourceTree = "<group>"; };
 		676155E323C9B54C00E8056A /* MenuAbleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuAbleItem.h; sourceTree = "<group>"; };
 		676155E423C9B54C00E8056A /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
-		676155E623C9B54C00E8056A /* PageMenuScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageMenuScrollView.m; sourceTree = "<group>"; };
 		676155E723C9B54C00E8056A /* UIViewController+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Layout.m"; sourceTree = "<group>"; };
-		676155E823C9B54C00E8056A /* ScrollBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollBaseViewController.m; sourceTree = "<group>"; };
 		676155E923C9B54C00E8056A /* MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItem.m; sourceTree = "<group>"; };
 		676155EB23C9B54C00E8056A /* BaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewController.h; sourceTree = "<group>"; };
 		676155EC23C9B54C00E8056A /* PopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupView.m; sourceTree = "<group>"; };
@@ -442,10 +438,8 @@
 		676155FB23C9B54C00E8056A /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		676155FC23C9B54C00E8056A /* BaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewController.m; sourceTree = "<group>"; };
 		676155FD23C9B54C00E8056A /* PopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupView.h; sourceTree = "<group>"; };
-		676155FE23C9B54C00E8056A /* ScrollBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollBaseViewController.h; sourceTree = "<group>"; };
 		676155FF23C9B54C00E8056A /* MenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItem.h; sourceTree = "<group>"; };
 		6761560123C9B54C00E8056A /* UIViewController+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Layout.h"; sourceTree = "<group>"; };
-		6761560223C9B54C00E8056A /* PageMenuScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageMenuScrollView.h; sourceTree = "<group>"; };
 		6761561923C9B90F00E8056A /* BaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
 		6761561A23C9B91000E8056A /* BaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
 		6761561C23C9B98D00E8056A /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
@@ -1282,14 +1276,10 @@
 				676155FB23C9B54C00E8056A /* NavigationViewController.m */,
 				676155F223C9B54C00E8056A /* NSObject+loadPadClass.h */,
 				676155DD23C9B54C00E8056A /* NSObject+loadPadClass.m */,
-				6761560223C9B54C00E8056A /* PageMenuScrollView.h */,
-				676155E623C9B54C00E8056A /* PageMenuScrollView.m */,
 				676155F423C9B54C00E8056A /* PageScrollView.h */,
 				676155DB23C9B54C00E8056A /* PageScrollView.m */,
 				676155FD23C9B54C00E8056A /* PopupView.h */,
 				676155EC23C9B54C00E8056A /* PopupView.m */,
-				676155FE23C9B54C00E8056A /* ScrollBaseViewController.h */,
-				676155E823C9B54C00E8056A /* ScrollBaseViewController.m */,
 				676155D923C9B54C00E8056A /* UIFramework.h */,
 				676155E223C9B54C00E8056A /* UINavigationController+Transition.h */,
 				676155F823C9B54C00E8056A /* UINavigationController+Transition.m */,
@@ -2611,10 +2601,8 @@
 				67A860EB23C9D64F001B773E /* UIView+Glow.m in Sources */,
 				67A860EA23C9D64F001B773E /* MoreTableView.m in Sources */,
 				6761561023C9B54C00E8056A /* MenuItem.m in Sources */,
-				6761560D23C9B54C00E8056A /* PageMenuScrollView.m in Sources */,
 				6761560B23C9B54C00E8056A /* UIView+Layout.m in Sources */,
 				67A8616823C9D650001B773E /* TAPageControl.m in Sources */,
-				6761560F23C9B54C00E8056A /* ScrollBaseViewController.m in Sources */,
 				67A8627123C9E026001B773E /* MyAudioHelp.m in Sources */,
 				67A860FB23C9D64F001B773E /* UIView+RelativeCoordinate.m in Sources */,
 				6761564623C9C0D100E8056A /* UILabel+ND.m in Sources */,
