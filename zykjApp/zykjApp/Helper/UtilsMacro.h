@@ -310,7 +310,7 @@ typedef  enum : NSInteger {
 }CODETYPE;
 
 
-#define Appconfig        (AppConfig *)[IMichUtil shareInstance].appConfig
+#define Appconfig        ((AppConfig *)[IMichUtil shareInstance].appConfig)
 #define emptyImgTop             5.0
 #define emptyLblBottom          25.0
 
@@ -332,7 +332,7 @@ typedef  enum : NSInteger {
 #define BaesFontMedium(sizes)   (UIFont *)[Appconfig baseFontMedium:sizes]
 
 
-#define kAppThemeHex                [Appconfig appThemeHex]          //16进制颜色
+#define kAppThemeHex                Appconfig.appThemeHex         //16进制颜色
 #define kAppThemeColor              UIColorFromRGB(kAppThemeHex)
 #define kMainTextColor              kAppThemeColor
 #define kHighlightedColor           UIColorFromRGB(0xf3f3f3)
