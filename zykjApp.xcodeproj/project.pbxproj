@@ -38,11 +38,6 @@
 		249EE9882247B3010076FE7F /* IMichUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE65F2247B2FB0076FE7F /* IMichUtil.m */; };
 		249EE9892247B3010076FE7F /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6612247B2FB0076FE7F /* GTMBase64.m */; };
 		249EE98A2247B3010076FE7F /* DES3Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6622247B2FB0076FE7F /* DES3Util.m */; };
-		249EEABD2247B3030076FE7F /* BaseRestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE93E2247B3000076FE7F /* BaseRestAPI.m */; };
-		249EEABF2247B3030076FE7F /* NSData+base64Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE9442247B3000076FE7F /* NSData+base64Encoding.m */; };
-		249EEAC02247B3030076FE7F /* NSString+ZLKExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE9462247B3000076FE7F /* NSString+ZLKExtend.m */; };
-		249EEAC12247B3030076FE7F /* HttpEncryptTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE9492247B3000076FE7F /* HttpEncryptTool.m */; };
-		249EEAC22247B3030076FE7F /* AESCbc.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE94C2247B3000076FE7F /* AESCbc.m */; };
 		249EEAF32247CA2B0076FE7F /* AllHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE19A2247A8240076FE7F /* AllHeader.h */; };
 		249EEAFF2248AE010076FE7F /* UtilsHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6522247B2FB0076FE7F /* UtilsHeader.h */; };
 		249EEB002248AE0A0076FE7F /* HelperHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 249EE66E2247B2FB0076FE7F /* HelperHeader.h */; };
@@ -400,17 +395,6 @@
 		249EE66B2247B2FB0076FE7F /* nd_define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nd_define.h; sourceTree = "<group>"; };
 		249EE66C2247B2FB0076FE7F /* ServerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerConfig.h; sourceTree = "<group>"; };
 		249EE66E2247B2FB0076FE7F /* HelperHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperHeader.h; sourceTree = "<group>"; };
-		249EE93D2247B3000076FE7F /* BaseRestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRestAPI.h; sourceTree = "<group>"; };
-		249EE93E2247B3000076FE7F /* BaseRestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRestAPI.m; sourceTree = "<group>"; };
-		249EE9402247B3000076FE7F /* NSString+ZLKExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZLKExtend.h"; sourceTree = "<group>"; };
-		249EE9422247B3000076FE7F /* HttpEncryptTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpEncryptTool.h; sourceTree = "<group>"; };
-		249EE9442247B3000076FE7F /* NSData+base64Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+base64Encoding.m"; sourceTree = "<group>"; };
-		249EE9452247B3000076FE7F /* NSData+base64Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+base64Encoding.h"; sourceTree = "<group>"; };
-		249EE9462247B3000076FE7F /* NSString+ZLKExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZLKExtend.m"; sourceTree = "<group>"; };
-		249EE9472247B3000076FE7F /* PublicRequestDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicRequestDefine.h; sourceTree = "<group>"; };
-		249EE9492247B3000076FE7F /* HttpEncryptTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpEncryptTool.m; sourceTree = "<group>"; };
-		249EE94B2247B3000076FE7F /* AESCbc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCbc.h; sourceTree = "<group>"; };
-		249EE94C2247B3000076FE7F /* AESCbc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCbc.m; sourceTree = "<group>"; };
 		24AA730623CAE7D1005275EB /* ViewPagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewPagerController.m; sourceTree = "<group>"; };
 		24AA730723CAE7D1005275EB /* ViewMyPagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewMyPagerViewController.h; sourceTree = "<group>"; };
 		24AA730823CAE7D1005275EB /* ViewPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewPagerController.h; sourceTree = "<group>"; };
@@ -1095,7 +1079,6 @@
 				6761562023C9B9E000E8056A /* Model */,
 				676155D623C9B54C00E8056A /* UIFramework */,
 				676150DE23C972E400E8056A /* NoArc */,
-				249EE93B2247B3000076FE7F /* API */,
 				249EE6662247B2FB0076FE7F /* Helper */,
 				249EE63F2247B2FB0076FE7F /* Utils */,
 				249EE6722247B2FC0076FE7F /* Views */,
@@ -1202,56 +1185,6 @@
 				6761553A23C9B20700E8056A /* ViewsHeader.h */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		249EE93B2247B3000076FE7F /* API */ = {
-			isa = PBXGroup;
-			children = (
-				249EE93C2247B3000076FE7F /* core */,
-				249EE93F2247B3000076FE7F /* IosApiRequestUtil */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		249EE93C2247B3000076FE7F /* core */ = {
-			isa = PBXGroup;
-			children = (
-				249EE93D2247B3000076FE7F /* BaseRestAPI.h */,
-				249EE93E2247B3000076FE7F /* BaseRestAPI.m */,
-			);
-			path = core;
-			sourceTree = "<group>";
-		};
-		249EE93F2247B3000076FE7F /* IosApiRequestUtil */ = {
-			isa = PBXGroup;
-			children = (
-				249EE94A2247B3000076FE7F /* AES */,
-				249EE9422247B3000076FE7F /* HttpEncryptTool.h */,
-				249EE9492247B3000076FE7F /* HttpEncryptTool.m */,
-				249EE9432247B3000076FE7F /* NSData+Base64 */,
-				249EE9402247B3000076FE7F /* NSString+ZLKExtend.h */,
-				249EE9462247B3000076FE7F /* NSString+ZLKExtend.m */,
-				249EE9472247B3000076FE7F /* PublicRequestDefine.h */,
-			);
-			path = IosApiRequestUtil;
-			sourceTree = "<group>";
-		};
-		249EE9432247B3000076FE7F /* NSData+Base64 */ = {
-			isa = PBXGroup;
-			children = (
-				249EE9442247B3000076FE7F /* NSData+base64Encoding.m */,
-				249EE9452247B3000076FE7F /* NSData+base64Encoding.h */,
-			);
-			path = "NSData+Base64";
-			sourceTree = "<group>";
-		};
-		249EE94A2247B3000076FE7F /* AES */ = {
-			isa = PBXGroup;
-			children = (
-				249EE94B2247B3000076FE7F /* AESCbc.h */,
-				249EE94C2247B3000076FE7F /* AESCbc.m */,
-			);
-			path = AES;
 			sourceTree = "<group>";
 		};
 		24AA730523CAE7D1005275EB /* ICViewPager */ = {
@@ -2733,7 +2666,6 @@
 				67A8627023C9E026001B773E /* amrFileCodec.m in Sources */,
 				67A860EE23C9D64F001B773E /* NSString+RegexCheck.m in Sources */,
 				67A8620923C9DE58001B773E /* UIViewController+CLPlayerRotation.m in Sources */,
-				249EEAC02247B3030076FE7F /* NSString+ZLKExtend.m in Sources */,
 				6761560423C9B54C00E8056A /* BaseAppDelegate.m in Sources */,
 				67A8617223C9D650001B773E /* UIImage+WebP.m in Sources */,
 				67A8617023C9D650001B773E /* FMDatabasePool.m in Sources */,
@@ -2780,7 +2712,6 @@
 				67A8626923C9E026001B773E /* MyAudioViewController.m in Sources */,
 				6761564F23C9C15000E8056A /* BaseControl.m in Sources */,
 				67A861CD23C9D92B001B773E /* MASLayoutConstraint.m in Sources */,
-				249EEAC12247B3030076FE7F /* HttpEncryptTool.m in Sources */,
 				67A8616123C9D650001B773E /* AFURLRequestSerialization.m in Sources */,
 				67A860F423C9D64F001B773E /* CLSafeMutableArray.m in Sources */,
 				67A8611E23C9D650001B773E /* M80AttributedLabel.m in Sources */,
@@ -2897,9 +2828,7 @@
 				67A860C723C9D64F001B773E /* ZLPickerBrowserPhotoImageView.m in Sources */,
 				67A860F123C9D64F001B773E /* NSData+CRC.m in Sources */,
 				67A8611823C9D650001B773E /* ADFlipTransition.m in Sources */,
-				249EEAC22247B3030076FE7F /* AESCbc.m in Sources */,
 				67A860DE23C9D64F001B773E /* ZLAnimationScrollView.m in Sources */,
-				249EEABD2247B3030076FE7F /* BaseRestAPI.m in Sources */,
 				67A8641B23CD9C86001B773E /* NSBundle+MJRefresh.m in Sources */,
 				67A8614E23C9D650001B773E /* UIView+MSSLayout.m in Sources */,
 				67A8610123C9D64F001B773E /* KeyChainHelper.m in Sources */,
@@ -2913,7 +2842,6 @@
 				67A860D023C9D64F001B773E /* ZLPickerGroupViewController.m in Sources */,
 				67A8620823C9DE58001B773E /* UINavigationController+CLPlayerRotation.m in Sources */,
 				67A860F323C9D64F001B773E /* UIImage+TintColor.m in Sources */,
-				249EEABF2247B3030076FE7F /* NSData+base64Encoding.m in Sources */,
 				67A8614423C9D650001B773E /* MSSBrowseModel.m in Sources */,
 				676151F323C99F4800E8056A /* UIView+Extension.m in Sources */,
 				67A8611623C9D650001B773E /* ADScaleTransition.m in Sources */,
@@ -3094,6 +3022,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3767P48NU9;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/zykjApp/Ext/TIM/TIMAdapter/Framework",
@@ -3122,6 +3051,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3767P48NU9;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/zykjApp/Ext/TIM/TIMAdapter/Framework",

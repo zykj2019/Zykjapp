@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "zykjApp"
-  s.version      = "110"
+  s.version      = "111"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -195,20 +195,20 @@ Pod::Spec.new do |s|
     end
 
 
-  #二级目录 API
-   s.subspec 'API' do |ss|
-    api_core_files = "zykjApp/zykjApp/API/core/**/*.{h,m,swift}"
-    api_IosApiRequestUtil_files = "zykjApp/zykjApp/API/IosApiRequestUtil/**/*.{h,m,swift}"
+  # #二级目录 API
+  #  s.subspec 'API' do |ss|
+  #   api_core_files = "zykjApp/zykjApp/API/core/**/*.{h,m,swift}"
+  #   api_IosApiRequestUtil_files = "zykjApp/zykjApp/API/IosApiRequestUtil/**/*.{h,m,swift}"
       
-    ss.subspec 'core' do |sss|
-    sss.source_files = api_core_files
-    end
+  #   ss.subspec 'core' do |sss|
+  #   sss.source_files = api_core_files
+  #   end
 
-    ss.subspec 'IosApiRequestUtil' do |sss|
-    sss.source_files = api_IosApiRequestUtil_files
-    end
-  #二级目录
-    end
+  #   ss.subspec 'IosApiRequestUtil' do |sss|
+  #   sss.source_files = api_IosApiRequestUtil_files
+  #   end
+  # #二级目录
+  #   end
 
     #二级目录 Ext
    s.subspec 'Ext' do |ss|
