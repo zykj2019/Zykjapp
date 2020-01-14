@@ -305,7 +305,8 @@
 		67A8642823CD9C86001B773E /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8641023CD9C86001B773E /* MJRefreshBackFooter.m */; };
 		67A8642923CD9C86001B773E /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8641123CD9C86001B773E /* MJRefreshAutoFooter.m */; };
 		67A8642A23CD9C86001B773E /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8641323CD9C86001B773E /* MJRefreshComponent.m */; };
-		67A8642D23CD9E37001B773E /* BRPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 67A8642C23CD9E37001B773E /* BRPickerView.bundle */; };
+		67A8643123CDA0A7001B773E /* BRPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 67A8643023CDA0A7001B773E /* BRPickerView.bundle */; };
+		67A8643323CDA249001B773E /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 67A8643223CDA249001B773E /* MJRefresh.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -966,7 +967,8 @@
 		67A8641323CD9C86001B773E /* MJRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshComponent.m; sourceTree = "<group>"; };
 		67A8641423CD9C86001B773E /* MJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooter.h; sourceTree = "<group>"; };
 		67A8641523CD9C86001B773E /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
-		67A8642C23CD9E37001B773E /* BRPickerView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = BRPickerView.bundle; path = zykjApp/zykjApp/Views/BRPickerView/AddressPickerView/BRPickerView.bundle; sourceTree = SOURCE_ROOT; };
+		67A8643023CDA0A7001B773E /* BRPickerView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BRPickerView.bundle; sourceTree = "<group>"; };
+		67A8643223CDA249001B773E /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
 		C3DEF3C9E47F4A038AC7A991 /* Pods_zykjApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zykjApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1266,7 +1268,8 @@
 		24AA730F23CAECC3005275EB /* Resoure */ = {
 			isa = PBXGroup;
 			children = (
-				67A8642C23CD9E37001B773E /* BRPickerView.bundle */,
+				67A8643223CDA249001B773E /* MJRefresh.bundle */,
+				67A8643023CDA0A7001B773E /* BRPickerView.bundle */,
 				24AA731023CAECC3005275EB /* Assets.xcassets */,
 			);
 			path = Resoure;
@@ -2411,21 +2414,21 @@
 		67A863E523CD9C86001B773E /* MJRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				67A863E623CD9C86001B773E /* UIScrollView+MJRefresh.m */,
-				67A863E723CD9C86001B773E /* MJRefreshConst.m */,
-				67A863E823CD9C86001B773E /* UIScrollView+MJExtension.h */,
-				67A863E923CD9C86001B773E /* UIScrollView+Page.m */,
-				67A863EA23CD9C86001B773E /* MJRefresh.h */,
-				67A863EB23CD9C86001B773E /* NSBundle+MJRefresh.h */,
-				67A863ED23CD9C86001B773E /* UIView+MJExtension.h */,
-				67A863EE23CD9C86001B773E /* UIScrollView+MJExtension.m */,
-				67A863EF23CD9C86001B773E /* MJRefreshConst.h */,
-				67A863F023CD9C86001B773E /* UIScrollView+MJRefresh.h */,
-				67A863F123CD9C86001B773E /* NSBundle+MJRefresh.m */,
-				67A863F223CD9C86001B773E /* UIScrollView+Page.h */,
-				67A863F323CD9C86001B773E /* UIView+MJExtension.m */,
-				67A863F423CD9C86001B773E /* Custom */,
 				67A8640B23CD9C86001B773E /* Base */,
+				67A863F423CD9C86001B773E /* Custom */,
+				67A863EA23CD9C86001B773E /* MJRefresh.h */,
+				67A863EF23CD9C86001B773E /* MJRefreshConst.h */,
+				67A863E723CD9C86001B773E /* MJRefreshConst.m */,
+				67A863EB23CD9C86001B773E /* NSBundle+MJRefresh.h */,
+				67A863F123CD9C86001B773E /* NSBundle+MJRefresh.m */,
+				67A863E823CD9C86001B773E /* UIScrollView+MJExtension.h */,
+				67A863EE23CD9C86001B773E /* UIScrollView+MJExtension.m */,
+				67A863F023CD9C86001B773E /* UIScrollView+MJRefresh.h */,
+				67A863E623CD9C86001B773E /* UIScrollView+MJRefresh.m */,
+				67A863F223CD9C86001B773E /* UIScrollView+Page.h */,
+				67A863E923CD9C86001B773E /* UIScrollView+Page.m */,
+				67A863ED23CD9C86001B773E /* UIView+MJExtension.h */,
+				67A863F323CD9C86001B773E /* UIView+MJExtension.m */,
 			);
 			path = MJRefresh;
 			sourceTree = "<group>";
@@ -2612,12 +2615,13 @@
 			files = (
 				2444E08B20590CAB00F29C06 /* LaunchScreen.storyboard in Resources */,
 				6761563023C9BD3500E8056A /* WKJSPOST.html in Resources */,
+				67A8643323CDA249001B773E /* MJRefresh.bundle in Resources */,
 				67A860D823C9D64F001B773E /* ZLPickerGroupTableViewCell.xib in Resources */,
 				2444E08820590CAB00F29C06 /* Assets.xcassets in Resources */,
 				67A8622523C9DEC4001B773E /* sys_region.json in Resources */,
 				2444E08620590CAB00F29C06 /* Main.storyboard in Resources */,
+				67A8643123CDA0A7001B773E /* BRPickerView.bundle in Resources */,
 				67A8614B23C9D650001B773E /* mss_browseLoading@3x.png in Resources */,
-				67A8642D23CD9E37001B773E /* BRPickerView.bundle in Resources */,
 				67A8612523C9D650001B773E /* MBProgressHUD.bundle in Resources */,
 				67A8616B23C9D650001B773E /* README.markdown in Resources */,
 				67A8616C23C9D650001B773E /* LICENSE.txt in Resources */,

@@ -7,6 +7,7 @@
 //
 
 #import "UIScrollView+Page.h"
+#import "MJRefresh.h"
 
 static NSString *const kLastObj = @"kLastObj";
 static NSString *const kPageSize = @"kPageSize";
