@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:zykjApp.xcodeproj">
+      location = "group:/Users/jsl/Desktop/zlx/BasePro/zykjapp/Resoure/MJRefresh.bundle">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

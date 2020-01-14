@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "zykjApp"
-  s.version      = "107"
+  s.version      = "108"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -287,8 +287,8 @@ Pod::Spec.new do |s|
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
   
-  s.resource = 'Resoure/**/*.xcassets'
-
+  # s.resource = 'Resoure/**/*.xcassets'
+  s.resources = ['Resoure/**/*.xcassets', 'Resoure/BRPickerView.bundle']
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
