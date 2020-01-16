@@ -302,6 +302,7 @@
 		67A8643123CDA0A7001B773E /* BRPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 67A8643023CDA0A7001B773E /* BRPickerView.bundle */; };
 		67A8643323CDA249001B773E /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 67A8643223CDA249001B773E /* MJRefresh.bundle */; };
 		67A8643523CDA2EF001B773E /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 67A8643423CDA2EF001B773E /* MBProgressHUD.bundle */; };
+		A7C2240123D05FB8002F13D1 /* NSDictionary+Zykj.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C2240023D05FB8002F13D1 /* NSDictionary+Zykj.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -953,6 +954,8 @@
 		67A8643023CDA0A7001B773E /* BRPickerView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BRPickerView.bundle; sourceTree = "<group>"; };
 		67A8643223CDA249001B773E /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
 		67A8643423CDA2EF001B773E /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		A7C223FF23D05FB8002F13D1 /* NSDictionary+Zykj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Zykj.h"; sourceTree = "<group>"; };
+		A7C2240023D05FB8002F13D1 /* NSDictionary+Zykj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Zykj.m"; sourceTree = "<group>"; };
 		C3DEF3C9E47F4A038AC7A991 /* Pods_zykjApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zykjApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1124,6 +1127,8 @@
 				676151F223C99F4800E8056A /* UIView+Extension.m */,
 				249EE6412247B2FB0076FE7F /* UIView+InitMethod */,
 				249EE6522247B2FB0076FE7F /* UtilsHeader.h */,
+				A7C223FF23D05FB8002F13D1 /* NSDictionary+Zykj.h */,
+				A7C2240023D05FB8002F13D1 /* NSDictionary+Zykj.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -2738,6 +2743,7 @@
 				6761554D23C9B20800E8056A /* TipView.m in Sources */,
 				67A860FF23C9D64F001B773E /* MKMapView+ZoomLevel.m in Sources */,
 				67A8618223C9D650001B773E /* UIButton+WebCache.m in Sources */,
+				A7C2240123D05FB8002F13D1 /* NSDictionary+Zykj.m in Sources */,
 				67A8612723C9D650001B773E /* IOSDeviceConfig.m in Sources */,
 				249EE9872247B3010076FE7F /* UIAlertView+Blocks.m in Sources */,
 				67A8617323C9D650001B773E /* MKAnnotationView+WebCache.m in Sources */,
@@ -3021,7 +3027,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3767P48NU9;
+				DEVELOPMENT_TEAM = 95G7KHB9NJ;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3050,7 +3056,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3767P48NU9;
+				DEVELOPMENT_TEAM = 95G7KHB9NJ;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

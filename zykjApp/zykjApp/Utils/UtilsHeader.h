@@ -17,4 +17,5 @@
 #import "UITableView+custom.h"
 #import "UINavigationBar+Awesome.h"
 #import "NSArray+NSArray_ILExtension.h"
+#import "NSDictionary+Zykj.h"
 #endif /* UtilsHeader_h */

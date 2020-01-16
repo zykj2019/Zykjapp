@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "BaseRestAPI.h"
 
 @interface ViewController ()
 
@@ -18,6 +17,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    Common * m1 = [Common new];
+    Common * m2 = [Common new];
+    m1.key = @"kkkkkk1";
+    m1.title = @"ttttttt1";
+    m2.key = @"kkkkkkkkkkk2";
+    
+    
+    NSDictionary *dic1 = @{
+        @"key": @"KEY",
+        @"title": @"TITLE"
+    };
+    NSDictionary *dic2 = @{
+        @"key": @"KEY2"
+    };
+    
+    NSDictionary* dict = [NSDictionary modelPropertiesFromDicts:@[dic1,dic2] andModels:@[m1,m2]];
+    
+    NSLog(@"wwww:%@",dict);
 }
 
 - (void)addOwnViews {
