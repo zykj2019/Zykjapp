@@ -62,4 +62,6 @@
 
 #import "KeyValue.h"
 
+#import "ZykjRouter.h"
+
 #endif

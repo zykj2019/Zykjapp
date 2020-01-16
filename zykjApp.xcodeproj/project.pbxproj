@@ -303,6 +303,8 @@
 		67A8643323CDA249001B773E /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 67A8643223CDA249001B773E /* MJRefresh.bundle */; };
 		67A8643523CDA2EF001B773E /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 67A8643423CDA2EF001B773E /* MBProgressHUD.bundle */; };
 		A7C2240123D05FB8002F13D1 /* NSDictionary+Zykj.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C2240023D05FB8002F13D1 /* NSDictionary+Zykj.m */; };
+		A7C2240523D079D5002F13D1 /* ZykjRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C2240423D079D5002F13D1 /* ZykjRouter.m */; };
+		A7C2240923D07D6B002F13D1 /* RouteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C2240823D07D6B002F13D1 /* RouteVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -956,6 +958,10 @@
 		67A8643423CDA2EF001B773E /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		A7C223FF23D05FB8002F13D1 /* NSDictionary+Zykj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Zykj.h"; sourceTree = "<group>"; };
 		A7C2240023D05FB8002F13D1 /* NSDictionary+Zykj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Zykj.m"; sourceTree = "<group>"; };
+		A7C2240323D079D5002F13D1 /* ZykjRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZykjRouter.h; sourceTree = "<group>"; };
+		A7C2240423D079D5002F13D1 /* ZykjRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZykjRouter.m; sourceTree = "<group>"; };
+		A7C2240723D07D6B002F13D1 /* RouteVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteVC.h; sourceTree = "<group>"; };
+		A7C2240823D07D6B002F13D1 /* RouteVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteVC.m; sourceTree = "<group>"; };
 		C3DEF3C9E47F4A038AC7A991 /* Pods_zykjApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zykjApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1013,6 +1019,7 @@
 		2444E07D20590CAB00F29C06 /* zykjApp */ = {
 			isa = PBXGroup;
 			children = (
+				A7C2240623D07D47002F13D1 /* TestVC */,
 				249EE1992247A7940076FE7F /* zykjApp */,
 				2444E07E20590CAB00F29C06 /* AppDelegate.h */,
 				2444E07F20590CAB00F29C06 /* AppDelegate.m */,
@@ -1257,6 +1264,7 @@
 		676155D623C9B54C00E8056A /* UIFramework */ = {
 			isa = PBXGroup;
 			children = (
+				A7C2240223D079AF002F13D1 /* ZykjRouter */,
 				67A861F023C9DE58001B773E /* Category */,
 				6761563123C9BDE300E8056A /* CustomNav */,
 				6761561A23C9B91000E8056A /* BaseTableView.h */,
@@ -2445,6 +2453,24 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		A7C2240223D079AF002F13D1 /* ZykjRouter */ = {
+			isa = PBXGroup;
+			children = (
+				A7C2240323D079D5002F13D1 /* ZykjRouter.h */,
+				A7C2240423D079D5002F13D1 /* ZykjRouter.m */,
+			);
+			path = ZykjRouter;
+			sourceTree = "<group>";
+		};
+		A7C2240623D07D47002F13D1 /* TestVC */ = {
+			isa = PBXGroup;
+			children = (
+				A7C2240723D07D6B002F13D1 /* RouteVC.h */,
+				A7C2240823D07D6B002F13D1 /* RouteVC.m */,
+			);
+			path = TestVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2719,6 +2745,7 @@
 				67A861CD23C9D92B001B773E /* MASLayoutConstraint.m in Sources */,
 				67A8616123C9D650001B773E /* AFURLRequestSerialization.m in Sources */,
 				67A860F423C9D64F001B773E /* CLSafeMutableArray.m in Sources */,
+				A7C2240923D07D6B002F13D1 /* RouteVC.m in Sources */,
 				67A8611E23C9D650001B773E /* M80AttributedLabel.m in Sources */,
 				67A8617123C9D650001B773E /* FMResultSet.m in Sources */,
 				67A8642023CD9C86001B773E /* MJRefreshAutoStateFooter.m in Sources */,
@@ -2788,6 +2815,7 @@
 				6761561723C9B54C00E8056A /* BaseCollectionViewController.m in Sources */,
 				676150E723C9734D00E8056A /* OpenUDID.m in Sources */,
 				67A8641E23CD9C86001B773E /* MJRefreshBackStateFooter.m in Sources */,
+				A7C2240523D079D5002F13D1 /* ZykjRouter.m in Sources */,
 				24AA730B23CAE7D1005275EB /* ViewMyPagerViewController.m in Sources */,
 				67A8641F23CD9C86001B773E /* MJRefreshBackNormalFooter.m in Sources */,
 				67A8614623C9D650001B773E /* MSSBrowseNetworkViewController.m in Sources */,

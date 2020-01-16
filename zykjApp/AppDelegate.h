@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseAppDelegate.h"
+#import "ViewController.h"
 
 
 @interface AppDelegate : BaseAppDelegate
 
-@property (strong, nonatomic) UIWindow *window;
 
 @end
 
