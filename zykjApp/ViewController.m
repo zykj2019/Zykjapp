@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "BaseRestAPI.h"
 
 @interface ViewController ()
 
