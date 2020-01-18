@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "zykjApp"
-  s.version      = "115"
+  s.version      = "116"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -115,11 +115,11 @@ Pod::Spec.new do |s|
   #在工程中首先排除一下
   s.exclude_files = non_arc_files,utils_files,api_files,model_files,uiFramework_files,views_files,help_files,ext_files
 
-  #二级目录 NoArc
-  s.subspec 'NoArc' do |ss|
-    ss.source_files = non_arc_files
-  #二级目录
-    end
+  # #二级目录 NoArc
+  # s.subspec 'NoArc' do |ss|
+  #   ss.source_files = non_arc_files
+  # #二级目录
+  #   end
 
        #二级目录 Utils
    s.subspec 'Utils' do |ss|

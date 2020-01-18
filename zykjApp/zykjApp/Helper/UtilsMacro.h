@@ -126,7 +126,7 @@
 #pragma mark -Redefine
 
 
-#define ApplicationDelegate                 ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+#define ApplicationDelegate                 ((BaseAppDelegate *)[[UIApplication sharedApplication] delegate])
 #define NotificationCenter                  [NSNotificationCenter defaultCenter]
 #define UserDefaults                        [NSUserDefaults standardUserDefaults]
 #define SharedApplication                   [UIApplication sharedApplication]
