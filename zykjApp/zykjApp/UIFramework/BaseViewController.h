@@ -53,9 +53,4 @@
 
 - (void)removeEmptyView;
 
-// 对于界面上有输入框的，可以选择性调用些方法进行收起键盘
-- (void)addTapBlankToHideKeyboardGesture;
-
-- (void)callImagePickerActionSheet;
-
 @end
