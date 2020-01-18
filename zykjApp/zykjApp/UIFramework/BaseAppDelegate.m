@@ -53,50 +53,6 @@
     //    [[UITableViewCell appearance] setTintColor:kNavBarThemeColor];
 }
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    [self configAppearance];
-    
-    // 日志重定向处理
-    if ([self needRedirectConsole])
-    {
-        //实例化一个NSDateFormatter对象
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        //设定时间格式,这里可以设置成自己需要的格式
-        [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-        //用[NSDate date]可以获取系统当前时间
-        NSString *currentDateStr = [dateFormatter stringFromDate:[NSDate date]];
-        
-        [self redirectConsoleLog:[NSString stringWithFormat:@"%@.log", currentDateStr]];
-    }
-    
-    // 用StoryBoard不需要自己创建
-    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    _window.backgroundColor = [UIColor whiteColor];
-    
-    [self configAppLaunch];
-    
-    [_window makeKeyAndVisible];
-
-    //注册通知消息已经移动到登录之后，必须在登录之后上传token
-//    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
-//    {
-//        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil]];
-//        [[UIApplication sharedApplication] registerForRemoteNotifications];
-//    }
-//    else
-//    {
-//        [[UIApplication sharedApplication] registerForRemoteNotificationTypes: (UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert)];
-//    }
-    
-    //清空通知栏消息
-    [[UIApplication sharedApplication] setApplicationIconBadgeNumber: 1];
-    [[UIApplication sharedApplication] cancelAllLocalNotifications];
-    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
-    
-    return YES;
-}
-
 - (void)configAppLaunch
 {
     // 作App配置
