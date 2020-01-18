@@ -24,6 +24,12 @@
     return @"PingFangSC-Medium";
     
 }
+
+- (UIColor *)baseViewColor {
+    return UIColorFromRGB(0xF0F0F0);
+    
+}
+
 - (NSUInteger)appThemeHex {
     return 0x4bcda0;
 }

@@ -63,6 +63,8 @@
 		670C3A3823D2E4DF002664F0 /* MyLayoutPos.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A2423D2E4DF002664F0 /* MyLayoutPos.m */; };
 		670C3A3923D2E4DF002664F0 /* MyBorderline.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A2523D2E4DF002664F0 /* MyBorderline.m */; };
 		670C3A3A23D2E4DF002664F0 /* MyLayoutSizeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A2623D2E4DF002664F0 /* MyLayoutSizeClass.m */; };
+		670C3A4123D2F4C6002664F0 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A4023D2F4C6002664F0 /* BaseTableViewController.m */; };
+		670C3A4423D2FA5D002664F0 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A4323D2FA5D002664F0 /* TestTableViewController.m */; };
 		676150E423C9733900E8056A /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 676150E323C9733900E8056A /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		676150E723C9734D00E8056A /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 676150E523C9734D00E8056A /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		676151F323C99F4800E8056A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 676151F223C99F4800E8056A /* UIView+Extension.m */; };
@@ -466,6 +468,10 @@
 		670C3A2523D2E4DF002664F0 /* MyBorderline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBorderline.m; sourceTree = "<group>"; };
 		670C3A2623D2E4DF002664F0 /* MyLayoutSizeClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLayoutSizeClass.m; sourceTree = "<group>"; };
 		670C3A2723D2E4DF002664F0 /* MyMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMaker.h; sourceTree = "<group>"; };
+		670C3A3F23D2F4C6002664F0 /* BaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		670C3A4023D2F4C6002664F0 /* BaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		670C3A4223D2FA5D002664F0 /* TestTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		670C3A4323D2FA5D002664F0 /* TestTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
 		676150DF23C9730200E8056A /* NoArcHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoArcHeader.h; sourceTree = "<group>"; };
 		676150E223C9733900E8056A /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		676150E323C9733900E8056A /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
@@ -1095,6 +1101,8 @@
 				2444E08C20590CAB00F29C06 /* Info.plist */,
 				2444E08D20590CAB00F29C06 /* main.m */,
 				2444E0B320590D8100F29C06 /* PrefixHeader.pch */,
+				670C3A4223D2FA5D002664F0 /* TestTableViewController.h */,
+				670C3A4323D2FA5D002664F0 /* TestTableViewController.m */,
 			);
 			path = zykjApp;
 			sourceTree = "<group>";
@@ -1385,6 +1393,8 @@
 				6761561923C9B90F00E8056A /* BaseTableView.m */,
 				676155EF23C9B54C00E8056A /* BaseAppDelegate.h */,
 				676155D823C9B54C00E8056A /* BaseAppDelegate.m */,
+				670C3A3F23D2F4C6002664F0 /* BaseTableViewController.h */,
+				670C3A4023D2F4C6002664F0 /* BaseTableViewController.m */,
 				676155EB23C9B54C00E8056A /* BaseCollectionViewController.h */,
 				676155FC23C9B54C00E8056A /* BaseCollectionViewController.m */,
 				676155F923C9B54C00E8056A /* BaseViewController.h */,
@@ -2758,6 +2768,7 @@
 				6761560823C9B54C00E8056A /* CommonBaseViewController.m in Sources */,
 				67A860D123C9D64F001B773E /* ZLNavigationController.m in Sources */,
 				67A860C823C9D64F001B773E /* ZLPickerBrowserPhotoScrollView.m in Sources */,
+				670C3A4123D2F4C6002664F0 /* BaseTableViewController.m in Sources */,
 				670C3A3123D2E4DF002664F0 /* MyTableLayout.m in Sources */,
 				67A8626C23C9E026001B773E /* MyAudioBtn.m in Sources */,
 				67A8617623C9D650001B773E /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -2800,6 +2811,7 @@
 				67A860E823C9D64F001B773E /* KeyValueTableViewController.m in Sources */,
 				67A860F623C9D64F001B773E /* NSDate+Common.m in Sources */,
 				249EE97C2247B3010076FE7F /* UIControl+Block.m in Sources */,
+				670C3A4423D2FA5D002664F0 /* TestTableViewController.m in Sources */,
 				67A860CA23C9D64F001B773E /* ZLCameraImageView.m in Sources */,
 				67A8615E23C9D650001B773E /* AFURLResponseSerialization.m in Sources */,
 				67A8614323C9D650001B773E /* MSSBrowseCollectionViewCell.m in Sources */,

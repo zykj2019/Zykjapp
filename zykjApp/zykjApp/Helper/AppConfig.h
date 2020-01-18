@@ -19,6 +19,9 @@
 //ios9以后主要Medium的字体
 @property (copy, nonatomic) NSString *iOS9LaterBaseFontMediumName;
 
+//view的基础颜色
+@property (strong, nonatomic) UIColor *baseViewColor;
+
 //app主题16进制颜色
 @property (assign, nonatomic) NSUInteger appThemeHex;
 

@@ -337,7 +337,7 @@ typedef  enum : NSInteger {
 #define kMainTextColor              kAppThemeColor
 #define kHighlightedColor           UIColorFromRGB(0xf3f3f3)
 
-#define WCVIEWCOLOR   UIColorFromRGB(0xF0F0F0)
+#define WCVIEWCOLOR              Appconfig.baseViewColor
 #define kAppBakgroundColor        WCVIEWCOLOR
 #define WCTABLEVIEWCOLOR  WCVIEWCOLOR
 #define WCLINECOLOR    RGB(228, 228, 228)
