@@ -28,10 +28,7 @@
 }
 
 -(void)loadView {
-     MyRelativeLayout *rootLayout = [MyRelativeLayout new];
-    rootLayout.backgroundColor = WCVIEWCOLOR;
-    rootLayout.insetsPaddingFromSafeArea = UIRectEdgeNone; 
-    self.view = rootLayout;
+    [super loadView];
 }
 
 - (void)viewDidLoad {

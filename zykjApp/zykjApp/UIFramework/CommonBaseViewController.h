@@ -19,6 +19,8 @@
     
 }
 
+@property (strong, nonatomic) UIView *tContentView;
+
 @property (nonatomic, strong) UIImageView  *backgroundView;
 
 @property (nonatomic, assign) BOOL hiddenNavBottmLine;
@@ -64,6 +66,9 @@
 
 - (void)addCustomNav;
 
+///
+- (void)addTContentView;
+
 /// //透明nav
 /// @param isTransparent 是否隐藏nav
 - (void)navIsTransparent:(BOOL)isTransparent;
@@ -77,5 +82,7 @@
 
 // 添加自动布局相关的constraints
 - (void)autoLayoutOwnViews;
+
+
 
 @end

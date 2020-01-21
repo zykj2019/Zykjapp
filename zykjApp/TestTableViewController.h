@@ -8,8 +8,11 @@
 
 #import "BaseTableViewController.h"
 
+@interface TestTableViewCell : UITableViewCell
 
-@interface TestTableViewController : BaseTableViewController
+@end
+
+@interface TestTableViewController : BaseViewController
 
 @end
 

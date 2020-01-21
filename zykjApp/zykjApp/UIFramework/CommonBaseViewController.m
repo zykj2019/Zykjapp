@@ -12,6 +12,8 @@
 
 #import "IOSDeviceConfig.h"
 
+#import "UIView+Extension.h"
+
 @interface CommonBaseViewController () {
      BOOL _isPortrait;
 }
@@ -25,7 +27,6 @@
     if (self = [super init])
     {
         [self configParams];
-       
     }
     
     return  self;
@@ -129,6 +130,8 @@
     
     [super viewDidLoad];
     
+     [self addTContentView];
+    
     [self configContainer];
     
     if (self.hiddenNav) {
@@ -206,6 +209,13 @@
     self.navigationItem.rightBarButtonItems = nil;
 }
 
+///
+- (void)addTContentView {
+    self.tContentView = [[UIView alloc] init];
+    self.tContentView.backgroundColor = kRedColor;
+    [self.view addSubview:self.tContentView];
+}
+
 //透明nav
 - (void)navIsTransparent:(BOOL)isTransparent {
     self.hiddenNavBottmLine = YES;
@@ -272,6 +282,11 @@
     //如果nav是自定义需要设置宽度
     if (self.customNav) {
         self.customNav.width = self.view.width;
+        self.customNav.height = [CustomNav navBarBottom];
+        
+        self.tContentView.frame = CGRectMake(0, CGRectGetMaxY(self.customNav.frame), self.view.width, self.view.height - self.customNav.height);
+    } else {
+        self.tContentView.frame = self.view.bounds;
     }
     
     BOOL isPortrait = UIDeviceOrientationIsPortrait([UIDevice currentDevice].orientation) ||  (ScreenWidth < ScreenHeight);

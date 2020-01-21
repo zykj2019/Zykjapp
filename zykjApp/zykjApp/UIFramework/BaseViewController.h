@@ -54,3 +54,8 @@
 - (void)removeEmptyView;
 
 @end
+
+@interface BaseLinearViewController : BaseViewController
+
+@end
+

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LineView : UIView
+@interface LineView : MyBaseLayout
 
 @end
 

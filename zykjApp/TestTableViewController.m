@@ -7,13 +7,33 @@
 //
 
 #import "TestTableViewController.h"
+#import "LineView.h"
 
-@interface TestTableViewController ()
+@interface TestView : UIView
+
+@end
+
+@implementation TestView
+
+
+@end
+
+@implementation TestTableViewCell
+
+
+@end
+
+@interface TestTableViewController () {
+    LineView *lineView;
+}
 
 @end
 
 @implementation TestTableViewController
 
+- (void)configParams {
+    self.hiddenNav = YES;
+}
 // 是否支持自动转屏
 - (BOOL)shouldAutorotate {
     return YES;
@@ -26,10 +46,31 @@
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
     return UIInterfaceOrientationPortrait;
 }
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+   
+    [self.navigationController setNavigationBarHidden:YES];
+    NSLog(@"%@",NSStringFromCGPoint(self.view.layer.anchorPoint));
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    lineView = [[LineView alloc] init];
+    lineView.backgroundColor = kRedColor;
+    lineView.myHeight = 2.0;
+    lineView.leftPos.equalTo(self.view.leftPos).offset(20);
+    lineView.rightPos.equalTo(self.view.rightPos).offset(20);
+    lineView.bottomPos.equalTo(self.view.bottomPos).offset(20);
+    [self.view addSubview:lineView];
+//    [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.bottom.right.mas_equalTo(self.view);
+//        make.height.mas_equalTo(20);
+//    }];
+    
+    LineView *line = [[LineView alloc] init];
+    line.frame = CGRectMake(0, 100, 100, 100);
+    [self.view addSubview:line];
 }
 
 /*
