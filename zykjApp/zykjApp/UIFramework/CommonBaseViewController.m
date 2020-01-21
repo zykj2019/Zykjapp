@@ -16,9 +16,6 @@
 
 @interface BaseRootView : UIView
 
-@property (strong, nonatomic)  CustomNav *customNav;
-
-@property (strong, nonatomic) UIView *tContentView;
 
 @end
 
@@ -52,7 +49,9 @@
 
 - (UIView *)tContentView {
     if (_tContentView == nil) {
-        [self addTContentView];
+       _tContentView = [self addTContentView];
+        _tContentView.backgroundColor = kClearColor;
+        [self.view addSubview:_tContentView];
     }
     return _tContentView;
 }
@@ -162,19 +161,12 @@
 - (void)viewDidLoad
 {
     
-    [self tContentView];
-    
     if ([self.view isKindOfClass:BaseRootView.class]) {
          self.tContentView.translatesAutoresizingMaskIntoConstraints = NO;
 
         for (UIView *subView in self.view.subviews) {
             if (subView != self.tContentView) {
                 [self.tContentView addSubview:subView];
-//                [subView mas_makeConstraints:^(MASConstraintMaker *make) {
-//                    make.left.right.top.mas_equalTo(self.tContentView).priorityLow();
-//
-//                }];
-              
             }
 
         }
@@ -279,13 +271,8 @@
 }
 
 ///
-- (void)addTContentView {
-    if (!_tContentView) {
-        _tContentView = [[MyRelativeLayout alloc] initWithFrame:self.view.bounds];
-        [self.view addSubview:_tContentView];
-        _tContentView.backgroundColor = kClearColor;
-    }
-    
+- (UIView *)addTContentView {
+    return [[UIView alloc] initWithFrame:self.view.bounds];
 }
 
 //透明nav
@@ -375,8 +362,6 @@
         [self changeDeviceScreenSizeHandle:_isPortrait];
     }
     
-//    [self.view layoutIfNeeded];
-//    [self.tContentView layoutIfNeeded];
     self.tContentView.backgroundColor = kRedColor;
 //    NSLog(@"%@",NSStringFromCGRect(self.tContentView.frame));
 }

@@ -59,3 +59,8 @@
 
 @end
 
+@interface BaseRelativeViewController : BaseViewController
+
+@end
+
+
