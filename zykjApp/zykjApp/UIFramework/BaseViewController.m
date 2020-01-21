@@ -317,5 +317,6 @@
 
 
 @implementation BaseLinearViewController
+
 @end
 

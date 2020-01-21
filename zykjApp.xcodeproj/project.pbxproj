@@ -130,10 +130,8 @@
 		67A860E223C9D64F001B773E /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A85F3723C9D64F001B773E /* NSObject+YYModel.m */; };
 		67A860E323C9D64F001B773E /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A85F3823C9D64F001B773E /* YYClassInfo.m */; };
 		67A860E423C9D64F001B773E /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A85F4023C9D64F001B773E /* EGORefreshTableHeaderView.m */; };
-		67A860E523C9D64F001B773E /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A85F4123C9D64F001B773E /* MenuTableViewController.m */; };
 		67A860E623C9D64F001B773E /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A85F4223C9D64F001B773E /* MenuButton.m */; };
 		67A860E723C9D64F001B773E /* ImageTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A85F4323C9D64F001B773E /* ImageTitleButton.m */; };
-		67A860E823C9D64F001B773E /* KeyValueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A85F4423C9D64F001B773E /* KeyValueTableViewController.m */; };
 		67A860E923C9D64F001B773E /* CheckButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A85F4723C9D64F001B773E /* CheckButton.m */; };
 		67A860EA23C9D64F001B773E /* MoreTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A85F4B23C9D64F001B773E /* MoreTableView.m */; };
 		67A860EB23C9D64F001B773E /* UIView+Glow.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A85F5023C9D64F001B773E /* UIView+Glow.m */; };
@@ -331,6 +329,8 @@
 		AF053A9023D4059600931FD7 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AF053A8A23D4059600931FD7 /* UITableView+FDIndexPathHeightCache.m */; };
 		AF053A9F23D43FD600931FD7 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF053A9E23D43FD600931FD7 /* BaseTableViewCell.m */; };
 		AF4FAA7523D6DA23004040FB /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4FAA7423D6DA23004040FB /* UIView+YYAdd.m */; };
+		AF4FAA8123D6F64E004040FB /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4FAA7F23D6F64D004040FB /* TestViewController.m */; };
+		AF4FAA8223D6F64E004040FB /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF4FAA8023D6F64E004040FB /* TestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -620,18 +620,14 @@
 		67A85F3E23C9D64F001B773E /* CheckButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckButton.h; sourceTree = "<group>"; };
 		67A85F3F23C9D64F001B773E /* CommonViewHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonViewHeaders.h; sourceTree = "<group>"; };
 		67A85F4023C9D64F001B773E /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
-		67A85F4123C9D64F001B773E /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
 		67A85F4223C9D64F001B773E /* MenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuButton.m; sourceTree = "<group>"; };
 		67A85F4323C9D64F001B773E /* ImageTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTitleButton.m; sourceTree = "<group>"; };
-		67A85F4423C9D64F001B773E /* KeyValueTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValueTableViewController.m; sourceTree = "<group>"; };
 		67A85F4523C9D64F001B773E /* MoreTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreTableView.h; sourceTree = "<group>"; };
 		67A85F4623C9D64F001B773E /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
 		67A85F4723C9D64F001B773E /* CheckButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckButton.m; sourceTree = "<group>"; };
 		67A85F4823C9D64F001B773E /* MenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuButton.h; sourceTree = "<group>"; };
-		67A85F4923C9D64F001B773E /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
 		67A85F4A23C9D64F001B773E /* ImageTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTitleButton.h; sourceTree = "<group>"; };
 		67A85F4B23C9D64F001B773E /* MoreTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreTableView.m; sourceTree = "<group>"; };
-		67A85F4C23C9D64F001B773E /* KeyValueTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyValueTableViewController.h; sourceTree = "<group>"; };
 		67A85F4E23C9D64F001B773E /* DebugMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugMarco.h; sourceTree = "<group>"; };
 		67A85F5023C9D64F001B773E /* UIView+Glow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Glow.m"; sourceTree = "<group>"; };
 		67A85F5123C9D64F001B773E /* UIView+CustomAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CustomAutoLayout.h"; sourceTree = "<group>"; };
@@ -1048,6 +1044,9 @@
 		AF053A9E23D43FD600931FD7 /* BaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		AF4FAA7323D6DA23004040FB /* UIView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYAdd.h"; sourceTree = "<group>"; };
 		AF4FAA7423D6DA23004040FB /* UIView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYAdd.m"; sourceTree = "<group>"; };
+		AF4FAA7E23D6F64D004040FB /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		AF4FAA7F23D6F64D004040FB /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		AF4FAA8023D6F64E004040FB /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		C3DEF3C9E47F4A038AC7A991 /* Pods_zykjApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zykjApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1120,6 +1119,9 @@
 				2444E0B320590D8100F29C06 /* PrefixHeader.pch */,
 				670C3A4223D2FA5D002664F0 /* TestTableViewController.h */,
 				670C3A4323D2FA5D002664F0 /* TestTableViewController.m */,
+				AF4FAA7E23D6F64D004040FB /* TestViewController.h */,
+				AF4FAA7F23D6F64D004040FB /* TestViewController.m */,
+				AF4FAA8023D6F64E004040FB /* TestViewController.xib */,
 			);
 			path = zykjApp;
 			sourceTree = "<group>";
@@ -1757,20 +1759,16 @@
 			isa = PBXGroup;
 			children = (
 				67A85F3E23C9D64F001B773E /* CheckButton.h */,
-				67A85F3F23C9D64F001B773E /* CommonViewHeaders.h */,
-				67A85F4023C9D64F001B773E /* EGORefreshTableHeaderView.m */,
-				67A85F4123C9D64F001B773E /* MenuTableViewController.m */,
-				67A85F4223C9D64F001B773E /* MenuButton.m */,
-				67A85F4323C9D64F001B773E /* ImageTitleButton.m */,
-				67A85F4423C9D64F001B773E /* KeyValueTableViewController.m */,
-				67A85F4523C9D64F001B773E /* MoreTableView.h */,
-				67A85F4623C9D64F001B773E /* EGORefreshTableHeaderView.h */,
 				67A85F4723C9D64F001B773E /* CheckButton.m */,
-				67A85F4823C9D64F001B773E /* MenuButton.h */,
-				67A85F4923C9D64F001B773E /* MenuTableViewController.h */,
+				67A85F3F23C9D64F001B773E /* CommonViewHeaders.h */,
+				67A85F4623C9D64F001B773E /* EGORefreshTableHeaderView.h */,
+				67A85F4023C9D64F001B773E /* EGORefreshTableHeaderView.m */,
 				67A85F4A23C9D64F001B773E /* ImageTitleButton.h */,
+				67A85F4323C9D64F001B773E /* ImageTitleButton.m */,
+				67A85F4823C9D64F001B773E /* MenuButton.h */,
+				67A85F4223C9D64F001B773E /* MenuButton.m */,
+				67A85F4523C9D64F001B773E /* MoreTableView.h */,
 				67A85F4B23C9D64F001B773E /* MoreTableView.m */,
-				67A85F4C23C9D64F001B773E /* KeyValueTableViewController.h */,
 			);
 			path = CommonView;
 			sourceTree = "<group>";
@@ -2740,6 +2738,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2444E08B20590CAB00F29C06 /* LaunchScreen.storyboard in Resources */,
+				AF4FAA8223D6F64E004040FB /* TestViewController.xib in Resources */,
 				6761563023C9BD3500E8056A /* WKJSPOST.html in Resources */,
 				67A8643323CDA249001B773E /* MJRefresh.bundle in Resources */,
 				67A860D823C9D64F001B773E /* ZLPickerGroupTableViewCell.xib in Resources */,
@@ -2821,7 +2820,6 @@
 				67A8611123C9D650001B773E /* FTAnimationManager.m in Sources */,
 				6761564023C9BE4D00E8056A /* UIFrameworkModel.m in Sources */,
 				67A8623723C9DECC001B773E /* XXPickerViewViewController.m in Sources */,
-				67A860E523C9D64F001B773E /* MenuTableViewController.m in Sources */,
 				24726C4D23CC2CDB005299B8 /* SDAVAssetExportHelp.m in Sources */,
 				6761560623C9B54C00E8056A /* PageScrollView.m in Sources */,
 				AF053A8E23D4059600931FD7 /* UITableView+FDKeyedHeightCache.m in Sources */,
@@ -2846,7 +2844,6 @@
 				2444E08320590CAB00F29C06 /* ViewController.m in Sources */,
 				24726C4E23CC2CDB005299B8 /* SDAVAssetExportSession.m in Sources */,
 				6761564D23C9C15000E8056A /* NJWeakWrapper.m in Sources */,
-				67A860E823C9D64F001B773E /* KeyValueTableViewController.m in Sources */,
 				67A860F623C9D64F001B773E /* NSDate+Common.m in Sources */,
 				249EE97C2247B3010076FE7F /* UIControl+Block.m in Sources */,
 				670C3A4423D2FA5D002664F0 /* TestTableViewController.m in Sources */,
@@ -2987,6 +2984,7 @@
 				249EE9892247B3010076FE7F /* GTMBase64.m in Sources */,
 				249EE9882247B3010076FE7F /* IMichUtil.m in Sources */,
 				67A860E723C9D64F001B773E /* ImageTitleButton.m in Sources */,
+				AF4FAA8123D6F64E004040FB /* TestViewController.m in Sources */,
 				67A860F023C9D64F001B773E /* NSObject+CommonBlock.m in Sources */,
 				67A860E323C9D64F001B773E /* YYClassInfo.m in Sources */,
 				67A8616523C9D650001B773E /* UIView+SDExtension.m in Sources */,

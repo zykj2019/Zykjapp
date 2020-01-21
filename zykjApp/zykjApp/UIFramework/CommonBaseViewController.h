@@ -66,7 +66,7 @@
 
 - (void)addCustomNav;
 
-///
+///增加内容ContentView
 - (void)addTContentView;
 
 /// //透明nav

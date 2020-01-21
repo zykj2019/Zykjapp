@@ -22,8 +22,4 @@
 
 #import "ImageTitleButton.h"
 
-#import "KeyValueTableViewController.h"
-
-#import "MenuTableViewController.h"
-
 #endif

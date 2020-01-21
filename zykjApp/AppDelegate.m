@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TestTableViewController.h"
+#import "TestViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +20,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-    TestTableViewController *vcMain = [[TestTableViewController alloc]init];
+//    TestTableViewController *vcMain = [[TestTableViewController alloc]init];
+    
+    TestViewController *vcMain = [[TestViewController alloc] initWithNibName:@"TestViewController" bundle:nil];
     self.window.rootViewController = [[NavigationViewController alloc]initWithRootViewController:vcMain];
     self.window.backgroundColor = UIColor.whiteColor;
     [self.window makeKeyAndVisible];

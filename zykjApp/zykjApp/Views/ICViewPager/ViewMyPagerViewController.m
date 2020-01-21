@@ -71,12 +71,12 @@
         swipeGestureRecognizer =[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
         swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
         swipeGestureRecognizer.cancelsTouchesInView = NO;
-        [self.view addGestureRecognizer:swipeGestureRecognizer];
+        [self.tContentView addGestureRecognizer:swipeGestureRecognizer];
         
         swipeGestureRecognizer =[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
         swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
         swipeGestureRecognizer.cancelsTouchesInView = NO;
-        [self.view addGestureRecognizer:swipeGestureRecognizer];
+        [self.tContentView addGestureRecognizer:swipeGestureRecognizer];
     }
     
     [self reloadData];
@@ -88,9 +88,9 @@
     //    CGFloat baseY = 0.0;
     
     frame = _tabsView.frame;
-    CGFloat  tabsWidth = _customView ? (self.view.bounds.size.width - _customView.frame.size.width)  : self.view.bounds.size.width;
+    CGFloat  tabsWidth = _customView ? (self.tContentView.bounds.size.width - _customView.frame.size.width)  : self.tContentView.bounds.size.width;
     frame.origin.x = 0.0;
-    frame.origin.y = self.tabLocation ? baseY + _tabTop : self.view.frame.size.height - self.tabHeight - _tabTop;
+    frame.origin.y = self.tabLocation ? baseY + _tabTop : self.tContentView.frame.size.height - self.tabHeight - _tabTop;
     frame.size.width = tabsWidth;
     frame.size.height = self.tabHeight;
     _tabsView.frame = frame;
@@ -106,7 +106,7 @@
     frame = _tabsBottomLine.frame;
     frame.origin.x = 0.0;
     frame.origin.y = CGRectGetMaxY(_tabsView.frame) - BottomLineHeight;
-    frame.size.width = self.view.bounds.size.width;
+    frame.size.width = self.tContentView.bounds.size.width;
     frame.size.height = BottomLineHeight;
     _tabsBottomLine.frame = frame;
     
@@ -114,8 +114,8 @@
     frame.origin.x = 0.0;
     //    frame.origin.y = self.tabLocation ? baseY + self.tabHeight + self.contentTop : self.contentTop + baseY;
     frame.origin.y = self.tabLocation ? CGRectGetMaxY(_tabsView.frame) + self.contentTop : self.contentTop + baseY;
-    frame.size.width = self.view.bounds.size.width;
-    frame.size.height = self.tabLocation ? self.view.frame.size.height - frame.origin.y : self.view.frame.size.height -CGRectGetMinY(_tabsView.frame);
+    frame.size.width = self.tContentView.bounds.size.width;
+    frame.size.height = self.tabLocation ? self.tContentView.frame.size.height - frame.origin.y : self.tContentView.frame.size.height -CGRectGetMinY(_tabsView.frame);
     _contentView.frame = frame;
     
     for (int i = 0; i < _tabCount; i++) {
@@ -180,7 +180,7 @@
     [self hanldeWillShowView:index];
     
     // Get the desired page's index
-    [self.pageViewController setContentOffset:CGPointMake(index * self.view.width, 0) animated:YES];
+    [self.pageViewController setContentOffset:CGPointMake(index * self.tContentView.width, 0) animated:YES];
     
 }
 
@@ -330,7 +330,7 @@
     _pageViewController.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     _pageViewController.delaysContentTouches = YES;
     _pageViewController.canCancelContentTouches = YES;
-    [self.view addSubview:_pageViewController];
+    [self.tContentView addSubview:_pageViewController];
     
     self.animatingToTab = YES;
     
@@ -389,13 +389,13 @@
     
     _customView = [self.delegate respondsToSelector:@selector(viewPagerForCustomView:)] ? [self.delegate viewPagerForCustomView:self] : nil;
     // Add tabsView
-    CGFloat screenWidth = self.view.frame.size.width;
+    CGFloat screenWidth = self.tContentView.frame.size.width;
     CGRect tabsFrame = CGRectMake(0.0, 0.0, screenWidth, self.tabHeight);
     if (_customView) {
         CGRect customFrame = _customView.frame;
         tabsFrame = CGRectMake(0, 0, screenWidth - _customView.width, self.tabHeight);
         _customView.frame = CGRectMake(tabsFrame.size.width, 0, customFrame.size.width, self.tabHeight);
-        [self.view insertSubview:_customView atIndex:0];
+        [self.tContentView insertSubview:_customView atIndex:0];
     }
     
     _tabsView = [[ViewPagerScrollView alloc] initWithFrame:tabsFrame];
@@ -404,12 +404,12 @@
     _tabsView.showsHorizontalScrollIndicator = NO;
     _tabsView.showsVerticalScrollIndicator = NO;
     
-    [self.view insertSubview:_tabsView atIndex:0];
+    [self.tContentView insertSubview:_tabsView atIndex:0];
     
     
     //bottomLine
     [_tabsBottomLine removeFromSuperview];
-    _tabsBottomLine = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 0.5)];
+    _tabsBottomLine = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tContentView.frame.size.width, 0.5)];
     _tabsBottomLine.backgroundColor = kDefaultTabsViewBottomLineColor;
     
     //    [self.view addSubview:_tabsBottomLine];
@@ -446,14 +446,14 @@
     }
     
     // Add contentView
-    _contentView = [self.view viewWithTag:kPageViewTag];
+    _contentView = [self.tContentView viewWithTag:kPageViewTag];
     
     if (!_contentView) {
         
         _contentView = _pageViewController;
         _contentView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         _contentView.backgroundColor = self.contentViewBackgroundColor;
-        _contentView.bounds = self.view.bounds;
+        _contentView.bounds = self.tContentView.bounds;
         _contentView.tag = kPageViewTag;
         
         //        [self.view insertSubview:_contentView atIndex:0];
@@ -573,7 +573,7 @@
             UIView *view = [self.dataSource viewPager:self contentViewForTabAtIndex:index];
             
             // Adjust view's bounds to match the pageView's bounds
-            UIView *pageView = [self.view viewWithTag:kPageViewTag];
+            UIView *pageView = [self.tContentView viewWithTag:kPageViewTag];
             view.frame = pageView.bounds;
             
             viewController = [UIViewController new];

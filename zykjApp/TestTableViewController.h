@@ -7,6 +7,7 @@
 //
 
 #import "BaseTableViewController.h"
+#import "ViewPagerController.h"
 
 @interface TestTableViewCell : UITableViewCell
 

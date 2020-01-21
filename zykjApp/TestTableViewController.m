@@ -8,6 +8,8 @@
 
 #import "TestTableViewController.h"
 #import "LineView.h"
+#import "MyAudioViewController.h"
+#import "WKWebViewController.h"
 
 @interface TestView : UIView
 
@@ -32,7 +34,8 @@
 @implementation TestTableViewController
 
 - (void)configParams {
-    self.hiddenNav = YES;
+    [super configParams];
+//    self.hiddenNav = YES;
 }
 // 是否支持自动转屏
 - (BOOL)shouldAutorotate {
@@ -54,23 +57,25 @@
 }
 
 - (void)viewDidLoad {
+//    self.delegate = self;
+//    self.dataSource = self;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    lineView = [[LineView alloc] init];
-    lineView.backgroundColor = kRedColor;
-    lineView.myHeight = 2.0;
-    lineView.leftPos.equalTo(self.view.leftPos).offset(20);
-    lineView.rightPos.equalTo(self.view.rightPos).offset(20);
-    lineView.bottomPos.equalTo(self.view.bottomPos).offset(20);
-    [self.view addSubview:lineView];
-//    [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.bottom.right.mas_equalTo(self.view);
-//        make.height.mas_equalTo(20);
-//    }];
-    
-    LineView *line = [[LineView alloc] init];
-    line.frame = CGRectMake(0, 100, 100, 100);
-    [self.view addSubview:line];
+//    lineView = [[LineView alloc] init];
+//    lineView.backgroundColor = kRedColor;
+//    lineView.myHeight = 2.0;
+//    lineView.leftPos.equalTo(self.view.leftPos).offset(20);
+//    lineView.rightPos.equalTo(self.view.rightPos).offset(20);
+//    lineView.bottomPos.equalTo(self.view.bottomPos).offset(20);
+//    [self.view addSubview:lineView];
+////    [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+////        make.left.bottom.right.mas_equalTo(self.view);
+////        make.height.mas_equalTo(20);
+////    }];
+//    
+//    LineView *line = [[LineView alloc] init];
+//    line.frame = CGRectMake(0, 100, 100, 100);
+//    [self.view addSubview:line];
 }
 
 /*
@@ -83,6 +88,12 @@
 }
 */
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    WKWebViewController *dst = [[WKWebViewController alloc] init];
+    [dst loadWebURLSring:@"http://www.baidu.com"];
+//    [self presentViewController:dst animated:YES completion:nil];
+    [self.navigationController pushViewController:dst animated:YES];
+}
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
@@ -105,5 +116,74 @@
     return 50;
 }
 
+
+#pragma mark - ViewPagerDataSource
+- (NSUInteger)numberOfTabsForViewPager:(ViewPagerController *)viewPager {
+    
+    return 1;
+}
+
+- (UIView *)viewPager:(ViewPagerController *)viewPager viewForTabAtIndex:(NSUInteger)index {
+    UILabel *label = [[UILabel alloc] init];
+    label.text = @"wwwww";
+    label.textColor = kBlueColor;
+    return label;
+}
+
+- (UIViewController *)viewPager:(ViewPagerController *)viewPager contentViewControllerForTabAtIndex:(NSUInteger)index {
+    
+    UIViewController *dst = [[UIViewController alloc] init];
+    dst.view.backgroundColor = kRedColor;
+    return dst;
+}
+
+#pragma mark - ViewPagerDelegate
+
+- (CGFloat)viewPager:(ViewPagerController *)viewPager valueForOption:(ViewPagerOption)option withDefault:(CGFloat)value {
+    
+    switch (option) {
+        case ViewPagerOptionStartFromSecondTab: //0为开始时第一页；1为开始第二页
+            return 0.0;
+            break;
+        case ViewPagerOptionCenterCurrentTab:
+            return 1.0;
+            break;
+        case ViewPagerOptionTabLocation:
+            return 1.0;
+            break;
+        case ViewPagerOptionTabWidth:
+            return ScreenWidth/4;
+            break;
+        case ViewPagerOptionCenterTabView:
+            return 1.0;
+            break;
+        default:
+            break;
+    }
+    
+    return value;
+}
+
+- (UIColor *)viewPager:(ViewPagerController *)viewPager colorForComponent:(ViewPagerComponent)component withDefault:(UIColor *)color {
+    
+    switch (component) {
+        case ViewPagerIndicator:
+            
+            return kMainTextColor;
+            break;
+        case ViewPagerTabsView:
+            
+            return kNavColor;
+            break;
+        case ViewPagerTextIndicator:
+            
+            return kBlackColor;
+            break;
+        default:
+            return color;
+            break;
+    }
+    
+}
 
 @end

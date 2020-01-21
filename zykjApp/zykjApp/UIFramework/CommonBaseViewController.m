@@ -14,6 +14,30 @@
 
 #import "UIView+Extension.h"
 
+@interface BaseRootView : UIView
+
+@property (strong, nonatomic)  CustomNav *customNav;
+
+@property (strong, nonatomic) UIView *tContentView;
+
+@end
+
+@implementation BaseRootView
+
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+      
+    }
+    return self;
+}
+
+- (void)addSubview:(UIView *)view {
+    [super addSubview:view];
+}
+@end
+
 @interface CommonBaseViewController () {
      BOOL _isPortrait;
 }
@@ -21,6 +45,17 @@
 @end
 
 @implementation CommonBaseViewController
+
+//- (void)loadView {
+//    self.view = [BaseRootView new];
+//}
+
+- (UIView *)tContentView {
+    if (_tContentView == nil) {
+        [self addTContentView];
+    }
+    return _tContentView;
+}
 
 - (instancetype)init
 {
@@ -41,7 +76,6 @@
 
 - (void)configParams
 {
-    
 }
 
 - (void)presentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion {
@@ -128,9 +162,40 @@
 - (void)viewDidLoad
 {
     
-    [super viewDidLoad];
+    [self tContentView];
+    self.tContentView.backgroundColor = kRedColor;
     
-     [self addTContentView];
+    if ([self.view isKindOfClass:BaseRootView.class]) {
+         self.tContentView.translatesAutoresizingMaskIntoConstraints = NO;
+
+        for (UIView *subView in self.view.subviews) {
+            if (subView != self.tContentView) {
+                [self.tContentView addSubview:subView];
+            }
+
+        }
+
+        for (NSLayoutConstraint *con in self.view.constraints) {
+            if (con.firstItem == self.view ) {
+                NSLayoutConstraint *tcon = [NSLayoutConstraint constraintWithItem:self.tContentView attribute:con.firstAttribute relatedBy:con.relation toItem:con.secondItem attribute:con.secondAttribute multiplier:con.multiplier constant:con.constant];
+
+                [self.tContentView addConstraint:tcon];
+                [self.view removeConstraint:con];
+
+            } else if (con.secondItem == self.view){
+                NSLayoutConstraint *tcon = [NSLayoutConstraint constraintWithItem:con.firstItem attribute:con.firstAttribute relatedBy:con.relation toItem:self.tContentView attribute:con.secondAttribute multiplier:con.multiplier constant:con.constant];
+
+                 [self.tContentView addConstraint:tcon];
+                  [self.view removeConstraint:con];
+            }
+
+
+
+        }
+
+    }
+    
+    [super viewDidLoad];
     
     [self configContainer];
     
@@ -211,9 +276,12 @@
 
 ///
 - (void)addTContentView {
-    self.tContentView = [[UIView alloc] init];
-    self.tContentView.backgroundColor = kRedColor;
-    [self.view addSubview:self.tContentView];
+    if (!_tContentView) {
+        _tContentView = [[UIView alloc] initWithFrame:self.view.bounds];
+        [self.view addSubview:_tContentView];
+        _tContentView.backgroundColor = kClearColor;
+    }
+    
 }
 
 //透明nav
@@ -285,6 +353,7 @@
         self.customNav.height = [CustomNav navBarBottom];
         
         self.tContentView.frame = CGRectMake(0, CGRectGetMaxY(self.customNav.frame), self.view.width, self.view.height - self.customNav.height);
+           NSLog(@"%@---%@",NSStringFromCGRect(self.tContentView.frame),self.tContentView.superview);
     } else {
         self.tContentView.frame = self.view.bounds;
     }
@@ -294,6 +363,11 @@
         _isPortrait = isPortrait;
         [self changeDeviceScreenSizeHandle:_isPortrait];
     }
+    
+    [self.view layoutIfNeeded];
+    [self.tContentView layoutIfNeeded];
+    self.tContentView.backgroundColor = kRedColor;
+    NSLog(@"%@---%@",NSStringFromCGRect(self.tContentView.frame),self.tContentView.superview);
 }
 
 
