@@ -127,7 +127,6 @@
 		67A860DE23C9D64F001B773E /* ZLAnimationScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A85F2823C9D64F001B773E /* ZLAnimationScrollView.m */; };
 		67A860DF23C9D64F001B773E /* ZLPickerGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A85F2A23C9D64F001B773E /* ZLPickerGlobal.m */; };
 		67A860E023C9D64F001B773E /* UITableView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A85F3023C9D64F001B773E /* UITableView+YYAdd.m */; };
-		67A860E123C9D64F001B773E /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A85F3123C9D64F001B773E /* UIView+YYAdd.m */; };
 		67A860E223C9D64F001B773E /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A85F3723C9D64F001B773E /* NSObject+YYModel.m */; };
 		67A860E323C9D64F001B773E /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A85F3823C9D64F001B773E /* YYClassInfo.m */; };
 		67A860E423C9D64F001B773E /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A85F4023C9D64F001B773E /* EGORefreshTableHeaderView.m */; };
@@ -331,6 +330,7 @@
 		AF053A8F23D4059600931FD7 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = AF053A8923D4059600931FD7 /* UITableView+FDTemplateLayoutCellDebug.m */; };
 		AF053A9023D4059600931FD7 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AF053A8A23D4059600931FD7 /* UITableView+FDIndexPathHeightCache.m */; };
 		AF053A9F23D43FD600931FD7 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF053A9E23D43FD600931FD7 /* BaseTableViewCell.m */; };
+		AF4FAA7523D6DA23004040FB /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4FAA7423D6DA23004040FB /* UIView+YYAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -609,9 +609,7 @@
 		67A85F2C23C9D64F001B773E /* ZLPickerGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPickerGlobal.h; sourceTree = "<group>"; };
 		67A85F2E23C9D64F001B773E /* YYKitMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKitMacro.h; sourceTree = "<group>"; };
 		67A85F3023C9D64F001B773E /* UITableView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+YYAdd.m"; sourceTree = "<group>"; };
-		67A85F3123C9D64F001B773E /* UIView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYAdd.m"; sourceTree = "<group>"; };
 		67A85F3223C9D64F001B773E /* UITableView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+YYAdd.h"; sourceTree = "<group>"; };
-		67A85F3323C9D64F001B773E /* UIView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYAdd.h"; sourceTree = "<group>"; };
 		67A85F3523C9D64F001B773E /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
 		67A85F3623C9D64F001B773E /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
 		67A85F3723C9D64F001B773E /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
@@ -1048,6 +1046,8 @@
 		AF053A8B23D4059600931FD7 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
 		AF053A9D23D43FD600931FD7 /* BaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		AF053A9E23D43FD600931FD7 /* BaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		AF4FAA7323D6DA23004040FB /* UIView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYAdd.h"; sourceTree = "<group>"; };
+		AF4FAA7423D6DA23004040FB /* UIView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYAdd.m"; sourceTree = "<group>"; };
 		C3DEF3C9E47F4A038AC7A991 /* Pods_zykjApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zykjApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1188,6 +1188,8 @@
 		249EE63F2247B2FB0076FE7F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				AF4FAA7323D6DA23004040FB /* UIView+YYAdd.h */,
+				AF4FAA7423D6DA23004040FB /* UIView+YYAdd.m */,
 				24726C5723CC32BD005299B8 /* UIView+ND.h */,
 				24726C5623CC32BD005299B8 /* UIView+ND.m */,
 				67A8623B23C9DF0F001B773E /* NSArray+NSArray_ILExtension.h */,
@@ -1706,9 +1708,7 @@
 			isa = PBXGroup;
 			children = (
 				67A85F3023C9D64F001B773E /* UITableView+YYAdd.m */,
-				67A85F3123C9D64F001B773E /* UIView+YYAdd.m */,
 				67A85F3223C9D64F001B773E /* UITableView+YYAdd.h */,
-				67A85F3323C9D64F001B773E /* UIView+YYAdd.h */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -2880,7 +2880,6 @@
 				67A8610D23C9D650001B773E /* UIColor+MLPFlatColors.m in Sources */,
 				67A860D523C9D64F001B773E /* ZLPickerImageView.m in Sources */,
 				67A8622423C9DEC4001B773E /* BRStringPickerView.m in Sources */,
-				67A860E123C9D64F001B773E /* UIView+YYAdd.m in Sources */,
 				67A860CE23C9D64F001B773E /* ZLPickerGroup.m in Sources */,
 				67A8611D23C9D650001B773E /* M80AttributedLabelAttachment.m in Sources */,
 				249EE9832247B3010076FE7F /* UIView+block.m in Sources */,
@@ -3053,6 +3052,7 @@
 				67A8641B23CD9C86001B773E /* NSBundle+MJRefresh.m in Sources */,
 				67A8614E23C9D650001B773E /* UIView+MSSLayout.m in Sources */,
 				67A8610123C9D64F001B773E /* KeyChainHelper.m in Sources */,
+				AF4FAA7523D6DA23004040FB /* UIView+YYAdd.m in Sources */,
 				67A860CB23C9D64F001B773E /* ZLCameraView.m in Sources */,
 				67A8617523C9D650001B773E /* SDWebImageDecoder.m in Sources */,
 				67A8624A23C9DFB8001B773E /* PictureView.m in Sources */,
