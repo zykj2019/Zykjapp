@@ -353,7 +353,7 @@
         self.customNav.height = [CustomNav navBarBottom];
         
         self.tContentView.frame = CGRectMake(0, CGRectGetMaxY(self.customNav.frame), self.view.width, self.view.height - self.customNav.height);
-           NSLog(@"%@---%@",NSStringFromCGRect(self.tContentView.frame),self.tContentView.superview);
+           NSLog(@"%@---%@",NSStringFromCGRect(CGRectMake(0, CGRectGetMaxY(self.customNav.frame), self.view.width, self.view.height - self.customNav.height)),self.tContentView.superview);
     } else {
         self.tContentView.frame = self.view.bounds;
     }
@@ -364,8 +364,8 @@
         [self changeDeviceScreenSizeHandle:_isPortrait];
     }
     
-    [self.view layoutIfNeeded];
-    [self.tContentView layoutIfNeeded];
+//    [self.view layoutIfNeeded];
+//    [self.tContentView layoutIfNeeded];
     self.tContentView.backgroundColor = kRedColor;
     NSLog(@"%@---%@",NSStringFromCGRect(self.tContentView.frame),self.tContentView.superview);
 }
