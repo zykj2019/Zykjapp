@@ -8,8 +8,11 @@
 
 #import "BaseTableViewController.h"
 #import "ViewPagerController.h"
+#import "BaseTableViewCell.h"
 
-@interface TestTableViewCell : UITableViewCell
+@interface TestTableViewCell : BaseTableViewCell
+
+@property (strong, nonatomic) UILabel *titleLbl;
 
 @end
 

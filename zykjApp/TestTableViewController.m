@@ -24,7 +24,19 @@
 
 @implementation TestTableViewCell
 
+- (void)addOwnViews {
+    [super addOwnViews];
+    [self createLblName:@"titleLbl" font:BaesFont(12.0) color:kBlackColor text:@"ccc"];
+}
 
+- (void)addConstConstraints {
+
+    [super addConstConstraints];
+    
+    [self.titleLbl mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.top.mas_equalTo(self.contentView);
+    }];
+}
 @end
 
 @interface TestTableViewController () {
@@ -51,12 +63,7 @@
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
     return UIInterfaceOrientationPortrait;
 }
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-   
-    [self.navigationController setNavigationBarHidden:YES];
-    NSLog(@"%@",NSStringFromCGPoint(self.view.layer.anchorPoint));
-}
+
 
 - (void)viewDidLoad {
 //    self.delegate = self;
@@ -98,7 +105,7 @@
 //    [self presentViewController:dst animated:YES completion:nil];
     [self.navigationController pushViewController:dst animated:YES];
 }
-#pragma mark - UITableViewDataSource
+
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
@@ -113,19 +120,34 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
      BaseEmptyItem *baseEmptyItem = [[BaseEmptyItem alloc] initWithTitle:@"dfdfdf" emptyImage:nil resetRequestBlock:nil];
     BaseEmptyTableViewCell *cell = [BaseEmptyTableViewCell cellWithTableView:tableView];
-    cell.baseEmptyItem = baseEmptyItem;
-  
+    [cell setProName:@"baseEmptyItem" proItem:baseEmptyItem isClearCacheHeight:NO];
+
 //    [cell layouts];
-    CGSize size = [cell.rootLayout sizeThatFits:CGSizeMake(tableView.frame.size.width, 0)];
-   
+//    CGSize size = [cell.rootLayout sizeThatFits:CGSizeMake(tableView.frame.size.width, 0)];
+
     return cell;
+    
+//    TestTableViewCell *cell = [TestTableViewCell cellWithTableView:tableView];
+//    [cell layouts];
+//    return cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-      NSLog(@"%.2f",tableView.width);
-       return UITableViewAutomaticDimension;
+     
+  CGFloat t =  [tableView fd_heightForCellCacheByIndexPath:indexPath Class:BaseEmptyTableViewCell.class configuration:^(BaseEmptyTableViewCell* cell) {
+       BaseEmptyItem *baseEmptyItem = [[BaseEmptyItem alloc] initWithTitle:@"dfdfdf" emptyImage:nil resetRequestBlock:nil];
+        [cell setProName:@"baseEmptyItem" proItem:baseEmptyItem isClearCacheHeight:YES];
+    }];
+       return t;
+    
+//    CGFloat t =  [tableView fd_heightForCellCacheByIndexPath:indexPath Class:TestTableViewCell.class configuration:^(TestTableViewCell* cell) {
+//
+//       }];
+//          return t;
 }
 
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.tableView reloadData];
+}
 #pragma mark - ViewPagerDataSource
 - (NSUInteger)numberOfTabsForViewPager:(ViewPagerController *)viewPager {
     

@@ -31,5 +31,27 @@ static NSString *const krightSlideConfig = @"krightSlideConfig";
      objc_setAssociatedObject(self, (__bridge const void *)krightSlideConfig, rightSlideConfig, OBJC_ASSOCIATION_RETAIN);
 }
 
+- (void)registerClass:(nullable Class)cellClass {
+    NSString *idStr = [self idStrWithClass:cellClass];
+    [self registerClass:cellClass forCellReuseIdentifier:idStr];
+}
+
+- (CGFloat)fd_heightForCellCacheByIndexPath:(NSIndexPath *)indexPath Class:(nullable Class)cellClass configuration:(void (^)(id cell))configuration {
+    if (self.width == 0) {
+        return 0;
+    }
+    
+    NSString *idStr = [self idStrWithClass:cellClass];
+    if (![self fd_onlyTemplateCellForReuseIdentifier:idStr]) {
+        //注册class
+        [self registerClass:cellClass];
+    }
+    return [self fd_heightForCellWithIdentifier:idStr cacheByIndexPath:indexPath configuration:configuration];
+}
+
+- (NSString *)idStrWithClass:(nullable Class)cellClass {
+    return [NSString stringWithFormat:@"%@_sizing_id",NSStringFromClass(cellClass)];
+}
+
 
 @end

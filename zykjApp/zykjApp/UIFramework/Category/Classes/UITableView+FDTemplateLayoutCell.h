@@ -73,7 +73,7 @@
 
 
 /// 仅仅获取fd_onlyTemplateCellForReuseIdentifier （若果获取uitableviewcell为空，不进行dequeueReusableCellWithIdentifier）
-/// @param identifier
+/// @param identifier identifier
 - (__kindof UITableViewCell *)fd_onlyTemplateCellForReuseIdentifier:(NSString *)identifier;
 
 @end

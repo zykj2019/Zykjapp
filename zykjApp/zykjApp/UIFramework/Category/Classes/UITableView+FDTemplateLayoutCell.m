@@ -82,8 +82,19 @@
         [cell.contentView addConstraint:widthFenceConstraint];
 
         // Auto layout engine does its math
-        fittingHeight = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
-        
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Warc-performSelector-leaks"
+        if ([cell respondsToSelector:@selector(rootLayout)]) {
+            if ([cell performSelector:@selector(rootLayout)]) {
+                fittingHeight = [cell systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+            } else {
+                fittingHeight = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+            }
+        } else {
+            fittingHeight = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+        }
+#pragma clang diagnostic pop
+       
         // Clean-ups
         [cell.contentView removeConstraint:widthFenceConstraint];
         if (isSystemVersionEqualOrGreaterThen10_2) {

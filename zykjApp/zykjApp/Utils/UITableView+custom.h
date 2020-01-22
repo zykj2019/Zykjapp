@@ -17,4 +17,8 @@
 
 - (void)setRightSlideConfig:(NSDictionary *)rightSlideConfig;
 
+- (void)registerClass:(nullable Class)cellClass;
+
+- (CGFloat)fd_heightForCellCacheByIndexPath:(NSIndexPath *)indexPath Class:(nullable Class)cellClass configuration:(void (^)(id cell))configuration;
+
 @end

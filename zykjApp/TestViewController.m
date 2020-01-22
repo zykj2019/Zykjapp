@@ -28,7 +28,7 @@
 }
 
 - (void)configParams {
-//    self.hiddenNav = YES;
+    self.hiddenNav = YES;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

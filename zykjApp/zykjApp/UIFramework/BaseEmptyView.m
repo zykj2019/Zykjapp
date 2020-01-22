@@ -74,7 +74,7 @@
 
 - (void)layoutIfNeeded {
     [super layoutIfNeeded];
-    NSLog(@"%@",NSStringFromCGRect(self.titleLbl.frame));
+    NSLog(@"%@",NSStringFromCGRect(self.contentView.frame));
 }
 @end
 
@@ -110,7 +110,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     BaseEmptyTableViewCell *cell = [BaseEmptyTableViewCell cellWithTableView:tableView];
 //    cell.baseEmptyItem = self.baseEmptyItem;
-    [cell setModelName:@"baseEmptyItem" modelItem:self.baseEmptyItem isUpdateMyLayouts:YES];
+    [cell setProName:@"baseEmptyItem" proItem:self.baseEmptyItem isClearCacheHeight:NO];
     return cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

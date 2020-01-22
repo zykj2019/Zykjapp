@@ -99,6 +99,7 @@
     }];
 }
 - (void)layouts {
+    [self updateMyLayouts];
     [self setNeedsUpdateConstraints];
 //    [self layoutIfNeeded];
 }
@@ -120,17 +121,6 @@
     [self layouts];
 }
 
-/// cell赋值模型
-/// @param name 赋值模型的属性名
-/// @param proItem 模型数据
-/// @param isUpdateMyLayouts 是否需要重新布局myLayouts
-- (void)setModelName:(NSString *)name modelItem:(NSObject *)proItem isUpdateMyLayouts:(BOOL)isUpdateMyLayouts {
-    [self setValue:proItem forKey:name];
-    if (isUpdateMyLayouts) {
-        [self updateMyLayouts];
-    }
-    [self layouts];
-}
 /**
  创建lbl
  

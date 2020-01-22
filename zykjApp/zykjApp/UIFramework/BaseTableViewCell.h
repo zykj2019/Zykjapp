@@ -46,14 +46,6 @@
 ///@param isClearCacheHeight 是否清理模型里的缓存高度
 - (void)setProName:(NSString *)name proItem:(NSObject *)proItem isClearCacheHeight:(BOOL)isClearCacheHeight;
 
-
-/// cell赋值模型
-/// @param name 赋值模型的属性名
-/// @param proItem 模型数据
-/// @param isUpdateMyLayouts 是否需要重新布局myLayouts
-- (void)setModelName:(NSString *)name modelItem:(NSObject *)proItem isUpdateMyLayouts:(BOOL)isUpdateMyLayouts;
-
-
 /**
   创建lbl
 
