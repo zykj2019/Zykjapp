@@ -10,6 +10,8 @@
 #import "LineView.h"
 #import "MyAudioViewController.h"
 #import "WKWebViewController.h"
+#import "BaseEmptyView.h"
+
 
 @interface TestView : UIView
 
@@ -76,6 +78,8 @@
 //    LineView *line = [[LineView alloc] init];
 //    line.frame = CGRectMake(0, 100, 100, 100);
 //    [self.view addSubview:line];
+    self.tableView.estimatedRowHeight = 60;
+       self.tableView.rowHeight = UITableViewAutomaticDimension;
 }
 
 /*
@@ -95,6 +99,7 @@
     [self.navigationController pushViewController:dst animated:YES];
 }
 #pragma mark - UITableViewDataSource
+#pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
     return 1;
@@ -102,18 +107,22 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 50;
+    return 1;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
-    cell.textLabel.text = [NSString stringWithFormat:@"wwwwwww"];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+     BaseEmptyItem *baseEmptyItem = [[BaseEmptyItem alloc] initWithTitle:@"dfdfdf" emptyImage:nil resetRequestBlock:nil];
+    BaseEmptyTableViewCell *cell = [BaseEmptyTableViewCell cellWithTableView:tableView];
+    cell.baseEmptyItem = baseEmptyItem;
+  
+//    [cell layouts];
+    CGSize size = [cell.rootLayout sizeThatFits:CGSizeMake(tableView.frame.size.width, 0)];
+   
     return cell;
 }
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    return 50;
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+      NSLog(@"%.2f",tableView.width);
+       return UITableViewAutomaticDimension;
 }
 
 

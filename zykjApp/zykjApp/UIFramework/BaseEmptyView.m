@@ -47,43 +47,34 @@
     _titleLbl.text = baseEmptyItem.title;
     _imgView.image = baseEmptyItem.emptyImage;
     
-    [_imgView resetMyLayoutSetting];
-    [_titleLbl resetMyLayoutSetting];
-       
-       if (_imgView.image) {
-           _imgView.mySize = [_imgView.image maxWidth:self.width];
-           _imgView.myTop = 5.0;
-           _imgView.myCenterY = 0;
-           
-           _titleLbl.topPos.equalTo(self.imgView.bottomPos).offset(25.0);
-           _titleLbl.myCenterY = 0;
-           _titleLbl.myBottom = 5.0;
-       } else {
-           
-           _titleLbl.leftPos.equalTo(@20);
-            _titleLbl.rightPos.equalTo(@20);
-           _titleLbl.myHeight = MyLayoutSize.wrap;
-              _titleLbl.topPos.equalTo(@60);
-            _titleLbl.bottomPos.equalTo(@20);
-           
-       }
-    
 }
 
-//- (void)updateConstraints {
-//    [super updateConstraints];
-//
-//
-//
-//    self.backgroundColor = kRedColor;
-//
-//}
+- (void)updateMyLayouts {
+    [super updateMyLayouts];
+    [_imgView resetMyLayoutSetting];
+    [_titleLbl resetMyLayoutSetting];
+    
+    _titleLbl.leftPos.equalTo(@20);
+    _titleLbl.rightPos.equalTo(@20);
+     _titleLbl.bottomPos.equalTo(@20);
+     _titleLbl.myHeight = MyLayoutSize.wrap;
+    
+    if (_imgView.image) {
+        _imgView.mySize = [_imgView.image maxWidth:self.width];
+        _imgView.myTop = 10.0;
+        _imgView.myCenterX = 0;
+        
+        _titleLbl.topPos.equalTo(self.imgView.bottomPos).offset(0);
+        _titleLbl.myCenterX = 0;
+    } else {
+        _titleLbl.topPos.equalTo(@60);
+        
+    }
+}
 
 - (void)layoutIfNeeded {
     [super layoutIfNeeded];
-    
-    NSLog(@"%@----%@",NSStringFromCGRect(self.titleLbl.superview.superview.frame),self.titleLbl.superview);
-     self.backgroundColor = kRedColor;
+    NSLog(@"%@",NSStringFromCGRect(self.titleLbl.frame));
 }
 @end
 
@@ -93,13 +84,15 @@
 @implementation BaseEmptyView
 
 + (instancetype)initWithBaseEmptyItem:(BaseEmptyItem *)item {
-    BaseEmptyView *baseEmptyView = [BaseEmptyView new];
+    BaseEmptyView *baseEmptyView = [BaseEmptyView customInst];
     baseEmptyView.backgroundColor = kWhiteColor;
     baseEmptyView.estimatedRowHeight = 60;
     baseEmptyView.rowHeight = UITableViewAutomaticDimension;
     baseEmptyView.baseEmptyItem = item;
     baseEmptyView.delegate = baseEmptyView;
     baseEmptyView.dataSource = baseEmptyView;
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:baseEmptyView action:@selector(touchAction:)];
+    [baseEmptyView addGestureRecognizer:singleTap];
     return baseEmptyView;
 }
 
@@ -116,14 +109,27 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     BaseEmptyTableViewCell *cell = [BaseEmptyTableViewCell cellWithTableView:tableView];
-    cell.baseEmptyItem = self.baseEmptyItem;
-    NSLog(@"%.2f",tableView.width);
-//    [cell layouts];
-    CGSize size = [cell.rootLayout sizeThatFits:CGSizeMake(tableView.frame.size.width, 0)];
-   
+//    cell.baseEmptyItem = self.baseEmptyItem;
+    [cell setModelName:@"baseEmptyItem" modelItem:self.baseEmptyItem isUpdateMyLayouts:YES];
     return cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+
        return UITableViewAutomaticDimension;
+}
+
+#pragma mark - tableViewDelgete
+
+//-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+//    if (self.baseEmptyItem.resetRequestBlock) {
+//        self.baseEmptyItem.resetRequestBlock();
+//    }
+//}
+
+#pragma mark - touch
+- (void)touchAction:(UITapGestureRecognizer *)singleTap {
+    if (self.baseEmptyItem.resetRequestBlock) {
+        self.baseEmptyItem.resetRequestBlock();
+    }
 }
 @end

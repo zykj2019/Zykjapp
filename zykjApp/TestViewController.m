@@ -40,6 +40,9 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self showEmptyView:@"fff" resetRequestBlock:nil];
+    
+    [self showEmptyView:@"房贷废了肯定就付了定金付了定金付了定金付了定金付了定金付了定金付了定金了发的垃圾分类等级分类的会计法律的街坊邻居" emptyImage:[UIImage imageNamed:@"empty_img1"] contentInset:UIEdgeInsetsMake(0, 0, 0, 0) resetRequestBlock:^{
+        
+    }];
 }
 @end
