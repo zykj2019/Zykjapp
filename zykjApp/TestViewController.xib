@@ -13,7 +13,7 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="BaseRootView">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -23,11 +23,22 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKS-8r-0Lf">
+                    <rect key="frame" x="53" y="42" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bve-ax-5bD">
+                    <rect key="frame" x="258" y="527" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="Bve-ax-5bD" secondAttribute="bottom" constant="11" id="7Yv-pa-r8t"/>
                 <constraint firstItem="2ic-o5-pGp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="55" id="IJc-Lg-eWB"/>
-                <constraint firstAttribute="trailing" secondItem="2ic-o5-pGp" secondAttribute="trailing" constant="223" id="lr9-J4-gpl"/>
+                <constraint firstAttribute="trailing" secondItem="Bve-ax-5bD" secondAttribute="trailing" constant="16" id="Otx-yo-KYP"/>
+                <constraint firstItem="WKS-8r-0Lf" firstAttribute="centerX" secondItem="2ic-o5-pGp" secondAttribute="centerX" id="UDe-Vu-Av0"/>
+                <constraint firstItem="WKS-8r-0Lf" firstAttribute="top" secondItem="2ic-o5-pGp" secondAttribute="bottom" constant="21" id="n9R-0S-vR5"/>
                 <constraint firstItem="2ic-o5-pGp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wJJ-Hu-BPE"/>
             </constraints>
             <point key="canvasLocation" x="-73" y="83"/>

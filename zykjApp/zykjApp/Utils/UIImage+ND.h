@@ -35,4 +35,8 @@
 -(UIImage*)getSubImage:(CGRect)rect;
 
 +(UIImage*)imageCache:(UIView*)view;
+
+///空视图宽度最大宽度
+- (CGSize) maxWidth:(CGFloat)maxWidth;
+
 @end

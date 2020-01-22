@@ -35,7 +35,7 @@
 
 - (void)configParams {
     [super configParams];
-//    self.hiddenNav = YES;
+    self.hiddenNav = YES;
 }
 // 是否支持自动转屏
 - (BOOL)shouldAutorotate {

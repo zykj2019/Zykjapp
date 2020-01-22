@@ -9,6 +9,7 @@
 #ifndef UtilsHeader_h
 #define UtilsHeader_h
 #import "IMichUtil.h"
+#import "UIImage+ND.h"
 //#import "UIView+Extension.h"
 #import "UIView+YYAdd.h"
 #import "UIView+block.h"
@@ -19,4 +20,5 @@
 #import "UINavigationBar+Awesome.h"
 #import "NSArray+NSArray_ILExtension.h"
 #import "NSDictionary+Zykj.h"
+#import "NSObject+ND.h"
 #endif /* UtilsHeader_h */

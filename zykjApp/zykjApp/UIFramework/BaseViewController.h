@@ -49,17 +49,23 @@
 
 - (void)showRightBarButtonItemWithTitle:(NSString *)title btnColor:(UIColor *)color showAnimated:(BOOL)showAnimated withBlock:(void(^)(id sender))block;
 
-- (void)showEmptyView:(NSString *)title;
+////展示空页面
+- (UIView *)showEmptyView:(NSString *)title resetRequestBlock:(CommonVoidBlock)resetRequestBlock;
+
+- (UIView *)showEmptyView:(NSString *)title emptyImage:(UIImage *)emptyImage contentInset:(UIEdgeInsets)contentInset resetRequestBlock:(CommonVoidBlock)resetRequestBlock;
 
 - (void)removeEmptyView;
 
 @end
 
-@interface BaseLinearViewController : BaseViewController
+///BaseRelativeViewController
+@interface BaseRelativeViewController : BaseViewController
 
 @end
 
-@interface BaseRelativeViewController : BaseViewController
+
+///BaseRelativeViewController
+@interface BaseLinearViewController : BaseViewController
 
 @end
 

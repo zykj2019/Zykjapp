@@ -115,4 +115,8 @@ static NSString *const kTopLine = @"kTopLine";
     self.layer.shadowRadius = 5.0;
     self.layer.cornerRadius = 8.0;
 }
+
+- (void)createLblName:(NSString *)name font:(UIFont *)font color:(UIColor *)color  text:(NSString *)text {
+    
+}
 @end

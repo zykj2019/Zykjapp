@@ -27,8 +27,13 @@
     
 }
 
--(void)loadView {
-    [super loadView];
+- (UIView *)addMyContentView {
+    UIView *myContentView = [super addMyContentView];
+    if ([myContentView isKindOfClass:MyBaseLayout.class]) {
+        MyBaseLayout *tmyContentView = (MyBaseLayout *)myContentView;
+        tmyContentView.insetsPaddingFromSafeArea = UIRectEdgeNone;
+    }
+    return myContentView;
 }
 
 - (void)viewDidLoad {
@@ -49,14 +54,14 @@
     [_tableView removeFromSuperview];
     
     _tableView = [BaseTableView customInst];
-    _tableView.widthSize.equalTo(self.view.widthSize);
-    _tableView.heightSize.equalTo(self.view.heightSize);
+    _tableView.widthSize.equalTo(self.myContentView.widthSize);
+    _tableView.heightSize.equalTo(self.myContentView.heightSize);
     
     if (!_delayCreateTableView) {
         _tableView.dataSource = self;
         _tableView.delegate = self;
     }
-    [self.view addSubview:_tableView];
+    [self.myContentView addSubview:_tableView];
     
 }
 

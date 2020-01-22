@@ -1,6 +1,6 @@
 //
 //  BaseTableViewController.h
-//  zykjApp
+// /Users/deerclass/Desktop/zlx/Ios/Zykjapp/zykjApp.xcodeproj zykjApp
 //
 //  Created by jsl on 2020/1/18.
 //  Copyright © 2020 zoulixiang. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import "BaseViewController.h"
 
-@interface BaseTableViewController : BaseViewController <UITableViewDataSource,UITableViewDelegate> {
+@interface BaseTableViewController : BaseRelativeViewController <UITableViewDataSource,UITableViewDelegate> {
      UITableView *_tableView;
 }
 

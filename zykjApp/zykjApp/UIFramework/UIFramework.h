@@ -24,6 +24,8 @@
 
 #define kIconReturnTag        150
 
+#import "UITableView+FDTemplateLayoutCell.h"
+
 #import "ZYWeakTimerObject.h"
 
 #import "CustomNav.h"

@@ -13,8 +13,8 @@
 {
     CustomNav *_customNav;
     UIView *_myContentView;
-    CGFloat _topToViewMargin;
-    CGFloat _tableViewTopToViewMargin;
+//    CGFloat _topToViewMargin;
+//    CGFloat _tableViewTopToViewMargin;
 @protected
     UIImageView *_backgroundView;
     
@@ -26,19 +26,19 @@
 
 @property (nonatomic, assign) BOOL hiddenNavBottmLine;
 
-/**
- 如果以后自定义nav 约束距离
- 也就是自定义nav的高度
- 以后的self.view里的第一个view不是从y = 0开始算 应该从 y = topToViewMargin开始算
- 后面所有约束top-self.view 都要加上topToViewMargin
- */
-@property (assign, nonatomic) CGFloat topToViewMargin;
-
-/**
- 如果以后自定义nav
- tableview约束距离
- */
-@property (assign, nonatomic) CGFloat tableViewTopToViewMargin;
+///**
+// 如果以后自定义nav 约束距离
+// 也就是自定义nav的高度
+// 以后的self.view里的第一个view不是从y = 0开始算 应该从 y = topToViewMargin开始算
+// 后面所有约束top-self.view 都要加上topToViewMargin
+// */
+//@property (assign, nonatomic) CGFloat topToViewMargin;
+//
+///**
+// 如果以后自定义nav
+// tableview约束距离
+// */
+//@property (assign, nonatomic) CGFloat tableViewTopToViewMargin;
 
 //导航栏底部1px的线条
 @property (strong, nonatomic) UIView *navBottomLine;

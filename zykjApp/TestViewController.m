@@ -28,7 +28,7 @@
 }
 
 - (void)configParams {
-    self.hiddenNav = YES;
+//    self.hiddenNav = YES;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -39,4 +39,7 @@
     [super addOwnViews];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self showEmptyView:@"fff" resetRequestBlock:nil];
+}
 @end

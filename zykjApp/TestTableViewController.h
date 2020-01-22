@@ -13,7 +13,7 @@
 
 @end
 
-@interface TestTableViewController : BaseViewController
+@interface TestTableViewController : BaseTableViewController
 
 @end
 

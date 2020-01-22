@@ -17,19 +17,74 @@
     return _tableView;
 }
 
-//增加bottom线条并加入约束
-- (void)addTBottomLine {
++(instancetype)cellWithTableView:(UITableView *)tableView {
+    NSString *identifier = NSStringFromClass([self class]);
+    BaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (!cell) {
+        cell = [[self alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
+    return cell;
+}
+
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+        self.clipsToBounds = YES;
+        [self addOwnViews];
+        [self configOwnViews];
+        [self addConstConstraints];
+    }
+    return self;
+}
+
+- (void)addOwnViews {
+    [super addOwnViews];
+    [self createRootLayout];
+    _rootLayout.backgroundColor = kClearColor;
+}
+
+#pragma mark - public
+
+- (void)createRootLayout {
+//    _rootLayout = [MyBaseLayout new];
+//    _rootLayout.widthSize.equalTo(self.contentView.widthSize);
+//    _rootLayout.heightSize.equalTo(self.contentView.heightSize);
+//     [self.contentView addSubview:_rootLayout];
+}
+
+- (void)addBottomLine {
+    UIView *rootLayout = self.myContentView;
     
     [_bottomLine removeFromSuperview];
     
     LineView *bottomLine =  [[LineView alloc] init];
-    [self.contentView addSubview:bottomLine];
+    [rootLayout addSubview:bottomLine];
     _bottomLine = bottomLine;
-    
-   
 }
 
-#pragma mark - public
+//增加bottom线条并加入约束
+- (void)addTBottomLine {
+    
+     UIView *rootLayout = self.myContentView;
+    
+    [_bottomLine removeFromSuperview];
+    
+    LineView *bottomLine =  [[LineView alloc] init];
+    [rootLayout addSubview:bottomLine];
+    _bottomLine = bottomLine;
+
+    [_bottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.bottom.right.mas_equalTo(rootLayout);
+        make.height.mas_equalTo(BottomLineHeight);
+    }];
+}
+- (void)layouts {
+    [self setNeedsUpdateConstraints];
+//    [self layoutIfNeeded];
+}
+
+
 /**
  创建lbl
  
@@ -38,13 +93,15 @@
  @param color 颜色
  */
 - (void)createLblName:(NSString *)name font:(UIFont *)font color:(UIColor *)color  text:(NSString *)text {
-    UILabel *lbl = [[UILabel alloc] init];
-    [self.contentView addSubview:lbl];
-     [self setValue:lbl forKey:name];
-    
-    lbl.font = font;
-    lbl.textColor = color;
-    lbl.text = text;
+     UIView *rootLayout = self.myContentView;
+//    UILabel *lbl = [[UILabel alloc] init];
+//    [rootLayout addSubview:lbl];
+//     [self setValue:lbl forKey:name];
+//
+//    lbl.font = font;
+//    lbl.textColor = color;
+//    lbl.text = text;
+    [self createLblName:name font:font color:color text:text inView:rootLayout];
    
 }
 
@@ -55,18 +112,33 @@
  @param equallyLblName 样式一样的属性名
  */
 - (void)createLblName:(NSString *)name text:(NSString *)text styleEquallyLblName:(NSString *)equallyLblName {
-    UILabel *lbl = [[UILabel alloc] init];
-    [self.contentView addSubview:lbl];
-    [self setValue:lbl forKey:name];
+     UIView *rootLayout = self.myContentView;
+//    UILabel *lbl = [[UILabel alloc] init];
+//    [rootLayout addSubview:lbl];
+//    [self setValue:lbl forKey:name];
+//
+//    UILabel *tlbl = [self valueForKey:equallyLblName];
+//    lbl.font = tlbl.font;
+//    lbl.textColor = tlbl.textColor;
+//    lbl.text = text;
     
-    UILabel *tlbl = [self valueForKey:equallyLblName];
-    lbl.font = tlbl.font;
-    lbl.textColor = tlbl.textColor;
-    lbl.text = text;
+    [self createLblName:name text:text styleEquallyLblName:equallyLblName inView:rootLayout];
 }
 
+/// 创建imgview
+/// @param name 属性名
+/// @param img img
+- (void)createImgView:(NSString *)name img:(UIImage *)img {
+     UIView *rootLayout = self.myContentView;
+    [self createImgView:name img:img inView:rootLayout];
+}
 
 #pragma mark - private
+- (UIView *)myContentView {
+    UIView *rootLayout = self.rootLayout ? : self.contentView;
+    return rootLayout;
+}
+
 - (UITableView *)findTableView:(UIView *)view {
    
     if (view == nil) {
@@ -125,3 +197,61 @@
 
 
 @end
+
+
+///
+@implementation BaseHLinearTableViewCell
+
+- (MyLinearLayout *)rootLayout {
+    return (MyLinearLayout *)_rootLayout;
+}
+
+- (void)createRootLayout {
+    _rootLayout= [MyLinearLayout linearLayoutWithOrientation:MyOrientation_Horz];
+    _rootLayout.cacheEstimatedRect = YES;
+    _rootLayout.myHorzMargin = MyLayoutPos.safeAreaMargin;
+    _rootLayout.myHeight = MyLayoutSize.wrap;
+    [self.contentView addSubview:_rootLayout];
+}
+
+- (void)addOwnViews {
+    [super addOwnViews];
+    
+}
+
+@end
+
+@implementation BaseVLinearTableViewCell
+
+- (MyLinearLayout *)rootLayout {
+    return (MyLinearLayout *)_rootLayout;
+}
+
+- (void)createRootLayout {
+    _rootLayout= [MyLinearLayout linearLayoutWithOrientation:MyOrientation_Vert];
+    _rootLayout.cacheEstimatedRect = YES;
+    _rootLayout.myHorzMargin = MyLayoutPos.safeAreaMargin;
+    _rootLayout.myHeight = MyLayoutSize.wrap;
+    [self.contentView addSubview:_rootLayout];
+}
+
+@end
+
+@implementation BaseRelativeTableViewCell
+
+- (MyRelativeLayout *)rootLayout {
+    return (MyRelativeLayout *)_rootLayout;
+}
+
+- (void)createRootLayout {
+    _rootLayout= [MyRelativeLayout new];
+    _rootLayout.cacheEstimatedRect = YES;
+    _rootLayout.myHorzMargin = MyLayoutPos.safeAreaMargin;
+     _rootLayout.widthSize.equalTo(self.contentView.widthSize);
+     _rootLayout.heightSize.equalTo(@(MyLayoutSize.wrap));
+    [self.contentView addSubview:_rootLayout];
+}
+
+@end
+
+

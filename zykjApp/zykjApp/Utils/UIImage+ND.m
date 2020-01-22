@@ -107,5 +107,10 @@
     return img;
 }
 
-
+///空视图宽度最大宽度
+- (CGSize) maxWidth:(CGFloat)maxWidth {
+    CGFloat width = MIN(self.size.width, maxWidth);
+    CGFloat height = width * (self.size.height / self.size.width);
+    return CGSizeMake(width, height);
+}
 @end

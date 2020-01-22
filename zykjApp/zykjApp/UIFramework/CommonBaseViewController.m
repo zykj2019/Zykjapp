@@ -22,10 +22,6 @@
 
 @implementation CommonBaseViewController
 
-//- (void)loadView {
-//    self.view = [BaseRootView new];
-//}
-
 - (UIView *)myContentView {
     if (_myContentView == nil) {
        _myContentView = [self addMyContentView];
@@ -68,19 +64,19 @@
 }
 
 
-- (CGFloat)topToViewMargin {
-    if ((self.customNav && self.hiddenNav) || self.edgesForExtendedLayout != UIRectEdgeNone) {
-        return [CustomNav navBarBottom];
-    }
-     return 0.0;
-}
-
-- (CGFloat)tableViewTopToViewMargin {
-    if ((self.customNav && self.hiddenNav)) {
-        return [CustomNav navBarBottom];
-    }
-    return 0.0;
-}
+//- (CGFloat)topToViewMargin {
+//    if ((self.customNav && self.hiddenNav) || self.edgesForExtendedLayout != UIRectEdgeNone) {
+//        return [CustomNav navBarBottom];
+//    }
+//     return 0.0;
+//}
+//
+//- (CGFloat)tableViewTopToViewMargin {
+//    if ((self.customNav && self.hiddenNav)) {
+//        return [CustomNav navBarBottom];
+//    }
+//    return 0.0;
+//}
 
 
 - (UIView *)navBottomLine {
@@ -124,11 +120,6 @@
 
 - (void)configContainer
 {
-//    self.edgesForExtendedLayout = UIRectEdgeNone;
-//    self.extendedLayoutIncludesOpaqueBars = NO;
-//   self.navigationController.navigationBar.translucent = NO;
-//    self.tabBarController.tabBar.translucent = NO;
-//    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
         self.extendedLayoutIncludesOpaqueBars = NO;
@@ -341,7 +332,7 @@
         [self changeDeviceScreenSizeHandle:_isPortrait];
     }
 
-    self.myContentView.backgroundColor = kRedColor;
+    
 //    NSLog(@"%@",NSStringFromCGRect(self.tContentView.frame));
 }
 

@@ -91,4 +91,5 @@
 + (CGSize)sizeWithText:(NSString *)value fontSize:(float)fontSize andWidth:(float)width;
 + (NSInteger)lineWithText:(NSString *)value fontSize:(float)fontSize andWidth:(float)width;
 
+
 @end

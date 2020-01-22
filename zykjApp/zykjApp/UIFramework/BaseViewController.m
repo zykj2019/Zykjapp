@@ -8,6 +8,7 @@
 
 #import "BaseViewController.h"
 #import "TipView.h"
+#import "BaseEmptyView.h"
 
 @interface BaseViewController (){
     UIImageView *navBarHairlineImageView;
@@ -304,23 +305,28 @@
     [self configRightBarItems:@[rightButtonItem] animated:showAnimated];
 }
 
-- (void)showEmptyView:(NSString *)title {
-    
+- (UIView *)showEmptyView:(NSString *)title resetRequestBlock:(CommonVoidBlock)resetRequestBlock {
+   return [self showEmptyView:title emptyImage:nil contentInset:UIEdgeInsetsZero resetRequestBlock:resetRequestBlock];
 }
+
+- (UIView *)showEmptyView:(NSString *)title emptyImage:(UIImage *)emptyImage contentInset:(UIEdgeInsets)contentInset resetRequestBlock:(CommonVoidBlock)resetRequestBlock {
+    [self removeEmptyView];
+    BaseEmptyItem *baseEmptyItem = [[BaseEmptyItem alloc] initWithTitle:title emptyImage:emptyImage resetRequestBlock:resetRequestBlock];
+    BaseEmptyView *empImgView = [BaseEmptyView initWithBaseEmptyItem:baseEmptyItem];
+    [self.myContentView addSubview:empImgView];
+    [empImgView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.myContentView).with.insets(contentInset).priorityHigh();
+    }];
+    return empImgView;
+}
+
 - (void)removeEmptyView
 {
-    UIView *empImgView = (UIView *)[self.view viewWithTag:EMPTYVIEWTAG];
+    UIView *empImgView = (UIView *)[self.myContentView viewWithTag:EMPTYVIEWTAG];
     [empImgView removeFromSuperview];
 }
 
 @end
-
-
-@implementation BaseLinearViewController
-
-@end
-
-
 
 @implementation BaseRelativeViewController
 
@@ -332,5 +338,18 @@
     myRelativeLayout.insetsPaddingFromSafeArea = UIRectEdgeAll;
     return myRelativeLayout;
 }
+@end
+
+@implementation BaseLinearViewController
+
+- (MyLinearLayout *)myContentView {
+    return (MyLinearLayout *)[super myContentView];
+}
+- (UIView *)addMyContentView {
+    MyLinearLayout *myLinearLayout = [[MyLinearLayout alloc] initWithFrame:self.view.bounds];
+    myLinearLayout.insetsPaddingFromSafeArea = UIRectEdgeTop | UIRectEdgeBottom;
+    return myLinearLayout;
+}
+
 @end
 

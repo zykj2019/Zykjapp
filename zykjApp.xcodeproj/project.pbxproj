@@ -44,25 +44,6 @@
 		24AA730A23CAE7D1005275EB /* ViewPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AA730623CAE7D1005275EB /* ViewPagerController.m */; };
 		24AA730B23CAE7D1005275EB /* ViewMyPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AA730923CAE7D1005275EB /* ViewMyPagerViewController.m */; };
 		24AA731123CAECC4005275EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24AA731023CAECC3005275EB /* Assets.xcassets */; };
-		670C3A2823D2E4DF002664F0 /* MyFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C39FF23D2E4DF002664F0 /* MyFlowLayout.m */; };
-		670C3A2923D2E4DF002664F0 /* MyGridNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A0323D2E4DF002664F0 /* MyGridNode.m */; };
-		670C3A2A23D2E4DF002664F0 /* MyRelativeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A0423D2E4DF002664F0 /* MyRelativeLayout.m */; };
-		670C3A2B23D2E4DF002664F0 /* MyLayoutSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A0523D2E4DF002664F0 /* MyLayoutSize.m */; };
-		670C3A2C23D2E4DF002664F0 /* MyGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A0F23D2E4DF002664F0 /* MyGridLayout.m */; };
-		670C3A2D23D2E4DF002664F0 /* MyMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A1023D2E4DF002664F0 /* MyMaker.m */; };
-		670C3A2E23D2E4DF002664F0 /* MyLayoutMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A1623D2E4DF002664F0 /* MyLayoutMath.m */; };
-		670C3A2F23D2E4DF002664F0 /* MyBaseLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A1723D2E4DF002664F0 /* MyBaseLayout.m */; };
-		670C3A3023D2E4DF002664F0 /* MyPathLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A1823D2E4DF002664F0 /* MyPathLayout.m */; };
-		670C3A3123D2E4DF002664F0 /* MyTableLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A1A23D2E4DF002664F0 /* MyTableLayout.m */; };
-		670C3A3223D2E4DF002664F0 /* MyFlexLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A1B23D2E4DF002664F0 /* MyFlexLayout.m */; };
-		670C3A3323D2E4DF002664F0 /* MyFloatLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A1C23D2E4DF002664F0 /* MyFloatLayout.m */; };
-		670C3A3423D2E4DF002664F0 /* MyLayoutDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A2023D2E4DF002664F0 /* MyLayoutDelegate.m */; };
-		670C3A3523D2E4DF002664F0 /* MyDimeScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A2123D2E4DF002664F0 /* MyDimeScale.m */; };
-		670C3A3623D2E4DF002664F0 /* MyFrameLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A2223D2E4DF002664F0 /* MyFrameLayout.m */; };
-		670C3A3723D2E4DF002664F0 /* MyLinearLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A2323D2E4DF002664F0 /* MyLinearLayout.m */; };
-		670C3A3823D2E4DF002664F0 /* MyLayoutPos.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A2423D2E4DF002664F0 /* MyLayoutPos.m */; };
-		670C3A3923D2E4DF002664F0 /* MyBorderline.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A2523D2E4DF002664F0 /* MyBorderline.m */; };
-		670C3A3A23D2E4DF002664F0 /* MyLayoutSizeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A2623D2E4DF002664F0 /* MyLayoutSizeClass.m */; };
 		670C3A4123D2F4C6002664F0 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A4023D2F4C6002664F0 /* BaseTableViewController.m */; };
 		670C3A4423D2FA5D002664F0 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A4323D2FA5D002664F0 /* TestTableViewController.m */; };
 		676150E423C9733900E8056A /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 676150E323C9733900E8056A /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -331,6 +312,8 @@
 		AF4FAA7523D6DA23004040FB /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4FAA7423D6DA23004040FB /* UIView+YYAdd.m */; };
 		AF4FAA8123D6F64E004040FB /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4FAA7F23D6F64D004040FB /* TestViewController.m */; };
 		AF4FAA8223D6F64E004040FB /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF4FAA8023D6F64E004040FB /* TestViewController.xib */; };
+		AF4FAA8723D7EF5B004040FB /* BaseEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4FAA8623D7EF5B004040FB /* BaseEmptyView.m */; };
+		AF4FAA8C23D8293F004040FB /* NSObject+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4FAA8B23D8293F004040FB /* NSObject+ND.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -429,50 +412,6 @@
 		24AA730823CAE7D1005275EB /* ViewPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewPagerController.h; sourceTree = "<group>"; };
 		24AA730923CAE7D1005275EB /* ViewMyPagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewMyPagerViewController.m; sourceTree = "<group>"; };
 		24AA731023CAECC3005275EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		670C39FC23D2E4DF002664F0 /* MyLayoutSizeInner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayoutSizeInner.h; sourceTree = "<group>"; };
-		670C39FD23D2E4DF002664F0 /* MyLayoutPosInner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayoutPosInner.h; sourceTree = "<group>"; };
-		670C39FE23D2E4DF002664F0 /* MyTableLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableLayout.h; sourceTree = "<group>"; };
-		670C39FF23D2E4DF002664F0 /* MyFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFlowLayout.m; sourceTree = "<group>"; };
-		670C3A0023D2E4DF002664F0 /* MyPathLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPathLayout.h; sourceTree = "<group>"; };
-		670C3A0123D2E4DF002664F0 /* MyBaseLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBaseLayout.h; sourceTree = "<group>"; };
-		670C3A0223D2E4DF002664F0 /* MyLayoutMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayoutMath.h; sourceTree = "<group>"; };
-		670C3A0323D2E4DF002664F0 /* MyGridNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGridNode.m; sourceTree = "<group>"; };
-		670C3A0423D2E4DF002664F0 /* MyRelativeLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRelativeLayout.m; sourceTree = "<group>"; };
-		670C3A0523D2E4DF002664F0 /* MyLayoutSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLayoutSize.m; sourceTree = "<group>"; };
-		670C3A0623D2E4DF002664F0 /* MyFloatLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFloatLayout.h; sourceTree = "<group>"; };
-		670C3A0723D2E4DF002664F0 /* MyFlexLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFlexLayout.h; sourceTree = "<group>"; };
-		670C3A0823D2E4DF002664F0 /* MyLinearLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLinearLayout.h; sourceTree = "<group>"; };
-		670C3A0923D2E4DF002664F0 /* MyFrameLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFrameLayout.h; sourceTree = "<group>"; };
-		670C3A0A23D2E4DF002664F0 /* MyGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGrid.h; sourceTree = "<group>"; };
-		670C3A0B23D2E4DF002664F0 /* MyLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayout.h; sourceTree = "<group>"; };
-		670C3A0C23D2E4DF002664F0 /* MyLayoutDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayoutDef.h; sourceTree = "<group>"; };
-		670C3A0D23D2E4DF002664F0 /* MyLayoutDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayoutDelegate.h; sourceTree = "<group>"; };
-		670C3A0E23D2E4DF002664F0 /* MyDimeScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDimeScale.h; sourceTree = "<group>"; };
-		670C3A0F23D2E4DF002664F0 /* MyGridLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGridLayout.m; sourceTree = "<group>"; };
-		670C3A1023D2E4DF002664F0 /* MyMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMaker.m; sourceTree = "<group>"; };
-		670C3A1123D2E4DF002664F0 /* MyLayoutSizeClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayoutSizeClass.h; sourceTree = "<group>"; };
-		670C3A1223D2E4DF002664F0 /* MyLayoutInner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayoutInner.h; sourceTree = "<group>"; };
-		670C3A1323D2E4DF002664F0 /* MyBorderline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBorderline.h; sourceTree = "<group>"; };
-		670C3A1423D2E4DF002664F0 /* MyLayoutPos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayoutPos.h; sourceTree = "<group>"; };
-		670C3A1523D2E4DF002664F0 /* MyGridNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGridNode.h; sourceTree = "<group>"; };
-		670C3A1623D2E4DF002664F0 /* MyLayoutMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLayoutMath.m; sourceTree = "<group>"; };
-		670C3A1723D2E4DF002664F0 /* MyBaseLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBaseLayout.m; sourceTree = "<group>"; };
-		670C3A1823D2E4DF002664F0 /* MyPathLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPathLayout.m; sourceTree = "<group>"; };
-		670C3A1923D2E4DF002664F0 /* MyFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFlowLayout.h; sourceTree = "<group>"; };
-		670C3A1A23D2E4DF002664F0 /* MyTableLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableLayout.m; sourceTree = "<group>"; };
-		670C3A1B23D2E4DF002664F0 /* MyFlexLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFlexLayout.m; sourceTree = "<group>"; };
-		670C3A1C23D2E4DF002664F0 /* MyFloatLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFloatLayout.m; sourceTree = "<group>"; };
-		670C3A1D23D2E4DF002664F0 /* MyLayoutSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayoutSize.h; sourceTree = "<group>"; };
-		670C3A1E23D2E4DF002664F0 /* MyRelativeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRelativeLayout.h; sourceTree = "<group>"; };
-		670C3A1F23D2E4DF002664F0 /* MyGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGridLayout.h; sourceTree = "<group>"; };
-		670C3A2023D2E4DF002664F0 /* MyLayoutDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLayoutDelegate.m; sourceTree = "<group>"; };
-		670C3A2123D2E4DF002664F0 /* MyDimeScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDimeScale.m; sourceTree = "<group>"; };
-		670C3A2223D2E4DF002664F0 /* MyFrameLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFrameLayout.m; sourceTree = "<group>"; };
-		670C3A2323D2E4DF002664F0 /* MyLinearLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLinearLayout.m; sourceTree = "<group>"; };
-		670C3A2423D2E4DF002664F0 /* MyLayoutPos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLayoutPos.m; sourceTree = "<group>"; };
-		670C3A2523D2E4DF002664F0 /* MyBorderline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBorderline.m; sourceTree = "<group>"; };
-		670C3A2623D2E4DF002664F0 /* MyLayoutSizeClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLayoutSizeClass.m; sourceTree = "<group>"; };
-		670C3A2723D2E4DF002664F0 /* MyMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMaker.h; sourceTree = "<group>"; };
 		670C3A3F23D2F4C6002664F0 /* BaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
 		670C3A4023D2F4C6002664F0 /* BaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		670C3A4223D2FA5D002664F0 /* TestTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
@@ -1047,6 +986,10 @@
 		AF4FAA7E23D6F64D004040FB /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		AF4FAA7F23D6F64D004040FB /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		AF4FAA8023D6F64E004040FB /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		AF4FAA8523D7EF5B004040FB /* BaseEmptyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseEmptyView.h; sourceTree = "<group>"; };
+		AF4FAA8623D7EF5B004040FB /* BaseEmptyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseEmptyView.m; sourceTree = "<group>"; };
+		AF4FAA8A23D8293F004040FB /* NSObject+ND.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ND.h"; sourceTree = "<group>"; };
+		AF4FAA8B23D8293F004040FB /* NSObject+ND.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ND.m"; sourceTree = "<group>"; };
 		C3DEF3C9E47F4A038AC7A991 /* Pods_zykjApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zykjApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1228,6 +1171,8 @@
 				249EE6522247B2FB0076FE7F /* UtilsHeader.h */,
 				A7C223FF23D05FB8002F13D1 /* NSDictionary+Zykj.h */,
 				A7C2240023D05FB8002F13D1 /* NSDictionary+Zykj.m */,
+				AF4FAA8A23D8293F004040FB /* NSObject+ND.h */,
+				AF4FAA8B23D8293F004040FB /* NSObject+ND.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1313,57 +1258,6 @@
 			path = Resoure;
 			sourceTree = SOURCE_ROOT;
 		};
-		670C39FB23D2E4DF002664F0 /* MyLayout */ = {
-			isa = PBXGroup;
-			children = (
-				670C3A0123D2E4DF002664F0 /* MyBaseLayout.h */,
-				670C3A1723D2E4DF002664F0 /* MyBaseLayout.m */,
-				670C3A1323D2E4DF002664F0 /* MyBorderline.h */,
-				670C3A2523D2E4DF002664F0 /* MyBorderline.m */,
-				670C3A0E23D2E4DF002664F0 /* MyDimeScale.h */,
-				670C3A2123D2E4DF002664F0 /* MyDimeScale.m */,
-				670C3A0723D2E4DF002664F0 /* MyFlexLayout.h */,
-				670C3A1B23D2E4DF002664F0 /* MyFlexLayout.m */,
-				670C3A0623D2E4DF002664F0 /* MyFloatLayout.h */,
-				670C3A1C23D2E4DF002664F0 /* MyFloatLayout.m */,
-				670C3A1923D2E4DF002664F0 /* MyFlowLayout.h */,
-				670C39FF23D2E4DF002664F0 /* MyFlowLayout.m */,
-				670C3A0923D2E4DF002664F0 /* MyFrameLayout.h */,
-				670C3A2223D2E4DF002664F0 /* MyFrameLayout.m */,
-				670C3A0A23D2E4DF002664F0 /* MyGrid.h */,
-				670C3A1F23D2E4DF002664F0 /* MyGridLayout.h */,
-				670C3A0F23D2E4DF002664F0 /* MyGridLayout.m */,
-				670C3A1523D2E4DF002664F0 /* MyGridNode.h */,
-				670C3A0323D2E4DF002664F0 /* MyGridNode.m */,
-				670C3A0B23D2E4DF002664F0 /* MyLayout.h */,
-				670C3A0C23D2E4DF002664F0 /* MyLayoutDef.h */,
-				670C3A0D23D2E4DF002664F0 /* MyLayoutDelegate.h */,
-				670C3A2023D2E4DF002664F0 /* MyLayoutDelegate.m */,
-				670C3A1223D2E4DF002664F0 /* MyLayoutInner.h */,
-				670C3A0223D2E4DF002664F0 /* MyLayoutMath.h */,
-				670C3A1623D2E4DF002664F0 /* MyLayoutMath.m */,
-				670C3A1423D2E4DF002664F0 /* MyLayoutPos.h */,
-				670C3A2423D2E4DF002664F0 /* MyLayoutPos.m */,
-				670C39FD23D2E4DF002664F0 /* MyLayoutPosInner.h */,
-				670C3A1D23D2E4DF002664F0 /* MyLayoutSize.h */,
-				670C3A0523D2E4DF002664F0 /* MyLayoutSize.m */,
-				670C3A1123D2E4DF002664F0 /* MyLayoutSizeClass.h */,
-				670C3A2623D2E4DF002664F0 /* MyLayoutSizeClass.m */,
-				670C39FC23D2E4DF002664F0 /* MyLayoutSizeInner.h */,
-				670C3A0823D2E4DF002664F0 /* MyLinearLayout.h */,
-				670C3A2323D2E4DF002664F0 /* MyLinearLayout.m */,
-				670C3A2723D2E4DF002664F0 /* MyMaker.h */,
-				670C3A1023D2E4DF002664F0 /* MyMaker.m */,
-				670C3A0023D2E4DF002664F0 /* MyPathLayout.h */,
-				670C3A1823D2E4DF002664F0 /* MyPathLayout.m */,
-				670C3A1E23D2E4DF002664F0 /* MyRelativeLayout.h */,
-				670C3A0423D2E4DF002664F0 /* MyRelativeLayout.m */,
-				670C39FE23D2E4DF002664F0 /* MyTableLayout.h */,
-				670C3A1A23D2E4DF002664F0 /* MyTableLayout.m */,
-			);
-			path = MyLayout;
-			sourceTree = "<group>";
-		};
 		676150DE23C972E400E8056A /* NoArc */ = {
 			isa = PBXGroup;
 			children = (
@@ -1407,13 +1301,13 @@
 		676155D623C9B54C00E8056A /* UIFramework */ = {
 			isa = PBXGroup;
 			children = (
-				A7C2240223D079AF002F13D1 /* ZykjRouter */,
 				67A861F023C9DE58001B773E /* Category */,
 				6761563123C9BDE300E8056A /* CustomNav */,
 				6761561A23C9B91000E8056A /* BaseTableView.h */,
 				6761561923C9B90F00E8056A /* BaseTableView.m */,
 				676155EF23C9B54C00E8056A /* BaseAppDelegate.h */,
 				676155D823C9B54C00E8056A /* BaseAppDelegate.m */,
+				A7C2240223D079AF002F13D1 /* ZykjRouter */,
 				670C3A3F23D2F4C6002664F0 /* BaseTableViewController.h */,
 				670C3A4023D2F4C6002664F0 /* BaseTableViewController.m */,
 				676155EB23C9B54C00E8056A /* BaseCollectionViewController.h */,
@@ -1456,6 +1350,8 @@
 				6761564823C9C15000E8056A /* NJWeakWrapper.m */,
 				AF053A9D23D43FD600931FD7 /* BaseTableViewCell.h */,
 				AF053A9E23D43FD600931FD7 /* BaseTableViewCell.m */,
+				AF4FAA8523D7EF5B004040FB /* BaseEmptyView.h */,
+				AF4FAA8623D7EF5B004040FB /* BaseEmptyView.m */,
 			);
 			path = UIFramework;
 			sourceTree = "<group>";
@@ -1496,7 +1392,6 @@
 		67A85EDF23C9D64F001B773E /* Ext */ = {
 			isa = PBXGroup;
 			children = (
-				670C39FB23D2E4DF002664F0 /* MyLayout */,
 				67A863E523CD9C86001B773E /* MJRefresh */,
 				67A861AE23C9D92B001B773E /* Masonry */,
 				67A8606923C9D64F001B773E /* AFNetworking */,
@@ -2777,7 +2672,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				67A8610E23C9D650001B773E /* PathUtility.m in Sources */,
-				670C3A2E23D2E4DF002664F0 /* MyLayoutMath.m in Sources */,
 				67A8616A23C9D650001B773E /* TAAbstractDotView.m in Sources */,
 				67A8618123C9D650001B773E /* SDWebImageManager+MJ.m in Sources */,
 				6761561E23C9B98D00E8056A /* Common.m in Sources */,
@@ -2789,9 +2683,7 @@
 				249EEAFF2248AE010076FE7F /* UtilsHeader.h in Sources */,
 				67A861CF23C9D92B001B773E /* View+MASAdditions.m in Sources */,
 				67A860C423C9D64F001B773E /* ZLPickerBrowserPhoto.m in Sources */,
-				670C3A3A23D2E4DF002664F0 /* MyLayoutSizeClass.m in Sources */,
 				67A8617A23C9D650001B773E /* SDWebImageCompat.m in Sources */,
-				670C3A3323D2E4DF002664F0 /* MyFloatLayout.m in Sources */,
 				249EEAF32247CA2B0076FE7F /* AllHeader.h in Sources */,
 				67A8614223C9D650001B773E /* MSSBrowseLocalViewController.m in Sources */,
 				67A860CC23C9D64F001B773E /* ALAsset+ZLPick.m in Sources */,
@@ -2805,7 +2697,6 @@
 				67A860D123C9D64F001B773E /* ZLNavigationController.m in Sources */,
 				67A860C823C9D64F001B773E /* ZLPickerBrowserPhotoScrollView.m in Sources */,
 				670C3A4123D2F4C6002664F0 /* BaseTableViewController.m in Sources */,
-				670C3A3123D2E4DF002664F0 /* MyTableLayout.m in Sources */,
 				67A8626C23C9E026001B773E /* MyAudioBtn.m in Sources */,
 				67A8617623C9D650001B773E /* UIImageView+HighlightedWebCache.m in Sources */,
 				67A861DC23C9DA09001B773E /* FCUUID.m in Sources */,
@@ -2825,7 +2716,6 @@
 				AF053A8E23D4059600931FD7 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				6761567E23C9C2AE00E8056A /* LineView.m in Sources */,
 				249EE9852247B3010076FE7F /* RIButtonItem.m in Sources */,
-				670C3A3223D2E4DF002664F0 /* MyFlexLayout.m in Sources */,
 				67A8642923CD9C86001B773E /* MJRefreshAutoFooter.m in Sources */,
 				67A8615F23C9D650001B773E /* AFHTTPSessionManager.m in Sources */,
 				249EE9862247B3010076FE7F /* UIActionSheet+Blocks.m in Sources */,
@@ -2887,7 +2777,6 @@
 				67A861DD23C9DA09001B773E /* NSObject+FBKVOController.m in Sources */,
 				67A8642723CD9C86001B773E /* MJRefreshHeader.m in Sources */,
 				67A860FA23C9D64F001B773E /* UITextField+UITextField_Tip.m in Sources */,
-				670C3A3723D2E4DF002664F0 /* MyLinearLayout.m in Sources */,
 				67A860DA23C9D64F001B773E /* UIView+ZLAutoLayout.m in Sources */,
 				67A8622923C9DEC4001B773E /* BRDatePickerView.m in Sources */,
 				67A860F523C9D64F001B773E /* NSString+Common.m in Sources */,
@@ -2895,28 +2784,22 @@
 				67A861CB23C9D92B001B773E /* MASCompositeConstraint.m in Sources */,
 				67A8617E23C9D650001B773E /* NSData+ImageContentType.m in Sources */,
 				67A861EC23C9DA21001B773E /* VPImageCropperViewController.m in Sources */,
-				670C3A3523D2E4DF002664F0 /* MyDimeScale.m in Sources */,
-				670C3A2923D2E4DF002664F0 /* MyGridNode.m in Sources */,
 				67A8617923C9D650001B773E /* UIImage+MultiFormat.m in Sources */,
-				670C3A3623D2E4DF002664F0 /* MyFrameLayout.m in Sources */,
 				AF053A9023D4059600931FD7 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				67A861CA23C9D92B001B773E /* ViewController+MASAdditions.m in Sources */,
-				670C3A2B23D2E4DF002664F0 /* MyLayoutSize.m in Sources */,
 				67A860EB23C9D64F001B773E /* UIView+Glow.m in Sources */,
 				67A860EA23C9D64F001B773E /* MoreTableView.m in Sources */,
-				670C3A2F23D2E4DF002664F0 /* MyBaseLayout.m in Sources */,
 				6761561023C9B54C00E8056A /* MenuItem.m in Sources */,
 				6761560B23C9B54C00E8056A /* UIView+Layout.m in Sources */,
 				67A8616823C9D650001B773E /* TAPageControl.m in Sources */,
 				67A8627123C9E026001B773E /* MyAudioHelp.m in Sources */,
 				67A860FB23C9D64F001B773E /* UIView+RelativeCoordinate.m in Sources */,
 				6761564623C9C0D100E8056A /* UILabel+ND.m in Sources */,
-				670C3A3023D2E4DF002664F0 /* MyPathLayout.m in Sources */,
 				67A8617C23C9D650001B773E /* SDImageCache.m in Sources */,
 				67A8642423CD9C86001B773E /* MJRefreshStateHeader.m in Sources */,
 				67A8626923C9E026001B773E /* MyAudioViewController.m in Sources */,
-				670C3A2823D2E4DF002664F0 /* MyFlowLayout.m in Sources */,
 				6761564F23C9C15000E8056A /* BaseControl.m in Sources */,
+				AF4FAA8C23D8293F004040FB /* NSObject+ND.m in Sources */,
 				67A861CD23C9D92B001B773E /* MASLayoutConstraint.m in Sources */,
 				67A8616123C9D650001B773E /* AFURLRequestSerialization.m in Sources */,
 				67A860F423C9D64F001B773E /* CLSafeMutableArray.m in Sources */,
@@ -2924,7 +2807,6 @@
 				67A8611E23C9D650001B773E /* M80AttributedLabel.m in Sources */,
 				67A8617123C9D650001B773E /* FMResultSet.m in Sources */,
 				67A8642023CD9C86001B773E /* MJRefreshAutoStateFooter.m in Sources */,
-				670C3A3923D2E4DF002664F0 /* MyBorderline.m in Sources */,
 				67A8622A23C9DEC4001B773E /* BRBaseView.m in Sources */,
 				67A8611923C9D650001B773E /* UIViewController+ADFlipTransition.m in Sources */,
 				6761567823C9C23400E8056A /* UINavigationBar+Awesome.m in Sources */,
@@ -2939,11 +2821,11 @@
 				67A8616723C9D650001B773E /* TADotView.m in Sources */,
 				67A860D623C9D64F001B773E /* ZLPickerFooterCollectionReusableView.m in Sources */,
 				24726C3C23CC18CE005299B8 /* AppConfig.m in Sources */,
+				AF4FAA8723D7EF5B004040FB /* BaseEmptyView.m in Sources */,
 				67A8623D23C9DF10001B773E /* NSArray+NSArray_ILExtension.m in Sources */,
 				6761561123C9B54C00E8056A /* PopupView.m in Sources */,
 				2444E08020590CAB00F29C06 /* AppDelegate.m in Sources */,
 				6761561323C9B54C00E8056A /* KeyValue.m in Sources */,
-				670C3A2D23D2E4DF002664F0 /* MyMaker.m in Sources */,
 				6761554D23C9B20800E8056A /* TipView.m in Sources */,
 				67A860FF23C9D64F001B773E /* MKMapView+ZoomLevel.m in Sources */,
 				67A8618223C9D650001B773E /* UIButton+WebCache.m in Sources */,
@@ -2988,7 +2870,6 @@
 				67A860F023C9D64F001B773E /* NSObject+CommonBlock.m in Sources */,
 				67A860E323C9D64F001B773E /* YYClassInfo.m in Sources */,
 				67A8616523C9D650001B773E /* UIView+SDExtension.m in Sources */,
-				670C3A3423D2E4DF002664F0 /* MyLayoutDelegate.m in Sources */,
 				67A8614523C9D650001B773E /* MSSBrowseActionSheet.m in Sources */,
 				67A8642223CD9C86001B773E /* MJRefreshAutoNormalFooter.m in Sources */,
 				AF053A8F23D4059600931FD7 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
@@ -3007,7 +2888,6 @@
 				67A8616323C9D650001B773E /* AFSecurityPolicy.m in Sources */,
 				67A8610323C9D64F001B773E /* NetworkUtility.m in Sources */,
 				67A8615023C9D650001B773E /* XHViewState.m in Sources */,
-				670C3A2A23D2E4DF002664F0 /* MyRelativeLayout.m in Sources */,
 				67A8641723CD9C86001B773E /* MJRefreshConst.m in Sources */,
 				67A8610023C9D64F001B773E /* UIImage+Alpha.m in Sources */,
 				67A860CD23C9D64F001B773E /* ZLPickerDatas.m in Sources */,
@@ -3043,7 +2923,6 @@
 				67A8617723C9D650001B773E /* SDWebImageDownloader.m in Sources */,
 				24726C5823CC32BD005299B8 /* UIView+ND.m in Sources */,
 				67A860C723C9D64F001B773E /* ZLPickerBrowserPhotoImageView.m in Sources */,
-				670C3A2C23D2E4DF002664F0 /* MyGridLayout.m in Sources */,
 				67A860F123C9D64F001B773E /* NSData+CRC.m in Sources */,
 				67A8611823C9D650001B773E /* ADFlipTransition.m in Sources */,
 				67A860DE23C9D64F001B773E /* ZLAnimationScrollView.m in Sources */,
@@ -3076,7 +2955,6 @@
 				67A860DC23C9D64F001B773E /* ZLAnimationImageView.m in Sources */,
 				67A860D223C9D64F001B773E /* ZLPickerViewController.m in Sources */,
 				67A860E923C9D64F001B773E /* CheckButton.m in Sources */,
-				670C3A3823D2E4DF002664F0 /* MyLayoutPos.m in Sources */,
 				6761562F23C9BD3500E8056A /* WKWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
