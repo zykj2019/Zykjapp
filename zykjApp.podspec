@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "zykjApp"
 
-  s.version      = "126"
+  s.version      = "127"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
-  #  Licensing your code is important. See http://choosealicense.com for more infoß.
+  #  Licensing your code is important. See http://choosealicense.com for more infoßß.
   #  CocoaPods will detect a license file if there is a named LICENSE*
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #

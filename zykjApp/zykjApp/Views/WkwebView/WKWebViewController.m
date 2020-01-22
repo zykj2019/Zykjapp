@@ -93,7 +93,7 @@ BOOL secureTextEntryIMP(id sender, SEL cmd) {
 
 -(void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
-    self.wkWebView.frame = self.tContentView.bounds;
+    self.wkWebView.frame = self.myContentView.bounds;
 }
 
 - (void)viewDidLoad {
@@ -103,10 +103,10 @@ BOOL secureTextEntryIMP(id sender, SEL cmd) {
     [self webViewloadURLType];
     
     //添加到主控制器上
-    [self.tContentView addSubview:self.wkWebView];
+    [self.myContentView addSubview:self.wkWebView];
     
     //添加进度条
-    [self.tContentView addSubview:self.progressView];
+    [self.myContentView addSubview:self.progressView];
     
     
     
@@ -118,11 +118,11 @@ BOOL secureTextEntryIMP(id sender, SEL cmd) {
     if (_isNavHidden == YES) {
         self.navigationController.navigationBarHidden = YES;
         //创建一个高20的假状态栏
-        UIView *statusBarView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tContentView.bounds.size.width, 20)];
+        UIView *statusBarView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.myContentView.bounds.size.width, 20)];
         //设置成绿色
         statusBarView.backgroundColor=[UIColor clearColor];
         // 添加到 navigationBar 上
-        [self.tContentView addSubview:statusBarView];
+        [self.myContentView addSubview:statusBarView];
     }else{
         self.navigationController.navigationBarHidden = NO;
     }
@@ -165,7 +165,7 @@ BOOL secureTextEntryIMP(id sender, SEL cmd) {
         [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self
                                                           action:@selector(handleRightEdgeGesture:)];
         rightEdgeGesture.edges = UIRectEdgeLeft;           // 右滑显示
-        [self.tContentView addGestureRecognizer:rightEdgeGesture];
+        [self.myContentView addGestureRecognizer:rightEdgeGesture];
     }
 }
 
@@ -549,7 +549,7 @@ BOOL secureTextEntryIMP(id sender, SEL cmd) {
         Configuration.suppressesIncrementalRendering = YES;
         // 允许用户更改网页的设置
         Configuration.userContentController = UserContentController;
-        _wkWebView = [[WKWebView alloc] initWithFrame:self.tContentView.bounds configuration:Configuration];
+        _wkWebView = [[WKWebView alloc] initWithFrame:self.myContentView.bounds configuration:Configuration];
         _wkWebView.backgroundColor = WCWHITE;
         // 设置代理
         _wkWebView.navigationDelegate = self;
@@ -591,9 +591,9 @@ BOOL secureTextEntryIMP(id sender, SEL cmd) {
     if (!_progressView) {
         _progressView = [[UIProgressView alloc]initWithProgressViewStyle:UIProgressViewStyleDefault];
         if (_isNavHidden == YES) {
-            _progressView.frame = CGRectMake(0, HT_StatusBarHeight, self.tContentView.bounds.size.width, 3);
+            _progressView.frame = CGRectMake(0, HT_StatusBarHeight, self.myContentView.bounds.size.width, 3);
         }else{
-            _progressView.frame = CGRectMake(0, 0, self.tContentView.bounds.size.width, 3);
+            _progressView.frame = CGRectMake(0, 0, self.myContentView.bounds.size.width, 3);
         }
     
         // 设置进度条的色彩

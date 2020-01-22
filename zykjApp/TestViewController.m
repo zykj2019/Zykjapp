@@ -37,13 +37,6 @@
 
 - (void)addOwnViews {
     [super addOwnViews];
-    
-    UIView *view = [UIView new];
-    view.widthSize.equalTo(self.tContentView.widthSize);
-    view.myHeight = 30;
-    view.myTop = -29;
-    view.backgroundColor = kGreenColor;
-    [self.tContentView addSubview:view];
 }
 
 @end

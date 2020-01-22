@@ -17,8 +17,8 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ic-o5-pGp">
-                    <rect key="frame" x="85" y="221" width="42" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ic-o5-pGp">
+                    <rect key="frame" x="55" y="0.0" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -28,7 +28,7 @@
             <constraints>
                 <constraint firstItem="2ic-o5-pGp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="55" id="IJc-Lg-eWB"/>
                 <constraint firstAttribute="trailing" secondItem="2ic-o5-pGp" secondAttribute="trailing" constant="223" id="lr9-J4-gpl"/>
-                <constraint firstItem="2ic-o5-pGp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="31" id="wJJ-Hu-BPE"/>
+                <constraint firstItem="2ic-o5-pGp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wJJ-Hu-BPE"/>
             </constraints>
             <point key="canvasLocation" x="-73" y="83"/>
         </view>

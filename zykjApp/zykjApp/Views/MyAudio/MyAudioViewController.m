@@ -91,30 +91,30 @@
    
     CGFloat spectrumWidth = 200.0;
     CGFloat spectrumHeight = 50.0;
-    self.spectrumView = [[SpectrumView alloc] initWithFrame:CGRectMake(CGRectGetMidX(self.tContentView.bounds) - spectrumWidth / 2.0,(ScreenHeight - spectrumHeight) / 2.0 - 50.0,spectrumWidth, spectrumHeight)];
+    self.spectrumView = [[SpectrumView alloc] initWithFrame:CGRectMake(CGRectGetMidX(self.myContentView.bounds) - spectrumWidth / 2.0,(ScreenHeight - spectrumHeight) / 2.0 - 50.0,spectrumWidth, spectrumHeight)];
     self.spectrumView.text = nil;
-     [self.tContentView addSubview:self.spectrumView];
+     [self.myContentView addSubview:self.spectrumView];
     
     WS(ws);
     MyAudioBtn *audioBtn = [MyAudioBtn buttonWithType:UIButtonTypeCustom];
-     [self.tContentView addSubview:audioBtn];
+     [self.myContentView addSubview:audioBtn];
     _audioBtn = audioBtn;
     _audioBtn.audioHelp = self.myAudioHelp;
     
     MyAudioAuditionBtn *audioPlayBtn = [MyAudioAuditionBtn buttonWithType:UIButtonTypeCustom];
-    [self.tContentView addSubview:audioPlayBtn];
+    [self.myContentView addSubview:audioPlayBtn];
     _audioPlayBtn = audioPlayBtn;
     
     [_audioBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(70.0, 70.0));
-        make.centerX.mas_equalTo(ws.tContentView.mas_centerX);
-        make.bottom.mas_equalTo(ws.tContentView).mas_offset(-(30.0 + HT_TabbarSafeBottomMargin));
+        make.centerX.mas_equalTo(ws.myContentView.mas_centerX);
+        make.bottom.mas_equalTo(ws.myContentView).mas_offset(-(30.0 + HT_TabbarSafeBottomMargin));
     }];
     
     [_audioPlayBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(70.0, 70.0));
-        make.centerX.mas_equalTo(ws.tContentView.mas_centerX);
-        make.bottom.mas_equalTo(ws.tContentView).mas_offset(-(30.0 + HT_TabbarSafeBottomMargin));
+        make.centerX.mas_equalTo(ws.myContentView.mas_centerX);
+        make.bottom.mas_equalTo(ws.myContentView).mas_offset(-(30.0 + HT_TabbarSafeBottomMargin));
     }];
     
     [self adjustAudioBtnShow];

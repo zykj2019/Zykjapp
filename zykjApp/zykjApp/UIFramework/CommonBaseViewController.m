@@ -14,27 +14,6 @@
 
 #import "UIView+Extension.h"
 
-@interface BaseRootView : UIView
-
-
-@end
-
-@implementation BaseRootView
-
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
-    self = [super initWithCoder:coder];
-    if (self) {
-      
-    }
-    return self;
-}
-
-- (void)addSubview:(UIView *)view {
-    [super addSubview:view];
-}
-@end
-
 @interface CommonBaseViewController () {
      BOOL _isPortrait;
 }
@@ -47,13 +26,13 @@
 //    self.view = [BaseRootView new];
 //}
 
-- (UIView *)tContentView {
-    if (_tContentView == nil) {
-       _tContentView = [self addTContentView];
-        _tContentView.backgroundColor = kClearColor;
-        [self.view addSubview:_tContentView];
+- (UIView *)myContentView {
+    if (_myContentView == nil) {
+       _myContentView = [self addMyContentView];
+        _myContentView.backgroundColor = kClearColor;
+        [self.view addSubview:_myContentView];
     }
-    return _tContentView;
+    return _myContentView;
 }
 
 - (instancetype)init
@@ -161,27 +140,27 @@
 - (void)viewDidLoad
 {
     
-    if ([self.view isKindOfClass:BaseRootView.class]) {
-         self.tContentView.translatesAutoresizingMaskIntoConstraints = NO;
+    if ([self.view constraints].count) {
+         self.myContentView.translatesAutoresizingMaskIntoConstraints = NO;
 
         for (UIView *subView in self.view.subviews) {
-            if (subView != self.tContentView) {
-                [self.tContentView addSubview:subView];
+            if (subView != self.myContentView) {
+                [self.myContentView addSubview:subView];
             }
 
         }
 
         for (NSLayoutConstraint *con in self.view.constraints) {
             if (con.firstItem == self.view ) {
-                NSLayoutConstraint *tcon = [NSLayoutConstraint constraintWithItem:self.tContentView attribute:con.firstAttribute relatedBy:con.relation toItem:con.secondItem attribute:con.secondAttribute multiplier:con.multiplier constant:con.constant];
+                NSLayoutConstraint *tcon = [NSLayoutConstraint constraintWithItem:self.myContentView attribute:con.firstAttribute relatedBy:con.relation toItem:con.secondItem attribute:con.secondAttribute multiplier:con.multiplier constant:con.constant];
 
-                [self.tContentView addConstraint:tcon];
+                [self.myContentView addConstraint:tcon];
                 [self.view removeConstraint:con];
 
             } else if (con.secondItem == self.view){
-                NSLayoutConstraint *tcon = [NSLayoutConstraint constraintWithItem:con.firstItem attribute:con.firstAttribute relatedBy:con.relation toItem:self.tContentView attribute:con.secondAttribute multiplier:con.multiplier constant:con.constant];
+                NSLayoutConstraint *tcon = [NSLayoutConstraint constraintWithItem:con.firstItem attribute:con.firstAttribute relatedBy:con.relation toItem:self.myContentView attribute:con.secondAttribute multiplier:con.multiplier constant:con.constant];
 
-                 [self.tContentView addConstraint:tcon];
+                 [self.myContentView addConstraint:tcon];
                   [self.view removeConstraint:con];
             }
 
@@ -271,7 +250,7 @@
 }
 
 ///
-- (UIView *)addTContentView {
+- (UIView *)addMyContentView {
     return [[UIView alloc] initWithFrame:self.view.bounds];
 }
 
@@ -343,15 +322,15 @@
         self.customNav.width = self.view.width;
         self.customNav.height = [CustomNav navBarBottom];
         
-        self.tContentView.frame = CGRectMake(0, CGRectGetMaxY(self.customNav.frame), self.view.width, self.view.height - self.customNav.height);
+        self.myContentView.frame = CGRectMake(0, CGRectGetMaxY(self.customNav.frame), self.view.width, self.view.height - self.customNav.height);
         
-        [self.tContentView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        [self.myContentView mas_remakeConstraints:^(MASConstraintMaker *make) {
            make.top.mas_equalTo(self.view).mas_offset([CustomNav navBarBottom]);
             make.left.bottom.right.mas_equalTo(self.view);
         }];
         
     } else {
-        [self.tContentView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        [self.myContentView mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.top.left.bottom.right.mas_equalTo(self.view);
         }];
     }
@@ -362,7 +341,7 @@
         [self changeDeviceScreenSizeHandle:_isPortrait];
     }
 
-    self.tContentView.backgroundColor = kRedColor;
+    self.myContentView.backgroundColor = kRedColor;
 //    NSLog(@"%@",NSStringFromCGRect(self.tContentView.frame));
 }
 

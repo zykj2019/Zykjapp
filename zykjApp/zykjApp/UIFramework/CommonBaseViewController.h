@@ -12,7 +12,7 @@
 @interface CommonBaseViewController : UIViewController
 {
     CustomNav *_customNav;
-    UIView *_tContentView;
+    UIView *_myContentView;
     CGFloat _topToViewMargin;
     CGFloat _tableViewTopToViewMargin;
 @protected
@@ -20,7 +20,7 @@
     
 }
 
-@property (strong, nonatomic) UIView *tContentView;
+@property (strong, nonatomic) UIView *myContentView;
 
 @property (nonatomic, strong) UIImageView  *backgroundView;
 
@@ -68,7 +68,7 @@
 - (void)addCustomNav;
 
 ///增加内容ContentView
-- (UIView *)addTContentView;
+- (UIView *)addMyContentView;
 
 /// //透明nav
 /// @param isTransparent 是否隐藏nav
