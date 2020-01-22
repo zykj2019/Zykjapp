@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) UILabel *titleLbl;
 
+@property (strong, nonatomic) UILabel *contentLbl;
 @end
 
 @interface TestTableViewController : BaseTableViewController

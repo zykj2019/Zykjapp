@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^CommonVoidBlock)();
+typedef void (^CommonVoidBlock)(void);
 
 typedef void (^CommonBlock)(id selfPtr);
 

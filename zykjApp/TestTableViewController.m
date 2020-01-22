@@ -27,6 +27,8 @@
 - (void)addOwnViews {
     [super addOwnViews];
     [self createLblName:@"titleLbl" font:BaesFont(12.0) color:kBlackColor text:@"ccc"];
+    
+     [self createLblName:@"contentLbl" font:BaesFont(12.0) color:kBlackColor text:@"ccccdd"];
 }
 
 - (void)addConstConstraints {
@@ -34,8 +36,14 @@
     [super addConstConstraints];
     
     [self.titleLbl mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.bottom.top.mas_equalTo(self.contentView);
+        make.left.right.top.mas_equalTo(self.myContentView).priorityHigh();
     }];
+    
+    [self.contentLbl mas_remakeConstraints:^(MASConstraintMaker *make) {
+           make.top.mas_equalTo(self.titleLbl.mas_bottom).mas_offset(10.0);
+        make.centerX.mas_equalTo(self.myContentView.mas_centerX);
+        make.bottom.mas_equalTo(self.myContentView).mas_offset(-10.0).priorityHigh();
+       }];
 }
 @end
 
@@ -85,8 +93,9 @@
 //    LineView *line = [[LineView alloc] init];
 //    line.frame = CGRectMake(0, 100, 100, 100);
 //    [self.view addSubview:line];
-    self.tableView.estimatedRowHeight = 60;
-       self.tableView.rowHeight = UITableViewAutomaticDimension;
+    
+//    self.tableView.estimatedRowHeight = 60;
+//       self.tableView.rowHeight = UITableViewAutomaticDimension;
 }
 
 /*
@@ -118,31 +127,32 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-     BaseEmptyItem *baseEmptyItem = [[BaseEmptyItem alloc] initWithTitle:@"dfdfdf" emptyImage:nil resetRequestBlock:nil];
-    BaseEmptyTableViewCell *cell = [BaseEmptyTableViewCell cellWithTableView:tableView];
-    [cell setProName:@"baseEmptyItem" proItem:baseEmptyItem isClearCacheHeight:NO];
-
-//    [cell layouts];
-//    CGSize size = [cell.rootLayout sizeThatFits:CGSizeMake(tableView.frame.size.width, 0)];
-
-    return cell;
-    
-//    TestTableViewCell *cell = [TestTableViewCell cellWithTableView:tableView];
-//    [cell layouts];
+//     BaseEmptyItem *baseEmptyItem = [[BaseEmptyItem alloc] initWithTitle:@"dfdfdf" emptyImage:nil resetRequestBlock:nil];
+//    BaseEmptyTableViewCell *cell = [BaseEmptyTableViewCell cellWithTableView:tableView];
+//    [cell setProName:@"baseEmptyItem" proItem:baseEmptyItem isClearCacheHeight:NO];
+//
+////    [cell layouts];
+////    CGSize size = [cell.rootLayout sizeThatFits:CGSizeMake(tableView.frame.size.width, 0)];
+//
 //    return cell;
+    
+    TestTableViewCell *cell = [TestTableViewCell cellWithTableView:tableView];
+    [cell layouts];
+    return cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
      
-  CGFloat t =  [tableView fd_heightForCellCacheByIndexPath:indexPath Class:BaseEmptyTableViewCell.class configuration:^(BaseEmptyTableViewCell* cell) {
-       BaseEmptyItem *baseEmptyItem = [[BaseEmptyItem alloc] initWithTitle:@"dfdfdf" emptyImage:nil resetRequestBlock:nil];
-        [cell setProName:@"baseEmptyItem" proItem:baseEmptyItem isClearCacheHeight:YES];
-    }];
-       return t;
+//  CGFloat t =  [tableView fd_heightForCellCacheByIndexPath:indexPath Class:BaseEmptyTableViewCell.class configuration:^(BaseEmptyTableViewCell* cell) {
+//       BaseEmptyItem *baseEmptyItem = [[BaseEmptyItem alloc] initWithTitle:@"dfdfdf" emptyImage:nil resetRequestBlock:nil];
+//        [cell setProName:@"baseEmptyItem" proItem:baseEmptyItem isClearCacheHeight:YES];
+//    }];
+////       return UITableViewAutomaticDimension;
+//     return t;
     
-//    CGFloat t =  [tableView fd_heightForCellCacheByIndexPath:indexPath Class:TestTableViewCell.class configuration:^(TestTableViewCell* cell) {
-//
-//       }];
-//          return t;
+    CGFloat t =  [tableView fd_heightForCellCacheByIndexPath:indexPath Class:TestTableViewCell.class configuration:^(TestTableViewCell* cell) {
+
+       }];
+          return t;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
