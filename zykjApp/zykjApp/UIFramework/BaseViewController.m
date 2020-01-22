@@ -320,3 +320,17 @@
 
 @end
 
+
+
+@implementation BaseRelativeViewController
+
+- (MyRelativeLayout *)tContentView {
+    return (MyRelativeLayout *)[super tContentView];
+}
+- (UIView *)addTContentView {
+    MyRelativeLayout *myRelativeLayout = [[MyRelativeLayout alloc] initWithFrame:self.view.bounds];
+    myRelativeLayout.insetsPaddingFromSafeArea = UIRectEdgeAll;
+    return myRelativeLayout;
+}
+@end
+

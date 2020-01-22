@@ -16,9 +16,6 @@
 
 @interface BaseRootView : UIView
 
-@property (strong, nonatomic)  CustomNav *customNav;
-
-@property (strong, nonatomic) UIView *tContentView;
 
 @end
 
@@ -52,7 +49,9 @@
 
 - (UIView *)tContentView {
     if (_tContentView == nil) {
-        [self addTContentView];
+       _tContentView = [self addTContentView];
+        _tContentView.backgroundColor = kClearColor;
+        [self.view addSubview:_tContentView];
     }
     return _tContentView;
 }
@@ -161,9 +160,6 @@
 
 - (void)viewDidLoad
 {
-    
-    [self tContentView];
-    self.tContentView.backgroundColor = kRedColor;
     
     if ([self.view isKindOfClass:BaseRootView.class]) {
          self.tContentView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -275,13 +271,8 @@
 }
 
 ///
-- (void)addTContentView {
-    if (!_tContentView) {
-        _tContentView = [[UIView alloc] initWithFrame:self.view.bounds];
-        [self.view addSubview:_tContentView];
-        _tContentView.backgroundColor = kClearColor;
-    }
-    
+- (UIView *)addTContentView {
+    return [[UIView alloc] initWithFrame:self.view.bounds];
 }
 
 //透明nav
@@ -353,9 +344,16 @@
         self.customNav.height = [CustomNav navBarBottom];
         
         self.tContentView.frame = CGRectMake(0, CGRectGetMaxY(self.customNav.frame), self.view.width, self.view.height - self.customNav.height);
-           NSLog(@"%@---%@",NSStringFromCGRect(CGRectMake(0, CGRectGetMaxY(self.customNav.frame), self.view.width, self.view.height - self.customNav.height)),self.tContentView.superview);
+        
+        [self.tContentView mas_remakeConstraints:^(MASConstraintMaker *make) {
+           make.top.mas_equalTo(self.view).mas_offset([CustomNav navBarBottom]);
+            make.left.bottom.right.mas_equalTo(self.view);
+        }];
+        
     } else {
-        self.tContentView.frame = self.view.bounds;
+        [self.tContentView mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.top.left.bottom.right.mas_equalTo(self.view);
+        }];
     }
     
     BOOL isPortrait = UIDeviceOrientationIsPortrait([UIDevice currentDevice].orientation) ||  (ScreenWidth < ScreenHeight);
@@ -363,14 +361,14 @@
         _isPortrait = isPortrait;
         [self changeDeviceScreenSizeHandle:_isPortrait];
     }
-    
-//    [self.view layoutIfNeeded];
-//    [self.tContentView layoutIfNeeded];
+
     self.tContentView.backgroundColor = kRedColor;
-    NSLog(@"%@---%@",NSStringFromCGRect(self.tContentView.frame),self.tContentView.superview);
+//    NSLog(@"%@",NSStringFromCGRect(self.tContentView.frame));
 }
 
-
+//- (void)viewDidLayoutSubviews {
+//   NSLog(@"%@",NSStringFromCGRect(self.tContentView.frame));
+//}
 - (void)layoutSubviewsFrame
 {
     if ([self isAutoLayout])
