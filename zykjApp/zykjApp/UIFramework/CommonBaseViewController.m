@@ -312,7 +312,7 @@
 - (void)viewWillLayoutSubviews
 {
     [super viewWillLayoutSubviews];
-    
+
      _myContentView.translatesAutoresizingMaskIntoConstraints = NO;
     //如果nav是自定义需要设置宽度
     if (self.customNav) {

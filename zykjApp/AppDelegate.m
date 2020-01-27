@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "TestTableViewController.h"
 #import "TestViewController.h"
-
+#import "Test2ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -21,8 +21,9 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
 //    TestTableViewController *vcMain = [[TestTableViewController alloc]init];
+    Test2ViewController *vcMain = [[Test2ViewController alloc]init];
     
-    TestViewController *vcMain = [[TestViewController alloc] initWithNibName:@"TestViewController" bundle:nil];
+//    TestViewController *vcMain = [[TestViewController alloc] initWithNibName:@"TestViewController" bundle:nil];
     self.window.rootViewController = [[NavigationViewController alloc]initWithRootViewController:vcMain];
     self.window.backgroundColor = UIColor.whiteColor;
     [self.window makeKeyAndVisible];

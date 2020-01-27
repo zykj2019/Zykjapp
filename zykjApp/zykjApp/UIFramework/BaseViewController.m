@@ -79,6 +79,7 @@
 - (UIView *)addMyContentView {
     MyLinearLayout *myLinearLayout = [[MyLinearLayout alloc] initWithFrame:self.view.bounds];
     myLinearLayout.insetsPaddingFromSafeArea = UIRectEdgeTop | UIRectEdgeBottom;
+    myLinearLayout.orientation = MyOrientation_Vert;
     return myLinearLayout;
 }
 

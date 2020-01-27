@@ -17,11 +17,16 @@
 ///BaseRelativeViewController
 @interface BaseRelativeViewController : BaseViewController
 
+- (MyRelativeLayout *)myContentView;
+
 @end
 
 
-///BaseRelativeViewController
+
+/// ///BaseRelativeViewController orientation：MyOrientation_Vert
 @interface BaseLinearViewController : BaseViewController
+
+- (MyLinearLayout *)myContentView;
 
 @end
 

@@ -23,6 +23,7 @@
 		24726C4E23CC2CDB005299B8 /* SDAVAssetExportSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 24726C4923CC2CDB005299B8 /* SDAVAssetExportSession.m */; };
 		24726C4F23CC2CDB005299B8 /* SDAVAssetExportSession+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 24726C4B23CC2CDB005299B8 /* SDAVAssetExportSession+Custom.m */; };
 		24726C5823CC32BD005299B8 /* UIView+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 24726C5623CC32BD005299B8 /* UIView+ND.m */; };
+		248ECC7A23DF2D73008D3638 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248ECC7923DF2D73008D3638 /* Test2ViewController.m */; };
 		249EE97C2247B3010076FE7F /* UIControl+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6402247B2FB0076FE7F /* UIControl+Block.m */; };
 		249EE97D2247B3010076FE7F /* UILabel+InitMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6442247B2FB0076FE7F /* UILabel+InitMethod.m */; };
 		249EE97E2247B3010076FE7F /* UIImageView+InitMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EE6452247B2FB0076FE7F /* UIImageView+InitMethod.m */; };
@@ -387,6 +388,8 @@
 		24726C4C23CC2CDB005299B8 /* SDAVAssetExportSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAVAssetExportSession.h; sourceTree = "<group>"; };
 		24726C5623CC32BD005299B8 /* UIView+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ND.m"; sourceTree = "<group>"; };
 		24726C5723CC32BD005299B8 /* UIView+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ND.h"; sourceTree = "<group>"; };
+		248ECC7823DF2D73008D3638 /* Test2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test2ViewController.h; sourceTree = "<group>"; };
+		248ECC7923DF2D73008D3638 /* Test2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test2ViewController.m; sourceTree = "<group>"; };
 		249EE19A2247A8240076FE7F /* AllHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllHeader.h; sourceTree = "<group>"; };
 		249EE6402247B2FB0076FE7F /* UIControl+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Block.m"; sourceTree = "<group>"; };
 		249EE6422247B2FB0076FE7F /* UIImageView+InitMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+InitMethod.h"; sourceTree = "<group>"; };
@@ -1128,6 +1131,8 @@
 				AF4FAA7E23D6F64D004040FB /* TestViewController.h */,
 				AF4FAA7F23D6F64D004040FB /* TestViewController.m */,
 				AF4FAA8023D6F64E004040FB /* TestViewController.xib */,
+				248ECC7823DF2D73008D3638 /* Test2ViewController.h */,
+				248ECC7923DF2D73008D3638 /* Test2ViewController.m */,
 			);
 			path = zykjApp;
 			sourceTree = "<group>";
@@ -2821,6 +2826,7 @@
 				67A8610723C9D64F001B773E /* NSData+MKBase64.m in Sources */,
 				67A861C923C9D92B001B773E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				67A8611F23C9D650001B773E /* M80AttributedLabelURL.m in Sources */,
+				248ECC7A23DF2D73008D3638 /* Test2ViewController.m in Sources */,
 				67A8610A23C9D64F001B773E /* NSDictionary+RequestEncoding.m in Sources */,
 				67A860D923C9D64F001B773E /* DACircularProgressView.m in Sources */,
 				67A8610C23C9D650001B773E /* NSDate+RFC1123.m in Sources */,
