@@ -46,14 +46,24 @@
 - (CustomNav *)customNav;
 - (void)setCustomNav:(CustomNav *)customNav;
 
+
+/// 展现全局菊花
+/// @param message message
 - (void)showLoading:(NSString *)message;
 
 - (void)showLoading:(NSString *)message inView:(UIView *)view;
 
+///设置nav的title
 - (void)setNavTitleView:(UIView *)view;
 
+///设置返回按钮
 - (void)setBackAciton:(void(^)(id sender))block;
 
+
+/// ///设置返回按钮
+/// @param block 返回事件
+/// @param normalImg NormalImage
+/// @param selectedImage selectedImage
 - (void)setBackAciton:(void(^)(id sender))block NormalImage:(UIImage *)normalImg SelectedImage:(UIImage *)selectedImage;
 
 - (UIButton *)setleftBarButtonItem:(UIImage *)image withSelectedImage:(UIImage *)selectedImage withFrame:(CGRect)frame withBlock:(void(^)(id sender))block;
@@ -74,17 +84,22 @@
 
 - (void)showLeftBarButtonItemWithTitle:(NSString *)title btnColor:(UIColor *)color showAnimated:(BOOL)showAnimated withBlock:(void(^)(id sender))block;
 
-//- (void)showRightBarButtonItemWithTitle:(NSString *)title target:(id)target action:(SEL)action;
-//
-//- (void)showRightBarButtonItemWithTitle:(NSString *)title btnColor:(UIColor *)color target:(id)target action:(SEL)action;
-
 - (void)showRightBarButtonItemWithTitle:(NSString *)title withBlock:(void(^)(id sender))block;
 
 - (void)showRightBarButtonItemWithTitle:(NSString *)title btnColor:(UIColor *)color showAnimated:(BOOL)showAnimated withBlock:(void(^)(id sender))block;
 
-////展示空页面
+
+/// 展示空页面
+/// @param title title
+/// @param resetRequestBlock 点击空页面的block 可以做重新请求
 - (UIView *)showEmptyView:(NSString *)title resetRequestBlock:(CommonVoidBlock)resetRequestBlock;
 
+
+/// 展示空页面
+/// @param title title
+/// @param emptyImage emptyImage
+/// @param contentInset 空页面距离父视图的间距
+/// @param resetRequestBlock 点击空页面的block 可以做重新请求
 - (UIView *)showEmptyView:(NSString *)title emptyImage:(UIImage *)emptyImage contentInset:(UIEdgeInsets)contentInset resetRequestBlock:(CommonVoidBlock)resetRequestBlock;
 
 - (void)removeEmptyView;

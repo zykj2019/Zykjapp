@@ -37,6 +37,9 @@
 //nav返回图标高亮图片
 @property (strong, nonatomic) UIImage *iconRetunHighImg;
 
+//nav返回按钮frame
+@property (assign, nonatomic) CGRect navBackFrame;
+
 //app 通用左右间距
 @property (assign, nonatomic) CGFloat viewMargin;
 

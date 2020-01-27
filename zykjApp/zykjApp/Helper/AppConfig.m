@@ -62,6 +62,10 @@
     return [UIImage imageNamed:@"return_action_high"];
 }
 
+- (CGRect)navBackFrame {
+    return CGRectMake(0, 0, 60, 42.0);
+}
+
 - (CGFloat)viewMargin {
     return 15.0;
 }

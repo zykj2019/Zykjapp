@@ -132,7 +132,7 @@ static NSString *const kNavLbl = @"kNavLbl";
         }
     };
     
-    UIButton *leftButton = [self setleftBarButtonItem:normalImg withSelectedImage:selectedImage withFrame:CGRectMake(0, 0, 24.0, 42.0) withBlock:blocks];
+    UIButton *leftButton = [self setleftBarButtonItem:normalImg withSelectedImage:selectedImage withFrame:Appconfig.navBackFrame withBlock:blocks];
     leftButton.tag = kIconReturnTag;
 
 }

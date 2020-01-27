@@ -312,24 +312,26 @@
 - (void)viewWillLayoutSubviews
 {
     [super viewWillLayoutSubviews];
+    
+     _myContentView.translatesAutoresizingMaskIntoConstraints = NO;
     //如果nav是自定义需要设置宽度
     if (self.customNav) {
         self.customNav.width = self.view.width;
         self.customNav.height = [CustomNav navBarBottom];
         
-        self.myContentView.frame = CGRectMake(0, CGRectGetMaxY(self.customNav.frame), self.view.width, self.view.height - self.customNav.height);
-        
-        self.myContentView.frame = CGRectMake(0, [CustomNav navBarBottom], self.view.width, self.view.height);
-//        [self.myContentView mas_remakeConstraints:^(MASConstraintMaker *make) {
-//           make.top.mas_equalTo(self.view).mas_offset([CustomNav navBarBottom]);
-//            make.left.bottom.right.mas_equalTo(self.view);
-//        }];
+       
+//        _myContentView.frame = CGRectMake(0, CGRectGetMaxY(self.customNav.frame), self.view.width, self.view.height - self.customNav.height);
+    
+        [_myContentView mas_remakeConstraints:^(MASConstraintMaker *make) {
+           make.top.mas_equalTo(self.view).mas_offset([CustomNav navBarBottom]);
+            make.left.bottom.right.mas_equalTo(self.view);
+        }];
         
     } else {
-//        [self.myContentView mas_remakeConstraints:^(MASConstraintMaker *make) {
-//            make.top.left.bottom.right.mas_equalTo(self.view);
-//        }];
-         self.myContentView.frame = self.view.bounds;
+        [_myContentView mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.top.left.bottom.right.mas_equalTo(self.view);
+        }];
+//         _myContentView.frame = self.view.bounds;
     }
     
     BOOL isPortrait = UIDeviceOrientationIsPortrait([UIDevice currentDevice].orientation) ||  (ScreenWidth < ScreenHeight);
