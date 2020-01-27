@@ -31,6 +31,10 @@
     return _myContentView;
 }
 
+- (void)setMyContentView:(UIView *)myContentView {
+    _myContentView = myContentView;
+}
+
 - (instancetype)init
 {
     if (self = [super init])
@@ -315,15 +319,17 @@
         
         self.myContentView.frame = CGRectMake(0, CGRectGetMaxY(self.customNav.frame), self.view.width, self.view.height - self.customNav.height);
         
-        [self.myContentView mas_remakeConstraints:^(MASConstraintMaker *make) {
-           make.top.mas_equalTo(self.view).mas_offset([CustomNav navBarBottom]);
-            make.left.bottom.right.mas_equalTo(self.view);
-        }];
+        self.myContentView.frame = CGRectMake(0, [CustomNav navBarBottom], self.view.width, self.view.height);
+//        [self.myContentView mas_remakeConstraints:^(MASConstraintMaker *make) {
+//           make.top.mas_equalTo(self.view).mas_offset([CustomNav navBarBottom]);
+//            make.left.bottom.right.mas_equalTo(self.view);
+//        }];
         
     } else {
-        [self.myContentView mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.top.left.bottom.right.mas_equalTo(self.view);
-        }];
+//        [self.myContentView mas_remakeConstraints:^(MASConstraintMaker *make) {
+//            make.top.left.bottom.right.mas_equalTo(self.view);
+//        }];
+         self.myContentView.frame = self.view.bounds;
     }
     
     BOOL isPortrait = UIDeviceOrientationIsPortrait([UIDevice currentDevice].orientation) ||  (ScreenWidth < ScreenHeight);

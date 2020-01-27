@@ -57,7 +57,7 @@
 
 - (void)configParams {
     [super configParams];
-    self.hiddenNav = YES;
+//    self.hiddenNav = YES;
 }
 // 是否支持自动转屏
 - (BOOL)shouldAutorotate {
@@ -94,8 +94,12 @@
 //    line.frame = CGRectMake(0, 100, 100, 100);
 //    [self.view addSubview:line];
     
-//    self.tableView.estimatedRowHeight = 60;
-//       self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 60;
+       self.tableView.rowHeight = UITableViewAutomaticDimension;
+    
+    [self showRightBarButtonItemWithTitle:@"www" withBlock:^(id sender) {
+        
+    }];
 }
 
 /*

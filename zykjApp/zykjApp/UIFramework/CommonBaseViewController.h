@@ -20,8 +20,6 @@
     
 }
 
-@property (strong, nonatomic) UIView *myContentView;
-
 @property (nonatomic, strong) UIImageView  *backgroundView;
 
 @property (nonatomic, assign) BOOL hiddenNavBottmLine;
