@@ -13,7 +13,7 @@
 #include <netdb.h>
 #include <arpa/inet.h>
 #import <objc/runtime.h>
-#import "ServerConfig.h"
+//#import "ServerConfig.h"
 
 #define DotNumbers       @"0123456789.\n"
 #define Numbers          @"0123456789\n"
@@ -51,48 +51,6 @@
     });
 
     return shareIMichUtil;
-}
-
-- (id)init
-{
-    self = [super init];
-    if (self)
-    {
-        NSString *baseAppHostIP = [self convertDomainNameToIPAddr:BASE_HOST];
-        if (baseAppHostIP)
-        {
-            self.baseAppHost = [NSString stringWithFormat:@"http://%@%@%@/", baseAppHostIP, BASE_PORT,BASE_FIXED_MIDDLE];
-        }
-        else
-        {
-            self.baseAppHost = nil;
-        }
-    }
-    
-    return self;
-}
-
-- (NSString *)getBaseAppHostIP
-{
-    if (self.baseAppHost)
-    {
-        return self.baseAppHost;
-    }
-    else
-    {
-        NSString *baseAppHostIP = [self convertDomainNameToIPAddr:BASE_HOST];
-        if (baseAppHostIP)
-        {
-            self.baseAppHost = [NSString stringWithFormat:@"http://%@%@%@", baseAppHostIP, BASE_PORT,BASE_FIXED_MIDDLE];
-            return self.baseAppHost;
-        }
-        else
-        {
-            self.baseAppHost = nil;
-        }
-        
-        return [NSString stringWithFormat:@"http://%s%@%@", BASE_HOST, BASE_PORT,BASE_FIXED_MIDDLE];
-    }
 }
 
 // 时间戳转日期
@@ -390,85 +348,6 @@
     
     return rows;
 }
-
-// 创建UUID
-+ (NSString *)cutStr:(NSString *)str
-{
-    if (!str || str.length == 0)
-    {
-        return str;
-    }
-    
-    return [str substringToIndex:str.length - 1];
-}
-
-+ (void)logFrame:(CGRect)frame{
-    NSLog(@"x:%f,y:%f,width:%f,height:%f",frame.origin.x,frame.origin.y,frame.size.width,frame.size.height);
-}
-
-//获得设备型号
-+ (NSString *)getCurrentDeviceModel
-{
-    int mib[2];
-    size_t len;
-    char *machine;
-    
-    mib[0] = CTL_HW;
-    mib[1] = HW_MACHINE;
-    sysctl(mib, 2, NULL, &len, NULL, 0);
-    machine = malloc(len);
-    sysctl(mib, 2, machine, &len, NULL, 0);
-    
-    NSString *platform = [NSString stringWithCString:machine encoding:NSASCIIStringEncoding];
-    free(machine);
-    
-    if ([platform isEqualToString:@"iPhone1,1"]) return @"iPhone 2G";
-    else if ([platform isEqualToString:@"iPhone1,2"]) return @"iPhone 3G";
-    else if ([platform isEqualToString:@"iPhone2,1"]) return @"iPhone 3GS";
-    else if ([platform isEqualToString:@"iPhone3,1"] || [platform isEqualToString:@"iPhone3,2"] || [platform isEqualToString:@"iPhone3,3"])
-        return @"iPhone 4";
-    
-    else if ([platform isEqualToString:@"iPhone4,1"]) return @"iPhone 4S";
-    else if ([platform isEqualToString:@"iPhone5,1"] || [platform isEqualToString:@"iPhone5,2"]) return @"iPhone 5";
-    else if ([platform isEqualToString:@"iPhone5,3"] || [platform isEqualToString:@"iPhone5,4"]) return @"iPhone 5c";
-    else if ([platform isEqualToString:@"iPhone6,1"] || [platform isEqualToString:@"iPhone6,2"]) return @"iPhone 5s";
-    else if ([platform isEqualToString:@"iPhone7,1"]) return @"iPhone 6 Plus";
-    else if ([platform isEqualToString:@"iPhone7,2"]) return @"iPhone 6";
-    else if ([platform isEqualToString:@"iPhone8,1"]) return @"iPhone 6s Plus";    // add
-    else if ([platform isEqualToString:@"iPhone8,2"]) return @"iPhone 6s";         // add
-    
-    else if ([platform isEqualToString:@"iPod1,1"])   return @"iPod Touch 1G";
-    else if ([platform isEqualToString:@"iPod2,1"])   return @"iPod Touch 2G";
-    else if ([platform isEqualToString:@"iPod3,1"])   return @"iPod Touch 3G";
-    else if ([platform isEqualToString:@"iPod4,1"])   return @"iPod Touch 4G";
-    else if ([platform isEqualToString:@"iPod5,1"])   return @"iPod Touch 5G";
-    
-    else if ([platform isEqualToString:@"iPad1,1"])   return @"iPad 1G";
-    
-    else if ([platform isEqualToString:@"iPad2,1"] || [platform isEqualToString:@"iPad2,2"] || [platform isEqualToString:@"iPad2,3"] || [platform isEqualToString:@"iPad2,4"])
-        return @"iPad 2";
-    
-    else if ([platform isEqualToString:@"iPad2,5"] || [platform isEqualToString:@"iPad2,6"] || [platform isEqualToString:@"iPad2,6"])
-        return @"iPad Mini 1G";
-    
-    else if ([platform isEqualToString:@"iPad3,1"] || [platform isEqualToString:@"iPad3,2"] || [platform isEqualToString:@"iPad3,3"])
-        return @"iPad 3";
-    
-    else if ([platform isEqualToString:@"iPad3,4"] || [platform isEqualToString:@"iPad3,5"] || [platform isEqualToString:@"iPad3,6"])
-        return @"iPad 4";
-    
-    else if ([platform isEqualToString:@"iPad4,1"] || [platform isEqualToString:@"iPad4,2"] || [platform isEqualToString:@"iPad4,3"])
-        return @"iPad Air";
-    
-    else if ([platform isEqualToString:@"iPad4,4"] || [platform isEqualToString:@"iPad4,5"] || [platform isEqualToString:@"iPad4,6"])
-        return @"iPad Mini 2G";
-    else if ([platform isEqualToString:@"i386"] || [platform isEqualToString:@"x86_64"])
-        return @"iPhone Simulator";
-    
-    
-    return platform;
-}
-
 
 - (NSString *)convertDomainNameToIPAddr:(const char *)domainName
 {

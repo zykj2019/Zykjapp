@@ -63,15 +63,6 @@
 
 + (NSInteger)calcCollectionCellRows:(NSInteger)count;
 
-+ (NSString *)cutStr:(NSString *)str;
-
-+ (void)logFrame:(CGRect)frame;
-
-//获得设备型号
-+ (NSString *)getCurrentDeviceModel;
-
-- (NSString *)getBaseAppHostIP;
-
 + (void)printException:(NSException*)exception;
 
 + (NSString *)getUUIDFromUrl:(NSString *)url;

@@ -10,7 +10,5 @@
 #define HelperHeader_h
 
 #import "UtilsMacro.h"
-#import "ServerConfig.h"
-//#import "NotificationMacro.h"
 
 #endif /* HelperHeader_h */

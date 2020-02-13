@@ -427,7 +427,6 @@
 		249EE6642247B2FB0076FE7F /* UIImageView+SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDImageCache.h"; sourceTree = "<group>"; };
 		249EE6682247B2FB0076FE7F /* UtilsMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		249EE66B2247B2FB0076FE7F /* nd_define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nd_define.h; sourceTree = "<group>"; };
-		249EE66C2247B2FB0076FE7F /* ServerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerConfig.h; sourceTree = "<group>"; };
 		249EE66E2247B2FB0076FE7F /* HelperHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperHeader.h; sourceTree = "<group>"; };
 		24AA730623CAE7D1005275EB /* ViewPagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewPagerController.m; sourceTree = "<group>"; };
 		24AA730723CAE7D1005275EB /* ViewMyPagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewMyPagerViewController.h; sourceTree = "<group>"; };
@@ -1276,7 +1275,6 @@
 			children = (
 				249EE66E2247B2FB0076FE7F /* HelperHeader.h */,
 				249EE66B2247B2FB0076FE7F /* nd_define.h */,
-				249EE66C2247B2FB0076FE7F /* ServerConfig.h */,
 				249EE6682247B2FB0076FE7F /* UtilsMacro.h */,
 				24726C3A23CC18CE005299B8 /* AppConfig.h */,
 				24726C3B23CC18CE005299B8 /* AppConfig.m */,
