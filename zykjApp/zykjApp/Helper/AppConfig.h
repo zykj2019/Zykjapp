@@ -67,6 +67,12 @@
 //app 视频录制或转码的最小时间
 @property (assign, nonatomic) CGFloat videoMinTime;
 
+// 支持哪些屏幕方向
+@property (assign, nonatomic) UIInterfaceOrientationMask supportedInterfaceOrientations;
+
+// 默认的屏幕方向（当前ViewController必须是通过模态出来的UIViewController（模态带导航的无效）方式展现出来的，才会调用这个方法）
+@property (assign, nonatomic) UIInterfaceOrientation preferredInterfaceOrientationForPresentation;
+
 - (UIFont *)baseFont:(CGFloat)size;
 
 - (UIFont *)baseFontLight:(CGFloat)size;

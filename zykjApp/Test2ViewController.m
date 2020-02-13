@@ -24,6 +24,7 @@
     [super addOwnViews];
     self.myContentView.subviewSpace = 5;
     self.myContentView.orientation = MyOrientation_Horz;
+    
     UIView *view = [[UIView alloc] init];
     view.backgroundColor = kRedColor;
     view.mySize = CGSizeMake(100, 100);
@@ -31,8 +32,9 @@
     
     view = [[UIView alloc] init];
     view.backgroundColor = kGreenColor;
-    view.mySize = CGSizeMake(100, 100);
-  
+//    view.mySize = CGSizeMake(100, 100);
+    view.weight = 1;
+    view.myHeight = 100;
     [self.myContentView addSubview:view];
     
 }
