@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "zykjApp"
 
-  s.version      = "137"
+  s.version      = "138"
   s.summary      = "zykjApp."
 
   # This description is used to generate tags and improve search results.
@@ -223,7 +223,6 @@ Pod::Spec.new do |s|
     masonry_files = "zykjApp/zykjApp/Ext/Masonry/**/*.{h,m,swift}"
     aFNetworking_files = "zykjApp/zykjApp/Ext/AFNetworking/**/*.{h,m,swift}"
     commonLibrary_files = "zykjApp/zykjApp/Ext/CommonLibrary/**/*.{h,m,swift}"
-    fMDB_files = "zykjApp/zykjApp/Ext/FMDB/**/*.{h,m,swift}"
     mSSBrowse_files = "zykjApp/zykjApp/Ext/MSSBrowse/**/*.{h,m,swift}"
     sDCycleScrollView_files = "zykjApp/zykjApp/Ext/SDCycleScrollView/**/*.{h,m,swift}"
     sDWebImage_files = "zykjApp/zykjApp/Ext/SDWebImage/**/*.{h,m,swift}"
@@ -232,7 +231,7 @@ Pod::Spec.new do |s|
     zLPickerLib_files = "zykjApp/zykjApp/Ext/ZLPickerLib/**/*.{h,m,swift}"
 
     ss.source_files = ext_files
-    ss.exclude_files = myLayout_files,mJRefresh_files,masonry_files,aFNetworking_files,commonLibrary_files,fMDB_files,mSSBrowse_files,sDCycleScrollView_files,sDWebImage_files,xHImageViewer_files,yyKit_files,zLPickerLib_files
+    ss.exclude_files = myLayout_files,mJRefresh_files,masonry_files,aFNetworking_files,commonLibrary_files,mSSBrowse_files,sDCycleScrollView_files,sDWebImage_files,xHImageViewer_files,yyKit_files,zLPickerLib_files
     
     ss.subspec 'MyLayout' do |sss|
       sss.source_files = myLayout_files
@@ -252,10 +251,6 @@ Pod::Spec.new do |s|
 
       ss.subspec 'CommonLibrary' do |sss|
       sss.source_files = commonLibrary_files
-      end
-
-      ss.subspec 'FMDB' do |sss|
-      sss.source_files = fMDB_files
       end
 
       ss.subspec 'MSSBrowse' do |sss|
@@ -337,6 +332,7 @@ Pod::Spec.new do |s|
   # s.dependency "BLMediator"
 
   s.dependency "ReactiveObjC"
+  s.dependency "FMDB/SQLCipher" , "~> 2.5"
 
   s.frameworks = 'Accelerate', 'CoreTelephony', 'SystemConfiguration'
   #//不带tbd后缀及lib前缀

@@ -18,6 +18,7 @@
 		2444E0B220590D5A00F29C06 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2444E0B120590D5A00F29C06 /* libsqlite3.tbd */; };
 		24472F56206B36C90037356F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 24472F4E206B36C80037356F /* libz.tbd */; };
 		24472F58206B36C90037356F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 24472F51206B36C80037356F /* libc++.tbd */; };
+		2463AB5523FCE14A00736D8A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2463AB5423FCE14A00736D8A /* Security.framework */; };
 		24726C3C23CC18CE005299B8 /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 24726C3B23CC18CE005299B8 /* AppConfig.m */; };
 		24726C4D23CC2CDB005299B8 /* SDAVAssetExportHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 24726C4723CC2CDB005299B8 /* SDAVAssetExportHelp.m */; };
 		24726C4E23CC2CDB005299B8 /* SDAVAssetExportSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 24726C4923CC2CDB005299B8 /* SDAVAssetExportSession.m */; };
@@ -45,6 +46,7 @@
 		24AA730A23CAE7D1005275EB /* ViewPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AA730623CAE7D1005275EB /* ViewPagerController.m */; };
 		24AA730B23CAE7D1005275EB /* ViewMyPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AA730923CAE7D1005275EB /* ViewMyPagerViewController.m */; };
 		24AA731123CAECC4005275EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24AA731023CAECC3005275EB /* Assets.xcassets */; };
+		47EB0303A8803FEF2E9302CB /* Pods_zykjApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DEF3C9E47F4A038AC7A991 /* Pods_zykjApp.framework */; };
 		670C3A4123D2F4C6002664F0 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A4023D2F4C6002664F0 /* BaseTableViewController.m */; };
 		670C3A4423D2FA5D002664F0 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670C3A4323D2FA5D002664F0 /* TestTableViewController.m */; };
 		676150E423C9733900E8056A /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 676150E323C9733900E8056A /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -207,13 +209,6 @@
 		67A8616823C9D650001B773E /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8608123C9D64F001B773E /* TAPageControl.m */; };
 		67A8616923C9D650001B773E /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8608223C9D64F001B773E /* TAAnimatedDotView.m */; };
 		67A8616A23C9D650001B773E /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8608323C9D64F001B773E /* TAAbstractDotView.m */; };
-		67A8616B23C9D650001B773E /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 67A8608823C9D64F001B773E /* README.markdown */; };
-		67A8616C23C9D650001B773E /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 67A8608923C9D64F001B773E /* LICENSE.txt */; };
-		67A8616D23C9D650001B773E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8608D23C9D64F001B773E /* FMDatabaseQueue.m */; };
-		67A8616E23C9D650001B773E /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8609023C9D64F001B773E /* FMDatabaseAdditions.m */; };
-		67A8616F23C9D650001B773E /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8609123C9D64F001B773E /* FMDatabase.m */; };
-		67A8617023C9D650001B773E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8609523C9D64F001B773E /* FMDatabasePool.m */; };
-		67A8617123C9D650001B773E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8609623C9D64F001B773E /* FMResultSet.m */; };
 		67A8617223C9D650001B773E /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8609823C9D64F001B773E /* UIImage+WebP.m */; };
 		67A8617323C9D650001B773E /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8609923C9D64F001B773E /* MKAnnotationView+WebCache.m */; };
 		67A8617423C9D650001B773E /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A8609C23C9D64F001B773E /* SDWebImageManager.m */; };
@@ -378,6 +373,7 @@
 		24472F53206B36C80037356F /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		24472F54206B36C90037356F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		24472F55206B36C90037356F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		2463AB5423FCE14A00736D8A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		24726C3A23CC18CE005299B8 /* AppConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
 		24726C3B23CC18CE005299B8 /* AppConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppConfig.m; sourceTree = "<group>"; };
 		24726C4723CC2CDB005299B8 /* SDAVAssetExportHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAVAssetExportHelp.m; sourceTree = "<group>"; };
@@ -433,6 +429,8 @@
 		24AA730823CAE7D1005275EB /* ViewPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewPagerController.h; sourceTree = "<group>"; };
 		24AA730923CAE7D1005275EB /* ViewMyPagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewMyPagerViewController.m; sourceTree = "<group>"; };
 		24AA731023CAECC3005275EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27989AFC1E890FAEEC965C67 /* Pods-zykjApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zykjApp.release.xcconfig"; path = "Target Support Files/Pods-zykjApp/Pods-zykjApp.release.xcconfig"; sourceTree = "<group>"; };
+		45F08A3B46DFCB9FE9B62420 /* Pods-zykjApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zykjApp.debug.xcconfig"; path = "Target Support Files/Pods-zykjApp/Pods-zykjApp.debug.xcconfig"; sourceTree = "<group>"; };
 		670C3A3F23D2F4C6002664F0 /* BaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
 		670C3A4023D2F4C6002664F0 /* BaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		670C3A4223D2FA5D002664F0 /* TestTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
@@ -788,19 +786,6 @@
 		67A8608423C9D64F001B773E /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
 		67A8608523C9D64F001B773E /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
 		67A8608623C9D64F001B773E /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
-		67A8608823C9D64F001B773E /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
-		67A8608923C9D64F001B773E /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		67A8608C23C9D64F001B773E /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		67A8608D23C9D64F001B773E /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
-		67A8608E23C9D64F001B773E /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		67A8608F23C9D64F001B773E /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		67A8609023C9D64F001B773E /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		67A8609123C9D64F001B773E /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		67A8609223C9D64F001B773E /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		67A8609323C9D64F001B773E /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
-		67A8609423C9D64F001B773E /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		67A8609523C9D64F001B773E /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		67A8609623C9D64F001B773E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		67A8609823C9D64F001B773E /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
 		67A8609923C9D64F001B773E /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
 		67A8609A23C9D64F001B773E /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
@@ -1067,7 +1052,9 @@
 				24472F56206B36C90037356F /* libz.tbd in Frameworks */,
 				67A8626E23C9E026001B773E /* libopencore-amrwb.a in Frameworks */,
 				67A8626F23C9E026001B773E /* libopencore-amrnb.a in Frameworks */,
+				2463AB5523FCE14A00736D8A /* Security.framework in Frameworks */,
 				2444E0B220590D5A00F29C06 /* libsqlite3.tbd in Frameworks */,
+				47EB0303A8803FEF2E9302CB /* Pods_zykjApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1096,6 +1083,7 @@
 				2444E0A120590CAB00F29C06 /* zykjAppUITests */,
 				2444E07C20590CAB00F29C06 /* Products */,
 				2444E0B020590D5A00F29C06 /* Frameworks */,
+				8C773393BC4541182D8AA112 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1157,6 +1145,7 @@
 		2444E0B020590D5A00F29C06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2463AB5423FCE14A00736D8A /* Security.framework */,
 				24472F53206B36C80037356F /* Accelerate.framework */,
 				24472F54206B36C90037356F /* AVFoundation.framework */,
 				24472F55206B36C90037356F /* CoreTelephony.framework */,
@@ -1464,7 +1453,6 @@
 				67A8606923C9D64F001B773E /* AFNetworking */,
 				67A85F3B23C9D64F001B773E /* CommonLibrary */,
 				67A85FEE23C9D64F001B773E /* ExtHeader.h */,
-				67A8608723C9D64F001B773E /* FMDB */,
 				67A8602523C9D64F001B773E /* MSSBrowse */,
 				67A8607723C9D64F001B773E /* SDCycleScrollView */,
 				67A8609723C9D64F001B773E /* SDWebImage */,
@@ -2101,42 +2089,6 @@
 			path = PageControl;
 			sourceTree = "<group>";
 		};
-		67A8608723C9D64F001B773E /* FMDB */ = {
-			isa = PBXGroup;
-			children = (
-				67A8608823C9D64F001B773E /* README.markdown */,
-				67A8608923C9D64F001B773E /* LICENSE.txt */,
-				67A8608A23C9D64F001B773E /* src */,
-			);
-			path = FMDB;
-			sourceTree = "<group>";
-		};
-		67A8608A23C9D64F001B773E /* src */ = {
-			isa = PBXGroup;
-			children = (
-				67A8608B23C9D64F001B773E /* fmdb */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		67A8608B23C9D64F001B773E /* fmdb */ = {
-			isa = PBXGroup;
-			children = (
-				67A8608C23C9D64F001B773E /* FMDatabase.h */,
-				67A8608D23C9D64F001B773E /* FMDatabaseQueue.m */,
-				67A8608E23C9D64F001B773E /* FMResultSet.h */,
-				67A8608F23C9D64F001B773E /* FMDatabasePool.h */,
-				67A8609023C9D64F001B773E /* FMDatabaseAdditions.m */,
-				67A8609123C9D64F001B773E /* FMDatabase.m */,
-				67A8609223C9D64F001B773E /* FMDatabaseQueue.h */,
-				67A8609323C9D64F001B773E /* FMDB.h */,
-				67A8609423C9D64F001B773E /* FMDatabaseAdditions.h */,
-				67A8609523C9D64F001B773E /* FMDatabasePool.m */,
-				67A8609623C9D64F001B773E /* FMResultSet.m */,
-			);
-			path = fmdb;
-			sourceTree = "<group>";
-		};
 		67A8609723C9D64F001B773E /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -2558,6 +2510,16 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		8C773393BC4541182D8AA112 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45F08A3B46DFCB9FE9B62420 /* Pods-zykjApp.debug.xcconfig */,
+				27989AFC1E890FAEEC965C67 /* Pods-zykjApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A7C2240223D079AF002F13D1 /* ZykjRouter */ = {
 			isa = PBXGroup;
 			children = (
@@ -2651,9 +2613,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2444E0A720590CAB00F29C06 /* Build configuration list for PBXNativeTarget "zykjApp" */;
 			buildPhases = (
+				90B1223E8D3DAD5194E1F1B4 /* [CP] Check Pods Manifest.lock */,
 				2444E07720590CAB00F29C06 /* Sources */,
 				2444E07820590CAB00F29C06 /* Frameworks */,
 				2444E07920590CAB00F29C06 /* Resources */,
+				809649C162E5E9DDA7A3C233 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2760,8 +2724,6 @@
 				2444E08620590CAB00F29C06 /* Main.storyboard in Resources */,
 				67A8643123CDA0A7001B773E /* BRPickerView.bundle in Resources */,
 				67A8614B23C9D650001B773E /* mss_browseLoading@3x.png in Resources */,
-				67A8616B23C9D650001B773E /* README.markdown in Resources */,
-				67A8616C23C9D650001B773E /* LICENSE.txt in Resources */,
 				67A8614D23C9D650001B773E /* mss_browseLoading@2x.png in Resources */,
 				24AA731123CAECC4005275EB /* Assets.xcassets in Resources */,
 				67A8643523CDA2EF001B773E /* MBProgressHUD.bundle in Resources */,
@@ -2783,6 +2745,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		809649C162E5E9DDA7A3C233 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zykjApp/Pods-zykjApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-zykjApp/Pods-zykjApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90B1223E8D3DAD5194E1F1B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zykjApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2444E07720590CAB00F29C06 /* Sources */ = {
@@ -2877,7 +2884,6 @@
 				67A8620923C9DE58001B773E /* UIViewController+CLPlayerRotation.m in Sources */,
 				6761560423C9B54C00E8056A /* BaseAppDelegate.m in Sources */,
 				67A8617223C9D650001B773E /* UIImage+WebP.m in Sources */,
-				67A8617023C9D650001B773E /* FMDatabasePool.m in Sources */,
 				67A860E623C9D64F001B773E /* MenuButton.m in Sources */,
 				67A8623923C9DECC001B773E /* XXPickerView.m in Sources */,
 				67A860DF23C9D64F001B773E /* ZLPickerGlobal.m in Sources */,
@@ -2895,7 +2901,6 @@
 				67A861ED23C9DA21001B773E /* UICKeyChainStore.m in Sources */,
 				676150E423C9733900E8056A /* JSONKit.m in Sources */,
 				24AA730A23CAE7D1005275EB /* ViewPagerController.m in Sources */,
-				67A8616E23C9D650001B773E /* FMDatabaseAdditions.m in Sources */,
 				67A861DD23C9DA09001B773E /* NSObject+FBKVOController.m in Sources */,
 				67A8642723CD9C86001B773E /* MJRefreshHeader.m in Sources */,
 				67A860FA23C9D64F001B773E /* UITextField+UITextField_Tip.m in Sources */,
@@ -2933,7 +2938,6 @@
 				A7C2240923D07D6B002F13D1 /* RouteVC.m in Sources */,
 				67A8611E23C9D650001B773E /* M80AttributedLabel.m in Sources */,
 				AF4FAABE23D83CF6004040FB /* MyGridLayout.m in Sources */,
-				67A8617123C9D650001B773E /* FMResultSet.m in Sources */,
 				67A8642023CD9C86001B773E /* MJRefreshAutoStateFooter.m in Sources */,
 				67A8622A23C9DEC4001B773E /* BRBaseView.m in Sources */,
 				67A8611923C9D650001B773E /* UIViewController+ADFlipTransition.m in Sources */,
@@ -2977,7 +2981,6 @@
 				67A861EA23C9DA21001B773E /* NJKWebViewProgress.m in Sources */,
 				AF053A8D23D4059600931FD7 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				6761555723C9B20800E8056A /* LEEAlert.m in Sources */,
-				67A8616F23C9D650001B773E /* FMDatabase.m in Sources */,
 				67A8627D23C9E2B1001B773E /* ZYWeakTimerObject.m in Sources */,
 				67A8612823C9D650001B773E /* FontHelper.m in Sources */,
 				6761560923C9B54C00E8056A /* BaseViewController.m in Sources */,
@@ -3069,7 +3072,6 @@
 				67A860CB23C9D64F001B773E /* ZLCameraView.m in Sources */,
 				67A8617523C9D650001B773E /* SDWebImageDecoder.m in Sources */,
 				67A8624A23C9DFB8001B773E /* PictureView.m in Sources */,
-				67A8616D23C9D650001B773E /* FMDatabaseQueue.m in Sources */,
 				67A860FD23C9D64F001B773E /* UILabel+Common.m in Sources */,
 				67A8642323CD9C86001B773E /* MJRefreshNormalHeader.m in Sources */,
 				67A860FC23C9D64F001B773E /* UIImage+Common.m in Sources */,
@@ -3254,6 +3256,7 @@
 		};
 		2444E0A820590CAB00F29C06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45F08A3B46DFCB9FE9B62420 /* Pods-zykjApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -3283,6 +3286,7 @@
 		};
 		2444E0A920590CAB00F29C06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27989AFC1E890FAEEC965C67 /* Pods-zykjApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
